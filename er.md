@@ -1,112 +1,227 @@
-erDiagram
+model User {
+  id              Int             @id @default(autoincrement())
+  name            String
+  email           String
+  providerType    String
+  providerUid     String
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
 
-  ユーザー {
-    int ID PK
-    string 名前
-    string メールアドレス
-    string プロバイダー種別
-    string プロバイダーUID
-    datetime created_at
-    datetime updated_at
-  }
+  articles        Article[]
+  userWords       UserWord[]
+  quizHistories   QuizHistory[]
+}
 
-  記事 {
-    int ID PK
-    int ユーザーID FK
-    string タイトル
-    text 内容
-    text 要約
-    string 出典URL
-    datetime created_at
-    datetime updated_at
-  }
+model Article {
+  id              Int             @id @default(autoincrement())
+  userId          Int
+  title           String
+  content         String
+  summary         String
+  sourceUrl       String
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
 
-  文 {
-    int ID PK
-    int 記事ID FK
-    text 英文
-    text 和訳
-    int 並び順
-    datetime created_at
-    datetime updated_at
-  }
+  user            User            @relation(fields: [userId], references: [id])
+  sentences       Sentence[]
+  articleQuizzes  ArticleQuiz[]
+}
 
-  単語 {
-    int ID PK
-    string 単語
-    text 意味
-    string 品詞
-    string レベル
-    text 語源
-    datetime created_at
-    datetime updated_at
-  }
+model Sentence {
+  id              Int             @id @default(autoincrement())
+  articleId       Int
+  english         String
+  japanese        String
+  order           Int
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
 
-  単語例文 {
-    int ID PK
-    int 単語ID FK
-    text 英文
-    text 和訳
-    datetime created_at
-    datetime updated_at
-  }
+  article         Article         @relation(fields: [articleId], references: [id])
+}
 
-  ユーザー単語 {
-    int ID PK
-    int ユーザーID FK
-    int 単語ID FK
-    datetime 登録日
-    datetime 最終テスト日
-    int 正解数
-    int 不正解数
-    datetime created_at
-    datetime updated_at
-  }
+model Word {
+  id              Int             @id @default(autoincrement())
+  word            String
+  meaning         String
+  partOfSpeech    String
+  level           String
+  etymology       String
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
 
-  クイズテンプレ {
-    int ID PK
-    int 単語ID FK
-    string クイズ形式
-    string 問題文  // VARCHAR(512)
-    string 選択肢1
-    string 選択肢2
-    string 選択肢3
-    string 選択肢4
-    int 正解  // 1〜4
-    datetime created_at
-    datetime updated_at
-  }
+  wordExamples    WordExample[]
+  quizTemplates   QuizTemplate[]
+  userWords       UserWord[]
+}
 
-  クイズ履歴 {
-    int ID PK
-    int ユーザーID FK
-    int クイズテンプレID FK
-    int ユーザー解答
-    boolean 正誤
-    datetime 実施日時
-    datetime created_at
-    datetime updated_at
-  }
+model WordExample {
+  id              Int             @id @default(autoincrement())
+  wordId          Int
+  english         String
+  japanese        String
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
 
-  記事クイズ {
-    int ID PK
-    int 記事ID FK
-    string 問題文  // VARCHAR(512)
-    string 選択肢1
-    string 選択肢2
-    string 選択肢3
-    int 正解  // 1〜3
-    text 解説
-    datetime created_at
-    datetime updated_at
-  }
+  word            Word            @relation(fields: [wordId], references: [id])
+}
 
-  ユーザー ||--o{ 記事 : 投稿
-  記事 ||--o{ 文 : 含む
-  単語 ||--o{ 単語例文 : 例文
-  単語 ||--o{ クイズテンプレ : クイズ
-  単語 ||--o{ ユーザー単語 : 登録
-  ユーザー ||--o{ ユーザー単語 : 単語登録
-  クイズテンプレ ||--o{ クイズ履歴 : 解答
-  ユーザー ||--o{ クイズ履歴 : クイズ記録
-  記事 ||--o{ 記事クイズ : 理解度確認
+model UserWord {
+  id              Int             @id @default(autoincrement())
+  userId          Int
+  wordId          Int
+  registeredAt    DateTime
+  lastTestedAt    DateTime
+  correctCount    Int
+  incorrectCount  Int
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+
+  user            User            @relation(fields: [userId], references: [id])
+  word            Word            @relation(fields: [wordId], references: [id])
+}
+
+model QuizTemplate {
+  id              Int             @id @default(autoincrement())
+  wordId          Int
+  quizType        String
+  question        String          @db.VarChar(512)
+  choice1         String
+  choice2         String
+  choice3         String
+  choice4         String
+  answer          Int
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+
+  word            Word            @relation(fields: [wordId], references: [id])
+  quizHistories   QuizHistory[]
+}
+
+model QuizHistory {
+  id                  Int         @id @default(autoincrement())
+  userId              Int
+  quizTemplateId      Int
+  userAnswer          Int
+  isCorrect           Boolean
+  executedAt          DateTime
+  createdAt           DateTime    @default(now())
+  updatedAt           DateTime    @updatedAt
+
+  user                User        @relation(fields: [userId], references: [id])
+  quizTemplate        QuizTemplate @relation(fields: [quizTemplateId], references: [id])
+}
+
+model ArticleQuiz {
+  id              Int             @id @default(autoincrement())
+  articleId       Int
+  question        String          @db.VarChar(512)
+  choice1         String
+  choice2         String
+  choice3         String
+  answer          Int
+  explanation     String
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+
+  article         Article         @relation(fields: [articleId], references: [id])
+}
+
+
+<!-- 
+model Sentence {
+  id              Int      @id @default(autoincrement())
+  articleId       Int
+  english         String   @db.Text
+  japanese        String   @db.Text
+  order           Int
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  article         Article  @relation(fields: [articleId], references: [id])
+}
+
+model Word {
+  id              Int      @id @default(autoincrement())
+  word            String   @db.VarChar(255)
+  meaning         String   @db.Text
+  partOfSpeech String? @db.VarChar(100)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  wordExamples    WordExample[]
+  quizTemplates   QuizTemplate[]
+  userWords       UserWord[]
+}
+
+model WordExample {
+  id              Int      @id @default(autoincrement())
+  wordId          Int
+  english         String   @db.Text
+  japanese        String   @db.Text
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  word            Word     @relation(fields: [wordId], references: [id])
+}
+
+model UserWord {
+  id              Int      @id @default(autoincrement())
+  userId          Int
+  wordId          Int
+  registeredAt    DateTime
+  lastTestedAt    DateTime
+  correctCount    Int
+  incorrectCount  Int
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  user            User     @relation(fields: [userId], references: [id])
+  word            Word     @relation(fields: [wordId], references: [id])
+}
+
+model QuizTemplate {
+  id              Int      @id @default(autoincrement())
+  wordId          Int
+  quizType        String   @db.VarChar(50)
+  question        String   @db.VarChar(512)
+  choice1         String   @db.VarChar(255)
+  choice2         String   @db.VarChar(255)
+  choice3         String   @db.VarChar(255)
+  choice4         String   @db.VarChar(255)
+  answer          Int
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  word            Word     @relation(fields: [wordId], references: [id])
+  quizHistories   QuizHistory[]
+}
+
+model QuizHistory {
+  id                  Int          @id @default(autoincrement())
+  userId              Int
+  quizTemplateId      Int
+  userAnswer          Int
+  isCorrect           Boolean
+  executedAt          DateTime
+  createdAt           DateTime     @default(now())
+  updatedAt           DateTime     @updatedAt
+
+  user                User         @relation(fields: [userId], references: [id])
+  quizTemplate        QuizTemplate @relation(fields: [quizTemplateId], references: [id])
+}
+
+model ArticleQuiz {
+  id              Int      @id @default(autoincrement())
+  articleId       Int
+  question        String   @db.VarChar(512)
+  choice1         String   @db.VarChar(255)
+  choice2         String   @db.VarChar(255)
+  choice3         String   @db.VarChar(255)
+  answer          Int
+  explanation     String   @db.Text
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  article         Article  @relation(fields: [articleId], references: [id])
+}
+ -->
