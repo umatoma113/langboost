@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Header from '@/components/Header';
+import { openai } from '../../../lib/openai';
 
 const mockArticles = [
   { id: 1, title: 'Climate change is affecting ecosystems...' },
