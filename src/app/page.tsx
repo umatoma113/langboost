@@ -2,6 +2,7 @@
 
 import Header from "@/components/Header";
 import {Button} from '@heroui/button'; 
+import { openai } from "../../lib/openai";
 
 export default function Page() {
   return (
