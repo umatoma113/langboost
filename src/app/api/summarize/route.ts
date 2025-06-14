@@ -1,48 +1,33 @@
 // src/app/api/summarize/route.ts
-import { openai } from "../../../../lib/openai";
+import { NextResponse } from "next/server";
+import openai from "../../../../lib/openai";
 
 export async function POST(req: Request) {
-  const { text } = await req.json();
+  try {
+    const { text } = await req.json();
 
-   const completion = await openai.chat.completions.create({
-    model: "gpt-3.5-turbo",
-    messages: [
-      {
-        role: "user",
-        content: `以下の文章を日本語で簡潔に要約してください：\n\n${text}`,
-      },
-    ],
-  });
+    if (!text || text.trim() === "") {
+      return NextResponse.json({ error: "テキストが空です。" }, { status: 400 });
+    }
 
-  const summary = completion.choices[0].message.content;
-  return Response.json({ summary });
+    const chatCompletion = await openai.chat.completions.create({
+      model: "gpt-4o-mini", 
+      messages: [
+        {
+          role: "user",
+          content: `以下の文章を日本語で要約してください:\n\n${text}`,
+        },
+      ],
+    });
+
+    const result = chatCompletion.choices[0]?.message?.content;
+    if (!result) {
+      return NextResponse.json({ error: "要約結果が取得できませんでした。" }, { status: 502 });
+    }
+
+    return NextResponse.json({ summary: result });
+  } catch (error) {
+    console.error("❌ OpenAI API Error:", error instanceof Error ? error.message : error);
+    return NextResponse.json({ error: "要約に失敗しました。" }, { status: 500 });
+  }
 }
-
-// export async function POST(req: Request) {
-//   try {
-//     const { text } = await req.json();
-
-//     console.log("✅ 受け取ったテキスト:", text);
-
-//     const completion = await openai.chat.completions.create({
-//       model: "gpt-3.5-turbo",
-//       messages: [
-//         {
-//           role: "user",
-//           content: `以下の文章を日本語で簡潔に要約してください：\n\n${text}`,
-//         },
-//       ],
-//     });
-
-//     const summary = completion.choices[0].message.content;
-//     console.log("✅ 要約結果:", summary);
-
-//     return Response.json({ summary });
-//   } catch (error) {
-//     console.error("❌ エラー:", error);
-//     return new Response(JSON.stringify({ error: "Internal Server Error" }), {
-//       status: 500,
-//     });
-//   }
-// }
-
