@@ -12,7 +12,7 @@ export async function analyzeArticle(text: string): Promise<AnalyzeResult> {
     },
     body: JSON.stringify({
       model: "gpt-4o",
-      // response_format: "json", // ✅ JSONモード
+      response_format: "json", // ✅ JSONモード
       messages: [
         {
           role: "user",

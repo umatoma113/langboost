@@ -14,7 +14,7 @@ export async function extractWordsFromText(text: string): Promise<ExtractedWord[
     },
     body: JSON.stringify({
       model: "gpt-4o",
-      // response_format: "json", // ✅ 正しい指定（文字列）
+      response_format: "json", // ✅ 正しい指定（文字列）
       messages: [
         {
           role: "user",
