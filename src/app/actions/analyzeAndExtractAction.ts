@@ -1,0 +1,73 @@
+// src/app/actions/analyzeAndExtract.ts
+'use server';
+
+import { analyzeArticle } from "@/services/article/analyze";
+import { extractWordsFromText } from "@/services/article/extractWords";
+import { auth } from "../../../lib/auth";
+import { prisma } from "../../../lib/db";
+
+export async function analyzeAndExtractAction(formData: FormData) {
+  console.log("✅ analyzeAndExtractAction reached");
+
+  const session = await auth();
+  if (!session?.id) throw new Error("ログインが必要です");
+
+  const text = formData.get("text")?.toString() || "";
+  if (!text.trim()) throw new Error("本文が空です");
+
+  // 要約
+  const result = await analyzeArticle(text);
+  const summary = result.summaryJa;
+
+  // 要約結果を保存
+  const savedArticle = await prisma.article.create({
+    data: {
+      userId: session.id,
+      title: "", // TODO: タイトル自動生成
+      content: text,
+      summary,
+      sourceUrl: "",
+    },
+  });
+
+  console.log("✅ Article saved:", savedArticle.id);
+
+  // 単語抽出
+  const rawWords = await extractWordsFromText(summary); // or use `text` if preferred
+
+  const MAX_WORD_LENGTH = 255;
+  const MAX_MEANING_LENGTH = 1024;
+
+  const words = [];
+
+  for (const entry of rawWords) {
+    const word = entry.word?.toString() ?? "";
+    const meaning = entry.meaning?.toString() ?? "";
+
+    if (!word || !meaning || word.length > MAX_WORD_LENGTH || meaning.length > MAX_MEANING_LENGTH) {
+      continue;
+    }
+
+    const saved = await prisma.word.upsert({
+      where: {
+        userId_word: {
+          userId: session.id,
+          word,
+        },
+      },
+      update: {},
+      create: {
+        word,
+        meaning,
+        userId: session.id,
+      },
+    });
+
+    words.push(saved);
+  }
+
+  return {
+    summary,
+    words,
+  };
+}

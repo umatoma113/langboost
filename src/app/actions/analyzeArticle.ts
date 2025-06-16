@@ -1,3 +1,4 @@
+//src/app/actions/analyzeArticle.ts
 'use server';
 
 import { analyzeArticle } from "@/services/article/analyze";
