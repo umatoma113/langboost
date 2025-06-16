@@ -18,6 +18,7 @@ export async function analyzeAndExtractAction(formData: FormData) {
   // 要約
   const result = await analyzeArticle(text);
   const summary = result.summaryJa;
+  const translation = result.translation;
 
   // 要約結果を保存
   const savedArticle = await prisma.article.create({
@@ -26,6 +27,7 @@ export async function analyzeAndExtractAction(formData: FormData) {
       title: "", // TODO: タイトル自動生成
       content: text,
       summary,
+      translation,
       sourceUrl: "",
     },
   });
@@ -68,6 +70,7 @@ export async function analyzeAndExtractAction(formData: FormData) {
 
   return {
     summary,
+    translation,
     words,
   };
 }

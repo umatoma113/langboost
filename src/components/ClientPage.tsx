@@ -38,6 +38,7 @@ export default function ClientPage({ user }: Props) {
       // クエリパラメータとして遷移先へ渡す
      const params = new URLSearchParams();
       params.set("summary", encodeURIComponent(result.summary));
+      params.set("translation", encodeURIComponent(result.translation));
       params.set("words", JSON.stringify(result.words));
 
       router.push(`/summary?${params.toString()}`);

@@ -90,6 +90,7 @@ model Article {
   title     String   @db.VarChar(255)
   content   String   @db.Text
   summary   String   @db.Text
+  translation String?  @db.Text
   sourceUrl String   @db.VarChar(255)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

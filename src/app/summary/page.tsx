@@ -12,14 +12,20 @@ type Word = {
 export default function SummaryPage() {
   const searchParams = useSearchParams();
   const [summary, setSummary] = useState('');
+  const [translation, setTranslation] = useState('');
   const [words, setWords] = useState<Word[]>([]);
 
   useEffect(() => {
     const summaryParam = searchParams.get('summary');
+    const translationParam = searchParams.get('translation');
     const wordsParam = searchParams.get('words');
 
     if (summaryParam) {
       setSummary(decodeURIComponent(summaryParam));
+    }
+
+    if (translationParam) {
+      setTranslation(decodeURIComponent(translationParam));
     }
 
     if (wordsParam) {
@@ -34,23 +40,18 @@ export default function SummaryPage() {
 
   return (
     <main className="min-h-screen bg-white px-6 py-10 space-y-10">
-      {/* SVGのタイトル位置に対応 */}
+      {/* タイトル */}
       <h1 className="text-3xl font-bold text-center">翻訳・要約ページ</h1>
 
-      {/* 記事タイトル枠 */}
-      <div className="max-w-3xl mx-auto">
-        <h2 className="text-xl font-bold text-gray-800 mb-2">記事タイトル</h2>
-      </div>
-
-      {/* 要約部分：既存構造に枠と背景のみ追加 */}
-      <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 max-w-4xl mx-auto">
+      {/* 要約セクション（最上部・横長） */}
+      <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 max-w-6xl mx-auto">
         <section className="mb-10">
           <h2 className="text-2xl font-bold mb-4 text-gray-900">📝 要約</h2>
           <p className="whitespace-pre-wrap text-gray-800">{summary}</p>
         </section>
       </div>
 
-      {/* 単語一覧：横長枠スタイル */}
+      {/* 単語一覧（中央） */}
       <div className="bg-yellow-50 border border-gray-300 rounded-lg p-6 max-w-6xl mx-auto">
         <section>
           <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">📚 抽出された単語</h2>
@@ -65,6 +66,14 @@ export default function SummaryPage() {
               ))}
             </ul>
           )}
+        </section>
+      </div>
+
+      {/* 和訳セクション（最下部・横長） */}
+      <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 max-w-6xl mx-auto">
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900">📖 和訳</h2>
+          <p className="whitespace-pre-wrap text-gray-800">{translation}</p>
         </section>
       </div>
     </main>
