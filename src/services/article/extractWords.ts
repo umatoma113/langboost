@@ -14,28 +14,23 @@ export async function extractWordsFromText(text: string): Promise<ExtractedWord[
     },
     body: JSON.stringify({
       model: "gpt-4o",
-      response_format: "json", // ✅ 正しい指定（文字列）
       messages: [
         {
           role: "user",
-          content: `以下の英文からTOEICスコア600点以上の英単語をすべて抽出してください。
-それぞれの単語に対して、日本語訳を含むJSON形式で返してください。
-形式は以下のようにしてください：
-
-[
-  { "word": "ecosystem", "meaning": "生態系" },
-  { "word": "climate", "meaning": "気候" }
-]
-
-"${text}"`,
+          content: `以下の英文からTOEICスコア600点以上の英単語を抽出してください。
+それぞれの単語に対して、日本語訳を**1〜2語程度の簡潔な表現**で返してください。`,
+        },
+        {
+          role: "user",
+          content: text,
         },
       ],
       tools: [
         {
           type: "function",
           function: {
-            name: "return_words",
-            description: "抽出された単語と日本語訳の配列を返す",
+            name: "extract_words",
+            description: "英文から英単語と日本語訳を抽出する",
             parameters: {
               type: "object",
               properties: {
@@ -58,9 +53,7 @@ export async function extractWordsFromText(text: string): Promise<ExtractedWord[
       ],
       tool_choice: {
         type: "function",
-        function: {
-          name: "return_words",
-        },
+        function: { name: "extract_words" },
       },
     }),
   });
@@ -71,13 +64,26 @@ export async function extractWordsFromText(text: string): Promise<ExtractedWord[
   }
 
   const json = await res.json();
+  const functionCall = json.choices?.[0]?.message?.tool_calls?.[0]?.function;
 
-  const toolCall = json.choices?.[0]?.message?.tool_calls?.[0];
-  if (!toolCall || toolCall.function.name !== "return_words") {
-    throw new Error("構造化された単語配列が返されませんでした");
+  if (!functionCall?.arguments) {
+    throw new Error("構造化出力が取得できませんでした");
   }
 
-  const args = JSON.parse(toolCall.function.arguments || "{}");
+  try {
+    const parsed = JSON.parse(functionCall.arguments) as { words: ExtractedWord[] };
 
-  return args.words as ExtractedWord[];
+    // 文字数制限による安全フィルタ
+    const MAX_WORD_LENGTH = 100;
+    const MAX_MEANING_LENGTH = 255;
+
+    const filtered = parsed.words.filter(
+      ({ word, meaning }) =>
+        word.length <= MAX_WORD_LENGTH && meaning.length <= MAX_MEANING_LENGTH
+    );
+
+    return filtered;
+  } catch (e) {
+    throw new Error("JSONパースエラー: " + String(e));
+  }
 }

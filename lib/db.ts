@@ -1,3 +1,4 @@
+//lib/db.ts
 import { PrismaClient } from "@/app/generated/prisma";
 
 const globalForPrisma = globalThis as any;

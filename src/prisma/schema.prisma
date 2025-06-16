@@ -15,28 +15,25 @@ datasource db {
 }
 
 model User {
-  id            String          @id @default(cuid()) @db.VarChar(32)
+  id            String          @id @default(cuid()) @db.VarChar(64)
   name          String?         @db.VarChar(32)
-  email         String          @unique @db.VarChar(32)
+  email         String          @unique @db.VarChar(64)
   emailVerified DateTime?
   image         String?         @db.VarChar(255)
   accounts      Account[]
   sessions      Session[]
-  // Optional for WebAuthn support
   Authenticator Authenticator[]
   articles      Article[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
 
   userWords     UserWord[]
   quizHistories QuizHistory[]
-
-  words Word[] @relation("UserToWords")
+  words         Word[] @relation("UserToWords")
 }
 
 model Account {
-  userId            String  @db.VarChar(32)
+  userId            String  @db.VarChar(64)
   type              String  @db.VarChar(32)
   provider          String  @db.VarChar(32)
   providerAccountId String  @db.VarChar(255)
@@ -47,9 +44,8 @@ model Account {
   scope             String? @db.VarChar(32)
   id_token          String? @db.VarChar(255)
   session_state     String? @db.VarChar(32)
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -58,32 +54,30 @@ model Account {
 
 model Session {
   sessionToken String   @unique
-  userId       String   @db.VarChar(32)
+  userId       String   @db.VarChar(64)
   expires      DateTime
   user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
 }
 
 model VerificationToken {
-  identifier String   @db.VarChar(32)
+  identifier String   @db.VarChar(64)
   token      String   @db.VarChar(255)
   expires    DateTime
 
   @@id([identifier, token])
 }
 
-// Optional for WebAuthn support
 model Authenticator {
   credentialID         String  @unique
-  userId               String  @db.VarChar(32)
+  userId               String  @db.VarChar(64)
   providerAccountId    String  @db.VarChar(255)
   credentialPublicKey  String  @db.Text
   counter              Int
   credentialDeviceType String  @db.VarChar(32)
   credentialBackedUp   Boolean
-  transports           String? @db.VarChar(255) // Comma-separated list of transports
+  transports           String? @db.VarChar(255)
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -92,7 +86,7 @@ model Authenticator {
 
 model Article {
   id        Int      @id @default(autoincrement())
-  userId    String   @db.VarChar(32)
+  userId    String   @db.VarChar(64)
   title     String   @db.VarChar(255)
   content   String   @db.Text
   summary   String   @db.Text
@@ -120,20 +114,19 @@ model Sentence {
 
 model Word {
   id           Int      @id @default(autoincrement())
-  word         String   @db.VarChar(255) 
+  word         String   @db.Text
   meaning      String   @db.Text
-  userId       String   @db.VarChar(32)
+  userId       String   @db.VarChar(64)
   partOfSpeech String?  @db.VarChar(100)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
-  user User @relation("UserToWords", fields: [userId], references: [id])
-
-  @@unique([userId, word])
-
+  user          User           @relation("UserToWords", fields: [userId], references: [id])
   wordExamples  WordExample[]
   quizTemplates QuizTemplate[]
   userWords     UserWord[]
+
+  @@unique([userId, word])
 }
 
 model WordExample {
@@ -149,7 +142,7 @@ model WordExample {
 
 model UserWord {
   id             Int      @id @default(autoincrement())
-  userId         String   @db.VarChar(32)
+  userId         String   @db.VarChar(64)
   wordId         Int
   registeredAt   DateTime
   lastTestedAt   DateTime
@@ -181,7 +174,7 @@ model QuizTemplate {
 
 model QuizHistory {
   id             Int      @id @default(autoincrement())
-  userId         String   @db.VarChar(32)
+  userId         String   @db.VarChar(64)
   quizTemplateId Int
   userAnswer     Int
   isCorrect      Boolean

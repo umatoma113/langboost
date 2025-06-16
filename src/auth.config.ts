@@ -1,6 +1,8 @@
 // src/auth.config.ts
 import Google from "next-auth/providers/google";
 import NextAuth from "next-auth";
+import { prisma } from "../lib/db";
+import type { NextAuthConfig } from "next-auth";
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   providers: [
@@ -19,6 +21,18 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     async session({ session, token }) {
       if (token?.sub && session.user) {
         session.user.id = token.sub;
+
+        // ✅ PrismaにUserがなければ作成
+        await prisma.user.upsert({
+          where: { id: token.sub },
+          update: {},
+          create: {
+            id: token.sub,
+            email: session.user.email!,
+            name: session.user.name ?? null,
+            image: session.user.image ?? null,
+          },
+        });
       }
       return session;
     },
@@ -30,4 +44,4 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       return token;
     },
   },
-});
+} satisfies NextAuthConfig);

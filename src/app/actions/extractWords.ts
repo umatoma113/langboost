@@ -5,10 +5,14 @@ import { extractWordsFromText } from "../../services/article/extractWords";
 import { auth } from "../../../lib/auth";
 import { prisma } from "../../../lib/db";
 
+const MAX_WORD_LENGTH = 255;
+const MAX_MEANING_LENGTH = 1024; // UI表示やOpenAI返答を考慮し少し長めでもOK
+
 export async function extractWordsAction(formData: FormData) {
   console.log("✅ extractWordsAction reached");
 
   const session = await auth();
+  console.log("🧑 session.id:", session.id); 
   if (!session?.id) {
     throw new Error("ログインが必要です");
   }
@@ -19,23 +23,29 @@ export async function extractWordsAction(formData: FormData) {
     throw new Error("本文が空です");
   }
 
-  // ✅ 型修正：配列として扱う
   const rawWords = await extractWordsFromText(text) as { word: string; meaning: string }[];
 
   console.log("🧪 rawWords:", rawWords);
 
   const words = [];
 
-  // ✅ entriesではなくfor...ofで正しくループ
-  for (const { word, meaning } of rawWords) {
+  for (const entry of rawWords) {
+    const word = entry.word?.toString() ?? "";
+    const meaning = entry.meaning?.toString() ?? "";
+
     console.log("📌 word:", word);
     console.log("📌 meaning:", meaning);
     console.log("📏 word.length:", word.length);
     console.log("📏 meaning.length:", meaning.length);
 
-    // 任意：255文字以上の警告ログ
-    if (word.length > 255 || meaning.length > 255) {
-      console.warn("⚠️ 長すぎる単語または意味を検出:", { word, meaning });
+    if (
+      !word ||
+      !meaning ||
+      word.length > MAX_WORD_LENGTH ||
+      meaning.length > MAX_MEANING_LENGTH
+    ) {
+      console.warn("⚠️ スキップ: 無効または長すぎる単語", { word, meaning });
+      continue; // 無効または長すぎるものは保存しない
     }
 
     const saved = await prisma.word.upsert({
@@ -45,7 +55,7 @@ export async function extractWordsAction(formData: FormData) {
           word,
         },
       },
-      update: {},
+      update: {}, // すでにある場合はそのまま
       create: {
         word,
         meaning,

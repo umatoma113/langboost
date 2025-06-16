@@ -23,27 +23,29 @@ export default function ClientPage({ user }: Props) {
   const [error, setError] = useState("");
 
   const handleSubmit = async () => {
-    if (!text.trim()) {
-      setError("本文を入力してください。");
-      return;
-    }
+  if (!text.trim()) {
+    setError("本文を入力してください。");
+    return;
+  }
 
-    setLoading(true);
-    setError("");
-    setSummary("");
-    setWords([]);
+  setLoading(true);
+  setError("");
+  setSummary("");
+  setWords([]);
 
-    try {
-      const formData = new FormData();
-      formData.append("text", text);
-      const result = await analyzeArticleAction(formData);
-      setSummary(result);
-    } catch {
-      setError("要約に失敗しました。");
-    } finally {
-      setLoading(false);
-    }
-  };
+  try {
+    const formData = new FormData();
+    formData.append("text", text);
+
+    const result = await analyzeArticleAction(formData);
+    setSummary(result.summaryJa); // ✅ 修正ここ！
+  } catch {
+    setError("要約に失敗しました。");
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   const handleExtractWords = async () => {
     if (!text.trim()) {

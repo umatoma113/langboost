@@ -1,12 +1,18 @@
-// src/app/actions/analyzeArticle.ts
 'use server';
 
 import { analyzeArticle } from "@/services/article/analyze";
-import { auth } from "../../../lib/auth"; 
+import { auth } from "../../../lib/auth";
 import { prisma } from "../../../lib/db";
 
 export async function analyzeArticleAction(formData: FormData) {
-  const user = await auth();
+  console.log("✅ analyzeArticleAction reached");
+
+  const session = await auth();
+  console.log("🧑 session.id:", session.id);
+
+  if (!session?.id) {
+    throw new Error("ログインが必要です");
+  }
 
   const text = formData.get("text")?.toString() || "";
 
@@ -14,18 +20,20 @@ export async function analyzeArticleAction(formData: FormData) {
     throw new Error("本文が空です");
   }
 
-  const summary = await analyzeArticle(text);
+  const result = await analyzeArticle(text); // ✅ オブジェクトを受け取る
+  console.log("📝 result:", result);
 
-  // Prisma に保存
-  await prisma.article.create({
+  const saved = await prisma.article.create({
     data: {
-      userId: user.id,           
-      title: "",              
+      userId: session.id,
+      title: "", // タイトル自動生成などは今後追加
       content: text,
-      summary,
-      sourceUrl: "",             
+      summary: result.summaryJa, // ✅ summaryは文字列で保存
+      sourceUrl: "",
     },
   });
 
-  return summary;
+  console.log("✅ Article saved:", saved.id);
+
+  return result; // ✅ returnもオブジェクトのまま
 }
