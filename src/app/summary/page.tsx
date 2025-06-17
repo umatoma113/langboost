@@ -1,6 +1,7 @@
-//src/app/summary/page.tsx
+//src/app/summary/[id]/page.tsx
 'use client';
 
+import Header from '@/components/Header';
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
@@ -39,6 +40,8 @@ export default function SummaryPage() {
   }, [searchParams]);
 
   return (
+    <>
+      <Header showTopPage={true} showMyPage={true} />
     <main className="min-h-screen bg-white px-6 py-10 space-y-10">
       {/* タイトル */}
       <h1 className="text-3xl font-bold text-center">翻訳・要約ページ</h1>
@@ -77,5 +80,6 @@ export default function SummaryPage() {
         </section>
       </div>
     </main>
+    </>
   );
 }
