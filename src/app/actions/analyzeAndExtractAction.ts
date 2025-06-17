@@ -69,6 +69,7 @@ export async function analyzeAndExtractAction(formData: FormData) {
   }
 
   return {
+    id: savedArticle.id,
     summary,
     translation,
     words,

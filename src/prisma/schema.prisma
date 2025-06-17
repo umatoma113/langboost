@@ -99,6 +99,7 @@ model Article {
 
   sentences      Sentence[]
   articleQuizzes ArticleQuiz[]
+  words Word[]
 }
 
 model Sentence {
@@ -121,11 +122,13 @@ model Word {
   partOfSpeech String?  @db.VarChar(100)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
+  articleId   Int?
 
   user          User           @relation("UserToWords", fields: [userId], references: [id])
   wordExamples  WordExample[]
   quizTemplates QuizTemplate[]
   userWords     UserWord[]
+  article     Article? @relation(fields: [articleId], references: [id])
 
   @@unique([userId, word])
 }

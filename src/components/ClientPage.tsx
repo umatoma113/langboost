@@ -41,7 +41,7 @@ export default function ClientPage({ user }: Props) {
       params.set("translation", encodeURIComponent(result.translation));
       params.set("words", JSON.stringify(result.words));
 
-      router.push(`/summary?${params.toString()}`);
+      router.push(`/summary/${result.id}`);
     } catch (err) {
       console.error(err);
       setError("要約・単語抽出に失敗しました。");
