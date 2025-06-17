@@ -38,9 +38,9 @@ export default async function SummaryPage({ params }: Props) {
         {article.words.length === 0 ? (
           <p className="text-gray-600 text-center">単語が見つかりませんでした。</p>
         ) : (
-          <ul className="list-disc ml-5 space-y-2 text-gray-800">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-gray-800">
             {article.words.map((word, index) => (
-              <li key={index}>
+              <li key={index} className="border p-3 rounded bg-white shadow-sm">
                 <span className="font-semibold">{word.word}</span>：{word.meaning}
               </li>
             ))}
