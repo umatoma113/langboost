@@ -1,8 +1,14 @@
 // src/services/article/analyze.ts
 
 type AnalyzeResult = {
-  summaryJa: string;    // 要約（日本語）
-  translation: string;  // 和訳（全文）
+  summaryJa: string;
+  translation: string;
+  quiz: {
+    question: string;
+    choices: [string, string, string, string];
+    answer: number; // 正解の番号（1〜4）
+    explanation: string;
+  };
 };
 
 export async function analyzeArticle(text: string): Promise<AnalyzeResult> {
@@ -17,36 +23,55 @@ export async function analyzeArticle(text: string): Promise<AnalyzeResult> {
       messages: [
         {
           role: "user",
-          content: "以下の英文について、日本語で簡潔に要約した要約文（summaryJa）と全文の自然な和訳（translation）を返してください。",
-        },
-        {
-          role: "user",
-          content: text,
-        },
-      ],
-      tools: [
-        {
-          type: "function",
-          function: {
-            name: "analyze_article",
-            description: "英文を日本語で要約し、和訳を返す",
-            parameters: {
-              type: "object",
-              properties: {
-                summaryJa: { type: "string" },
-                translation: { type: "string" },
+          content: `以下の英文について、次の3点を日本語で生成してください：
+
+  1. 簡潔な要約（summaryJa）  
+  2. 全文の自然な和訳（translation）  
+  3. 要旨に関する4択クイズ（quiz）を1問（JSON形式）
+
+  本文：
+  ${text}
+  `,
+          },
+        ],
+        tools: [
+          {
+            type: "function",
+            function: {
+              name: "analyze_article",
+              description: "英文を要約・翻訳し、要旨クイズを生成する",
+              parameters: {
+                type: "object",
+                properties: {
+                  summaryJa: { type: "string" },
+                  translation: { type: "string" },
+                  quiz: {
+                    type: "object",
+                    properties: {
+                      question: { type: "string" },
+                      choices: {
+                        type: "array",
+                        items: { type: "string" },
+                        minItems: 4,
+                        maxItems: 4,
+                      },
+                      answer: { type: "integer", minimum: 1, maximum: 4 },
+                      explanation: { type: "string" },
+                    },
+                    required: ["question", "choices", "answer", "explanation"],
+                  },
+                },
+                required: ["summaryJa", "translation", "quiz"],
               },
-              required: ["summaryJa", "translation"],
             },
           },
+        ],
+        tool_choice: {
+          type: "function",
+          function: { name: "analyze_article" },
         },
-      ],
-      tool_choice: {
-        type: "function",
-        function: { name: "analyze_article" },
-      },
-    }),
-  });
+      }),
+    });
 
   if (!res.ok) {
     const err = await res.text();

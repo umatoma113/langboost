@@ -34,6 +34,19 @@ export async function analyzeAndExtractAction(formData: FormData) {
 
   console.log("✅ Article saved:", savedArticle.id);
 
+  await prisma.articleQuiz.create({
+  data: {
+    articleId: savedArticle.id,
+    question: result.quiz.question,
+    choice1: result.quiz.choices[0],
+    choice2: result.quiz.choices[1],
+    choice3: result.quiz.choices[2],
+    choice4: result.quiz.choices[3],
+    answer: result.quiz.answer,
+    explanation: result.quiz.explanation,
+  },
+});
+
   // 単語抽出
   const rawWords = await extractWordsFromText(summary); // or use `text` if preferred
 
@@ -73,5 +86,6 @@ export async function analyzeAndExtractAction(formData: FormData) {
     summary,
     translation,
     words,
+    quiz: result.quiz,
   };
 }
