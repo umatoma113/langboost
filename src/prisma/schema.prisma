@@ -197,6 +197,7 @@ model ArticleQuiz {
   choice1     String   @db.VarChar(255)
   choice2     String   @db.VarChar(255)
   choice3     String   @db.VarChar(255)
+  choice4     String   @db.VarChar(255)
   answer      Int
   explanation String   @db.Text
   createdAt   DateTime @default(now())
