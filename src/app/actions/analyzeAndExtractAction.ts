@@ -24,7 +24,7 @@ export async function analyzeAndExtractAction(formData: FormData) {
   const savedArticle = await prisma.article.create({
     data: {
       userId: session.id,
-      title: "", // TODO: タイトル自動生成
+      title: summary.slice(0, 50),
       content: text,
       summary,
       translation,

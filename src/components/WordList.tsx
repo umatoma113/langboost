@@ -3,6 +3,7 @@
 
 import { useState } from 'react';
 import { registerWordAction } from '@/app/actions/registerWord';
+// import Header from './Header';
 
 type Word = {
   word: string;
@@ -27,6 +28,8 @@ export default function WordList({ words }: Props) {
   const visibleWords = showAll ? words : words.slice(0, 5);
 
   return (
+    <>
+    {/* <Header /> */}
     <div>
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-gray-800 max-h-[300px] overflow-y-auto">
         {visibleWords.map((wordObj, index) => (
@@ -59,6 +62,7 @@ export default function WordList({ words }: Props) {
         </div>
       )}
     </div>
+    </>
   );
 }
 

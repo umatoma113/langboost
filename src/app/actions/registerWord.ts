@@ -8,24 +8,40 @@ export async function registerWordAction(word: string, meaning: string) {
   const user = await auth();
   if (!user?.id) throw new Error("未ログイン");
 
-  const existing = await prisma.word.findUnique({
+  const wordRecord = await prisma.word.upsert({
     where: {
       userId_word: {
         userId: user.id,
         word,
       },
     },
-  });
-
-  if (existing) return { alreadyRegistered: true };
-
-  await prisma.word.create({
-    data: {
+    update: {},
+    create: {
       userId: user.id,
       word,
       meaning,
     },
   });
 
-  return { success: true };
+  const already = await prisma.userWord.findFirst({
+    where: {
+      userId: user.id,
+      wordId: wordRecord.id,
+    },
+  });
+
+  if (already) return { success: true, alreadyRegistered: true };
+
+  await prisma.userWord.create({
+    data: {
+      userId: user.id,
+      wordId: wordRecord.id,
+      registeredAt: new Date(),
+      lastTestedAt: new Date(),
+      correctCount: 0,
+      incorrectCount: 0,
+    },
+  });
+
+  return { success: true, alreadyRegistered: false };
 }
