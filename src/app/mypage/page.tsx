@@ -4,7 +4,6 @@ import MyPageLayout from '@/components/Layouts/MyPage';
 import { getMyArticles } from '@/services/user/getMyArticles';
 import { getMyWords } from '@/services/user/getMyWords';
 import { getMyQuizRecords } from '@/services/user/getMyQuizRecords';
-import Header from '@/components/Header';
 
 export default async function MyPage() {
   const user = await auth().catch(() => null);

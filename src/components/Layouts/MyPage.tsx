@@ -2,6 +2,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import { deleteWordAction } from '@/app/actions/deleteWord';
 
@@ -54,7 +55,6 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
     }
   };
 
-
   return (
     <>
       <Header showTopPage={true} showMyPage={false} />
@@ -68,25 +68,22 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
         <div className="flex justify-center space-x-4">
           <button
             onClick={() => setViewMode('both')}
-            className={`px-4 py-2 rounded border ${
-              viewMode === 'both' ? 'bg-blue-100 text-blue-800' : 'hover:bg-gray-100'
-            }`}
+            className={`px-4 py-2 rounded border ${viewMode === 'both' ? 'bg-blue-100 text-blue-800' : 'hover:bg-gray-100'
+              }`}
           >
             両方表示
           </button>
           <button
             onClick={() => setViewMode('articles')}
-            className={`px-4 py-2 rounded border ${
-              viewMode === 'articles' ? 'bg-blue-100 text-blue-800' : 'hover:bg-gray-100'
-            }`}
+            className={`px-4 py-2 rounded border ${viewMode === 'articles' ? 'bg-blue-100 text-blue-800' : 'hover:bg-gray-100'
+              }`}
           >
             記事のみ
           </button>
           <button
             onClick={() => setViewMode('words')}
-            className={`px-4 py-2 rounded border ${
-              viewMode === 'words' ? 'bg-blue-100 text-blue-800' : 'hover:bg-gray-100'
-            }`}
+            className={`px-4 py-2 rounded border ${viewMode === 'words' ? 'bg-blue-100 text-blue-800' : 'hover:bg-gray-100'
+              }`}
           >
             単語のみ
           </button>
@@ -94,9 +91,8 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
 
         {/* 記事と単語：左右並びまたは片方のみ */}
         <div
-          className={`grid gap-6 ${
-            viewMode === 'both' ? 'grid-cols-1 md:grid-cols-2' : 'grid-cols-1'
-          }`}
+          className={`grid gap-6 ${viewMode === 'both' ? 'grid-cols-1 md:grid-cols-2' : 'grid-cols-1'
+            }`}
         >
           {(viewMode === 'articles' || viewMode === 'both') && (
             <section className="bg-white p-4 rounded shadow w-full">
@@ -111,7 +107,14 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
 
           {(viewMode === 'words' || viewMode === 'both') && (
             <section className="bg-white p-4 rounded shadow w-full">
-              <h2 className="text-lg font-bold mb-2">📚 単語帳</h2>
+              <div className="flex items-center justify-between mb-2">
+                <h2 className="text-lg font-bold">📚 単語帳</h2>
+                <Link href="/quiz">
+                  <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-1.5 rounded shadow">
+                    クイズを始める
+                  </button>
+                </Link>
+              </div>
               <ul className="list-disc pl-5 space-y-2">
                 {userWords.map((entry, index) => (
                   <li key={index} className="flex justify-between items-center">
@@ -130,7 +133,6 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
             </section>
           )}
         </div>
-
 
         {/* クイズ履歴（下部固定） */}
         <section className="bg-white p-4 rounded shadow">
