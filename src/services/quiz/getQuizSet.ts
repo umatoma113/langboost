@@ -1,9 +1,18 @@
-// services/quiz/getQuizSet.ts
-import { prisma } from '../../../lib/db';
+//src/services/quiz/getQuizSet.ts
 import { getLeitnerReviewWords } from './getLeitnerReviewWords';
 import { generateQuizTemplateForWord } from './generateQuizTemplate';
 
-export type QuizTemplate = Awaited<ReturnType<typeof prisma.quizTemplate.findFirst>>;
+export type QuizTemplate = {
+  id: number;
+  wordId: number;
+  quizType: string;
+  question: string;
+  choice1: string;
+  choice2: string;
+  choice3: string;
+  choice4: string;
+  answer: number;
+};
 
 export async function getQuizSet(userId: string): Promise<QuizTemplate[]> {
   const userWords = await getLeitnerReviewWords(userId);

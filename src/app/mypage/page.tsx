@@ -14,14 +14,13 @@ export default async function MyPage() {
   const words = await getMyWords(user.id);
   const quizzes = await getMyQuizRecords(user.id);
 
-    console.log('🧪 user.id:', user.id);
-    console.log('🧪 articles:', articles);
-    console.log('🧪 words:', words);
-    console.log('🧪 quizzes:', quizzes);
+    // console.log('🧪 user.id:', user.id);
+    // console.log('🧪 articles:', articles);
+    // console.log('🧪 words:', words);
+    // console.log('🧪 quizzes:', quizzes);
 
   return (
     <>
-      <Header showTopPage />
       <MyPageLayout
         user={user}
         articles={articles}
