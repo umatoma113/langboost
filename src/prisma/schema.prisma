@@ -150,6 +150,8 @@ model UserWord {
   wordId         Int
   registeredAt   DateTime
   lastTestedAt   DateTime
+  level          Int      @default(1)      
+  nextReviewDate DateTime  @default(now())
   correctCount   Int
   incorrectCount Int
   createdAt      DateTime @default(now())
