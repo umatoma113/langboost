@@ -95,12 +95,20 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
           {(viewMode === 'articles' || viewMode === 'both') && (
             <section className="bg-white p-4 rounded shadow w-full">
               <h2 className="text-lg font-bold mb-2">📰 登録記事</h2>
-              <ul className="list-disc pl-5 space-y-1">
+              <ul className="space-y-2">
                 {articles.map((article) => (
-                  <li key={article.id}>{article.title}</li>
+                  <li key={article.id} className="flex justify-between items-center border-b pb-2">
+                    <span className="truncate">{article.title}</span>
+                    <Link href={`/summary/${article.id}`}>
+                      <button className="ml-4 px-3 py-1 text-sm text-white bg-blue-600 hover:bg-blue-700 rounded shadow">
+                        開く
+                      </button>
+                    </Link>
+                  </li>
                 ))}
               </ul>
             </section>
+
           )}
 
           {(viewMode === 'words' || viewMode === 'both') && (
