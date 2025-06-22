@@ -1,6 +1,7 @@
 //src/app/actions/registerWord.ts
 'use server';
 
+import { generateQuizTemplateForWord } from "@/services/quiz/generateQuizTemplate";
 import { auth } from "../../../lib/auth";
 import { prisma } from "../../../lib/db";
 
@@ -42,6 +43,8 @@ export async function registerWordAction(word: string, meaning: string) {
       incorrectCount: 0,
     },
   });
+
+  await generateQuizTemplateForWord(wordRecord.id);
 
   return { success: true, alreadyRegistered: false };
 }

@@ -159,6 +159,8 @@ model UserWord {
 
   user User @relation(fields: [userId], references: [id])
   word Word @relation(fields: [wordId], references: [id])
+
+  @@unique([userId, wordId])
 }
 
 model QuizTemplate {
@@ -181,6 +183,7 @@ model QuizTemplate {
 model QuizHistory {
   id             Int      @id @default(autoincrement())
   userId         String   @db.VarChar(64)
+  wordId         Int?
   quizTemplateId Int
   userAnswer     Int
   isCorrect      Boolean

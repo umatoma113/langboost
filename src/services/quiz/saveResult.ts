@@ -19,9 +19,9 @@ export async function saveQuizResult(params: SaveResultParams) {
       userId,
       wordId,
       quizTemplateId,
-      selectedChoice,
+      userAnswer: selectedChoice,
       isCorrect,
-      answeredAt: new Date(),
+      executedAt: new Date(),
     },
   });
 

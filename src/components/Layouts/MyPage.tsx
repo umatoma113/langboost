@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import { deleteWordAction } from '@/app/actions/deleteWord';
+import { format } from 'date-fns';
 
 type Article = {
   id: number;
@@ -73,25 +74,19 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
           {user.name ?? 'あなた'}のマイページ
         </h1>
 
-        {/* 表示切り替えボタン */}
         <div className="flex justify-center space-x-4">
           {(['both', 'articles', 'words'] as const).map((mode) => (
             <button
               key={mode}
               onClick={() => setViewMode(mode)}
-              className={`px-4 py-2 rounded border ${viewMode === mode ? 'bg-blue-100 text-blue-800' : 'hover:bg-gray-100'
-                }`}
+              className={`px-4 py-2 rounded border ${viewMode === mode ? 'bg-blue-100 text-blue-800' : 'hover:bg-gray-100'}`}
             >
               {mode === 'both' ? '両方表示' : mode === 'articles' ? '記事のみ' : '単語のみ'}
             </button>
           ))}
         </div>
 
-        {/* 記事と単語 */}
-        <div
-          className={`grid gap-6 ${viewMode === 'both' ? 'grid-cols-1 md:grid-cols-2' : 'grid-cols-1'
-            }`}
-        >
+        <div className={`grid gap-6 ${viewMode === 'both' ? 'grid-cols-1 md:grid-cols-2' : 'grid-cols-1'}`}>
           {(viewMode === 'articles' || viewMode === 'both') && (
             <section className="bg-white p-4 rounded shadow w-full">
               <h2 className="text-lg font-bold mb-2">📰 登録記事</h2>
@@ -108,7 +103,6 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
                 ))}
               </ul>
             </section>
-
           )}
 
           {(viewMode === 'words' || viewMode === 'both') && (
@@ -140,7 +134,6 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
           )}
         </div>
 
-        {/* クイズ履歴（詳細 + 並び替え + ページネーション） */}
         <section className="bg-white p-4 rounded shadow">
           <h2 className="text-lg font-bold mb-2">📝 クイズ履歴</h2>
           {sortedQuizzes.length === 0 ? (
@@ -155,14 +148,13 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
                   >
                     <div>
                       <span className="text-sm text-gray-500">
-                        {new Date(quiz.executedAt).toLocaleDateString()}：
+                        {format(new Date(quiz.executedAt), 'yyyy/MM/dd')}：
                       </span>{' '}
                       <strong>{quiz.quizTemplate.word.word}</strong> —{' '}
                       {quiz.quizTemplate.question}
                     </div>
                     <span
-                      className={`text-sm font-semibold ${quiz.isCorrect ? 'text-green-600' : 'text-red-600'
-                        }`}
+                      className={`text-sm font-semibold ${quiz.isCorrect ? 'text-green-600' : 'text-red-600'}`}
                     >
                       {quiz.isCorrect ? '正解' : '不正解'}
                     </span>
@@ -170,13 +162,11 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
                 ))}
               </ul>
 
-              {/* ページネーション */}
               <div className="mt-4 flex justify-center items-center space-x-4">
                 <button
                   onClick={() => setPage((prev) => prev - 1)}
                   disabled={page === 1}
-                  className={`px-3 py-1 rounded border ${page === 1 ? 'text-gray-400 border-gray-300 cursor-not-allowed' : 'hover:bg-gray-100'
-                    }`}
+                  className={`px-3 py-1 rounded border ${page === 1 ? 'text-gray-400 border-gray-300 cursor-not-allowed' : 'hover:bg-gray-100'}`}
                 >
                   前へ
                 </button>
@@ -186,8 +176,7 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
                 <button
                   onClick={() => setPage((prev) => prev + 1)}
                   disabled={page === totalPages}
-                  className={`px-3 py-1 rounded border ${page === totalPages ? 'text-gray-400 border-gray-300 cursor-not-allowed' : 'hover:bg-gray-100'
-                    }`}
+                  className={`px-3 py-1 rounded border ${page === totalPages ? 'text-gray-400 border-gray-300 cursor-not-allowed' : 'hover:bg-gray-100'}`}
                 >
                   次へ
                 </button>
@@ -199,4 +188,3 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
     </>
   );
 }
-
