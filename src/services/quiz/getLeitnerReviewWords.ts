@@ -15,8 +15,9 @@ export async function getLeitnerReviewWords(userId: string) {
         lte: today,
       },
       level: {
-        lte: 6,
+        lte: 7,
       },
+      isMastered: false,
     },
     include: {
       word: {

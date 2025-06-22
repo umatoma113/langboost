@@ -154,6 +154,7 @@ model UserWord {
   nextReviewDate DateTime  @default(now())
   correctCount   Int
   incorrectCount Int
+  isMastered     Boolean  @default(false)
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
 
