@@ -1,12 +1,9 @@
 // services/quiz/getLeitnerReviewWords.ts
 import { prisma } from '../../../lib/db';
 import { startOfDay } from 'date-fns';
-import { toZonedTime } from 'date-fns-tz';
 
 export async function getLeitnerReviewWords(userId: string) {
-  const now = new Date();
-  const jstDate = toZonedTime(now, 'Asia/Tokyo');
-  const today = startOfDay(jstDate);
+  const today = startOfDay(new Date());
 
   const reviewWords = await prisma.userWord.findMany({
     where: {
@@ -38,13 +35,16 @@ export async function getLeitnerReviewWords(userId: string) {
   );
 
   console.log('🧪 userId:', userId);
-  console.log('🧪 today:', today.toISOString());
-  console.log('🧪 reviewWords:', reviewWords.map((w: typeof reviewWords[number]) => ({
-    wordId: w.wordId,
-    level: w.level,
-    nextReviewDate: w.nextReviewDate.toISOString(),
-    quizTemplates: w.word.quizTemplates.length,
-  })));
+  console.log('🧪 today (UTC):', today.toISOString());
+  console.log(
+    '🧪 reviewWords (debug):',
+    reviewWords.map((w: typeof reviewWords[number]) => ({
+      wordId: w.wordId,
+      level: w.level,
+      nextReviewDate: w.nextReviewDate.toISOString(),
+      quizTemplates: w.word.quizTemplates.length,
+    }))
+  );
 
   return reviewWords;
 }

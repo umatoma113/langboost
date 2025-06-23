@@ -20,7 +20,7 @@ export async function generateQuizTemplateForWord(wordId: number) {
 
   const systemPrompt = 'あなたは英語学習者向けのクイズを日本語で作るAIです。';
   const userPrompt = `英単語「${word.word}」の意味は「${word.meaning}」です。この単語の意味を問う4択問題を日本語で作成してください。
-正解の選択肢は最初（配列の先頭）に入れてください。以下の形式のJSONで返してください：
+正解の選択肢は最初（配列の先頭）に入れてください。以下の形式の**純粋なJSON文字列のみ**で返してください（説明やコードブロック記号は不要）：
 {
   "question": "...",
   "choices": ["正解", "誤答1", "誤答2", "誤答3"]
