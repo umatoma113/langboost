@@ -8,13 +8,7 @@ import TopPageButtons from '@/components/TopPageButtons';
 
 export const dynamic = 'force-dynamic';
 
-type PageProps = {
-  params: {
-    id: string;
-  };
-};
-
-export default async function Page({ params }: PageProps) {
+export default async function Page({ params }: { params: { id: string } }) {
   const id = params.id;
 
   if (!id || typeof id !== 'string' || isNaN(Number(id))) {
@@ -28,7 +22,6 @@ export default async function Page({ params }: PageProps) {
   return (
     <>
       <TopPageButtons />
-      <title>LangBoost - 記事要約</title>
       <main className="min-h-screen bg-white px-6 py-10 space-y-10">
         <h1 className="text-3xl font-bold text-center">翻訳・要約ページ</h1>
 
