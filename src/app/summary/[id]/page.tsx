@@ -8,16 +8,15 @@ import TopPageButtons from '@/components/TopPageButtons';
 
 export const dynamic = 'force-dynamic';
 
-type Props = {
+type PageProps = {
   params: {
     id: string;
   };
 };
 
-export default async function SummaryPage({ params }: Props) {
+export default async function Page({ params }: PageProps) {
   const id = params.id;
 
-  // 明示的なチェックでエラー回避
   if (!id || typeof id !== 'string' || isNaN(Number(id))) {
     return notFound();
   }
@@ -28,10 +27,10 @@ export default async function SummaryPage({ params }: Props) {
 
   return (
     <>
-    <TopPageButtons />
+      <TopPageButtons />
       <title>LangBoost - 記事要約</title>
-        <main className="min-h-screen bg-white px-6 py-10 space-y-10">
-          <h1 className="text-3xl font-bold text-center">翻訳・要約ページ</h1>
+      <main className="min-h-screen bg-white px-6 py-10 space-y-10">
+        <h1 className="text-3xl font-bold text-center">翻訳・要約ページ</h1>
 
         {/* 要約 */}
         <section className="bg-gray-50 border border-gray-200 rounded-lg p-6 max-w-6xl mx-auto">
@@ -53,9 +52,7 @@ export default async function SummaryPage({ params }: Props) {
         />
 
         {/* クイズ */}
-        {article.quiz && (
-          <QuizSection quiz={article.quiz} />
-        )}
+        {article.quiz && <QuizSection quiz={article.quiz} />}
       </main>
     </>
   );
