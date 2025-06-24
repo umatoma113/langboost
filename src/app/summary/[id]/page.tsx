@@ -8,12 +8,13 @@ import TopPageButtons from '@/components/TopPageButtons';
 
 export const dynamic = 'force-dynamic';
 
-export default async function Page({ params }: { params: { id: string } }) {
-  const id = params.id;
+export default async function Page({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
 
-  if (!id || typeof id !== 'string' || isNaN(Number(id))) {
+  if (!id || isNaN(Number(id))) {
     return notFound();
   }
+
 
   const articleId = Number(id);
   const article = await getArticleById(articleId);
