@@ -60,7 +60,7 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
     try {
       await deleteWordAction(wordId);
       setUserWords((prev) => prev.filter((entry) => entry.word.id !== wordId));
-    } catch (error) {
+    } catch {
       alert('削除に失敗しました');
     }
   };

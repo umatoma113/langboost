@@ -1,3 +1,4 @@
+//eslint.config.mjs
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
@@ -10,6 +11,9 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  {
+    ignores: ["src/app/generated/prisma/**"],
+  },
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
 

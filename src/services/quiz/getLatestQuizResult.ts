@@ -19,12 +19,18 @@ export async function getLatestQuizResult(userId: string) {
             template.choice3,
             template.choice4,
         ];
+
+        const correctAnswerIndex = template.answer - 1;
+        const selectedAnswerIndex = result.userAnswer - 1;
+
         return {
             wordId: result.wordId,
             question: template.question,
             choices,
-            correctAnswer: choices[template.answer - 1],
-            selectedAnswer: choices[result.userAnswer - 1],
+            correctAnswer: choices[correctAnswerIndex],
+            selectedAnswer: choices[selectedAnswerIndex],
+            correctAnswerIndex,
+            selectedAnswerIndex,
             isCorrect: result.isCorrect,
             executedAt: result.executedAt,
         };

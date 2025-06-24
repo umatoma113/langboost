@@ -7,8 +7,6 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { analyzeAndExtractAction } from "@/app/actions/analyzeAndExtractAction";
 
-type Word = { word: string; meaning: string };
-
 type Props = {
   user: { id: string; name?: string | null };
 };

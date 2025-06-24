@@ -93,9 +93,6 @@ export default function QuizPage() {
 
         <ul className="space-y-3">
           {choices.map((choice, i) => {
-            const isSelected = showResult && current.answer === i + 1;
-            const isWrong = showResult && isCorrect === false && current.answer !== i + 1;
-
             return (
               <li key={i}>
                 <button

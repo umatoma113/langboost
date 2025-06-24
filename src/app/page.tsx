@@ -7,7 +7,7 @@ export default async function Page() {
   try {
     const user = await auth();
     return <ClientPage user={user} />;
-  } catch (error) {
+  } catch {
     // 未ログイン → ログインページへリダイレクト
     redirect("/signin"); // 任意のサインインページに変更可能
   }

@@ -41,7 +41,7 @@ export async function generateQuizTemplateForWord(wordId: number) {
   let parsed;
   try {
     parsed = JSON.parse(json);
-  } catch (e) {
+  } catch {
     throw new Error('OpenAIのレスポンスのパースに失敗しました');
   }
 
