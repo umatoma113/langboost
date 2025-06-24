@@ -1,4 +1,6 @@
 // src/auth.config.ts
+export const runtime = "nodejs";
+
 import Google from "next-auth/providers/google";
 import NextAuth from "next-auth";
 import { prisma } from "../lib/db";
