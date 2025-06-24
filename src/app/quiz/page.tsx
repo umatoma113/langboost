@@ -22,11 +22,11 @@ export default function QuizPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
-  const [mounted, setMounted] = useState(false); // 🔧 追加
+  const [mounted, setMounted] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
-    setMounted(true); // 🔧 マウント検知
+    setMounted(true);
     startQuizAction()
       .then(setQuizzes)
       .catch((e) => console.error('クイズ取得失敗:', e));
@@ -83,45 +83,58 @@ export default function QuizPage() {
   ];
 
   return (
-    <div className="p-6 max-w-xl mx-auto space-y-6">
-      <h1 className="text-2xl font-bold">単語クイズ</h1>
-      <p className="text-lg font-semibold">{current.question}</p>
+    <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-indigo-100 px-6 py-10">
+      <div className="max-w-xl mx-auto bg-white p-6 rounded-xl shadow-lg space-y-6 animate-fade-in">
+        <h1 className="text-3xl font-bold text-center text-indigo-600">🎯 単語クイズ</h1>
 
-      <ul className="space-y-2">
-        {choices.map((choice, i) => (
-          <li key={i}>
-            <button
-              className={`w-full p-3 border rounded ${showResult && current.answer === i + 1
-                ? 'bg-green-100'
-                : showResult
-                  ? 'opacity-50'
-                  : 'bg-white hover:bg-gray-50'
-                }`}
-              onClick={() => handleChoice(i + 1)}
-              disabled={showResult}
-            >
-              {choice}
-            </button>
-          </li>
-        ))}
-      </ul>
-
-      {showResult && isCorrect !== null && (
-        <div className="space-y-4">
-          <p
-            className={`text-lg font-bold ${isCorrect ? 'text-green-600' : 'text-red-600'
-              }`}
-          >
-            {isCorrect ? '正解！' : '不正解…'}
-          </p>
-          <button
-            onClick={handleNext}
-            className="bg-blue-500 text-white px-4 py-2 rounded"
-          >
-            {currentIndex < quizzes.length - 1 ? '次の問題へ' : '結果を見る'}
-          </button>
+        <div className="text-lg font-semibold text-gray-800 text-center">
+          {`Q${currentIndex + 1}：${current.question}`}
         </div>
-      )}
+
+        <ul className="space-y-3">
+          {choices.map((choice, i) => {
+            const isSelected = showResult && current.answer === i + 1;
+            const isWrong = showResult && isCorrect === false && current.answer !== i + 1;
+
+            return (
+              <li key={i}>
+                <button
+                  className={`w-full py-3 px-4 rounded-lg border transition-all duration-200 text-left text-md
+                    ${showResult
+                      ? current.answer === i + 1
+                        ? 'bg-green-100 border-green-400 text-green-800 font-bold'
+                        : 'bg-gray-100 border-gray-300 text-gray-400'
+                      : 'bg-white hover:bg-indigo-50 border-gray-300'
+                    }
+                  `}
+                  onClick={() => handleChoice(i + 1)}
+                  disabled={showResult}
+                >
+                  {choice}
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+
+        {showResult && (
+          <div className="text-center space-y-4">
+            <p
+              className={`text-xl font-bold ${
+                isCorrect ? 'text-green-600' : 'text-red-500'
+              }`}
+            >
+              {isCorrect ? ' 正解！ ' : ' 不正解… '}
+            </p>
+            <button
+              onClick={handleNext}
+              className="px-6 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition"
+            >
+              {currentIndex < quizzes.length - 1 ? '次の問題へ' : '結果を見る'}
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

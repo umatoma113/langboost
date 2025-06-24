@@ -1,5 +1,6 @@
 //src/components/Header.tsx
 'use client';
+import { signOut } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
 type HeaderProps = {
@@ -10,10 +11,10 @@ type HeaderProps = {
 export default function Header({ showTopPage, showMyPage }: HeaderProps) {
   const router = useRouter();
 
-  const handleLogout = () => {
-    // ここにログアウト処理を追加（例: supabase.auth.signOut()）
-    router.push('/login');
+  const handleLogout = async () => {
+    await signOut({ callbackUrl: '/login' });
   };
+
 
   return (
     <header className="flex justify-between items-center px-4 py-4 border-b">

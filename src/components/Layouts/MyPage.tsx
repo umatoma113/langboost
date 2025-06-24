@@ -69,11 +69,15 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
     <>
       <Header showTopPage={true} showMyPage={false} />
 
-      <main className="min-h-screen px-6 py-10 bg-gray-50 text-gray-800 space-y-8">
-        <h1 className="text-2xl font-bold text-center">
-          {user.name ?? 'あなた'}のマイページ
-        </h1>
+      <main className="min-h-screen px-6 py-10 bg-gradient-to-b from-white via-green-50 to-green-50 text-gray-800 space-y-10">
 
+        {/* ✅ プロフィールセクション */}
+        <section className="p-4 text-center">
+          <h2 className="text-xl font-semibold mb-1">ようこそ、{user.name ?? 'ユーザー'} さん!!!</h2>
+          {user.email && <p className="text-sm text-gray-500">{user.email}</p>}
+        </section>
+
+        {/* ✅ 表示切り替えボタン */}
         <div className="flex justify-center space-x-4">
           {(['both', 'articles', 'words'] as const).map((mode) => (
             <button
@@ -86,22 +90,27 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
           ))}
         </div>
 
-        <div className={`grid gap-6 ${viewMode === 'both' ? 'grid-cols-1 md:grid-cols-2' : 'grid-cols-1'}`}>
+        {/* ✅ 記事・単語帳セクション */}
+        <div className={`grid gap-6 ${viewMode === 'both' ? 'grid-cols-1 lg:grid-cols-2' : 'grid-cols-1'}`}>
           {(viewMode === 'articles' || viewMode === 'both') && (
             <section className="bg-white p-4 rounded shadow w-full">
               <h2 className="text-lg font-bold mb-2">📰 登録記事</h2>
-              <ul className="space-y-2">
-                {articles.map((article) => (
-                  <li key={article.id} className="flex justify-between items-center border-b pb-2">
-                    <span className="truncate">{article.title}</span>
-                    <Link href={`/summary/${article.id}`}>
-                      <button className="ml-4 px-3 py-1 text-sm text-white bg-blue-600 hover:bg-blue-700 rounded shadow">
-                        開く
-                      </button>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              {articles.length === 0 ? (
+                <p className="text-sm text-gray-500">まだ記事が登録されていません。</p>
+              ) : (
+                <ul className="space-y-2">
+                  {articles.map((article) => (
+                    <li key={article.id} className="flex justify-between items-center border-b pb-2">
+                      <span className="truncate">{article.title}</span>
+                      <Link href={`/summary/${article.id}`}>
+                        <button className="ml-4 px-3 py-1 text-sm text-white bg-blue-600 hover:bg-blue-700 rounded shadow">
+                          開く
+                        </button>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </section>
           )}
 
@@ -115,46 +124,50 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
                   </button>
                 </Link>
               </div>
-              <ul className="list-disc pl-5 space-y-2">
-                {userWords.map((entry, index) => (
-                  <li key={index} className="flex justify-between items-center">
-                    <span>
-                      {entry.word.word} - {entry.word.meaning}
-                    </span>
-                    <button
-                      onClick={() => handleDelete(entry.word.id)}
-                      className="ml-4 text-red-600 text-sm hover:underline"
-                    >
-                      削除
-                    </button>
-                  </li>
-                ))}
-              </ul>
+              {userWords.length === 0 ? (
+                <p className="text-sm text-gray-500">単語がまだ登録されていません。</p>
+              ) : (
+                <ul className="list-disc pl-5 space-y-2">
+                  {userWords.map((entry, index) => (
+                    <li key={index} className="flex justify-between items-center">
+                      <span>
+                        {entry.word.word} - {entry.word.meaning}
+                      </span>
+                      <button
+                        onClick={() => handleDelete(entry.word.id)}
+                        className="ml-4 text-red-600 text-sm hover:underline"
+                      >
+                        削除
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </section>
           )}
         </div>
 
+        {/* ✅ クイズ履歴セクション */}
         <section className="bg-white p-4 rounded shadow">
           <h2 className="text-lg font-bold mb-2">📝 クイズ履歴</h2>
           {sortedQuizzes.length === 0 ? (
             <p className="text-sm text-gray-500">まだクイズ履歴がありません。</p>
           ) : (
             <>
-              <ul className="list-disc pl-5 space-y-2">
+              <ul className="divide-y divide-gray-200">
                 {paginated.map((quiz) => (
                   <li
                     key={quiz.id}
-                    className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1"
+                    className="py-2 flex justify-between items-center text-sm"
                   >
                     <div>
-                      <span className="text-sm text-gray-500">
+                      <span className="text-gray-500">
                         {format(new Date(quiz.executedAt), 'yyyy/MM/dd')}：
                       </span>{' '}
-                      <strong>{quiz.quizTemplate.word.word}</strong> —{' '}
-                      {quiz.quizTemplate.question}
+                      <strong>{quiz.quizTemplate.word.word}</strong> — {quiz.quizTemplate.question}
                     </div>
                     <span
-                      className={`text-sm font-semibold ${quiz.isCorrect ? 'text-green-600' : 'text-red-600'}`}
+                      className={`font-semibold ${quiz.isCorrect ? 'text-green-600' : 'text-red-600'}`}
                     >
                       {quiz.isCorrect ? '正解' : '不正解'}
                     </span>
