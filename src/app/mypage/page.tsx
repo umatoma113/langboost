@@ -9,6 +9,8 @@ export default async function MyPage() {
   const user = await auth().catch(() => null);
   if (!user) return redirect('/login');
 
+    console.log("🧪 user.id:", user.id);
+
   const articles = await getMyArticles(user.id);
   const words = await getMyWords(user.id);
   const quizzes = await getMyQuizRecords(user.id);

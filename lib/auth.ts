@@ -1,5 +1,6 @@
 // lib/auth.ts
-import { auth as baseAuth } from "@/auth.config";
+import { getServerSession } from "next-auth";
+import { authOptions } from "./authOptions";
 
 type AuthUser = {
   id: string;
@@ -7,14 +8,14 @@ type AuthUser = {
 };
 
 export async function auth(): Promise<AuthUser> {
-  const session = await baseAuth();
+  const session = await getServerSession(authOptions);
 
   if (!session?.user?.id) {
     throw new Error("認証が必要です");
   }
 
   return {
-    id: session.user.id, // この時点で undefined なら throw される
+    id: session.user.id,
     name: session.user.name,
   };
 }

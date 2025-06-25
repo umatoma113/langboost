@@ -12,9 +12,9 @@ export default function Header({ showTopPage, showMyPage }: HeaderProps) {
   const router = useRouter();
 
   const handleLogout = async () => {
-    await signOut({ callbackUrl: '/login' });
-  };
-
+  const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
+  await signOut({ callbackUrl: `${baseUrl}/signin` });
+};
 
   return (
     <header className="flex justify-between items-center px-4 py-4 border-b">
