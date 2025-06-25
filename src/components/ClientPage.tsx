@@ -2,7 +2,7 @@
 'use client';
 
 import Header from "@/components/Header";
-import { Button } from "@heroui/button";
+// import { Button } from "@heroui/button";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { analyzeAndExtractAction } from "@/app/actions/analyzeAndExtractAction";
@@ -88,11 +88,11 @@ export default function ClientPage({ user }: Props) {
             </button>
           </div>
 
-          <div className="text-center mt-6">
+          {/* <div className="text-center mt-6">
             <Button color="primary" className="focus:ring-0 focus:outline-none">
               HeroUIボタン
             </Button>
-          </div>
+          </div> */}
 
           {error && <p className="text-red-500 text-center mt-4">{error}</p>}
         </div>
