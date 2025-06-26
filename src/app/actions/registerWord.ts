@@ -4,6 +4,7 @@
 import { generateQuizTemplateForWord } from "@/services/quiz/generateQuizTemplate";
 import { auth } from "../../../lib/auth";
 import { prisma } from "../../../lib/db";
+import { startOfDay } from "date-fns";
 
 export async function registerWordAction(word: string, meaning: string) {
   const user = await auth();
@@ -39,6 +40,9 @@ export async function registerWordAction(word: string, meaning: string) {
       wordId: wordRecord.id,
       registeredAt: new Date(),
       lastTestedAt: new Date(),
+      nextReviewDate: startOfDay(new Date()), 
+      level: 1,
+      isMastered: false,
       correctCount: 0,
       incorrectCount: 0,
     },
