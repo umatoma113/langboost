@@ -2,7 +2,6 @@
 'use client';
 
 import Header from "@/components/Header";
-// import { Button } from "@heroui/button";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { analyzeAndExtractAction } from "@/app/actions/analyzeAndExtractAction";
@@ -87,12 +86,6 @@ export default function ClientPage({ user }: Props) {
               {loading ? "分析中..." : "要約と単語を抽出"}
             </button>
           </div>
-
-          {/* <div className="text-center mt-6">
-            <Button color="primary" className="focus:ring-0 focus:outline-none">
-              HeroUIボタン
-            </Button>
-          </div> */}
 
           {error && <p className="text-red-500 text-center mt-4">{error}</p>}
         </div>

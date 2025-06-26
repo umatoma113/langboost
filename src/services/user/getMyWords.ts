@@ -1,3 +1,4 @@
+//src/services/user/getMyWords.ts
 import { prisma } from '../../../lib/db';
 
 export async function getMyWords(userId: string) {
