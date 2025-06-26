@@ -1,9 +1,11 @@
 // services/quiz/getLeitnerReviewWords.ts
 import { prisma } from '../../../lib/db';
 import { startOfDay } from 'date-fns';
+import { toZonedTime } from 'date-fns-tz';
 
 export async function getLeitnerReviewWords(userId: string) {
-  const today = startOfDay(new Date());
+  const jstNow = toZonedTime(new Date(), 'Asia/Tokyo');
+  const today = startOfDay(jstNow); 
 
   const reviewWords = await prisma.userWord.findMany({
     where: {
