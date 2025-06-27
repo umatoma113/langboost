@@ -35,17 +35,17 @@ export async function analyzeAndExtractAction(formData: FormData) {
   console.log("✅ Article saved:", savedArticle.id);
 
   await prisma.articleQuiz.create({
-  data: {
-    articleId: savedArticle.id,
-    question: result.quiz.question,
-    choice1: result.quiz.choices[0],
-    choice2: result.quiz.choices[1],
-    choice3: result.quiz.choices[2],
-    choice4: result.quiz.choices[3],
-    answer: result.quiz.answer,
-    explanation: result.quiz.explanation,
-  },
-});
+    data: {
+      articleId: savedArticle.id,
+      question: result.quiz.question,
+      choice1: result.quiz.choices[0],
+      choice2: result.quiz.choices[1],
+      choice3: result.quiz.choices[2],
+      choice4: result.quiz.choices[3],
+      answer: result.quiz.answer,
+      explanation: result.quiz.explanation,
+    },
+  });
 
   // 単語抽出
   const rawWords = await extractWordsFromText(summary); // or use `text` if preferred
@@ -63,23 +63,39 @@ export async function analyzeAndExtractAction(formData: FormData) {
       continue;
     }
 
-    const saved = await prisma.word.upsert({
+    const savedWord = await prisma.word.upsert({
+      where: { baseForm: word },
+      update: {},
+      create: {
+        word,
+        baseForm: word,
+        meaning,
+      },
+    });
+
+    await prisma.userWord.upsert({
       where: {
-        userId_word: {
+        userId_wordId: {
           userId: session.id,
-          word,
+          wordId: savedWord.id,
         },
       },
       update: {},
       create: {
-        word,
-        meaning,
         userId: session.id,
+        wordId: savedWord.id,
+        level: 1,
+        nextReviewDate: new Date(),
+        registeredAt: new Date(),
+        lastTestedAt: new Date(),
+        correctCount: 0,
+        incorrectCount: 0,
       },
     });
 
-    words.push(saved);
+    words.push(savedWord);
   }
+
 
   return {
     id: savedArticle.id,

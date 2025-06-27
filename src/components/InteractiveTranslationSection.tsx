@@ -1,7 +1,7 @@
 //src/components/InteractiveTranslationSection.tsx
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { normalizeWord } from '../../lib/normalizeWord';
 import { ngslWords as ngslWordsSet } from '../../lib/ngslWords';
 
@@ -62,16 +62,15 @@ export default function InteractiveTranslationSection({
         return () => document.removeEventListener('keydown', handleKey);
     }, []);
 
-    // ✅ NGSL未収録の意味未登録単語だけ API に送る
-    useEffect(() => {
-        const missing = localWords.filter((w) => {
+    // 🔧 修正済: useMemoを使って依存関係の警告を回避
+    const missing = useMemo(() => {
+        return localWords.filter((w) => {
             const normalized = normalizeWord(w.word);
-            return (
-                w.meaning === '意味未登録' &&
-                !ngslWordsSet.has(normalized)
-            );
+            return w.meaning === '意味未登録' && !ngslWordsSet.has(normalized);
         });
+    }, [localWords]);
 
+    useEffect(() => {
         if (missing.length === 0) return;
 
         const text = missing.map((w) => w.word).join(', ');
@@ -101,7 +100,7 @@ export default function InteractiveTranslationSection({
             .catch((err) => {
                 console.error('❌ OpenAI意味取得エラー:', err);
             });
-    }, []);
+    }, [missing]);
 
     const handleMouseEnter = (
         wordKey: string,
@@ -165,14 +164,10 @@ export default function InteractiveTranslationSection({
                                 marginTop: '0.5rem',
                             }}
                         >
-                            <div className="font-bold text-gray-900 mb-2">
-                                {wordEntry.word}
-                            </div>
+                            <div className="font-bold text-gray-900 mb-2">{wordEntry.word}</div>
                             <div className="text-gray-700 mb-2">{wordEntry.meaning}</div>
                             {wordEntry.isRegistered ? (
-                                <div className="text-blue-600 text-xs font-semibold">
-                                    ✅ 登録済み
-                                </div>
+                                <div className="text-blue-600 text-xs font-semibold">✅ 登録済み</div>
                             ) : (
                                 <button
                                     onClick={() => handleRegister(wordEntry)}
@@ -205,9 +200,7 @@ export default function InteractiveTranslationSection({
                         >
                             {visible[idx] ? '翻訳を隠す' : '翻訳を表示'}
                         </button>
-                        {visible[idx] && (
-                            <p className="mt-1 text-gray-700">{pair.japanese}</p>
-                        )}
+                        {visible[idx] && <p className="mt-1 text-gray-700">{pair.japanese}</p>}
                     </li>
                 ))}
             </ul>

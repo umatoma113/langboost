@@ -1,7 +1,6 @@
 //src/components/Header.tsx
 'use client';
 import { signOut } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 type HeaderProps = {
@@ -10,8 +9,6 @@ type HeaderProps = {
 };
 
 export default function Header({ showTopPage, showMyPage }: HeaderProps) {
-  const router = useRouter();
-
   const handleLogout = async () => {
     const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
     await signOut({ callbackUrl: `${baseUrl}/signin` });
@@ -38,3 +35,4 @@ export default function Header({ showTopPage, showMyPage }: HeaderProps) {
     </header>
   );
 }
+

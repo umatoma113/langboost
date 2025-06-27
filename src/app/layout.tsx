@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import {Providers} from "./providers";
+import { Providers } from "./providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,12 +24,38 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-          {children}
+          <div className="min-h-screen flex flex-col">
+            <main className="flex-grow">
+              {children}
+            </main>
+            <footer className="text-center text-xs text-gray-500 py-6 border-t bg-white">
+              出典：
+              <a
+                href="https://www.diqt.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-600"
+              >
+                DiQt
+              </a>{" "}
+              提供
+              <br />
+              ライセンス：
+              <a
+                href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-600"
+              >
+                CC BY-SA 4.0
+              </a>
+            </footer>
+          </div>
         </Providers>
       </body>
     </html>
