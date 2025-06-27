@@ -50,7 +50,7 @@ export default function ClientPage({ user }: Props) {
   return (
     <>
       <Header showMyPage />
-      <main className="min-h-screen bg-white px-4 py-6 md:py-12">
+      <main className="flex-grow bg-white px-4 py-6 md:py-12">
         <section className="text-center mb-6">
           <h2 className="text-3xl font-bold text-gray-900">英語力を、毎日のニュースで</h2>
           <h2 className="text-3xl font-bold text-gray-900 mt-2">育てよう</h2>

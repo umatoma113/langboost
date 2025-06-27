@@ -69,7 +69,7 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
     <>
       <Header showTopPage={true} showMyPage={false} />
 
-      <main className="min-h-screen px-6 py-10 bg-gradient-to-b from-white via-green-50 to-green-50 text-gray-800 space-y-10">
+      <main className="flex-grow px-6 py-10 bg-gradient-to-b from-white via-green-50 to-green-50 text-gray-800 space-y-10">
 
         {/* ✅ プロフィールセクション */}
         <section className="p-4 text-center">

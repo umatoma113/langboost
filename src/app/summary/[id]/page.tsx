@@ -64,7 +64,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
   return (
     <>
       <TopPageButtons />
-      <main className="min-h-screen bg-white px-6 py-10 space-y-10">
+      <main className="flex-grow bg-white px-6 py-10 space-y-10">
         <h1 className="text-3xl font-bold text-center text-gray-900">翻訳・要約ページ</h1>
 
         {/* 要約 */}
