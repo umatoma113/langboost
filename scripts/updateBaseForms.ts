@@ -13,13 +13,10 @@ function normalizeWord(word: string): string {
 }
 
 async function main() {
-  const words = await prisma.word.findMany({
-  where: {
-    baseForm: {
-      equals: null as any,
-    },
-  },
-});
+  const words = await prisma.$queryRaw<
+    { id: number; word: string }[]
+  >`SELECT id, word FROM "Word" WHERE "baseForm" IS NULL`;
+
 
   console.log(`🔍 null の baseForm を持つ単語数: ${words.length}`);
 

@@ -1,13 +1,10 @@
 // types/next-auth.d.ts
-import NextAuth from "next-auth";
+import { DefaultSession } from "next-auth";  // DefaultSessionをインポート
 
 declare module "next-auth" {
   interface Session {
     user: {
-      id: string; 
-      name?: string | null;
-      email?: string | null;
-      image?: string | null;
-    };
+      id: string;               // カスタムIDを追加
+    } & DefaultSession['user']; // DefaultSessionのユーザープロパティを継承
   }
 }
