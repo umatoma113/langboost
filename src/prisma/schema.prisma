@@ -1,9 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
   output   = "../app/generated/prisma"
@@ -20,34 +14,31 @@ model User {
   email         String          @unique @db.VarChar(64)
   emailVerified DateTime?
   image         String?         @db.VarChar(255)
-  accounts      Account[]
-  sessions      Session[]
-  Authenticator Authenticator[]
-  articles      Article[]
   createdAt     DateTime        @default(now())
   updatedAt     DateTime        @updatedAt
-
-  userWords     UserWord[]
+  accounts      Account[]
+  articles      Article[]
+  Authenticator Authenticator[]
   quizHistories QuizHistory[]
-  words         Word[] @relation("UserToWords")
+  sessions      Session[]
+  userWords     UserWord[]
 }
 
 model Account {
-  userId            String  @db.VarChar(64)
-  type              String  @db.VarChar(32)
-  provider          String  @db.VarChar(32)
-  providerAccountId String  @db.VarChar(255)
-  refresh_token     String? @db.VarChar(255)
-  access_token      String? @db.VarChar(255)
+  userId            String   @db.VarChar(64)
+  type              String   @db.VarChar(32)
+  provider          String   @db.VarChar(32)
+  providerAccountId String   @db.VarChar(255)
+  refresh_token     String?  @db.VarChar(255)
+  access_token      String?  @db.VarChar(255)
   expires_at        Int?
-  token_type        String? @db.VarChar(32)
-  scope             String? @db.VarChar(32)
-  id_token          String? @db.VarChar(255)
-  session_state     String? @db.VarChar(32)
+  token_type        String?  @db.VarChar(32)
+  scope             String?  @db.VarChar(32)
+  id_token          String?  @db.VarChar(255)
+  session_state     String?  @db.VarChar(32)
   createdAt         DateTime @default(now())
   updatedAt         DateTime @updatedAt
-
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@id([provider, providerAccountId])
 }
@@ -56,9 +47,9 @@ model Session {
   sessionToken String   @unique
   userId       String   @db.VarChar(64)
   expires      DateTime
-  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model VerificationToken {
@@ -73,127 +64,115 @@ model Authenticator {
   credentialID         String  @unique
   userId               String  @db.VarChar(64)
   providerAccountId    String  @db.VarChar(255)
-  credentialPublicKey  String  @db.Text
+  credentialPublicKey  String
   counter              Int
   credentialDeviceType String  @db.VarChar(32)
   credentialBackedUp   Boolean
   transports           String? @db.VarChar(255)
-
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user                 User    @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@id([userId, credentialID])
 }
 
 model Article {
-  id        Int      @id @default(autoincrement())
-  userId    String   @db.VarChar(64)
-  title     String   @db.VarChar(255)
-  content   String   @db.Text
-  summary   String   @db.Text
-  translation String?  @db.Text
-  sourceUrl String   @db.VarChar(255)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  user User @relation(fields: [userId], references: [id])
-
-  sentences      Sentence[]
+  id             Int           @id @default(autoincrement())
+  userId         String        @db.VarChar(64)
+  title          String        @db.VarChar(255)
+  content        String
+  summary        String
+  sourceUrl      String        @db.VarChar(255)
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  translation    String?
+  user           User          @relation(fields: [userId], references: [id])
   articleQuizzes ArticleQuiz[]
-  words Word[]
+  sentences      Sentence[]
+  words          Word[]
 }
 
 model Sentence {
   id        Int      @id @default(autoincrement())
   articleId Int
-  english   String   @db.Text
-  japanese  String   @db.Text
+  english   String
+  japanese  String
   order     Int
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-
-  article Article @relation(fields: [articleId], references: [id])
+  article   Article  @relation(fields: [articleId], references: [id])
 }
 
 model Word {
-  id           Int      @id @default(autoincrement())
-  word         String   @db.Text
-  meaning      String   @db.Text
-  userId       String   @db.VarChar(64)
-  partOfSpeech String?  @db.VarChar(100)
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
-  articleId   Int?
-
-  user          User           @relation("UserToWords", fields: [userId], references: [id])
-  wordExamples  WordExample[]
+  id            Int            @id @default(autoincrement())
+  word          String
+  baseForm      String         @unique @db.VarChar(64)
+  meaning       String
+  partOfSpeech  String?        @db.VarChar(100)
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  articleId     Int?
   quizTemplates QuizTemplate[]
   userWords     UserWord[]
-  article     Article? @relation(fields: [articleId], references: [id])
-
-  @@unique([userId, word])
+  article       Article?       @relation(fields: [articleId], references: [id])
+  wordExamples  WordExample[]
 }
 
 model WordExample {
   id        Int      @id @default(autoincrement())
   wordId    Int
-  english   String   @db.Text
-  japanese  String   @db.Text
+  english   String
+  japanese  String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-
-  word Word @relation(fields: [wordId], references: [id])
+  word      Word     @relation(fields: [wordId], references: [id])
 }
 
 model UserWord {
   id             Int      @id @default(autoincrement())
   userId         String   @db.VarChar(64)
   wordId         Int
-  registeredAt   DateTime
-  lastTestedAt   DateTime
-  level          Int      @default(1)      
-  nextReviewDate DateTime  @default(now())
+  registeredAt   DateTime @db.Timestamptz(6)
+  lastTestedAt   DateTime @db.Timestamptz(6)
   correctCount   Int
   incorrectCount Int
-  isMastered     Boolean  @default(false)
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
-
-  user User @relation(fields: [userId], references: [id])
-  word Word @relation(fields: [wordId], references: [id])
+  level          Int      @default(1)
+  nextReviewDate DateTime @default(now()) @db.Timestamptz(6)
+  isMastered     Boolean  @default(false)
+  user           User     @relation(fields: [userId], references: [id])
+  word           Word     @relation(fields: [wordId], references: [id])
 
   @@unique([userId, wordId])
 }
 
 model QuizTemplate {
-  id        Int      @id @default(autoincrement())
-  wordId    Int
-  quizType  String   @db.VarChar(50)
-  question  String   @db.VarChar(512)
-  choice1   String   @db.VarChar(255)
-  choice2   String   @db.VarChar(255)
-  choice3   String   @db.VarChar(255)
-  choice4   String   @db.VarChar(255)
-  answer    Int
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  word          Word          @relation(fields: [wordId], references: [id])
+  id            Int           @id @default(autoincrement())
+  wordId        Int
+  quizType      String        @db.VarChar(50)
+  question      String        @db.VarChar(512)
+  choice1       String        @db.VarChar(255)
+  choice2       String        @db.VarChar(255)
+  choice3       String        @db.VarChar(255)
+  choice4       String        @db.VarChar(255)
+  answer        Int
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
   quizHistories QuizHistory[]
+  word          Word          @relation(fields: [wordId], references: [id])
 }
 
 model QuizHistory {
-  id             Int      @id @default(autoincrement())
-  userId         String   @db.VarChar(64)
-  wordId         Int?
+  id             Int          @id @default(autoincrement())
+  userId         String       @db.VarChar(64)
   quizTemplateId Int
   userAnswer     Int
   isCorrect      Boolean
   executedAt     DateTime
-  createdAt      DateTime @default(now())
-  updatedAt      DateTime @updatedAt
-
-  user         User         @relation(fields: [userId], references: [id])
-  quizTemplate QuizTemplate @relation(fields: [quizTemplateId], references: [id])
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  wordId         Int?
+  quizTemplate   QuizTemplate @relation(fields: [quizTemplateId], references: [id])
+  user           User         @relation(fields: [userId], references: [id])
 }
 
 model ArticleQuiz {
@@ -203,11 +182,20 @@ model ArticleQuiz {
   choice1     String   @db.VarChar(255)
   choice2     String   @db.VarChar(255)
   choice3     String   @db.VarChar(255)
-  choice4     String   @db.VarChar(255)
   answer      Int
-  explanation String   @db.Text
+  explanation String
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+  choice4     String   @db.VarChar(255)
+  article     Article  @relation(fields: [articleId], references: [id])
+}
 
-  article Article @relation(fields: [articleId], references: [id])
+model BaseWord {
+  id             Int      @id @default(autoincrement())
+  word           String   @unique
+  meaning        String
+  partOfSpeech   String?
+  isFunctionWord Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
 }

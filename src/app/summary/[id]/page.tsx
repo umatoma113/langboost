@@ -1,23 +1,20 @@
 // src/app/summary/[id]/page.tsx
-
 import QuizSection from '@/components/QuizSection';
 import TopPageButtons from '@/components/TopPageButtons';
 import InteractiveTranslationSection from '@/components/InteractiveTranslationSection';
 import { getArticleById } from '@/services/article';
-import { getMyRegisteredWordIds } from '@/services/user/getMyRegisteredWordIds';
+import { getMyRegisteredBaseForms } from '@/services/user/getMyRegisteredBaseForms';
 import { auth } from '../../../../lib/auth';
 import { notFound } from 'next/navigation';
 import { registerWordAction } from '@/app/actions/registerWord';
-
+import { normalizeWord } from '../../../../lib/normalizeWord';
+import { prisma } from '../../../../lib/db';
 
 export const dynamic = 'force-dynamic';
 
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-
-  if (!id || isNaN(Number(id))) {
-    return notFound();
-  }
+  if (!id || isNaN(Number(id))) return notFound();
 
   const articleId = Number(id);
   const article = await getArticleById(articleId);
@@ -25,14 +22,44 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
 
   const user = await auth();
   const userId = user?.id;
-  const registeredIds = userId ? await getMyRegisteredWordIds(userId) : [];
+  const registeredBaseForms = userId ? await getMyRegisteredBaseForms(userId) : [];
 
-  const wordList = (article.words as { id: number; word: string; meaning: string }[]).map(w => ({
-    word: w.word,
-    meaning: w.meaning,
-    wordId: w.id,
-    isRegistered: registeredIds.includes(w.id),
-  }));
+  const words = article.words as { id: number; word: string; meaning: string }[];
+  const tokens = article.content.split(/\s+/);
+  const baseFormSet = new Set(tokens.map(normalizeWord));
+
+  const ignoredWords = new Set([
+    'i', 'you', 'he', 'she', 'it', 'we', 'they',
+    'me', 'him', 'her', 'us', 'them',
+    'a', 'an', 'the', 'this', 'that', 'these', 'those',
+    'to', 'of', 'in', 'on', 'at', 'for', 'with',
+    'and', 'or', 'but', 'so', 'because', 'if', 'then',
+  ]);
+
+  const baseWords = await prisma.baseWord.findMany({
+    where: { isFunctionWord: false },
+  });
+
+  const baseWordMap = new Map(baseWords.map(b => [b.word, b.meaning]));
+
+  const wordList = Array.from(baseFormSet).map(base => {
+    if (ignoredWords.has(base)) return null;
+
+    const matched = words.find(w => normalizeWord(w.word) === base);
+    const original = tokens.find(t => normalizeWord(t) === base) ?? base;
+
+    const fallbackMeaning = baseWordMap.get(base);
+    if (!matched && !fallbackMeaning) return null;
+
+    return {
+      word: original,
+      meaning: matched?.meaning ?? fallbackMeaning ?? '意味未登録',
+      wordId: matched?.id ?? 0,
+      isRegistered: registeredBaseForms.includes(base),
+    };
+  });
+
+  const filteredWordList = wordList.filter((w): w is Exclude<typeof w, null> => w !== null);
 
   return (
     <>
@@ -50,13 +77,12 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
         <InteractiveTranslationSection
           original={article.content}
           translation={article.translation ?? ''}
-          wordList={wordList}
+          wordList={filteredWordList}
           onRegister={async (word, meaning) => {
             'use server';
             await registerWordAction(word, meaning);
           }}
         />
-
 
         {/* クイズ */}
         {article.quiz && <QuizSection quiz={article.quiz} />}
@@ -64,3 +90,4 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
     </>
   );
 }
+

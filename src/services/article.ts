@@ -6,7 +6,7 @@ export type ArticleWithWords = {
   title: string;
   summary: string;
   translation: string | null;
-  content: string; 
+  content: string;
   words: {
     word: string;
     meaning: string;
@@ -42,7 +42,7 @@ export async function getArticleById(id: number): Promise<ArticleWithWords | nul
   if (!article) return null;
 
   const words = await prisma.word.findMany({
-    where: { userId: article.userId },
+    where: { articleId: article.id },
     select: {
       word: true,
       meaning: true,
@@ -60,14 +60,14 @@ export async function getArticleById(id: number): Promise<ArticleWithWords | nul
     words,
     quiz: quizData
       ? {
-          question: quizData.question,
-          choice1: quizData.choice1,
-          choice2: quizData.choice2,
-          choice3: quizData.choice3,
-          choice4: quizData.choice4,
-          answer: quizData.answer,
-          explanation: quizData.explanation,
-        }
+        question: quizData.question,
+        choice1: quizData.choice1,
+        choice2: quizData.choice2,
+        choice3: quizData.choice3,
+        choice4: quizData.choice4,
+        answer: quizData.answer,
+        explanation: quizData.explanation,
+      }
       : null,
   };
 }

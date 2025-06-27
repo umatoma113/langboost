@@ -1,5 +1,11 @@
+// src/app/api/extract-words/route.ts
 import { NextResponse } from "next/server";
 import openai from "../../../../lib/openai";
+
+type ExtractedWord = {
+  word: string;
+  meaning: string;
+};
 
 export async function POST(req: Request) {
   try {
@@ -32,25 +38,35 @@ export async function POST(req: Request) {
 
     const rawContent = response.choices[0]?.message?.content?.trim();
 
-    // 余計な```やコメントを除去
     const jsonString = rawContent
       ?.replace(/^\s*```json\s*/i, "")
-      ?.replace(/^\s*```\s*/i, "")
-      ?.replace(/\s*```$/i, "")
+      ?.replace(/^\s*```/, "")
+      ?.replace(/\s*```$/, "")
       ?.trim();
 
-    let words = [];
+    let words: ExtractedWord[] = [];
     try {
-      words = jsonString ? JSON.parse(jsonString) : [];
+      const parsed = jsonString ? JSON.parse(jsonString) : [];
+
+      if (Array.isArray(parsed)) {
+        words = parsed.filter(
+          (w): w is ExtractedWord =>
+            typeof w.word === "string" && typeof w.meaning === "string"
+        );
+      }
     } catch (parseError) {
       console.error("❌ JSON parse failed:", parseError);
       console.error("📦 OpenAI response content:", rawContent);
       return NextResponse.json({ error: "JSONパースに失敗しました。" }, { status: 500 });
     }
 
-    return NextResponse.json({ words });
+    // ✅ 重複除去（小文字化してキー化）
+    const uniqueWords = Array.from(new Map(words.map(w => [w.word.toLowerCase(), w])).values());
+
+    return NextResponse.json({ words: uniqueWords });
   } catch (error) {
     console.error("❌ 単語抽出エラー:", error);
     return NextResponse.json({ error: "単語抽出に失敗しました。" }, { status: 500 });
   }
 }
+
