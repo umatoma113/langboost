@@ -8,7 +8,7 @@ import { ngslWords as ngslWordsSet } from '../../lib/ngslWords';
 type WordEntry = {
     word: string;
     meaning: string;
-    wordId: number;
+    wordId?: number;
     isRegistered: boolean;
 };
 
@@ -33,6 +33,7 @@ export default function InteractiveTranslationSection({
     const [localWords, setLocalWords] = useState<WordEntry[]>(wordList);
     const [hoveredWordKey, setHoveredWordKey] = useState<string | null>(null);
     const [popupPos, setPopupPos] = useState<{ top: number; left: number } | null>(null);
+    const [hasFetchedMissing, setHasFetchedMissing] = useState(false);
     const [visible, setVisible] = useState<boolean[]>(
         Array(Math.min(original.length, translation.length)).fill(false)
     );
@@ -62,7 +63,6 @@ export default function InteractiveTranslationSection({
         return () => document.removeEventListener('keydown', handleKey);
     }, []);
 
-    // 🔧 修正済: useMemoを使って依存関係の警告を回避
     const missing = useMemo(() => {
         return localWords.filter((w) => {
             const normalized = normalizeWord(w.word);
@@ -71,7 +71,7 @@ export default function InteractiveTranslationSection({
     }, [localWords]);
 
     useEffect(() => {
-        if (missing.length === 0) return;
+        if (hasFetchedMissing || missing.length === 0) return;
 
         const text = missing.map((w) => w.word).join(', ');
 
@@ -96,23 +96,27 @@ export default function InteractiveTranslationSection({
                         return meaning ? { ...w, meaning } : w;
                     })
                 );
+                setHasFetchedMissing(true);
             })
             .catch((err) => {
                 console.error('❌ OpenAI意味取得エラー:', err);
             });
-    }, [missing]);
+    }, [missing, hasFetchedMissing]);
+
 
     const handleMouseEnter = (
         wordKey: string,
-        event: React.MouseEvent<HTMLSpanElement>
+        event: React.MouseEvent<HTMLSpanElement>,
+        idx: number
     ) => {
         const rect = event.currentTarget.getBoundingClientRect();
-        setHoveredWordKey(wordKey);
+        setHoveredWordKey(`${wordKey}-${idx}`);
         setPopupPos({
             top: rect.top + window.scrollY - 10,
             left: rect.left + window.scrollX,
         });
     };
+
 
     const handleMouseLeave = () => {
         setHoveredWordKey(null);
@@ -120,6 +124,11 @@ export default function InteractiveTranslationSection({
     };
 
     const handleRegister = async (target: WordEntry) => {
+        if (!target.meaning || target.meaning === '意味未登録') {
+            alert('意味が登録されていません。');
+            return;
+        }
+
         const normalized = normalizeWord(target.word);
         await onRegister(target.word, target.meaning);
         setLocalWords((prev) =>
@@ -142,15 +151,14 @@ export default function InteractiveTranslationSection({
                 return <span key={idx}>{part}</span>;
             }
 
-            const wordKey = `${normalized}-${idx}`;
-            const isHovered = hoveredWordKey === wordKey;
+            const isHovered = hoveredWordKey === normalized;
 
             return (
                 <span
-                    key={wordKey}
+                    key={`${normalized}-${idx}`}
                     className={`relative underline cursor-pointer transition-colors duration-150 ${wordEntry.isRegistered ? 'text-blue-600' : 'text-gray-800'
                         }`}
-                    onMouseEnter={(e) => handleMouseEnter(wordKey, e)}
+                    onMouseEnter={(e) => handleMouseEnter(normalized, e, idx)}
                     onMouseLeave={handleMouseLeave}
                 >
                     {part}

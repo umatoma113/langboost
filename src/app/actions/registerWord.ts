@@ -13,18 +13,22 @@ export async function registerWordAction(word: string, meaning: string) {
 
   const baseForm = normalizeWord(word);
 
-  // ✅ Word テーブルに baseForm で upsert
-  const wordRecord = await prisma.word.upsert({
-  where: { baseForm: baseForm }, // 明示的にプロパティ名を書く
-  update: {},
-  create: {
-    word,
-    baseForm,
-    meaning,
-  },
-});
+  // ✅ 意味が未登録なら処理しない
+  if (!word || !meaning || meaning === '意味未登録') {
+    console.warn('❌ 無効な単語登録要求:', { word, meaning });
+    return { success: false, message: '意味未登録の単語は登録できません' };
+  }
 
-  // ✅ すでに登録されているか確認（UserWord）
+  const wordRecord = await prisma.word.upsert({
+    where: { baseForm },
+    update: {},
+    create: {
+      word,
+      baseForm,
+      meaning,
+    },
+  });
+
   const already = await prisma.userWord.findFirst({
     where: {
       userId: user.id,
@@ -34,7 +38,6 @@ export async function registerWordAction(word: string, meaning: string) {
 
   if (already) return { success: true, alreadyRegistered: true };
 
-  // ✅ UserWord 登録
   await prisma.userWord.create({
     data: {
       userId: user.id,
@@ -49,9 +52,9 @@ export async function registerWordAction(word: string, meaning: string) {
     },
   });
 
-  // ✅ クイズ生成
   await generateQuizTemplateForWord(wordRecord.id);
 
   return { success: true, alreadyRegistered: false };
 }
+
 

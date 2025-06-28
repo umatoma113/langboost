@@ -49,7 +49,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
     const original = tokens.find(t => normalizeWord(t) === base) ?? base;
 
     const fallbackMeaning = baseWordMap.get(base);
-    if (!matched && !fallbackMeaning) return null;
+    
 
     return {
       word: original,
