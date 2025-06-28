@@ -30,6 +30,9 @@ export default function InteractiveTranslationSection({
     wordList,
     onRegister,
 }: Props) {
+    console.log("🧪 初期 localWords.length:", wordList.length);
+
+
     const [localWords, setLocalWords] = useState<WordEntry[]>(wordList);
     const [hoveredWordKey, setHoveredWordKey] = useState<string | null>(null);
     const [popupPos, setPopupPos] = useState<{ top: number; left: number } | null>(null);
@@ -98,6 +101,11 @@ export default function InteractiveTranslationSection({
                     prev.map((w) => {
                         const base = normalizeWord(w.word);
                         const meaning = map.get(base) as string | undefined;
+
+                        console.log(
+                            `🧪 word: "${w.word}" → base: "${base}" → meaning: ${meaning ?? "❌ 見つからない"}`
+                        );
+
                         return meaning ? { ...w, meaning } : w;
                     })
                 );
@@ -147,16 +155,24 @@ export default function InteractiveTranslationSection({
     const highlightWords = (sentence: string) => {
         const words = sentence.split(/(\s+)/); // preserve spaces
         return words.map((part, idx) => {
+            const trimmed = part.trim();
+            if (!trimmed) {
+                return <span key={idx}>{part}</span>; // 空白はそのまま描画だけ
+            }
+
             const normalized = normalizeWord(part);
             const wordEntry = localWords.find(
                 (w) => normalizeWord(w.word) === normalized
             );
 
-            if (!wordEntry || part.trim() === '') {
+            console.log("🔍 Hover word:", part, "→", normalized);
+            console.log("🔍 Matching entry:", wordEntry);
+
+            if (!wordEntry) {
                 return <span key={idx}>{part}</span>;
             }
 
-            const isHovered = hoveredWordKey === normalized;
+            const isHovered = hoveredWordKey === `${normalized}-${idx}`;
 
             return (
                 <span
@@ -195,6 +211,7 @@ export default function InteractiveTranslationSection({
             );
         });
     };
+
 
     return (
         <section className="bg-gray-50 border border-gray-200 rounded-lg p-6 max-w-6xl mx-auto relative">
