@@ -5,8 +5,6 @@ import { useState, useEffect, useMemo } from 'react';
 import { normalizeWord } from '../../lib/normalizeWord';
 import { ngslWords as ngslWordsSet } from '../../lib/ngslWords';
 
-console.log("📘 NGSL語数（ビルド時）:", ngslWordsSet.size);
-
 type WordEntry = {
     word: string;
     meaning: string;
@@ -53,6 +51,11 @@ export default function InteractiveTranslationSection({
         copy[index] = !copy[index];
         setVisible(copy);
     };
+
+    useEffect(() => {
+        console.log("📘 NGSL語数（クライアント側）:", ngslWordsSet.size);
+    }, []);
+
 
     useEffect(() => {
         const handleKey = (e: KeyboardEvent) => {
