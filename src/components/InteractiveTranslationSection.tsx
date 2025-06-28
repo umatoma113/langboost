@@ -5,6 +5,8 @@ import { useState, useEffect, useMemo } from 'react';
 import { normalizeWord } from '../../lib/normalizeWord';
 import { ngslWords as ngslWordsSet } from '../../lib/ngslWords';
 
+console.log("📘 NGSL語数（ビルド時）:", ngslWordsSet.size);
+
 type WordEntry = {
     word: string;
     meaning: string;
