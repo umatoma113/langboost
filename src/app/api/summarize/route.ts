@@ -14,7 +14,7 @@ export async function POST(req: Request) {
 
     console.time("🕒 OpenAI API call");
     const chatCompletion = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
+      model: "gpt-4.1-mini",
       messages: [
         {
           role: "user",

@@ -6,6 +6,8 @@ import { useRouter } from 'next/navigation';
 import { startQuizAction } from '@/app/actions/startQuiz';
 import { submitAnswerAction } from '../actions/submitAnswerAction';
 
+export const dynamic = 'force-dynamic';
+
 type QuizTemplate = {
   id: number;
   wordId: number;
