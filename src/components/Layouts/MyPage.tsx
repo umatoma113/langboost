@@ -115,7 +115,7 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
               {userArticles.length === 0 ? (
                 <p className="text-sm text-gray-500">まだ記事が登録されていません。</p>
               ) : (
-                <ul className="space-y-2">
+                <ul className="space-y-2 max-h-[50vh] overflow-y-auto pr-1">
                   {userArticles.map((article) => (
                     <li key={article.id} className="flex justify-between items-center border-b pb-2">
                       <span className="truncate">{article.title}</span>
@@ -152,7 +152,7 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
               {userWords.length === 0 ? (
                 <p className="text-sm text-gray-500">単語がまだ登録されていません。</p>
               ) : (
-                <ul className="list-disc pl-5 space-y-2">
+                <ul className="list-disc pl-5 space-y-2 max-h-[50vh] overflow-y-auto pr-1">
                   {userWords.map((entry, index) => (
                     <li key={index} className="flex justify-between items-center">
                       <span>{entry.word.word} - {entry.word.meaning}</span>

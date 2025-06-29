@@ -3,11 +3,12 @@
 
 import { analyzeArticle } from "@/services/article/analyze";
 import { extractWordsFromText } from "@/services/article/extractWords";
+import { normalizeWord } from "../../../lib/normalizeWord";
 import { auth } from "../../../lib/auth";
 import { prisma } from "../../../lib/db";
 
 export async function analyzeAndExtractAction(formData: FormData) {
-  console.log("✅ analyzeAndExtractAction reached");
+  console.time("🕒 analyzeAndExtract 全体処理");
 
   const session = await auth();
   if (!session?.id) throw new Error("ログインが必要です");
@@ -15,12 +16,14 @@ export async function analyzeAndExtractAction(formData: FormData) {
   const text = formData.get("text")?.toString() || "";
   if (!text.trim()) throw new Error("本文が空です");
 
-  // 要約
+  console.time("🕒 要約と翻訳");
   const result = await analyzeArticle(text);
+  console.timeEnd("🕒 要約と翻訳");
+
   const summary = result.summaryJa;
   const translation = result.translation;
 
-  // 要約結果を保存
+  console.time("🕒 記事保存");
   const savedArticle = await prisma.article.create({
     data: {
       userId: session.id,
@@ -31,9 +34,9 @@ export async function analyzeAndExtractAction(formData: FormData) {
       sourceUrl: "",
     },
   });
+  console.timeEnd("🕒 記事保存");
 
-  console.log("✅ Article saved:", savedArticle.id);
-
+  console.time("🕒 クイズ保存");
   await prisma.articleQuiz.create({
     data: {
       articleId: savedArticle.id,
@@ -46,10 +49,10 @@ export async function analyzeAndExtractAction(formData: FormData) {
       explanation: result.quiz.explanation,
     },
   });
+  console.timeEnd("🕒 クイズ保存");
 
-  // 単語抽出
-  const rawWords = await extractWordsFromText(summary); // or use `text` if preferred
-
+  console.time("🕒 単語抽出と保存");
+  const rawWords = await extractWordsFromText(summary);
   const MAX_WORD_LENGTH = 255;
   const MAX_MEANING_LENGTH = 1024;
 
@@ -58,44 +61,32 @@ export async function analyzeAndExtractAction(formData: FormData) {
   for (const entry of rawWords) {
     const word = entry.word?.toString() ?? "";
     const meaning = entry.meaning?.toString() ?? "";
+    const baseForm = normalizeWord(word);
 
-    if (!word || !meaning || word.length > MAX_WORD_LENGTH || meaning.length > MAX_MEANING_LENGTH) {
+    if (
+      !word ||
+      !meaning ||
+      !baseForm ||
+      baseForm.length > MAX_WORD_LENGTH ||
+      meaning.length > MAX_MEANING_LENGTH
+    ) {
       continue;
     }
 
     const savedWord = await prisma.word.upsert({
-      where: { baseForm: word },
+      where: { baseForm },
       update: {},
       create: {
         word,
-        baseForm: word,
+        baseForm,
         meaning,
       },
     });
-
-    await prisma.userWord.upsert({
-      where: {
-        userId_wordId: {
-          userId: session.id,
-          wordId: savedWord.id,
-        },
-      },
-      update: {},
-      create: {
-        userId: session.id,
-        wordId: savedWord.id,
-        level: 1,
-        nextReviewDate: new Date(),
-        registeredAt: new Date(),
-        lastTestedAt: new Date(),
-        correctCount: 0,
-        incorrectCount: 0,
-      },
-    });
-
     words.push(savedWord);
   }
+  console.timeEnd("🕒 単語抽出と保存");
 
+  console.timeEnd("🕒 analyzeAndExtract 全体処理");
 
   return {
     id: savedArticle.id,

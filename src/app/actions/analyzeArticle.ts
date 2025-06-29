@@ -6,35 +6,31 @@ import { auth } from "../../../lib/auth";
 import { prisma } from "../../../lib/db";
 
 export async function analyzeArticleAction(formData: FormData) {
-  console.log("✅ analyzeArticleAction reached");
+  console.time("🕒 analyzeArticleAction 全体処理");
 
   const session = await auth();
-  console.log("🧑 session.id:", session.id);
-
-  if (!session?.id) {
-    throw new Error("ログインが必要です");
-  }
+  if (!session?.id) throw new Error("ログインが必要です");
 
   const text = formData.get("text")?.toString() || "";
+  if (!text.trim()) throw new Error("本文が空です");
 
-  if (!text.trim()) {
-    throw new Error("本文が空です");
-  }
+  console.time("🕒 analyzeArticle 実行");
+  const result = await analyzeArticle(text);
+  console.timeEnd("🕒 analyzeArticle 実行");
 
-  const result = await analyzeArticle(text); // ✅ オブジェクトを受け取る
-  console.log("📝 result:", result);
-
-  const saved = await prisma.article.create({
+  console.time("🕒 記事保存");
+  await prisma.article.create({
     data: {
       userId: session.id,
-      title: "", // タイトル自動生成などは今後追加
+      title: "",
       content: text,
-      summary: result.summaryJa, // ✅ summaryは文字列で保存
+      summary: result.summaryJa,
       sourceUrl: "",
     },
   });
+  console.timeEnd("🕒 記事保存");
 
-  console.log("✅ Article saved:", saved.id);
-
-  return result; // ✅ returnもオブジェクトのまま
+  console.timeEnd("🕒 analyzeArticleAction 全体処理");
+  return result;
 }
+

@@ -13,36 +13,48 @@ import { prisma } from '../../../../lib/db';
 export const dynamic = 'force-dynamic';
 
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
-  console.time('全体処理');
-  console.time('paramsの取得');
+  console.time('summaryPage: 全体処理');
+
+  console.time('summaryPage: paramsの取得');
   const { id } = await params;
-  console.timeEnd('paramsの取得');
+  console.timeEnd('summaryPage: paramsの取得');
 
   if (!id || isNaN(Number(id))) return notFound();
-
   const articleId = Number(id);
 
-  console.time('getArticleById');
-  const article = await getArticleById(articleId);
-  console.timeEnd('getArticleById');
-
+  console.time('summaryPage: getArticleById');
+  let article;
+  try {
+    article = await getArticleById(articleId);
+  } finally {
+    console.timeEnd('summaryPage: getArticleById');
+  }
   if (!article) return notFound();
 
-  console.time('auth()');
-  const user = await auth();
-  console.timeEnd('auth()');
+  console.time('summaryPage: auth');
+  let user;
+  try {
+    user = await auth();
+  } finally {
+    console.timeEnd('summaryPage: auth');
+  }
 
   const userId = user?.id;
 
-  console.time('getMyRegisteredBaseForms');
-  const registeredBaseForms = userId ? await getMyRegisteredBaseForms(userId) : [];
-  console.timeEnd('getMyRegisteredBaseForms');
+  console.time('summaryPage: getMyRegisteredBaseForms');
+  let registeredBaseForms;
+  try {
+    registeredBaseForms = userId ? await getMyRegisteredBaseForms(userId) : [];
+  } finally {
+    console.timeEnd('summaryPage: getMyRegisteredBaseForms');
+  }
 
   const words = article.words as { id: number; word: string; meaning: string }[];
-  console.time('文章のトークン化と基本形への変換');
+
+  console.time('summaryPage: 文章のトークン化と基本形への変換');
   const tokens = article.content.split(/\s+/);
   const baseFormSet = new Set(tokens.map(normalizeWord));
-  console.timeEnd('文章のトークン化と基本形への変換');
+  console.timeEnd('summaryPage: 文章のトークン化と基本形への変換');
 
   const ignoredWords = new Set([
     'i', 'you', 'he', 'she', 'it', 'we', 'they',
@@ -52,26 +64,28 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
     'and', 'or', 'but', 'so', 'because', 'if', 'then',
   ]);
 
-  console.time('baseWord取得');
-  const baseForms = [...baseFormSet]; 
-  const baseWords = await prisma.baseWord.findMany({
-    where: {
-      word: { in: baseForms },
-      isFunctionWord: false,
-    },
-  });
-  console.timeEnd('baseWord取得');
-
+  console.time('summaryPage: baseWord取得');
+  let baseWords;
+  try {
+    const baseForms = [...baseFormSet];
+    baseWords = await prisma.baseWord.findMany({
+      where: {
+        word: { in: baseForms },
+        isFunctionWord: false,
+      },
+    });
+  } finally {
+    console.timeEnd('summaryPage: baseWord取得');
+  }
 
   const baseWordMap = new Map(baseWords.map(b => [b.word, b.meaning]));
 
-  console.time('wordList生成');
+  console.time('summaryPage: wordList生成');
   const wordList = Array.from(baseFormSet).map(base => {
     if (ignoredWords.has(base)) return null;
 
     const matched = words.find(w => normalizeWord(w.word) === base);
     const original = tokens.find(t => normalizeWord(t) === base) ?? base;
-
     const fallbackMeaning = baseWordMap.get(base);
 
     return {
@@ -81,13 +95,13 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
       isRegistered: registeredBaseForms.includes(base),
     };
   });
-  console.timeEnd('wordList生成');
+  console.timeEnd('summaryPage: wordList生成');
 
-  console.time('null除外');
+  console.time('summaryPage: null除外');
   const filteredWordList = wordList.filter((w): w is Exclude<typeof w, null> => w !== null);
-  console.timeEnd('null除外');
+  console.timeEnd('summaryPage: null除外');
 
-  console.timeEnd('全体処理');
+  console.timeEnd('summaryPage: 全体処理');
 
   return (
     <>

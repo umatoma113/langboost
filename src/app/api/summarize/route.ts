@@ -3,6 +3,8 @@ import { NextResponse } from "next/server";
 import openai from "../../../../lib/openai";
 
 export async function POST(req: Request) {
+  console.time("🕒 summarize API 全体処理");
+
   try {
     const { text } = await req.json();
 
@@ -10,8 +12,9 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "テキストが空です。" }, { status: 400 });
     }
 
+    console.time("🕒 OpenAI API call");
     const chatCompletion = await openai.chat.completions.create({
-      model: "gpt-4o-mini", 
+      model: "gpt-4o-mini",
       messages: [
         {
           role: "user",
@@ -19,6 +22,7 @@ export async function POST(req: Request) {
         },
       ],
     });
+    console.timeEnd("🕒 OpenAI API call");
 
     const result = chatCompletion.choices[0]?.message?.content;
     if (!result) {
@@ -29,5 +33,7 @@ export async function POST(req: Request) {
   } catch (error) {
     console.error("❌ OpenAI API Error:", error instanceof Error ? error.message : error);
     return NextResponse.json({ error: "要約に失敗しました。" }, { status: 500 });
+  } finally {
+    console.timeEnd("🕒 summarize API 全体処理");
   }
 }
