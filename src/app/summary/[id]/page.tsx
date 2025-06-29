@@ -13,20 +13,36 @@ import { prisma } from '../../../../lib/db';
 export const dynamic = 'force-dynamic';
 
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
+  console.time('全体処理');
+  console.time('paramsの取得');
   const { id } = await params;
+  console.timeEnd('paramsの取得');
+
   if (!id || isNaN(Number(id))) return notFound();
 
   const articleId = Number(id);
+
+  console.time('getArticleById');
   const article = await getArticleById(articleId);
+  console.timeEnd('getArticleById');
+
   if (!article) return notFound();
 
+  console.time('auth()');
   const user = await auth();
+  console.timeEnd('auth()');
+
   const userId = user?.id;
+
+  console.time('getMyRegisteredBaseForms');
   const registeredBaseForms = userId ? await getMyRegisteredBaseForms(userId) : [];
+  console.timeEnd('getMyRegisteredBaseForms');
 
   const words = article.words as { id: number; word: string; meaning: string }[];
+  console.time('文章のトークン化と基本形への変換');
   const tokens = article.content.split(/\s+/);
   const baseFormSet = new Set(tokens.map(normalizeWord));
+  console.timeEnd('文章のトークン化と基本形への変換');
 
   const ignoredWords = new Set([
     'i', 'you', 'he', 'she', 'it', 'we', 'they',
@@ -36,12 +52,20 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
     'and', 'or', 'but', 'so', 'because', 'if', 'then',
   ]);
 
+  console.time('baseWord取得');
+  const baseForms = [...baseFormSet]; 
   const baseWords = await prisma.baseWord.findMany({
-    where: { isFunctionWord: false },
+    where: {
+      word: { in: baseForms },
+      isFunctionWord: false,
+    },
   });
+  console.timeEnd('baseWord取得');
+
 
   const baseWordMap = new Map(baseWords.map(b => [b.word, b.meaning]));
 
+  console.time('wordList生成');
   const wordList = Array.from(baseFormSet).map(base => {
     if (ignoredWords.has(base)) return null;
 
@@ -49,7 +73,6 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
     const original = tokens.find(t => normalizeWord(t) === base) ?? base;
 
     const fallbackMeaning = baseWordMap.get(base);
-    
 
     return {
       word: original,
@@ -58,8 +81,13 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
       isRegistered: registeredBaseForms.includes(base),
     };
   });
+  console.timeEnd('wordList生成');
 
+  console.time('null除外');
   const filteredWordList = wordList.filter((w): w is Exclude<typeof w, null> => w !== null);
+  console.timeEnd('null除外');
+
+  console.timeEnd('全体処理');
 
   return (
     <>
@@ -67,13 +95,11 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
       <main className="flex-grow bg-white px-6 py-10 space-y-10">
         <h1 className="text-3xl font-bold text-center text-gray-900">翻訳・要約ページ</h1>
 
-        {/* 要約 */}
         <section className="bg-gray-50 border border-gray-200 rounded-lg p-6 max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold mb-4 text-gray-900">📝 要約</h2>
           <p className="whitespace-pre-wrap text-gray-800">{article.summary}</p>
         </section>
 
-        {/* 英文＋対訳＋単語クリック対応 */}
         <InteractiveTranslationSection
           original={article.content}
           translation={article.translation ?? ''}
@@ -84,10 +110,8 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           }}
         />
 
-        {/* クイズ */}
         {article.quiz && <QuizSection quiz={article.quiz} />}
       </main>
     </>
   );
 }
-

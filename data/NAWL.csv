@@ -1,0 +1,978 @@
+headword,pos,supplement,entry,meaning,ipa,word_id,example_sentence,translated_sentence,sentence_id
+,,,trait,"〈C〉《かたく》 (性格・身体上の) 特徴, 特性, 性質",/ treɪt /,43953,Her kindness is a trait that everyone admires.,彼女の優しさは、誰もが称賛する特徴です。,3005893
+,,,utility,〈U〉役に立つこと / 〈C〉《しばしば複数形で》(ガス・電気・水道などの) 公共事業体,/juˈtɪlɪti/,45712,The utility company provides electricity and water to the residents.,公共事業会社は住民に電気と水を供給しています。,3006332
+,,,morphology,"形態学(生物の構造の研究)  / 形態論,語形論(言語の形態の研究)",/mɔrˈfɑlədʒi/,27553,Morphology is the study of the structure of organisms.,形態学は生物の構造の研究です。,3001641
+,,,inequality,"〈U/C〉等しくないこと, 不平等 / 〈C〉《複数形で》でこぼこ / 〈U〉不等 / 〈C〉不等式",/ɪnɪˈkwɒlɪti/,21725,There is a growing inequality between the rich and the poor in our society.,私たちの社会では、富裕層と貧困層の間で格差が広がっています。,3000158
+,,,phosphate,【名/U】リン酸塩 / 【名/C】《複数形で》リン酸肥料,/fɒsfeɪt/,31672,Phosphate is an essential nutrient for plant growth.,リン酸塩は植物の成長に必要な栄養素です。,1660752
+,,,depict,"(絵・言葉などで)…‘を'描き表す,描写する",/dɪˈpɪkt/,11430,The artist used vibrant colors to depict the beauty of nature.,芸術家は鮮やかな色を使って自然の美しさを描き表しました。,2997476
+,,,shuttle,"【名/C】(特に短距離の)定期往復列車, 便 / 杼 / (ミシンの)シャトル / 【動/他】を前後に動かす, を往復させる / 【動/自】行ったり来たりする",/ˈʃʌtəl/,38797,I took the shuttle to the airport.,私はシャトルバスで空港に行きました。,3004533
+,,,actively,"活発に, 積極的に",/ˈæk.tɪv.li/,440,She is actively participating in the community service.,彼女は積極的に地域奉仕活動に参加しています。,2995739
+,,,adaptive,"適応できる,適応性のある",/əˈdæptɪv/,478,The adaptive nature of the human brain allows us to learn and adjust to new situations.,人間の脳の適応性により、私たちは新しい状況に学び、適応することができます。,1639583
+,,,adjacent,"近接の,隣接している",/əˈdʒeɪsənt/,518,The two buildings are adjacent to each other.,その二つの建物は互いに近接しています。,2995771
+,,,mutation,"変化,俸転  / (生物の)突然変異;その変種",/mjuˈteɪʃən/,27963,The mutation of the virus caused a pandemic.,ウィルスの変異がパンデミックを引き起こした。,1626658
+,,,aerosol,"【名/C】噴霧器, スプレー缶, エアゾール / 煙霧質(気体中に膠質粒子が分散した状態), エアロゾル",/ˈɛərəˌsɒl/,682,[[Bug spray]] is an aerosol you spray on your skin to [[ward off]] harmful insects.,虫除けスプレーは、有害な虫を追い払うために肌に吹きかけるスプレー缶です。,1017199
+,,,algebra,代数[学],/ˈæl.dʒɪ.brə/,1061,I am studying algebra for my upcoming math exam.,私はこれからの数学の試験のために代数を勉強しています。,2995933
+,,,anthropology,人類学,/ænˈθrɑpəˌlɑdʒi/,1708,I am studying anthropology to understand the evolution of human societies.,人類学を学んで人間社会の進化を理解しています。,2996113
+,,,antibody,"抗体,免疫体,抗毒素",/ˈæntɪˌbɒdi/,1720,The human body produces an antibody to fight off the virus.,人間の体はウイルスを撃退するための抗体を生成します。,2996109
+,,,liver,"【名/C】肝臓 / 【名/U】(食用にする)動物の肝臓,レバー",/ˈlaɪ.vər/,24776,The liver is responsible for detoxifying the body.,肝臓は体を解毒する役割を担っています。,3000945
+,,,pulse,"〈C〉脈拍 / (一般に,規則的な)鼓動,律動 / (電気の)パルス / 豆類【動/自】脈を打つ,鼓動する",/pʌls/,34049,I could feel my pulse racing as I ran the marathon.,私はマラソンを走っている間、鼓動が速まっているのを感じることができました。,3003331
+,,,mole,【名/C】ほくろ / あざ,/moʊl/,27313,I have a mole on my cheek.,私の頬にほくろがあります。,3001580
+,,,oscillation,"〈U〉振動;〈C〉(振動の)ひと振り  / 〈U〉〈C〉(意見・信念などの)動揺,迷い",/ˌɑːsɪˈleɪʃən/,29856,The pendulum's oscillation was mesmerizing to watch.,振り子の振動は見ていて魅了されるものだった。,1665184
+,,,super,"《くだけて》素晴らしい, 最高の",/suːpər/,41808,He is doing a super job.,彼は素晴らしい仕事をしている。,44677
+,,,tract,"〈C〉器官系, (器官の)管,(神経の)索 / 広大な土地, 広がり",/trækt/,43891,The farmer had to purchase a new tract of land to expand his farm.,農夫は農場を拡張するために新しい土地を購入しなければなりませんでした。,1626314
+,,,temporal,"【形】一時的な,はかない / この世の,現世の / 時の,時間の",/ˈtɛmpərəl/,42799,The temporary employee will start working next week.,臨時社員は来週から働き始めます。,1648480
+,,,unity,"〈U〉単一性,統一性, まとまり / 〈C〉単一体, 統一体 / 〈U/C〉(古典劇構成での)一致 / 〈U〉《...との》 協調, 調和, 融和 《with ...》",/juːˈnɪti/,45264,Unity is important for a team to succeed.,チームが成功するためには団結が重要だ。,3006217
+,,,paradigm,"範例,規範  / 語形変化表",/pəˈrædɪm/,30575,The shift from traditional teaching methods to online learning is a paradigm shift in education.,従来の教育方法からオンライン学習への移行は教育の範例の転換です。,3002474
+,,,parameter,【名/C】パラメーター / (数学で)媒介変数 / 【名/U】(統計で)母数,/pəˈræmətər/,30597,The function takes a parameter and returns a value.,関数はパラメータを受け取り、値を返します。,3002481
+,,,parental,"親の,親としての,親にふさわしい  / 親のような",/pəˈrɛn.təl/,30639,My parental instincts kicked in when I saw the child in danger.,子供が危険にさらされているのを見た時、親の本能が働きました。,3002493
+,,,biology,生物学,/baɪˈɑlədʒi/,4154,I am studying biology to understand the complexity of life.,私は生命の複雑さを理解するために生物学を勉強しています。,2996750
+,,,pest,害虫  / 《話》やっかい者  / 《まれ》ペスト,/pɛst/,31489,The garden was infested with pests.,庭には害虫が大量発生していました。,1660933
+,,,phenomenal,"自然現象の(に関する)  / 並みはずれた,驚異的な  / 知覚できる",/fɪˈnɒmɪnəl/,31596,The Northern Lights are a phenomenal natural phenomenon.,オーロラは驚くべき自然現象です。,3002715
+,,,philosopher,哲学者;賢人  / 困難にも冷静(沈着)な人,/fɪˈlɒsəfər/,31627,The philosopher pondered the meaning of life.,哲学者は人生の意味を考えた。,3002725
+,,,photographic,"写真の,写真用の  / (写真のように)正確な,精密な",/fəˌtɒɡrəˈfɪk/,31698,She has a passion for photographic art.,彼女は写真の芸術に情熱を持っています。,1665187
+,,,bullet,"弾丸,銃弾,小銃弾",/'bʊlɪt/,5531,He dodged the bullet just in time.,彼はギリギリで弾丸を避けた。,3009092
+,,,pragmatic,実際的な実用的な  / 実用主義の,/præɡˈmætɪk/,32949,She always takes a pragmatic approach to problem-solving.,彼女は常に問題解決に実際的なアプローチを取ります。,3003027
+,,,primitive,"原始の,太古の  / 原始的な,そぼくな;古風な,旧式な",/prɪˈmɪtɪv/,33362,Primitive societies relied on hunting and gathering for survival.,原始社会は生存のために狩猟と採集に頼っていました。,3003143
+,,,chess,"チェス,西洋将棋",/tʃɛs/,7219,I enjoy playing chess with my friends on the weekends.,週末に友達とチェスを楽しんでいます。,2996955
+,,,protocol,"〈U〉外交儀礼  / 〈C〉条約の原案,議定書",/'proʊtəˌkɔl/,33781,The protocol for diplomatic meetings is to exchange formal greetings and engage in discussions.,外交会議のプロトコルは、正式な挨拶を交換し、議論に参加することです。,3003261
+,,,chromosome,染色体,/ˈkroʊməsoʊm/,7502,The chromosome is the structure that carries genetic information in cells.,染色体は細胞内で遺伝情報を運ぶ構造です。,1657521
+,,,punishment,"〈U〉罰を[を受けること]  / 〈C〉処罰,刑罰  / 〈U〉ひどい仕打ち,虐待",/pʌnɪʃmənt/,34095,He received a severe punishment for his actions.,彼は自分の行動のために厳しい罰を受けた。,3003354
+,,,classroom,"クラスルーム,教室",/ˈklɑːs.ruːm/,7782,I am in the classroom.,私は教室にいる。,1624088
+,,,readily,"快く, 進んで([[willingly]]) / 容易に, やすやすと([[easily]])",/ˈrɛdɪli/,34947,She readily agreed to help me with my project.,彼女は快く私のプロジェクトを手伝うことに同意しました。,3003512
+,,,receptor,=sense organ  / 受信装置,/rɪˈsɛptər/,35076,The taste receptor on my tongue helps me distinguish between sweet and sour flavors.,私の舌の味覚受容体は、甘い味と酸っぱい味を区別するのに役立ちます。,3003548
+,,,rejection,"〈U〉〈C〉断ること,拒絶;却下  / 〈C〉廃棄物",/rɪˈdʒɛkʃən/,35460,I faced rejection when I applied for the job.,私はその仕事に応募した時に断られました。,1652024
+,,,bleed,"出血する,血を流す;血を流して死ぬ  / (切り口などから)〈植物が〉樹液を出す  / (…に)血の出るような思いをする《+for+名》  / 〈絵具・染料などが〉にじむ  / (病気の治療として)〈患者〉‘から'血をとる,放血させる  / (切口・開口部から)〈血・樹液など〉'を'出す  / …‘から'液体(ガス)を抜きとる;(液体・ガスなどを)…‘から'抜きとる《+名+of+名》  / 《話》…‘から'金をしぼり取る",/bliːd/,4374,I cut my finger and it started to bleed.,私は指を切って出血し始めました。,2996802
+,,,coronary,冠状動脈の  / 心臓の  / 冠状動脈血栓(けっせん)症(coronary thrombosis),/kɔːˈrɒnəri/,9522,Coronary artery disease is a common condition that affects the heart.,冠状動脈疾患は心臓に影響を与える一般的な状態です。,1660939
+,,,correctly,"正しく,正確に;正確に言えば",/kəˈrɛktli/,9551,Please answer the question correctly.,質問に正しく答えてください。,3009924
+,,,ultimate,"最後の, 究極の / 最大限の / 根本的な /  最も遠い / （the ~）究極のもの",/ˈʌltɪmət/,44768,He reached the ultimate level of success.,彼は成功の最後のレベルに到達した。,3006099
+,,,rhetoric,修辞学;演説法  / 美辞麗句で飾った言葉,/rɛtərɪk/,36055,She studied rhetoric in college.,彼女は大学で修辞学を学んだ。,3003856
+,,,rhythm,"〈U〉律動,リズム;韻律  / 〈C〉(特定の)リズム",/'rɪðəm/,36085,The music had a catchy rhythm that made everyone want to dance.,その音楽はキャッチーなリズムがあり、みんなが踊りたくなった。,1646090
+,,,cyclic,"周期的な,循環する",/'saɪklɪk/,10536,The moon goes through a cyclic pattern of phases.,月は周期的な位相のパターンを経る。,1640075
+,,,scenario,"(映画の)シナリオ,台本  / (小説・戯曲の)筋書き",/səˈnɛəri.oʊ/,37364,The screenwriter is working on a new scenario for the movie.,脚本家は映画の新しいシナリオに取り組んでいます。,1646577
+,,,dictionary,"辞書,辞典,字引き",/dɪkʃəˈnɛri/,11814,I bought a new dictionary yesterday.,昨日新しい辞書を買った。,1624155
+,,,sexuality,"(両性の)性的特質  / 性欲,性的関心",/sɛkʃuˈæləti/,38333,Sexuality is a complex and diverse aspect of human nature.,性的特質は人間の複雑で多様な側面です。,1646958
+,,,shallow,"浅い  / 浅薄な,表面的な",/ˈʃæloʊ/,38390,The water in the pond is shallow.,池の水は浅いです。,3004419
+,,,dominance,"優越,優勢;支配",/dɑːmɪnəns/,12627,She asserted her dominance over the team by leading them to victory.,彼女はチームを勝利に導くことで優越感を主張しました。,1635178
+,,,similarity,"〈U〉類似,相似 / 〈C〉類似点",/sɪmɪˈlærəti/,38973,There is some similarity in the way they sing.,彼らの歌い方にはいくつかの類似点がある。,1017200
+,,,singular,"非凡な,目ざましい  / 奇妙な,変わった  / (文法で)単数の  /",/ˈsɪŋɡjələr/,39048,He has a singular talent for playing the piano.,彼はピアノを演奏する非凡な才能を持っています。,3004604
+,,,socially,"社会的に,社会によって / 社交上, 社交的に / 親しく, 打ち解けて",/ˈsoʊʃəli/,39752,She is socially active and enjoys attending various events.,彼女は社会的に活発で、さまざまなイベントに参加するのが好きです。,1658795
+,,,entity,"実在するもの,実体",/ˈɛn.tə.ti/,14125,The Loch Ness Monster is a famous mythical entity.,ネッシーは有名な神話上の存在です。,2998187
+,,,ex,前の；前…；外へ；完全に,/ɛks/,14605,I need to exfoliate my skin before applying makeup.,メイクをする前に、肌の角質を取り除く必要があります。,2998301
+,,,sphere,"球,球体,球面  / (惑星・星などの)天体;天球;《詞》天,空  / (知識・活動・影響などの)範囲,領域《+of+名》  / (社会的)地位,階級",/sfɪər/,40292,The Earth is a sphere.,地球は球体です。,3004996
+,,,explicit,明白に述べた,/ɪkˈsplɪsɪt/,14844,He made his intentions explicit.,彼は自分の意図を明白に述べた。,1656767
+,,,stance,"態度,立場  / スタンス(ゴルフ・野球などで打球のときの足の位置)",/stæns/,40711,His stance on the issue is clear.,彼の態度は明確です。,3005030
+,,,fetal,胎児の,/ˈfiːtəl/,15542,The doctor performed an ultrasound to check the fetal development.,医師は胎児の発育をチェックするために超音波検査を実施した。,1629413
+,,,stripe,"筋,しま  / 《複数形で》(軍服のそでにつける)記章,そで章(階級・勤続年数などを表す)  / むち打ち",/stɹaɪp/,41331,The national flag of the USA is called the Stars and Stripes.,合衆国の国旗は星条旗と呼ばれる。,87213
+,,,flexibility,"柔軟性,しなやかさ;適応性,融通性",/flɛksəˈbɪləti/,16122,Flexibility is important in adapting to new situations.,新しい状況に適応するためには柔軟性が重要です。,2998727
+,,,subset,(一組・一団などの一部を成す)小さな一組  / (数学の集合論で)部分集合,/ˈsʌbˌsɛt/,41541,The set A is a subset of set B.,集合Aは集合Bの部分集合です。,1629414
+,,,syllable,"音節,シラブル  / 《通例否定語と共に用いて》一言,一語",/sɪləbəl/,42203,Each word in English is made up of one or more syllables.,英語の各単語は1つ以上の音節で構成されています。,3005433
+,,,tempt,"〈他〉(無分別・悪事などに)〈人〉を誘惑する, をそそのかす / ...をそそる, ...の気を引く",/tɛmpt/,42806,The sunshine tempted people out.,太陽の日差しに誘われて人々が外出した。,53929
+,,,thickness,"〈U〉〈C〉厚さ,太さ,濃さ,密集,繁茂  / 〈C〉層,重ね(layer)",/ˈθɪknəs/,43117,The thickness of the paper is important for printing.,紙の厚さは印刷に重要です。,1659561
+,,,thumb,親指;(手袋などの)親指の部分,/θʌm/,43280,He sucked his thumb when he was a child.,彼は子供の頃、親指をしゃぶっていました。,3005785
+,,,translation,"〈U〉訳すこと,翻訳  / 〈C〉翻訳されたもの",/trænˈsleɪʃən/,44026,Translation is the process of converting text from one language to another.,訳すことは、テキストを一つの言語から別の言語に変換するプロセスです。,3005916
+,,,trauma,"【名/U/C】外傷 / 精神的外傷, トラウマ",/ˈtrɔːmə/,44090,She experienced a traumatic event that left a lasting impact on her.,彼女はトラウマを経験し、それが彼女に長い影響を与えました。,1662465
+,,,tropical,"熱帯の,熱帯性の,熱帯産の  / 酷暑の",/'tɹɒpɪkəl/,44336,I love exploring tropical destinations.,私は熱帯地域を探検するのが大好きです。,3005984
+,,,hormone,ホルモン,/hɔrˈmoʊn/,20345,Hormones play a crucial role in regulating various bodily functions.,ホルモンはさまざまな体の機能を調節する上で重要な役割を果たしています。,2999806
+,,,unify,"〈他〉...を統一する /〈自〉一つになる, 一体化する",/juː.nɪ.faɪ/,45219,The goal of this project is to unify all the different systems into one platform.,このプロジェクトの目標は、異なるシステムを統一した一つのプラットフォームにすることです。,1629412
+,,,hydrogen,水素(化学記号はH),/ˈhaɪdrədʒən/,20743,Hydrogen is the lightest and most abundant element in the universe.,水素は宇宙で最も軽く、最も豊富な元素です。,2999912
+,,,usage,"〈U〉(物の)用い方, 用法 / 〈U〉〈C〉(言語の)慣用, 語法",/ˈjuːsɪdʒ/,45676,I need help with the usage of this software.,このソフトウェアの使い方について助けが必要です。,3006317
+,,,importantly,より（最も）重要なことには；もったいぶって,/ɪmˈpɔːrtəntli/,21230,"Importantly, she emphasized the need for teamwork in achieving the company's goals.",重要なことには、彼女は会社の目標を達成するためにチームワークの必要性を強調しました。,3000035
+,,,variant,"(同種のものと)異なった,別の  / 異形;(同じ単語の)異なったつづり(発音など)",/'vɛəriənt/,45873,The variant of the virus is spreading rapidly.,ウイルスの変異種が急速に広がっています。,1665389
+,,,vector,"(数学で)ベクトル,方向量  / (ハエ・カなどの)病原媒介昆虫  / (飛行機,ミサイルなどの)脱路,軌道",/'vɛktər/,45921,I learned about vector in my math class.,数学の授業でベクトルについて学びました。,1661593
+,,,vegetation,"(ある地域の)植物  / 《集合的に》植物,草木",/vɛdʒɪˈteɪʃən/,45937,The dense vegetation in the rainforest provides a habitat for a wide variety of animals.,熱帯雨林の密集した植生は、さまざまな動物の生息地を提供しています。,1641750
+,,,indigenous,"固有の,土着の,生まれながらの",/ɪnˈdɪʤənəs/,21611,The indigenous people of the region have a deep connection to their ancestral lands and traditions.,この地域の先住民は、先祖代々の土地や伝統と深いつながりをもっています。,1627334
+,,,independently,"独立して,単独で",/ˌɪndɪˈpɛndəntli/,21568,She decided to live independently after graduating from college.,彼女は大学を卒業した後、独立して生活することを決めました。,3000114
+,,,industrialize,"…‘を'産業化する,工業化する",/ɪnˈdʌstriəˌlaɪz/,21699,Many countries have industrialized their economies to boost growth and development.,多くの国々は成長と発展を促進するために経済を産業化してきています。,1656780
+,,,solvent,"溶剤,溶媒 ,解決策",/'sɒlvənt/,39901,"However, these solvents were identified as carcinogenic.",しかしながら、これらの溶剤は発がん性が指摘された。,582
+,,,optimum,"【形】最適の,最高の【名/C】最適の条件",/ˈɒptɪməm/,29702,The optimum temperature for this experiment is 25 degrees Celsius.,この実験の最適な温度は摂氏25度です。,1627948
+,,,molecular,"分子の,分子による",/məˈlɛkjələr/,27316,Molecular biology is the study of biological molecules and their interactions.,分子生物学は生物分子とその相互作用の研究です。,1643329
+,,,neural,神経[系統]の,/'nʊrəl/,28422,The neural network model is used in various fields such as image recognition and natural language processing.,ニューラルネットワークモデルは画像認識や自然言語処理などさまざまな分野で利用されています。,1665256
+,,,noisy,"(人・声などが) やかましい,騒々しい",/'nɔɪzi/,28739,The party next door was so noisy that I couldn't concentrate on my work.,隣のパーティーがとてもやかましくて、仕事に集中できませんでした。,3001967
+,,,onwards,前方へ（=[[onward]]）,/ˈɒnwədz/,29585,"From now onwards, I will focus on my studies.",今後、私は勉強に集中します。,1657020
+,,,optimal,"{[形]}最適の,最高の{[名/C]}最適の条件 / =optimum",/ˈɒptɪməl/,29697,Finding the optimal solution requires careful analysis.,最適解を見つけるには、慎重な分析が必要だ。,3002242
+,,,oxygen,〈U〉酸素 (化学記号はO),/ˈɑksɪdʒən/,30236,Oxygen is needed for combustion.,火が燃えるには酸素がいる。,98882
+,,,acidic,"【形】酸味のある,すっぱい；酸性の",/əˈsɪdɪk/,48300,The orange juice tasted acidic.,オレンジジュースは酸味があった。,3006987
+,,,poster,"ポスター,びら",/'poʊstər/,32785,I have a poster of my favorite band in my room.,部屋に自分の好きなバンドのポスターを持っている。,1623673
+,,,psychologist,心理学者,/saɪˈkɒlədʒɪst/,33910,The psychologist conducted a series of experiments to study human behavior.,心理学者は人間の行動を研究するために一連の実験を行った。,3003286
+,,,quantum,量子,/'kwɑntəm/,34334,Quantum mechanics is a branch of physics that studies the behavior of particles at the atomic and subatomic levels.,量子力学は、原子や亜原子レベルでの粒子の振る舞いを研究する物理学の一分野です。,1664543
+,,,residue,"【名/U/C】残り,残余 / 残留物",/ˈrɛzɪˌdjuː/,35779,"After cooking the chicken, there was a residue of oil in the pan.",鶏肉を調理した後、フライパンに油の残りがありました。,1660550
+,,,respiratory,"呼吸の,呼吸作用の,呼吸のための",/rɪˈspɪrəˌtɔːri/,35827,She has a respiratory infection.,彼女は呼吸器感染症を持っています。,1651073
+,,,container,"〈C〉容器 , 入れ物 / (貨物輸送用の)コンテナ",/kənˈteɪnər/,9167,I packed my lunch in a container.,私はランチを容器に詰めました。,1630644
+,,,emission,"〈U/C〉(光・熱・液体などの)放射,放出 / 〈C〉放射物,放出物",/ɪˈmɪʃən/,13823,The emission of greenhouse gases is a major concern for environmentalists.,温室効果ガスの排出は環境保護主義者にとって重大な関心事です。,1629265
+,,,semantic,(言語の)意味に関する;意味論の,/səˈmæntɪk/,38026,The semantic meaning of this word is unclear.,この単語の意味は意味論的には不明です。,3004326
+,,,finite,"限りある, 有限の",/fʌɪnaɪt/,15788,The resources are finite.,資源は有限です。,1627880
+,,,solute,【名/C】(化学で)溶質 / 【形】溶解した,/'sɒljuːt/,39895,"In this experiment, the salt is the solute, and the water is the solvent.",この実験では、塩が溶質で、水が溶媒です。,1017016
+,,,statistical,"統計の,統計学上の",/stəˈtɪstɪkəl/,40826,Statistical analysis is used to interpret data and draw conclusions.,統計分析はデータを解釈し、結論を導くために使用されます。,3005057
+,,,tumor,"〈C〉はれもの,できもの,腫瘍",/ˈtjuːmər/,44490,He was diagnosed with a brain tumor.,彼は脳腫瘍と診断されました。,1650229
+,,,vitamin,"ビタミン,栄養素(身体の喜常な機能を維持するために少量ながら必要な有機化合物)",/'vɪtəmɪn/,46351,I take a vitamin supplement every morning.,毎朝、ビタミンのサプリメントを摂取しています。,3006463
+,,,ritual,"〈U〉〈C〉儀式 / (社会的慣習としての)礼儀,作法",/ˈrɪtʃuəl/,36258,The wedding ceremony is a beautiful ritual.,結婚式は美しい儀式です。,3003905
+,,,statistically,【副】統計的に；統計（学）上,/stəˈtɪstɪkli/,48309,"Statistically, women live longer than men.",統計的に、女性の方が男性よりも長生きします。,1638371
+,,,regime,"〈C〉政権,政府 / 政治体制 / 制度",/ɹɪˈʒiːm/,35392,The new regime implemented strict policies to maintain control.,新政権は厳しい政策を実施して統制を維持した。,3003640
+,,,straightforward,"わかりやすい,簡単な / 正直な,率直な / まっすぐに進む",/stɹeɪtfɔːɹwəd/,41205,She gave a straightforward explanation of the process.,彼女はその経緯をわかりやすく説明してくれました。,1622995
+,,,continuity,"【名/U】連続性, 一貫性 / （映画などの）撮影用台本, コンテ / 【名/C】コンテに書かれた個々の指示",/kɒn.tɪ.nuˈɪ.ti/,9220,There is no continuity between the three parts of the book.,この本の3つの章の間には、連続性がありません。,1017203
+,,,widespread,"広範囲にわたる,行き渡った,普及している / （翼など）広げた",/ˈwaɪdspɹɛd/,47430,The COVID-19 pandemic has had a widespread impact on the global economy.,COVID-19パンデミックは世界経済に広範囲な影響を与えています。,3006731
+,,,molecule,分子《略》mol)  / (一般に)(…の)微量《+of+名》,/mɒˈlɛkjuːl/,27317,Water is a molecule composed of two hydrogen atoms and one oxygen atom.,水は、2つの水素原子と1つの酸素原子から構成される分子です。,3001584
+,,,acid,"酸性の  / 酸味のある,すっぱい(sour)  / (言葉・態度などが)厳しい,しんらつな  / 酸  / すっぱいもの  / 《俗》=LSD",/'æsɪd/,365,The solution turned red because it was acid.,その溶液は酸性だったので赤くなった。,2995713
+,,,altitude,〈U〉高さ / 〈C〉標高 / 海抜 /高い地位 / 〈U/C〉高度,/ˈæltɪtjuːd/,1233,The altitude of this mountain is quite high.,この山の高度はかなり高いです。,2995989
+,,,antiquity,"【名/U】古代 / 古代人 / 古さ, 古風 / 【名/C】《複数形で》古代の遺物",/ænˈtɪkwəti/,1776,"In antiquity, humans [[managed to|manage to]] survive without electricity.",古代、人類は電気がなくても生きていくことができました。,1017204
+,,,approximate,近似の　,/əˈprɑksəmət/,1987,The approximate time of arrival is around 3 pm.,到着のおおよその時間は午後3時頃です。,2996183
+,,,artificial,"人工の, 人造の / 模造の / 不自然な,見せかけの",/ˌɑːr.tɪˈfɪʃ.əl/,2286,The artificial intelligence industry is rapidly growing.,人工知能産業は急速に成長しています。,2996249
+,,,artistic,"芸術的な  / 芸術(美術)の;芸術家(美術家)の  / 美的感受性に富む,美のわかる",/ɑrˈtɪstɪk/,2295,The artistic design of the building is truly breathtaking.,その建物の芸術的なデザインは本当に息をのむほどです。,2996254
+,,,aspect,側面、観点、様相,/ˈæs.pɛkt/,2355,This new product outperforms the old model in every aspect.,この新製品は、あらゆる点で旧型よりも優れている。,1627858
+,,,breakdown,"〈C〉故障,衰弱,分析",/ˈbreɪkdaʊn/,5136,My car had a breakdown on the way to work.,私の車は仕事の途中で故障しました。,3008988
+,,,broadly,"広く,あまねく  / 明白に;露骨に  / 大まかに",/ˈbrɔːdli/,5302,She has a broadly diverse range of interests.,彼女は広く多様な興味を持っています。,3009035
+,,,bucket,"バケツ,手おけ;(井戸の)つるべ  / バケツ状の物;(水車・タービンなどの)水受け;(ポンプの)吸い子  / バケツ1杯(の…)(bucketful)《+of+名》",/ˈbʌkɪt/,5440,The man filled a bucket with water.,男はバケツに水を満たした。,1624047
+,,,calculator,計算者  / 計算器機(=calculating machine),/ˈkæl.kjə.leɪ.tər/,5958,Using a calculator is an expedient way to solve complex math problems.,電卓を使うことは複雑な数学の問題を解くための便利な方法です。,1628790
+,,,calculus,〈C〉(腎臓内などにできる)結石  / 〈U〉微積分学,/'kælkjələs/,5960,I had to undergo surgery to remove a calculus from my kidney.,私は腎臓から結石を取り除く手術を受ける必要がありました。,3009194
+,,,maternal,"母らしい, 母の, 母性の / 母方の",/məˈtɜːrnəl/,26100,She has a maternal instinct and takes care of everyone like a mother.,彼女は母性本能があり、母のようにみんなの世話をします。,3001268
+,,,characterization,"【名/U】(小説や劇中の)人物[性格]描写,人物表現；特性,特性評価；特徴の説明",/ˌkæɹ.ək.təɹ.əˈzeɪ.ʃən/,7066,The author's characterization of the protagonist is incredibly detailed and nuanced.,作者の主人公の描写は非常に詳細で微妙です。,1657625
+,,,chemistry,"〈U〉化学 / 化学的性質,化学反応,化学作用",/tʃɛmɪstri/,7200,I am studying chemistry at university.,私は大学で化学を勉強しています。,3009425
+,,,cheers,(健康を祝して)乾杯  / ありがとう  / (特に電話で)ではまた,/tʃɪərz/,7181,Cheers to good health!,健康を祝して乾杯！,3009420
+,,,chunk,"(…の)厚切り,厚いかたまり《+of+名》  / かなりの量(額,部分)",/tʃʌŋk/,7535,I ordered a chunk of steak for dinner.,夕食に厚切りのステーキを注文しました。,1659099
+,,,cinema,〈C〉映画館 / 《the ~》映画産業 / 《集合的に》映画,/sɪˈnɛmə/,7590,I'm going to the cinema tonight.,今夜は映画館に行くつもりです。,1624083
+,,,circulation,"〈U〉血液の循環,血行  / 〈U〉(貨幣の)流通;(情報・うわさなどの)流布伝達;(新聞・雑誌など,印刷物の)配布  / 〈C〉(新聞・雑誌などの)発行部数",/sɜːr.kjʊˈleɪ.ʃən/,7622,The circulation of blood is essential for maintaining good health.,血液の循環は健康を維持するために不可欠です。,3009499
+,,,clay,"粘土;泥土  / (聖書で,人間の肉体が造られているとされる)土",/ kleɪ /,7795,She molded the clay into a beautiful sculpture.,彼女は粘土を美しい彫刻に形作った。,1642128
+,,,clever,"リコウな,頭のよい,才気のある,気のきいた  / 器用な,じょうずな(skillful)",/ˈklɛvər/,7854,He is a clever boy.,彼は賢い少年だ。,1624089
+,,,complement,"(あるものを完全にするため)(…を)補う物(事)《+of+名》  / 補語(文法で文の成分の一つ)  / (必要な)全数,全量;(船の)定員",/'kɒmplɪmənt/,8670,Eating a balanced diet is the complement of a healthy lifestyle.,バランスの取れた食事は健康的な生活を補完します。,3009708
+,,,commonly,"一般に, 通例, 普通 / 俗に,下品に",/ˈkɑːmənli/,8565,"Commonly, people prefer to eat healthy food.",一般的に、人々は健康的な食べ物を好む。,3009673
+,,,communist,共産主義者  / 《しばしばC-》共産党員  / 共産主義[者]の;《しばしばC-》共産党の,/kɒmjənɪst/,8592,He is a dedicated communist.,彼は献身的な共産主義者です。,1636660
+,,,conditional,"条件つきの,暫定的な  / (文法で)条件を表す  / (文法で)条件文(節)",/kənˈdɪʃənəl/,8853,The approval is conditional upon meeting all the requirements.,承認はすべての要件を満たすことを条件としています。,1632969
+,,,cone,"円すい,円すい形  / 円すい形のもの  / 球果(松かさなど)・暴風警報球.",/kəʊn/,8873,I ate an ice cream cone.,私はアイスクリームの円すいを食べました。,3009768
+,,,constrain,"【動/他】強いる,抑制する",/kənˈstreɪn/,9126,We need to constrain our spending in order to save money.,お金を節約するために、支出を制限する必要があります。,3009823
+,,,contradiction,"否定,反ばく  / 矛盾",/kɒntrəˈdɪkʃən/,9245,There is a contradiction in his statement.,彼の発言には矛盾がある。,3009862
+,,,demonstrator,立証者  / 実演する人  / デモ参加者,/dɪˈmɒn.str.eɪ.tər/,11340,The demonstrator provided evidence to support their claims.,立証者は自分たちの主張を裏付ける証拠を提供しました。,2997453
+,,,derivative,"派生した,由来した;独創性のない,借り物めいた  / 派生語  / 派生した物",/dɪˈrɪvətɪv/,11498,The concept of evolution is a derivative of Charles Darwin's theory.,進化の概念はチャールズ・ダーウィンの理論の派生です。,1664029
+,,,detection,"発見,探知,発覚  / (電波の)検波",/dɪˈtɛkʃən/,11618,The detection of the virus was crucial in preventing its spread.,ウイルスの発見は、その拡散を防ぐ上で重要でした。,1636840
+,,,deviation,"逸脱,脱線,偏向,偏差,磁針の自差",/dɛviˈeɪʃən/,11679,The experiment showed a deviation from the expected results.,実験結果は予想と外れることを示した。,1634659
+,,,diameter,直径  / (レンズなどの)倍率,/daɪˈæmɪtər/,11766,The diameter of the circle is 10 centimeters.,円の直径は10センチメートルです。,2997574
+,,,dimensional,(長さ・幅・厚さなどの)寸法の  / (数学で)…次元の,/dɪˈmɛnʃənəl/,11900,"The dimensional measurements of the box are 10 inches in length, 8 inches in width, and 6 inches in thickness.",箱の寸法は長さが10インチ、幅が8インチ、厚さが6インチです。,1633710
+,,,dye,"(髪・布などの)染料  / 染め色,色合い",/daɪ/,13234,She used a dye to color her hair.,彼女は髪を染めるために染料を使いました。,2997953
+,,,evolutionary,発展の  / 進化の;進化論に関する,/ˌiː.və.ˈluː.ʃə.ˌner.i/,14599,The theory of evolution explains the process of evolutionary change in living organisms.,進化論は生物の進化的変化の過程を説明します。,2998300
+,,,fabric,"〈C〉〈U〉織物,編物  / 〈U〉織り方;織地  / 〈U〉構造,組織  / 〈U〉構造物,建造物",/'fæbrɪk/,15040,She bought a beautiful fabric to make a dress.,彼女はドレスを作るために美しい織物を買いました。,2998435
+,,,factorial,(数学で)階乗  / 階乗の;因数の,/fækˈtɔːriəl/,15080,The factorial of a number is the product of all positive integers less than or equal to that number.,ある数の階乗は、その数以下のすべての正の整数の積です。,1636941
+,,,adaptation,"〈U〉適応, 順応 / 脚色,翻案 / 〈C〉翻案物, 改作物",/ˌæd.əpˈteɪ.ʃən/,475,The movie is an adaptation of the popular novel.,その映画は人気小説の映画化です。,1653222
+,,,fever,"〈U〉《しばしばa fever》(身体の異常な)熱,発熱  / 〈U〉熱病  / 〈U〉〈C〉(…に対する)興奮,熱狂《+for+名》",/ˈfiːvər/,15565,I have a fever.,私は熱を出しています。,1624216
+,,,fraction,"〈C〉破片,断片 / 《...の》一部《of ...》 / 分数",/'fræk.ʃən/,16803,He ate only a fraction of the cake.,彼はケーキのほんの一部しか食べませんでした。,1628051
+,,,generalization,"〈U〉一般化すること,概括すること  / 〈C〉一般的な考え(説明,法則),一般論",/dʒɛnərəlaɪˈzeɪʃən/,17663,Generalization is an important concept in computer science.,一般化はコンピュータ科学において重要な概念です。,6535942
+,,,ghost,"幽霊,亡霊,死者の霊  / (…の)ほんのわずか《+of+名》  / (…の)幻,面影《+of+名》  / =ghost writer  / (テレビの画面の)ゴースト  / =ghostwrite",/ɡoʊst/,17822,I saw a ghost in my bedroom last night.,昨夜私の部屋で幽霊を見た。,1624247
+,,,goat,ヤギ  / 《米話》=scapegoat  / 《俗》好色家 /最高（ Greatest of All Time（歴史上最高の頭字語））,/ɡoʊt/,18098,The goat is grazing in the field.,ヤギが畑で草を食べています。,2999185
+,,,grammatical,《名詞の前にのみ用いて》文法上の  / 文法にかなった,/ɡrəˈmætɪkəl/,18343,Understanding grammatical rules is essential for learning a new language.,新しい言語を学ぶためには文法のルールを理解することが重要です。,2999267
+,,,gravity,"(地球の)引力,重力;重量(weight)  / 厳粛さ,まじめさ  / 重大さ,ゆゆしさ",/ˈɡrævəti/,18465,Gravity keeps us grounded on Earth.,引力は私たちを地球に引きつけます。,2999299
+,,,halfway,"(2点間の)中間の  / 中途はんぱの  / 中途で,中途まで  / ほとんど",/ˈhæf.weɪ/,19058,I stopped halfway through the marathon.,私はマラソンの途中で止まりました。,2999448
+,,,headquarters,"本部,司令部,本署 / 《会社の》本社",/hɛdˈkwɔːrtərz/,19476,The company's headquarters is located in New York.,会社の本部はニューヨークにあります。,2999579
+,,,helix,らせん  / らせん形のもの,/'hɛlɪks/,19648,"The DNA molecule is shaped like a double helix, with two intertwined strands creating its unique structure.",DNA 分子は二重らせんのような形をしており、2 本の鎖が絡み合って独特の構造を形成しています。,1627828
+,,,capillary,"【名/C】毛細血管 / 【形】毛細管の / 毛状の,毛のように細い",/'kæp.ə.lɛr.i/,6251,The capillary is a tiny blood vessel that connects arterioles and venules.,毛細血管は、動脈小管と静脈小管をつなぐ微細な血管です。,3009244
+,,,horizontal,"水平線の,地平線の;水平の,水平面の  / 水平の位置;水平線(面)",/hɔːrɪˈzɒntəl/,20342,The sun sets below the horizontal line.,太陽は水平線の下に沈みます。,2999800
+,,,immune,"免疫の / 《...に》免疫がある《to ...》 / 《補語にのみ用いて》《影響・攻撃などを》免れている《against, from, to ...》",/ɪˈmjuːn/,21126,Regular exercise can help boost your immune system.,定期的な運動は免疫システムを強化するのに役立ちます。,3000010
+,,,incredible,"信じられない,信用できない  / 途方もない,驚くべき(surprising)",/ɪnˈkrɛdəbəl/,21499,The view from the top of the mountain was incredible.,山の頂上からの景色は信じられなかった。,3000102
+,,,cheat,〈他〉騙す / 〈自〉不正をする,/tʃiːt/,7149,"He tried to cheat on the test, but he got caught.",彼はテストでカンニングしようとしたが、バレた。,3009358
+,,,infectious,"(病気が)伝染する,伝染性の  / (影響などが)感化しやすい,うつりやすい",/ɪnˈfɛkʃəs/,21776,Infectious diseases can spread quickly in crowded areas.,混雑した地域では感染症が急速に広がることがあります。,3000169
+,,,injection,"〈U〉〈C〉注射,注入  / 〈C〉注射液",/ɪnˈdʒɛkʃən/,21925,I received an injection at the doctor's office.,私は医者のオフィスで注射を受けました。,3000209
+,,,initiation,"【名/U】（組織などへの）加入,入会,仲間入り；(手続き･計画などの)開始,着手【C】入会[入社]式",/ɪˌnɪʃiˈeɪʃən/,21922,He underwent initiation into the secret society.,彼は秘密結社への入会を受けました。,1626271
+,,,innate,"生得的な, 生まれつきの",/ɪˈneɪt/,21953,Her innate talent for music was evident from a young age.,彼女の生まれつきの音楽の才能は若い頃から明らかでした。,3000216
+,,,interval,"(事と事の)間の時間,合い間;(物と物の)間の空間,間隔  / 《英》=intermission  / 音程",/ˈɪntərvəl/,22362,There was a long interval before he answered.,彼が答えるまでに長い間があった。,45137
+,,,invert,...を逆さまにする  / 〈順序・位置・関係など〉を反対にする,/ɪnˈvɜrt/,22459,She decided to invert the colors of the painting.,彼女は絵の色を逆さまにすることを決めました。,3000357
+,,,compact,"【形】ぎっしり詰まった, 緊密な, 引き締まった / こぢんまりして経済的な,小さくまとまった / (文体などが)簡潔な / 【動/他】…をぎっしり詰める, を圧縮する",/kəmˈpækt/,8610,This compact suitcase can fit all your belongings.,このコンパクトなスーツケースには、すべての荷物が収まります。,1642160
+,,,compact,"【名/U/C】契約,盟約 / 【動/自】《…と》契約する《with ...》",/kəmˈpækt/,8611,I bought a compact car for easy parking in the city.,都市での駐車が簡単になるため、コンパクトカーを買いました。,3009687
+,,,conception,"〈U〉概念 / 〈C〉着想,思いつき / 〈U〉妊娠,受胎",/kənˈsɛpʃən/,8782,The conception of the project was a great success.,プロジェクトの構想は大成功だった。,1626957
+,,,lexical,"単語の,語彙の",/lɛksɪkəl/,24354,I am studying lexical analysis in my computer science class.,私はコンピュータサイエンスの授業で語彙解析を勉強しています。,1652722
+,,,liable,"(法律的に)責任(義務)のある  / 《be liable to+名》(病気などに)かかりやすい  / 《be liable to do》(性質・習慣などにより)…しがちである,しやすい;《話》…しそうな,たぶん…する",/ˈlaɪəbəl/,24365,He is liable for the damages caused by his actions.,彼は自分の行動によって引き起こされた損害に対して責任がある。,3000833
+,,,connotation,"【名/U/C】言外の意味, 含蓄 / (論理学で)内包",/kɑnəˈteɪʃən/,9020,The word 'snake' has a negative connotation.,「蛇」という言葉はネガティブな意味合いを持っています。,2997015
+,,,limb,(動物の)手足;(鳥の)翼  / (木の)大枝,/lɪm/,24542,The dog lost a limb in the accident.,その犬は事故で手足を失った。,3000879
+,,,linear,"線の,直線の  / 線から成る,線を使った;線状の  / (方程式が)一次の",/ˈlɪniər/,24598,The graph shows a linear relationship between the two variables.,グラフは、2つの変数の間に線の関係を示しています。,1642527
+,,,corpus,"【名/C】(特定の事に関する)文書資料の集成, コーパス / (研究用に収集した)資料",/'kɔːrpəs/,9543,The corpus contains a large collection of texts.,コーパスには大量のテキストが含まれています。,1635148
+,,,cure,"〈C〉(病気の)回復 / 治療 / 〈C〉《...の》治療薬, 治療法 《for ...》",/kjʊər/,10416,There is no cure for the common cold.,普通の風邪に治療法はない。,109117
+,,,damp,"湿っぽい, 湿気のある",/dæmp/,10691,The clothes were still damp after being left outside in the rain.,雨の中に外に置かれた後、服はまだ湿っていました。,2997285
+,,,denominator,〈C〉《数》分母 / 共通点,/dɪˈnɒmɪneɪtər/,11375,The denominator of the fraction is 12.,分数の分母は12である。,1017761
+,,,directive,"【名/C】《...に関する》指令,命令,訓令《on ...》【形】指導的な,指示的な；《...を》指令する《of ...》",/dɪˈrɛktɪv/,11990,The teacher gave us a directive to complete the assignment by Friday.,先生は私たちに金曜日までに課題を完成させるよう指示を出しました。,1633498
+,,,liver,(ある態度で)生活する人;居住者,/ˈlaɪvər/,24777,She is a high-liver.,彼女はお酒をよく飲む人です,15888
+,,,discharge,"〈他〉の荷を下ろす / を発射する,放出する / 排出する / を解放する,放免する,赦免する〈自〉荷を下ろす",/dɪsˈtʃɑːrdʒ/,12066,The hospital will discharge the patient tomorrow.,病院は明日、患者を退院させます。,2997656
+,,,locus,"(法律用語で)場所,位置  / (数学で,点が描く)軌跡",/'loʊkəs/,24885,The locus of the crime was carefully examined by the forensic team.,犯罪現場の場所は法医学チームによって注意深く調査された。,1628481
+,,,epidemic,"【形】流行性の, 急速に広がる / (一般に)流行している / 【名/C】 (一時的な)流行病,伝染病 / 流行, はやり",/ɛpɪˈdɛmɪk/,14199,The government is taking measures to control the epidemic.,政府は流行性の制御策を取っています。,2998209
+,,,essentially,本質的に;本来は / 《否定構文で》必然的には,/ɪˈsɛnʃəli/,14392,"Essentially, he is a good person.",本質的に彼は良い人です。,2998249
+,,,faculty,"〈C〉《...の》才能《for, of ...》 / (身体器官の) 機能, (精神的)能力 / (大学の) 学部 / (大学の学部の) 教授団",/'fækəlti/,15089,The faculty of this university is highly respected.,この大学の教員は非常に尊敬されています。,2998449
+,,,magnetic,"磁石の;磁気の(による,を帯びた)  / 人を引き付ける,魅力のある",/mæɡˈnɛtɪk/,25480,The magnetic field of the Earth helps birds navigate during migration.,地球の磁場は鳥の渡りの際にナビゲーションを助けます。,3001117
+,,,mall,木陰の散歩道;遊歩道  / 《米》歩行者専用の商店街・ショッピングモール,/mɔːl/,25652,I went to the mall to buy some new clothes.,私は新しい服を買うためにショッピングモールに行きました。,3001149
+,,,manipulation,"(…の)巧妙な扱い,操作《+of+名》  / (自分の利益のための)ごまかし,小細工",/məˌnɪpjəˈleɪʃən/,25772,He is skilled in the manipulation of data.,彼はデータの巧妙な扱いに熟練しています。,1642850
+,,,manual,"手でする,手細工の",/mænjuəl/,25817,I prefer manual labor over using machines.,私は機械を使うよりも手作業を好む。,3001186
+,,,manuscript,"〈C〉(手書きまたはタイプされた印刷用の)原稿;〈U〉原稿の状態(《略》MS.,MS,ms.,ms)  / 〈C〉(特に印刷術発明以前で,手書きの)写本",/mænjəˌskrɪpt/,25827,She submitted her manuscript to the publisher.,彼女は原稿を出版社に提出しました。,3001189
+,,,marginal,"取るに足りない,小さな / 限界の,ぎりぎりの / 限界収益点の / 欄外の / 縁の,へりの",/mɑrˈdʒɪnəl/,25877,She has only a marginal interest in sports.,彼女はスポーツに取るに足りない程度の興味しか持っていない。,3001208
+,,,marrow,"【名/U】髄(ずい),骨髄 / 《the ~ of ...》...の核心, 精髄 / 力, 活力",/ˈmær.oʊ/,25950,He had a bone marrow transplant.,彼は骨髄移植を受けました。,1629329
+,,,incline,"【動/自】心が傾く,気が向く；《...する》傾向がある《to do》；《...に》傾く《to》【動/他】《...に》を傾ける；の心を向けさせる《to》【名/C】傾斜,こう配;斜面",/ɪnˈklaɪn/,21423,I inclined my ear to him.,彼の言うことに耳を傾けた。,43191
+,,,mathematical,"数学の,数学的  / (非常に)正確な",/mæθəˈmætɪkəl/,26105,Mathematical equations can be solved using various methods.,数学の方程式はさまざまな方法を使って解くことができます。,3001271
+,,,mineral,"(動植物に対して)無機物  / 鉱物,鉱石  / 《複数形で》《英》炭酸水,清涼飲料(mineral water)",/mɪnərəl/,26917,Plants require minerals for their growth.,植物は成長に無機物を必要とします。,1643200
+,,,par,"【名/U】同等,同価,同水準,同程度 / 平価,額面価格 / (程度・質・状態・数量などの)平均,標準 / 【名/C】(ゴルフで)標準打数,パー / 【動/他】(ゴルフで)〈1ホールまたは1コース〉を基準打数でとる,をパーで上回る",/pɑːr/,30562,His command of English is on a par with mine.,彼の英語力は私のそれと等しい。,43649
+,,,unemployed,"仕事のない,失業した  / 利用してない,遊ばせてある",/ʌnɪmˈplɔɪd/,45111,He has been unemployed for six months.,彼は6ヶ月間仕事のない状態です。,3006169
+,,,pole,"〈C〉(木製・金属性などの)棒, さお / 柱 / (牛車・馬車の)ながえ",/poʊl/,32460,I saw a bird perched on top of the pole.,私はポールの上にとまった鳥を見ました。,3002911
+,,,genetically,"遺伝（子）的に,遺伝学的に",/dʒəˈnɛtɪkli/,48305,Genetically modified crops have become more common in recent years.,近年、遺伝子組み換え作物がより一般的になってきました。,1649658
+,,,methodology,【名/U/C】方法論,/mɛθəˈdɑlədʒi/,48307,The researcher used a rigorous methodology to conduct the experiment.,研究者は厳密な方法論を用いて実験を行った。,3006995
+,,,positively,"積極的に / 《話》全く,本当に /  《米》(質問に答えて)そのとおり,もちろん",/pɑːzɪtɪvli/,32743,She always approaches challenges positively.,彼女は常に積極的に課題に取り組みます。,1651038
+,,,robot,"ロボット  / 機械的に働く人間,他人の意のままに働く人",/ˈroʊˌbɑt/,36324,The robot cleaned the entire house.,ロボットが家中を掃除しました。,3003921
+,,,sniff,"(…を)かぐ,〈犬が〉(…を)くんくんかぐ《+at+名》  / (軽べつ・不満などを示して)(…に)フンと鼻をならす《+at+名》  / …‘の'においをかぐ,鼻で吸う",/snɪf/,39618,I sniffed the flowers to enjoy their fragrance.,私は花をかぐことでその香りを楽しんだ。,3004729
+,,,swap,"《単数形で》(物と物の)交換,取り換え;交換物  / (と)…‘を'交換する《+名+for+名》  / 交換する",/swɑp/,42050,I will swap my book with yours.,私はあなたの本と私の本を交換します。,3005382
+,,,turbulent,"荒れ狂う,混乱した / 不穏な,騒がしい,動乱の",/ˈtɜːrbjələnt/,44529,The turbulent waves crashed against the rocky shore.,荒れ狂う波が岩礁に激突した。,1649067
+,,,parcel,"〈C〉《...の》包み, 小包《of ...》",/'pɑːrsəl/,30624,I received a parcel in the mail today.,今日、郵便で小包を受け取りました。,3002484
+,,,potassium,"〈U〉ポタシウム,カリウム",/pəˈtæsiəm/,32823,Potassium is an essential mineral for maintaining proper heart and muscle function.,カリウムは心臓や筋肉の適切な機能を維持するために必要なミネラルです。,1645016
+,,,jazz,"〈U〉《音楽》ジャズ / 《俗》大ぼら,大うそ",/dʒæz/,22839,She is interested in jazz.,彼女はジャズに興味がある。,18583
+,,,presume,を推定する / を仮定する / 思い切って...する《to do》,/prɪˈzjuːm/,33254,I presume he will be late for the meeting.,彼は会議に遅れると思います。,3003112
+,,,rack,"〈C〉《しばしば複合語を作って》(枠・網・棒などで作られた)…掛け, ...のせ, ...棚 / 拷問台",/ræk/,34561,I need to buy a new rack for my kitchen.,私はキッチン用の新しいラックを買う必要があります。,3003412
+,,,sometime,"(未来の)いつか, そのうち / 《未来の時を表す語句の前で》( ...の)あたりで, ある時点で / (過去の)あるとき",/sʌm.taɪm/,39917,I will meet with my friend sometime next week.,来週あたり、友人と会う予定です。,1623327
+,,,span,〈他〉架かる、渡される/　及ぶ、広がる/　回す、つかむ/　測る　,/spæn/,40138,She span the globe in her travels.,彼女は旅行で地球を一周した。,4680694
+,,,spray,"〈U〉《水や他の液体の》しぶき 《of ...》 / 〈C〉噴霧器,スプレー",/spreɪ/,40479,By means of a super high-pressure water spray practically all the sediment is removed.,超高圧水の噴射により、ほとんどの詰まりが排除される。,1295
+,,,swell,"〈物が〉大きくなる, ふくれる, はれる《up》 / 〈帆などが〉張り出る《out》 / 〈程度・力などが〉増大する / をふくらませる / 〈帆など〉を張り出させる《out ...》 / を増大させる",/swɛl/,42113,The waves swell as the storm approaches.,嵐が近づくにつれて波が大きくなる。,3005402
+,,,syllabus,"【名/C】(講義などの)要項, 概要  / (学期・学年などの)学習指導計画",/sɪˈlæbəs/,42205,The syllabus for this course is available online.,このコースのシラバスはオンラインで利用できます。,1653912
+,,,tense,(筋肉:繊維などが)ぴんと張った / (精神的に) 緊張した /,/tɛns/,42851,I could feel the tense muscles in my body.,私は体の筋肉がぴんと張っているのを感じることができました。,3005596
+,,,uplift,"…‘を'あげる,持ち上げる  / 〈精神〉‘を'高揚する,〈意気〉‘を'盛んにする  / (社会的・道徳的・知的に)…‘を'向上させる  / 持ち上げること;(道徳的・社会的・知的)向上;精神的高揚  / (土地の)隆起",/ʌpˈlɪft/,45574,She always tries to uplift the spirits of those around her.,彼女は常に周りの人々の気持ちを高めようと努力しています。,1641003
+,,,slot,"細長いみぞ(くぼみ,口);(自動販売器などの)料金投入口  / (リスト・予定表・ある組合せなどの中で占める)場所,位置",/slɒt/,39423,I found a coin in the slot.,隙間の中にコインを見つけた。,3004684
+,,,slash,"さっと切りつけること,打ち下ろすこと / 切り口,深い切り傷 / (価格 / 数量などの)大幅切り下げ,大削減 / (衣服の)あき口(スリット)  / 斜線記号(/)",/slæʃ/,39299,a slash across his right cheek,右頬の切り傷,4680250
+,,,valid,"(理論・理由などが) 妥当な /  (契約・法律などが) 合法的な, 正当な / (ある条件のもとで)有効な",/'vælɪd/,45804,The argument presented in the paper is valid.,論文で提示された議論は妥当です。,3006354
+,,,adolescent,【形】青年期の / 青年らしい【名/C】青年期の人 / 若者,/ˌædəˈlɛsənt/,571,She is going through the challenges of being an adolescent.,彼女は青年期の課題に直面しています。,1639590
+,,,composite,"【形】合成の,複合の / キク科の / 【名/C】合成物,複合物 / キク科植物",/kəmˈpɑzɪt/,8706,Spain is a composite of diverse traditions and people.,スペインは、多様な伝統と人々の複合体です。,1017208
+,,,computation,"〈U/C〉計算, 算出 / 〈C〉(計算の結果出た)算定額",/kɑmpjuˈteɪʃən/,8741,Computation is an essential part of computer science.,計算はコンピュータ科学の重要な一部です。,1634582
+,,,terminal,終わりの / 死に至る,/'tɜːrmɪnəl/,42877,"Her illness, diagnosed as a rare and terminal form of leukemia, left her with only months to live.",彼女は珍しい末期の白血病と診断され、余命数カ月と宣告された。,3010857
+,,,fundamentally,"【副】根本的に, 本質的に, 基本的に",/fʌndəˈmɛntəli/,17218,"Fundamentally, I believe that everyone deserves equal opportunities.",根本的に、私は誰もが平等な機会を受けるべきだと信じています。,1642340
+,,,substitution,"〈U/C〉《...の》 代用 , 代理 , 置き換え 《for ...》",/sʌbstɪˈtjuːʃən/,41569,Substitution is a common strategy used in mathematics to solve equations.,代入法は数学で方程式を解くときによく使われる戦略です。,1661738
+,,,likewise,"《かたく》 同様に / 《かたく》 …もまた / さらに / 《話》 同様です, こちらこそ",/ˈlaɪkwaɪz/,24528,"I enjoy reading, and likewise, my sister loves to read.",私は読書を楽しんでいますし、同様に、私の姉も読書が大好きです。,3000882
+,,,ray,"〈C〉光線, 熱線, 放射線 / 《a ~》《希望などの》一筋(ひとすじ), ごく少量《of ...》 / 放射状に突き出たもの",/reɪ/,34909,The sun's rays warmed my face.,太陽の光線が私の顔を温めた。,3003502
+,,,punch,"〈他〉…をげんこつでなぐる /  (機械などを動かすために)…‘を'押す  / に穴をあける,に刻印する",/pʌntʃ/,34064,He threw a powerful punch at his opponent.,彼は相手に強力なパンチを放った。,3003329
+,,,multiply,"【副】多様に,複雑に,複合的に, 多くの方法で",/mʌltɪplaɪ/,27849,The artist used colors multiply to create a complex and vibrant painting.,その芸術家は複雑で鮮やかな絵画を作るために、色を多様に使用しました。,6510440
+,,,strand,"〈C〉こより / （より合わせた）糸,ひも / 頭髪の房 / ひもに通したもの / （理論などの）要素",/strænd/,41217,She found a strand of hair on her pillow.,彼女は枕の上で髪の一房を見つけた。,1647946
+,,,conceptual,"概念の, 概念的な, 概念上の",/kənˈsɛptʃuəl/,8783,The artist's work explores conceptual ideas and challenges traditional notions of art.,芸術家の作品は概念的なアイデアを探求し、伝統的な芸術の概念に挑戦しています。,1658818
+,,,ruler,"支配者,統治者  / 定規",/ˈruːlər/,36688,The ruler was made of brass.,その定規は真鍮で作られていました。,1623729
+,,,bodily,"【形】身体上の, 肉体上の / 【副】みずから, 自身で / 体ごとそっくり",/'bɑdəli/,4638,Regular exercise is essential for maintaining bodily health.,定期的な運動は身体上の健康を維持するために不可欠です。,2996866
+,,,supposedly,"たぶん,おそらく /  《文修飾》想定するところでは",/səˈpoʊzɪdli/,41903,"Supposedly, the old mansion is haunted by ghosts of the previous owners.",おそらく、古い邸宅には前の所有者の幽霊が取り憑いていると思われます。,1627750
+,,,underneath,"の下に,の下を / の見かけに隠れて",/ʌndərˈniːθ/,45013,The cat is sleeping underneath the table.,猫はテーブルの下で眠っています。,3006140
+,,,rub,"〈物の表面など〉‘を'こする,さする  / (…に)…‘を'こすりつける《+名+against(on, over)+名》;(…に)…‘を'すりこむ《+名+in(into, on)+名》  / 〈二つの物〉‘を'こすり合わせる《+名+together,+together+名》  / …‘を'こすり落とす《+名+away(off),+away(off)+名》  / …‘を'すりむく,ひりひりさせる  / (…の表面を)こする,すれる《+against(on)+名》;〈二つの物が〉こすれ合う《+together》  / 《単数形で》こすること  / 当てこすり  / 《the rub》やっかいな事,困難",/rʌb/,36625,I need to rub the stain out of my shirt.,シャツのシミをこすり落とさないといけない。,3003986
+,,,sword,"刀,剣  / 《the ~》武力,兵力",/sɔrd/,42177,He wielded a sharp sword in battle.,彼は戦闘で鋭い刀を振るった。,3005427
+,,,stabilize,"…‘を'固定させる,安定させる",/steɪ.bə.laɪz/,40638,We need to stabilize the situation before it gets worse.,悪化する前に状況を安定させる必要があります。,1662609
+,,,standardize,【動/自/他】標準化する,/ˈstændərdaɪz/,40726,We need to standardize our procedures to ensure consistency.,一貫性を確保するために、手続きを標準化する必要があります。,3005033
+,,,tricky,"(人が)こうかつな,ずるい / (物事・仕事などが)手の込んだ, 慎重を要する, 扱いにくい",/'trɪki/,44220,Dealing with tricky situations requires careful consideration.,こうかつな状況に対処するには注意深い考慮が必要です。,3005959
+,,,discrimination,"区別(識別)すること  / (…に対する)差別待遇《+against+名》  / 識別力,鋭く見分ける力",/dɪˌskrɪmɪˈneɪʃən/,12131,Discrimination based on race is a violation of human rights.,人種に基づく差別は人権の侵害です。,2997668
+,,,fiber,"(1本の)繊維,すじ  / 〈U〉《集合的に》繊維,繊維組織  / 〈U〉(布の)生地,織り地(textile)、 食物繊維 / 〈U〉性格,性質;根性",/ˈfaɪbər/,15583,I need to increase my daily intake of fiber.,私は毎日の食物繊維摂取量を増やす必要があります。,2998581
+,,,morality,"〈U〉道徳,倫理;道徳学,倫理学  / 〈U〉道徳性  / 〈U〉品行  / 〈C〉教訓;寓意",/məˈræləti/,27513,Morality is the foundation of a civilized society.,道徳は文明社会の基盤です。,3001624
+,,,inevitably,"必然的に,避けられないで",/ɪˈnɛvɪtəbli/,21738,Change is inevitably a part of life.,変化は必然的に人生の一部です。,3000155
+,,,reproduction,"〈U〉繁殖,生殖[作用]  / 〈U〉(…を)再生(再現)すること;模写(複製)すること《+of+名》  / 〈C〉再生(再現)された物,複写(複製)した物",/rɛprəˈdʌkʃən/,35711,The reproduction of the painting was identical to the original.,絵の再現はオリジナルと同一であった。,1626709
+,,,quantitative,"量の,量的な",/kwɑːntəˈteɪtɪv/,34331,Quantitative analysis is used to measure the amount of a substance.,定量分析は物質の量を測定するために使用されます。,1638112
+,,,rationality,"道理にかなっていること,合理性",/ræʃəˈnæləti/,34864,Rationality is the key to making logical decisions.,合理性は論理的な決定をするための鍵です。,1645682
+,,,resemble,似ている、類似している,/rɪˈzɛmbəl/,35759,They resemble each other in appearance.,彼らは容姿が似ている。,2995392
+,,,strategic,"(比較変化なし)戦略の,計略の / 戦略上重要な",/strəˈtɛdʒɪk/,41235,The company's strategic plan focused on expanding their market share by launching new products and acquiring smaller competitors.,同社の戦略計画は、新製品の発売と小規模な競合他社の買収によって市場シェアを拡大することに重点を置いていました。,1627749
+,,,ancestor,"(一人の)先祖,祖先(forefather)  / (事物の)原型,先駆  / (生物の)原型種",/ˈæn.sɛs.tər/,1473,My ancestor was a brave warrior.,私の先祖は勇敢な戦士でした。,2996063
+,,,barrel,"(胴のふくれた)たる  / (…の)1たる[の量]《+of+名》  / 銃身,砲身  / 《単数扱い》(…の)多量《+of+名》《話》",/ˈbærəl/,3365,The wine was aged in a large oak barrel.,そのワインは大きなオークのたるで熟成されました。,2996551
+,,,tribe,"《集合的に》《単数・複数扱い》部族  / 《しばしば軽べつして》(…の)仲間,集団,連中《+of+名》  / (動植物の)族(family(科)と genus(属)の間の分類単位)",/traɪb/,44197,The tribe gathered around the fire to celebrate their victory.,部族は勝利を祝うために火の周りに集まった。,3005960
+,,,transformation,"〈U〉変形,変身,変換",/trænsfɔrˈmeɪʃən/,44003,The caterpillar undergoes a transformation and becomes a butterfly.,毛虫は変態を経て蝶になる。,3005907
+,,,treaty,条約 / 協定 / 条定 / 和約,/'triːti/,44136,The two countries signed a treaty to promote trade and cooperation.,両国は貿易と協力を促進するために条約に署名しました。,3005942
+,,,weave,"〈自〉織物を織る / 〈他〉《毛糸・綿糸などから》〈織物〉を織る《from, of ...》 / 〈毛糸・綿糸など〉を織って...を作る《into ...》",/wi:v/,46970,She learned how to weave baskets from her grandmother.,彼女は祖母からかごを編む方法を学びました。,3006622
+,,,capitalism,資本主義,/ˈkæp.ɪ.təl.ɪ.zəm/,6261,Capitalism is an economic system based on private ownership of the means of production and their operation for profit.,資本主義は、生産手段の私有とその利益のための運営に基づく経済システムです。,1662612
+,,,bulk,"【名/U】《...の》 大部分, 大半 《the ~ of ...》 / 容量, かさ / (船の)積み荷  / 【形】大口の / 大量の / 【動/自】かさばる / 【動/他】を大きく見せる",/bʌlk/,5518,I bought a bulk package of toilet paper.,私はトイレットペーパーの大量パッケージを買いました。,3009083
+,,,chronic,"（病気が）長期にわたる,慢性の /  常習の,癖になった",/ˈkrɑnɪk/,7506,He has been suffering from chronic back pain for years.,彼は何年も慢性の腰痛に苦しんでいます。,3009484
+,,,fusion,"〈U〉(金属などが)溶けること,融解,融合《+of+名》  / 〈C〉融合物  / 〈C〉(政党・党派などの)連合,合同;(民族などの)融合《+of+名》  / 〈U〉〈C〉核融合(nuclear fusion)",/fjuːʒən/,17285,The fusion of metals creates new alloys.,金属の融合によって新しい合金が作られます。,2998997
+,,,harvest,"〈C〉(穀物・果物などの)収穫,取り入れ  / 〈C〉収穫期,取り入れの時期  / 〈C〉収穫物;収穫高(量)  / 《a~,the~》(仕事などの)結果,報い  / 〈作物〉‘を'取り入れる,〈畑〉‘の'作物を取り入れる  / 〈結果など〉‘を'獲得する",/ˈhɑːrvɪst/,19327,The farmers were busy with the harvest.,農民たちは収穫で忙しかった。,2999526
+,,,rotation,〈U〉〈C〉回転  / 〈U〉〈C〉(地球・天体の)自転  / 〈U〉循環;交替;(作物の)輪作,/rəʊˈteɪʃən/,36513,The Earth completes one rotation on its axis every 24 hours.,地球は24時間ごとに軸の周りを1回転します。,1659142
+,,,seminar,"(指導教授のもとで行う大学の)研究(演習)グループ,研究会,演習,セミナー,ゼミナール",/ˈsɛmɪnɑr/,38045,I joined a seminar to conduct research under the guidance of my professor.,私は教授の指導のもとで研究を行うためにセミナーに参加しました。,3004333
+,,,abdominal,"(比較変化なし)腹の,腹部の",/æbˈdɒmɪnəl/,85,She complained of abdominal pain.,彼女は腹痛を訴えました。,6535724
+,,,utilize,"...を利用する, ...を役立たせる",/juːˈtɪl.aɪz/,45715,I utilize technology to streamline my work process.,私は技術を利用して仕事のプロセスを効率化しています。,3006333
+,,,syntax,"構文,文章論,統語論,文章構成法,(文中における語の配列を扱う文法の一部門)",/'sɪntæks/,42275,Understanding the syntax of a language is crucial for effective communication.,言語の構文を理解することは効果的なコミュニケーションに不可欠です。,1657708
+,,,pathway,"道,小道(path)",/ˈpæθweɪ/,30880,The pathway through the forest was lined with beautiful flowers.,森の中の道は美しい花で囲まれていました。,3002551
+,,,airplane,飛行機(《英》[[aeroplane]]),/ˈɛərpleɪn/,971,I will take an airplane to travel to Japan next month.,来月、日本へ旅行するために飛行機に乗る予定です。,2995904
+,,,homework,"(生徒の)宿題,学庭学習  / (教師の)授業準備,講義の下調べ  / 自宅でする仕事;内職",/həʊmwɜːk/,20218,I'll finish my homework and go to bed.,宿題を終わらせて寝よう。,1623974
+,,,splice,"〈綱などの端と端と〉‘を'組み(より)継ぎする;〈材木など)‘を'重ね継ぐ,〈フィルム・テープ〉‘を'つなぐ  / 《受動態で》《話》〈二人〉‘を'結婚させる  / (綱の)より継ぎ;(材木の)重ね継ぎ;(フィルム・テープの)接合  / より(重ね)継ぎ目",/splaɪs/,40391,He used a splice to join the two ropes together.,彼は2本のロープを結ぶためにスプライスを使用しました。,1665185
+,,,syntactic,"【形】統語論の,構文の",/sɪnˈtæktɪk/,42273,Syntactic analysis is an important aspect of linguistics.,統語論の分析は言語学の重要な側面です。,1648302
+,,,textbook,教科書,/'tɛkst.bʊk/,42958,I forgot to bring my textbook to class.,授業に教科書を持ってくるのを忘れてしまった。,3005625
+,,,volition,"【名/U】｟かたく｠ 意志の働き,意志作用；決断,決意；決断[意志]力",/vəˈlɪʃən/,46433,I have the volition to succeed in my goals.,私は目標を達成する意志を持っています。,1629286
+,,,wavelength,〈c〉(音・光などの)波長,/ˈweɪvˌlɛŋθ/,46879,The wavelength of light determines its color.,光の波長はその色を決定します。,3006600
+,,,neat,きちんとした,/niːt/,28269,She keeps her room neat and tidy.,彼女は部屋をきちんと整理しています。,3001841
+,,,bacteria,"バクテリア,細菌",/bækˈtɪər.i.ə/,3030,The bacteria in our gut play a crucial role in our overall health.,私たちの腸内のバクテリアは、全体的な健康に重要な役割を果たしています。,2996478
+,,,goods,"(不動産以外の)財産,(金・証券以外の)動産  / 商品,品物  / 《米》反物,織物  / 《英》(鉄道で運ばれる)貨物",/ɡʊdz/,18232,He inherited all of his father's goods.,彼は父の財産をすべて相続した。,2999229
+,,,facilitate,"〈他〉を容易にする, を楽にする / を助ける, を促進する",/fəˈsɪlɪteɪt/,15068,Technology can facilitate communication between people who are far apart.,技術は遠く離れた人々の間のコミュニケーションを容易にすることができます。,2998443
+,,,verbal,"言葉の,口頭の",/'vɜr.bəl/,46018,She has excellent verbal skills.,彼女は優れた言葉のスキルを持っています。,1658849
+,,,expertise,"〈U〉専門技術,専門知識 / 〈C〉専門家の調査報告",/ˌɛk.spɝˈtiːz/,14828,He has extensive expertise in the field of technology.,彼はテクノロジーの分野で広範囲の専門知識を持っています。,1628233
+,,,allocate,"《...に》...を配分する, を割り当てる《to, for ...》",/ˈæləˌkeɪt/,1150,The company will allocate resources to the new project.,会社は新しいプロジェクトにリソースを割り当てます。,1628112
+,,,probe,探査器 / 探求 / 問題点 / 探測器 / 調査,/prəʊb/,33472,Scientists launched a probe to explore the outer reaches of the solar system.,科学者たちは、太陽系の外部領域を探査するために探査機を打ち上げました。,3003173
+,,,subtract,"《...から》 ...を引く, を減じる 《from ...》 / 引き算をする",/səbˈtrækt/,41585,"To solve this math problem, you need to subtract the second number from the first number.",この数学の問題を解くには、2番目の数を1番目の数から引く必要があります,3005247
+,,,definite,"明確な, はっきりとした, 確定した / 正確な / 一定の / 限定的な / 明確に限定された",/dɪˈfɪnɪt/,11141,This is the definite answer.,これは明確な答えです。,2997399
+,,,nutrient,"〈C〉栄養物,栄養剤",/ˈnuːtriənt/,29083,Thiamine is an essential nutrient for the body.,チアミンは体にとって必須の栄養素です。,1651885
+,,,formulation,"〈U〉公式化,  定式化, 制定 / 《薬学》製法, 処方, 製剤 / 〈C〉明確な表現",/fɔːrˌmjʊˈleɪʃən/,16668,The formulation of the new policy took several months.,新しい政策の策定には数ヶ月かかりました。,1629016
+,,,likelihood,"【名/U】《...が》ありそうなこと / 《...の》見込み,可能性ある《of》",/lɑɪklihʊd/,24523,There is a high likelihood of rain tomorrow.,明日は雨の可能性が高いです。,3000875
+,,,proton,〈C〉陽子(素粒子の一つ),/'prəʊ.tɒn/,33782,Protons are one of the tiny particles that make up atoms.,陽子は原子を構成する小さな粒子の一つです。,1622950
+,,,locally,"【副】地方的に, 局部的に / 地元で, 近くで",/ləʊkəli/,24859,I love to support locally owned businesses.,地元の経営者が運営するビジネスを応援するのが好きです。,1653512
+,,,memorize,"〈言葉・番号など〉を記憶する,を暗記する,を覚える",/mɛməˈraɪz/,26398,I need to memorize all the vocabulary words for the test.,テストのためにすべての単語を記憶する必要があります。,3001355
+,,,lifetime,"〈C〉生涯, 一生",/ˈlaɪfˌtaɪm/,24466,The memories we create last a lifetime.,私たちが作り出す思い出は一生続く。,3000854
+,,,sensitivity,"敏感,(生理的な)感受性  / 感度,度光度",/sɛnˈsɪtɪvəti/,38107,She has a high sensitivity to noise.,彼女は騒音に対して高い敏感さを持っています。,3004346
+,,,adverse,"反対の,逆の,敵意を持つ  / 逆方向の / 有害な",/ædˈvɜːrs/,628,He experienced an adverse reaction to the medicine.,彼はその薬に対して副作用を経験しました。,1627167
+,,,repertoire,"上演目録,演奏曲目,レパートリー",/rɛpərˈtwɑr/,35653,She has a wide repertoire of songs.,彼女は幅広い曲目のレパートリーを持っています。,1645950
+,,,mortality,"〈U〉死を免れぬこと,死ぬべき運命 / 〈U〉《時にa〜》死亡数;死亡率 / 〈U〉《時にa〜》(戦争などによる)多数の死",/mɔːrˈtælɪti/,27560,The mortality rate in the country has been steadily decreasing over the years.,その国の死亡率は年々着実に減少しています。,3001642
+,,,contradictory,"矛盾した, 対立した",/kɒntrəˈdɪktəri/,9246,His actions are contradictory to his words.,彼の行動は彼の言葉と矛盾している。,1653501
+,,,interfere,"《...に》干渉する《in, with ...》 / 《仕事・状況などの》 妨げとなる《with ...》/ 妨害する, 邪魔する",/ˌɪn.tərˈfɪər/,22246,I don't want to interfere in their personal matters.,私は彼らの個人的な問題に干渉したくない。,3000311
+,,,defect,"【名】障害, 欠点, 欠乏, 欠陥",/dɪˈfɛkt/,11111,There is a defect in the product.,製品に欠陥があります。,2997390
+,,,render,"《render+名〈目〉+形〈補〉》…‘を'(…の状態に)する)make)  / …‘を'行う,果たす  / (…に対して)…‘を'返す《+名+for+名》  / '‘を'公式に宣言する,言い渡す  / (…に)〈計算書など〉‘を'提出する,送付する《+名+to+名》  / (文章や絵画で)…‘を'表現する  / (…に)…‘を'翻訳する(translate)《+名+into+名》  / ‘を'演奏する,演ずる(perform)  / 〈脂肪など〉‘を'溶かす,溶かして精製する《+名+down,+down+名》",/ˈrɛndər/,35592,The artist used vibrant colors to render the scene more realistic.,芸術家は鮮やかな色を使って、シーンをよりリアルに描写しました。,3003717
+,,,denote,を示す / を意味する / の記号である,/dɪˈnoʊt/,11378,The red color denotes danger.,赤色は危険を示す。,2997454
+,,,impact,"〈U〉〈C〉(…の…に対する)衝突,衝撃《+of+名+against(on,upon,with)+名》  / 〈C〉(…の…に対する)影響(influence)影響力《+of+名+on(upon, against)+名》 / 他動 / 〔～に〕影響を与える［及ぼす］ / 〔～を〕詰め込む / 〔～に〕激突する / 自動 / 影響を与える［及ぼす］ / 激突する",/ˈɪmpækt/,21137,The earthquake had a significant impact on the city.,地震は市に大きな衝撃を与えました。,3000009
+,,,explicitly,"【副】明示的に；明白に,はっきりと,あからさまに.",/ɪkˈsplɪsɪtli/,48303,She explicitly stated her opinion during the meeting.,彼女は会議中に明示的に自分の意見を述べました。,1638368
+,,,projection,"〈C〉見積もり, 予測 / 〈U〉〈C〉突き出ること, 突起 /  投影すること, 投影図 / 〈U〉発射 / 発声",/prəˈdʒɛkʃən/,33586,The projection on the wall was clear and vivid.,壁に映し出された投影ははっきりと鮮明でした。,1628487
+,,,elaborate,【動詞】詳しく説明する、ものを精巧に作る 【形容詞】精巧な、入念な,/ɪˈlæbəreɪt/,13571,Could you please elaborate on your idea?,あなたのアイデアについて詳しく説明していただけますか？,2998055
+,,,vague,"(言葉・意味などが)はっきりしない,あいまいな  / (考え・感じなどが)ばく然としている,ぼんやりした  / (形・姿などが)ぼやけた,はっきりしない  / 《名詞の前にのみ用いて》《通例最上級で》《話》ほんのわずかの,かすかな",/veɪɡ/,45782,Her explanation was vague and unclear.,彼女の説明は曖昧で分かりにくかった。,3006347
+,,,interact,"《...と》相互に作用する, 影響し合う, 交流する《with ...》",/ɪntərˈækt/,22209,I love to interact with people from different cultures.,私は異なる文化の人々と交流するのが好きです。,1640104
+,,,empirical,"経験的な, 経験を基礎とする / 実証的な, 実験に基づいた",/ɪmˈpɪrɪkəl/,13854,,,
+,,,qualitative,"(量でなく)質的な,性質上の,質にかかわる,定性的な",/kwɒlɪˈteɪtɪv/,34325,The researcher conducted a qualitative study to gather in-depth information.,研究者は詳細な情報を集めるために質的な研究を行った。,1628562
+,,,retrieve,"【動/他】《...から》を取り戻す, を回収する《from ...》 / 〈罪など〉を償う,〈誤りなど〉を訂正する / 〈猟犬が〉〈獲物〉を捜して持って来る",/rɪˈtriːv/,35931,The police managed to retrieve the stolen goods.,警察は盗まれた商品を取り戻すことに成功しました。,1665364
+,,,bundle,"【名/C】《…の》束, 包み《of ...》 / 【動/他】を包みにする, を束にする",/'bʌndəl/,5576,I bought a bundle of flowers for my mother's birthday.,私は母の誕生日に花束を買いました。,3009107
+,,,intervene,"《...に》干渉する,介入する《in ...》 / 《...の間を》 仲裁に入る《between》 / じゃまに入る / 間に起こる《between》  / ...と言って口をはさむ",/ˌɪntərˈviːn/,22363,The teacher decided to intervene in the argument between the students.,先生は生徒たちの口論に干渉することを決めた。,3000331
+,,,technically,"専門的に / 技術的に / 厳密に言えば / 表向きは, 表面上は, 建前としては",/tɛkˈnɪkəli/,42688,"Technically, I am not allowed to disclose that information.",厳密に言うと、その情報を開示することは許されていません。,3005550
+,,,surplus,"【名/U/C】余剰,余分【名/C】余剰金,黒字【形】余分な,余剰の",/sərˈplʌs/,41961,The company had a surplus of funds at the end of the year.,会社は年末に資金の余剰を持っていました。,3005354
+,,,clarify,"〈他〉を明らかにする, を理解しやすくする / 〈液体・空気など〉を澄ませる / 〈自〉〈思想・意味などが〉分かりやすくなる / 澄む",/ˈklærəˌfaɪ/,7755,Could you please clarify your question?,質問を明確にしていただけますか？,3009516
+,,,coordinate,"（各部分）を調和させる, を調整する  / 《...と》調和して動く《with ...》",/koʊˈɔrdɪneɪt/,9384,I need you to coordinate with the other team members and ensure we complete the project [[on time]].,他のチームメンバーとの調整を行い、時間内にプロジェクトを完了させてほしい。,1625356
+,,,dose,〈C〉(おもに飲み薬1回分の) 服用量 / (痛いこと・いやなことの)1回分,/dəʊs/,12696,The doctor prescribed a dose of medication for the patient.,医師は患者に薬の服用量を処方しました。,2997820
+,,,plausible,(話などが)もっともらしい / 口先のうまい / 見込みのある/妥当な,/ˈplɔːzəbəl/,32203,His explanation sounded plausible.,彼の説明はもっともらしかった。,3002844
+,,,migration,"〈U〉〈C〉移住,(動物の)移動  / 〈C〉《集合的に》(人・動物などの)移動の群",/mɪˈɡreɪʃən/,26781,Migration is a natural phenomenon that has been happening for centuries.,移住は何世紀も前から起こっている自然現象です。,3001451
+,,,reinforce,"を増強する,を補強する / に増援する,に援兵を送る",/rɪnˈfɔːrs/,35450,Regular exercise can help reinforce your immune system.,定期的な運動は免疫システムを増強するのに役立ちます。,3003660
+,,,induce,【動/他】〈人〉に勧めて...させる《to do》 / ...させる / を引き起こす / 〈電気〉を誘導する /  …を帰納する,/ɪnˈduːs/,21676,The doctor will induce labor to help the baby come out.,医者は赤ちゃんが出てくるのを助けるために分娩誘発を行います。,3000144
+,,,whereby,【副】《関係副詞》…によって…するところの(according to which),/wɛərˈbaɪ/,47207,Radioactivity is the process whereby unstable atomic nuclei release energetic subatomic particles.,放射能とは、不安定な原子核がエネルギーを持った素粒子を放出することによる過程である。,6535264
+,,,implicit,【形】暗に示された、暗黙の、絶対的な,/ɪmˈplɪsɪt/,21218,Her implicit message was clear.,彼女の暗に示されたメッセージは明確だった。,3000026
+,,,affirm,"…'を'断言する,明言する  / (正式に)…'を'確認する,承認する  / (法廷で)証言する",/əˈfɜrm/,721,I affirm that I saw him at the park yesterday.,私は昨日彼を公園で見たと断言します。,2995830
+,,,coherent,"(論理などが)筋の通った,首尾一貫した / 密着した",/kəʊˈhɪərənt/,8227,His argument was coherent and well-reasoned.,彼の主張は筋の通ったものであり、論理的にも妥当だった。,2996984
+,,,thermal,"熱の,熱による  / 熱い  / (暖まった)上昇気流",/ˈθɜːrməl/,43072,The thermal energy from the sun is used to heat the water.,太陽からの熱エネルギーは水を加熱するために使用されます。,1662768
+,,,sodium,"ソジウム,ナトリウム(金属元素;化学記号はNa)",/ˈsoʊdiəm/,39773,Sodium is a highly reactive metal.,ソジウムは非常に反応性のある金属です。,1658746
+,,,equivalence,"【名/U】(価値・重要性などの)等しいこと, 等価, 同量",/ɪkwɪvələns/,14274,The equivalence of the two theories was proven by the mathematician.,2つの理論の等価性は、その数学者によって証明されました。,2998222
+,,,notation,"【名/U】表記（法）【C】記号,符号；注釈；覚え書き",/nəʊˈteɪʃən/,48314,The notation used in this document is easy to understand.,この文書で使用されている表記はわかりやすいです。,1633091
+,,,mole,【名/C】モグラ / (組織に潜伏した)スパイ,/moʊl/,27312,I have a mole on my cheek.,私の頬にほくろがあります。,3001575
+,,,disability,"〈U〉無能, 無力 / 〈C〉障害, 欠陥 / 〈U〉《米》障害者年金 / (法律で)無能力,無資格",/dɪsəˈbɪlɪti/,12010,My brother overcame his disability and now works as a successful attorney.,弟は障害を克服し、今は弁護士として成功しています。,1627172
+,,,slab,"(木材・石・金属の)厚板,平板;(肉・パン・ケーキ・チ・ズなどの)平たい厚切り",/slæb/,39265,The construction workers laid a slab of concrete for the foundation.,建設作業員は基礎のためにコンクリートの厚板を敷きました。,1647280
+,,,descendent,"【名】子孫 / 【形】下降する / (先祖)伝来の, 子孫の /  世襲の / 派生した([[descendant]])",/dɪˈsɛndənt/,11525,The descendent gene was passed down from generation to generation.,子孫の遺伝子は世代から世代へと受け継がれました。,1622842
+,,,conduction,【名/U】(熱・電気の)伝導 / (液体を)管などで導くこと,/kənˈdʌkʃən/,8867,Copper is a good medium for the conduction of heat and electricity.,銅は熱と電気の伝導に適した媒体です。,1017212
+,,,problematic,"疑問のある,あやふやな;未決(定)の",/prəˈblɛmətɪk/,33476,The new policy has raised some problematic issues.,新しい政策にはいくつかの疑問のある問題が生じています。,3003174
+,,,traditionally,"伝説的に;伝統的に,しきたり通りに",/trəˈdɪʃənəli/,43924,The festival is traditionally held every year.,その祭りは毎年伝説的に開催される。,3005885
+,,,activate,【動/他】を活動的にする / に放射能を与える / (物質)を活性化する,/ˈæktɪveɪt/,435,Please activate your account to start using the app.,アプリを利用するためにアカウントを有効化してください。,1639572
+,,,commentary,"〈U/C〉《...の》論評, 解説, 注解, 注釈書《on, upon ...》 / 《複数形で》《...の》実録 《on ...》",/kɒmənˈtɛri/,8510,The sports commentator provided live commentary during the game.,スポーツの解説者が試合中に実況解説を行いました。,1629754
+,,,complication,"〈U〉〈C〉複雑[な状態],粉糾[状態]  / 《…を》複雑にすること《of ...》  / 〈C〉複雑な(やっかいな)事を引き起こすもの / 〈C〉併発症, 併発，合併症",/kɑmplɪˈkeɪʃən/,8690,Dealing with the complication was challenging.,複雑な状況に対処するのは困難でした。,1642171
+,,,dilemma,"板ばさみ,抜きさしならない羽目,窮地  / (論理学で)両刀論法",/dɪˈlɛmə/,11885,I was in a dilemma whether to choose the red or blue dress for the party.,パーティーのために赤いドレスと青いドレスのどちらを選ぶかで板ばさみになっていました。,2997603
+,,,overlap,"重複, 重なり；共通点",/ˌoʊvəˈlæp/,30115,The two circles overlap each other.,二つの円が重なり合っている。,3002352
+,,,yeast,"【名/U】酵母,イースト",/jist/,48096,Yeast is used to make bread rise.,イーストはパンを膨らませるために使われます。,3006933
+,,,progression,"〈U〉前進 / 進歩,進展, 進捗 / (でき事などの)連続,連鎖 / 〈C〉数列",/prəˈɡrɛʃən/,33577,My manager evaluates my work progression on a weekly basis to assess my growth within the company.,上司は私の仕事の進捗を週単位で評価し、会社での私の成長を評価しています。,1626529
+,,,amplitude,"広さ,大きさ  / 十分,豊富  / (振子の)最大振幅;(電波・音波などの)振幅",/ˈæmp.lɪ.tjuːd/,1397,The amplitude of the park is quite impressive.,その公園の広さはかなり印象的です。,2996031
+,,,hepatitis,肝[臓]炎,/hɛpəˈtaɪtɪs/,19718,He was diagnosed with hepatitis last month.,彼は先月、肝[臓]炎と診断されました。,2999644
+,,,postgraduate,"【形】大学卒業後の,研究科の,大学院の / 【名/C】研究生, 大学院生",/poʊstˈɡrædʒuət/,32790,She decided to pursue a postgraduate degree after graduating from college.,彼女は大学卒業後、大学院の学位を追求することを決めました。,1637806
+,,,sponsorship,"【名/U/C】 後援, 援助, 経済的な支援 / 保証人であること / （商業放送の）スポンサーであること",/sˈpɒnsərʃɪp/,40429,The company received sponsorship from a local business for their charity event.,その企業は、地元の企業からチャリティイベントのためのスポンサーシップを受けました。,1647705
+,,,integration,"統合,集成,完成  / (学校や住居における)人種差別の撤廃",/ˌɪntɪˈɡreɪʃən/,22170,The integration of different departments within the company has improved communication and efficiency.,会社内の異なる部門の統合により、コミュニケーションと効率が向上しました。,1641753
+,,,audio,"(電波の)可聴周波の,低周波の;(テレビの)音声の  / (テレビの)音声[部門]",/ˈɔdi.oʊ/,2630,The audio frequency of this radio is very clear.,このラジオの音声周波数は非常にクリアだ。,2996365
+,,,rehabilitation,"(けが人・病人などの)社会復帰,リハビリテーション  / 復職;名誉回復",/rɛˌhəˌbɪlɪˈteɪʃən/,35432,"After undergoing rehabilitation, the injured person was able to reintegrate into society.",リハビリテーションを受けた後、けがをした人は社会復帰することができました。,3003654
+,,,grid,"【名/C】格子, 焼き網 / 高圧送電線網 / (地図などの)碁盤目",/ɡrɪd/,18573,The city streets are laid out in a grid pattern.,市の道路は格子状に配置されています。,1630361
+,,,subjective,【形】主観的な / 主格の,/səbˈdʒɛktɪv/,41490,Beauty is a subjective concept.,美は主観的な概念です。,3005229
+,,,micro,"【複合要素】小,微少",/ˈmaɪkroʊ/,48325,Microorganisms are too small to be seen with the naked eye.,肉眼では見えないほど微小な生物が存在します。,1656728
+,,,pesticide,殺虫剤,/ˈpɛstɪsaɪd/,31491,The farmer sprayed pesticide on the crops to protect them from insects.,農夫は作物に殺虫剤を散布して、虫から守りました。,3002683
+,,,elasticity,"〈U〉弾力,弾性 / 伸縮自在, 伸縮性 / 融通性",/ɪˌlæsˈtɪsəti/,13578,,,
+,,,synthesis,"〈U〉総合,統合[すること]  / 〈C〉総合体,統合されたもの  / 〈U〉合成",/sɪnθəsɪs/,42277,Synthesis is the process of combining separate elements or substances to form a coherent whole.,総合は、別々の要素や物質を組み合わせて一貫した全体を形成するプロセスです。,3005452
+,,,clone,"クロン(一個体から無性生殖で増殖した有機体群);(植物の)栄養系,(動物の)分技系",/kləʊn/,7935,Scientists successfully cloned a sheep.,科学者たちは羊のクローンを作ることに成功した。,1641752
+,,,incredibly,信じられないほどに / 《くだけて》 ものすごく,/ɪnˈkrɛdəbli/,21500,He ran incredibly fast.,彼は信じられないほど速く走った。,1628629
+,,,connector,"(電気の)接続子,(電話の)接続器  / (一般に)連絡者;(列車の)連結手;連結物;(車両の)連結器",/kəˈnɛktər/,9013,The connector is used to connect electrical devices.,接続子は電気機器を接続するために使用されます。,1641790
+,,,trans,【接頭辞】越えて；横切って；貫いて；ほかの側へ；別の状態（場所）へ,/trænz/,48323,I need to transcribe this audio file into text.,この音声ファイルをテキストに書き起こす必要があります。,3006998
+,,,scripture,"聖書・経典,聖典・聖書の一節",/'skrɪptʃər/,37593,The scripture is a sacred text that holds religious significance.,聖書は宗教的な意義を持つ神聖なテキストです。,3004184
+,,,null,法的効力のない / 無効な / 存在しない / 空の,/nʌl/,29029,The contract is null and void.,契約は無効です。,3002037
+,,,reliability,【名/U】信頼できること；確実性,/rɪˌlaɪəˈbɪləti/,35500,Reliability is an important factor when choosing a car.,信頼性は車を選ぶ際に重要な要素です。,3003680
+,,,critique,"〈C〉(美術・文芸作品などに関する)評論  / 〈U〉(一般に)論評,批判",/kɹɪˈtiːk/,10114,She wrote a scathing critique of the new art exhibition.,彼女は新しい美術展について辛辣な評論を書いた。,2997149
+,,,simultaneously,同時に,/sɪˌmʌlˈteɪniəsli/,39008,"They were talking simultaneously, making it difficult to understand either of them.",彼らは同時に話していて、どちらの言葉も理解しにくかった。,3004588
+,,,sin,"【名/U】(宗教・道徳上の) 罪 / 【名/C】罪の行為 / 【動/自】おきてを破る,罪を犯す  / 《...に》違反(過失)をする,背く《against ...》",/sɪn/,39010,I committed a sin and I regret it.,私は罪を犯し、後悔しています。,3004587
+,,,agriculture,"農業,農学",/ˈæɡrɪˌkʌlʧər/,866,Agriculture plays a vital role in the economy of many countries.,農業は多くの国々の経済で重要な役割を果たしています。,2995885
+,,,motif,"【名/C】（文学・芸術作品の表現の中心となる）主題, モチーフ / （デザインなどに繰り返して用いられる）主模様, 基調",/moˈtif/,27625,The butterfly is a common motif in Japanese art.,蝶は日本の美術でよく使われるモチーフです。,1629179
+,,,nationalism,"愛国心;国家主義  / (植民地などの)典族芝義,独立自治主義",/ˈnæʃənəlɪzəm/,28168,Nationalism is a strong sense of love and loyalty towards one's country.,愛国心は、自国への強い愛と忠誠心のことです。,1641754
+,,,necessity,"〈U〉《時にa ~》必要, 必要性 / 〈C〉《しばしば複数形で》《...の》必需品《of, for, to ...》",/nɪˈsɛsəti/,28288,Education is a necessity for personal growth.,教育は個人の成長に必要不可欠です。,3001843
+,,,allocation,"(…への)割り当て,配置;〈C〉割り当て額(量)《+to(for)+名)》",/ˌæləˈkeɪʃən/,1151,The company made an allocation of funds for research and development.,会社は研究開発のために資金を割り当てました。,1657781
+,,,nicely,"見事に,気持ちよく;うまく  / 精密に",/ˈnaɪsli/,28546,She played the piano nicely.,彼女は見事にピアノを演奏した。,3001914
+,,,niche,"壁がん(像・花びんなどを置く壁のくぼみ)  / (…に)ふさわしい場所(地位,仕事),適所《+for+名》",/nitʃ/,28549,I found a small niche in the wall where I can display my favorite vase.,私は壁の中に小さな壁がんを見つけました。そこにはお気に入りの花びんを飾ることができます。,3001915
+,,,delta,"デルタ(ギリシア語アルファベットの第4字Δ,δ;英語D,dに相当)  / (河口の)三角州,デルタ  / 三角形をしたもの",/dɛltə/,11263,The symbol Δ represents the Greek letter delta.,記号Δはギリシャ文字デルタを表します。,1642235
+,,,anti,【接頭辞】反…；非…；対…；抗…；不…,/ˈænti/,1713,The anti-war movement gained momentum in the 1960s.,反戦運動は1960年代に勢いを増した。,2996110
+,,,nucleus,"中心,核  / (生物の)細胞核  / 原子核",/ˈnjuːkliəs/,29017,The nucleus is the central part of an atom.,原子核は原子の中心部です。,3002030
+,,,novice,"【名】新参者,初心者,未熟者；修練士；新信者；未勝利馬",/'nɑvɪs/,28974,She is a novice in the field of photography.,彼女は写真の分野での新参者です。,1657010
+,,,applause,拍手喝采;称賛 /  a round of applause  = 拍手喝采,/əˈplɔːz/,1930,His great performance drew thundering applause from the audience.,彼の名演技に観客はやんやの喝采を送った。,149662
+,,,apple,リンゴ;リンゴの木,/ˈæpəl/,1931,I ate an apple this morning.,今朝リンゴを食べました。,1623419
+,,,objection,"(…に対する)反対,異議,異論《+to(against)+名(doing,wh-節)》  / (…に対する)嫌悪,不満《+to(against)+名(doing,wh‐節)》  / (…に)反対する理由(根拠)《+to(against)+名(doing,wh‐節)》",/əbˈdʒɛkʃən/,29165,I have no objection to your plan.,あなたの計画には反対意見はありません。,3002082
+,,,observer,"(…を)観察する人,見守る人《+of+名》  / オブザーバー(会議などの正式の代表者でなく傍聴する人)  / (規則・習慣などを)守る人",/əbˈzɜːrvər/,29212,The scientist acted as an observer during the experiment.,科学者は実験中に観察者として行動しました。,1662783
+,,,oral,"口頭の,口述の(spoken)  / 口の,口部の  / 経口の",/ˈɔːrəl/,29714,Oral communication is an important skill in the workplace.,職場では口頭コミュニケーションが重要なスキルです。,3002247
+,,,organ,"オルガン,パイプオルガン(pipe organ),リードオルガン(reed organ),電子オルガン(electronic organ),手回しオルガン(barrel organ)  / (動植物の)器官  / (政党・会社などの)機関誌,機関紙  / 《しばしば複数形で》(行動・実施などの)組織,機関",/ˈɔːrɡən/,29772,She plays the organ at church every Sunday.,彼女は毎週日曜日に教会でオルガンを演奏します。,3002259
+,,,organism,"有機体,生物  / (国家・社会などの)有機的組織体",/ˈɔːrɡənɪzəm/,29780,An organism is a living thing that can function on its own.,生物とは、それ自体で機能することができる生き物である。,3002269
+,,,orientation,"〈U〉(新しい環境などに)適応させること, 適応すること / 方位測定 / 〈C〉〈U〉(新入生などへの)オリエンテーション",/ˌɔːriənˈteɪʃən/,29801,Orientation programs are designed to help new employees adapt to their new work environment.,オリエンテーションプログラムは新入社員が新しい職場環境に適応するのを支援するために設計されています。,3002274
+,,,soluble,"水溶性の, 溶解性の / 解決できる",/'sɒljʊbəl/,39894,This substance is soluble in water.,この物質は水に溶ける。,1647519
+,,,bacterial,"バクテリアの,細菌の",/bækˈtɪə.ri.əl/,3031,Bacterial infections can be treated with antibiotics.,バクテリア感染は抗生物質で治療できます。,1639862
+,,,painful,"(肉体的・精神的に)痛い,苦痛の  / 人を苦しめる,やっかいな",/ˈpeɪnfəl/,30367,I have a painful headache.,厄介な頭痛持ちです,3002427
+,,,partial,"一部分の,部分的な / 不完全な / 不公平な,偏った / 《Aが》特に好きで《be ~ to A》",/pɑːrʃəl/,30722,He only gave a partial explanation of the situation.,彼は状況の一部の説明しかしなかった。,1628303
+,,,partially,"部分的に,一部分  / 不公平に,偏って",/pɑːrˈʃəli/,30724,She only partially completed the project.,彼女はプロジェクトを部分的にしか完了させませんでした。,1641755
+,,,plantation,"(大規模な)農場,栽倍場  / 植林地",/plænˈteɪʃən/,32157,The plantation covers a vast area and produces a variety of crops.,その農場は広大な面積をカバーし、さまざまな作物を生産しています。,3002836
+,,,pole,"【名/C】(地球などの) 極 / 《物理》電極, 磁極, (核・細胞などの)極 / (性格・意見などの)相反対",/poʊl/,32461,,,
+,,,portrayal,〈U〉(…についての)描写《+of+名》  / 〈C〉(…を)描写した絵(文)《+of+名》,/pɔrˈtreɪəl/,32728,The novel provides a vivid portrayal of life in the 19th century.,その小説は19世紀の生活の鮮やかな描写を提供しています。,1645001
+,,,cattle,（集合的に）畜牛,/'kætəl/,6676,The rancher raised a herd of cattle on his farm.,その牧場主は農場で牛の群れを育てました。,3009310
+,,,processor,[農産物]加工業者  / (コンピューターの)データ処理装置,/prəˈsɛsər/,33490,The processor is responsible for processing agricultural products.,農産物加工業者は農産物の加工を担当しています。,3003180
+,,,productive,"生産的な,多産な / 実りのある,建設的な / 利益をもたらす",/pɹəˈdʌktɪv/,33523,She is a very productive worker.,彼女は非常に生産的な労働者です。,3003189
+,,,progressive,"(行列などが)前進する,進んで行く  / (事態が)進展する,進行する  / 進歩的な,革新的な  / (病気・暴力などが)次第に悪くなる(広がる)  / (課税が)累進的な  / (文法で)進行[形]の  / 進歩的な人,革新主義者",/prəˈɡrɛsɪv/,33578,The project is making progressive steps towards completion.,プロジェクトは完成に向けて前進しています。,1645266
+,,,profound,深遠な / 心の底からの / 完全な / 深みのある / 重大な,/prəˈfaʊnd/,33553,Her knowledge on the subject is profound.,彼女のその科目に関する知識は深遠です。,3003204
+,,,pronounce,"〈単語・文・音〉‘を'発音する;〈単語の発音〉‘を'発音記号で示す  / …‘を'宣言する,言明する;…‘を'宣告する  / 発音する  / (…について)判断(判決)を下す《+on(upon)+名》",/prəˈnaʊns/,33643,Can you pronounce this word correctly?,この単語を正しく発音できますか？,3003224
+,,,chemotherapy,化学療法,/t͡ʃiːmoʊˈθɛrəpi/,7201,She underwent chemotherapy to treat her cancer.,彼女はがんを治療するために化学療法を受けました。,1651323
+,,,purely,"全く,完全に  / 純粋に,きれいに,清らかに",/pjʊəli/,34133,I am purely focused on my work.,私は全く仕事に集中しています。,3003381
+,,,circa,"(とくに近似の年代を示すのに用いて)およそ, 約, 頃",/sɜːr.kə/,7606,"He was born circa 1950, but the exact date is unknown.",彼は1950年頃に生まれましたが、正確な日付は不明です。,1626721
+,,,quiz,"小テスト  / クイズ  / (…について)《人》‘に'質問する,試験する《+名《人》+about(no)+名》",/kwɪz/,34472,I need to study for the quiz tomorrow.,明日の小テストのために勉強しなければならない。,3003375
+,,,radiation,"〈U〉(光・熱・放射能などの)発散,放射  / 〈C〉放射物;放射線;輻射(ふくしゃ)熱  / 〈C〉(喜び・幸福感などの)発散《+of+名》  / =radioactivity",/ˌreɪdiˈeɪʃən/,34589,Exposure to radiation can have harmful effects on the body.,放射線にさらされると体に有害な影響を及ぼすことがあります。,1628814
+,,,coefficient,"〈C〉(数学で)係数, (物理で)係数,率",/kəʊɪˈfɪʃənt/,8175,The coefficient of friction determines how much two surfaces will slide against each other.,摩擦係数は、2つの表面がどれだけ滑り合うかを決定します。,1628601
+,,,rational,"(物事が)道理にかなった,合理的な  / (人が)理性的な,分別のある  / 理性を備えた  / (数が)有理の",/ræʃənəl/,34857,He made a rational decision based on the facts.,彼は事実に基づいて道理にかなった決断をした。,3003495
+,,,reactor,反応装置  / = nuclear reactor,/riˈæktər/,34940,The nuclear reactor generates electricity by harnessing the power of nuclear reactions.,原子炉は核反応の力を利用して電力を生成します。,1659714
+,,,realistic,"現実主義の,現実的(実際的)な  / 写実的な,写実主義の  / 実在論の",/rɪəˈlɪstɪk/,34970,He has a realistic view of life.,彼は現実的な人生観を持っています。,3003511
+,,,realism,"現実主義  / 写実主義,リアリズム  / 実在論",/ˈriəlɪzəm/,34968,Realism is a literary movement that focuses on depicting life as it is.,現実主義は、生活をそのまま描写することに焦点を当てた文学運動です。,1639475
+,,,comma,"(句読点の)コンマ(,)",/'kɑmə/,8483,I need to use a comma in this sentence.,この文でコンマを使う必要があります。,3009657
+,,,realm,"〈C〉（学問などの）分野, 領域, 範囲 / 《文》王国、レルム",/rɛlm/,34982,She is an expert in the realm of science.,彼女は科学の分野での専門家です。,3003521
+,,,reconstruct,"…‘を'再建する,改造(復興,復元)する  / 〈でき事〉‘を'再現する",/ˌriːkənˈstrʌkt/,35144,The government plans to reconstruct the old bridge.,政府は古い橋を再建する計画です。,3003573
+,,,competence,"〈U〉能力,適性 / (法律上の)権限・力量 /《まれ》《a~》相当の資産",/ˈkɑmpɪtəns/,8650,She demonstrated her competence by completing the project ahead of schedule.,彼女はプロジェクトを予定よりも早く完了させることで自分の能力を示しました。,3009702
+,,,composer,作曲家,/kəmˈpoʊzər/,8704,Beethoven is a famous composer.,ベートーヴェンは有名な作曲家です。,3009719
+,,,configuration,"(全体の)形状,外形;(部分の)配置;(星の)星位;原子配列",/kənˌfɪɡjəˈreɪʃən/,8909,The configuration of the building is unique and modern.,建物の形状はユニークでモダンです。,3009778
+,,,consultation,"〈U〉〈C〉(…との)相談,協議《+with+名》;専門家との相談・〈C〉協議会,(専門家の)会議",/kɒn.sʌlˈteɪ.ʃən/,9147,I need to schedule a consultation with my doctor.,私は医者との相談を予定する必要があります。,3009835
+,,,continent,〈C〉大陸 / 《the~》(イギリス諸島と区別して)ヨーロッパ本土,/kɒn.tɪ.nənt/,9204,Africa is the second largest continent in the world.,アフリカは世界で2番目に大きな大陸です。,3009854
+,,,republic,"共和国;共和政体  / 《R-》(フランス革命から喚代までの,フランスの)共和制",/rɪˈpʌblɪk/,35721,The United States is a republic.,アメリカ合衆国は共和国です。,3003758
+,,,residual,【形】残りの / 残留の【名/C】残余 / 残留物,/rɪˈzɪdʒuəl/,35777,There was a residual amount of water left in the bucket.,バケツの中には水が少し残っていました。,1660046
+,,,transaction,"〈U〉《the ~》(業務などの)処理,処置《+of+名》  / 〈C〉業務,商取り引き  / 〈C〉《複数形で》(学術協会などの)報告書",/trænˈzæk.ʃən/,43977,The transaction was completed successfully.,取引は成功裏に完了しました。,3005903
+,,,revolutionary,《名詞の前にのみ用いて》革命の;革命的な  / 全く新しい  / 《R-》アメリカ独立戦争の  / 革命家,/rɛvəˈluːʃəˌnɛri/,36019,She was a revolutionary leader who fought for equality.,彼女は平等のために戦った革命的なリーダーだった。,3003853
+,,,exit,"〈C〉出口 / 《かたく》退出,退去",/ˈɛksɪt/,14765,Please use the exit on the right.,右側の出口をご利用ください。,2998355
+,,,neuron,"神経単位,神経細胞,ニューロン,ノイロン",/njʊərɑn/,28430,The neuron is the basic unit of the nervous system.,神経単位は神経系の基本単位です。,1634876
+,,,impulse,"〈U〉〈C〉(心の)衝動, 一時の感情,でき心 / 〈C〉衝撃, 推進力([[push]]);刺激",/ˈɪmpʌls/,21296,He couldn't resist the impulse to buy the new video game.,彼は新しいビデオゲームを買う衝動を抑えられなかった。,3000057
+,,,overhead,"【副】頭上に, 上空を【形】頭上にある, 上空の【名/C】間接費, 一般諸経費",/ˌoʊvərˈhɛd/,30106,Be careful of the overhead branches.,頭上の枝に注意してください。,3002347
+,,,curriculum,(学校の)教科課程,/kəˈrɪkjələm/,10446,They have a very good curriculum at that university.,その大学のカリキュラムは非常に優れている。,120084
+,,,oxidize,"【動/他】を酸化させる,さびつかせる【自】酸化する, さびる.",/ˈɑksɪˌdaɪz/,30229,Iron can oxidize when exposed to air and moisture.,鉄は空気と湿気にさらされると酸化することがある。,1640149
+,,,artwork,"【名/U】挿し絵,図版【C】芸術作品；工芸品【U】工芸品の製作",/'ɑːrtwɜːrk/,48324,The museum has a beautiful collection of artwork.,その美術館には美しい芸術作品のコレクションがあります。,3006999
+,,,sneeze,くしゃみ,/sniːz/,39614,"He stifled a series of sneezes, afraid to wake the sleeping baby.",寝ている赤ん坊を起こすのが怖くて、くしゃみを何度も抑えた。,3010818
+,,,diagnostic,"【形】診断の；兆候を示す；【名】診断,診察；兆候",/dɪəɡˈnɑːstɪk/,11742,The doctor performed a diagnostic test to determine the cause of the patient's symptoms.,医師は患者の症状の原因を特定するために診断テストを行いました。,1635502
+,,,diary,"日記,日記帳,日誌",/ˈdaɪəri/,11783,I write in my diary every night.,私は毎晩日記を書きます。,2997573
+,,,dioxide,二酸化物,/daɪˈɑksaɪd/,11951,Carbon dioxide is a greenhouse gas.,二酸化炭素は温室効果ガスです。,2997614
+,,,selective,"【形】選択の,選択する；注意して選ばれた；淘汰の",/sɪˈlɛktɪv/,37915,She is very selective when it comes to choosing her friends.,彼女は友達を選ぶ時にとても選択的です。,1663283
+,,,sensation,"〈U〉〈C〉(五感による)感覚,知覚  / 〈C〉(…の)感じ,気持ち  / 〈C〉〈U〉大評判,センセーション;大評判になった人(物,事)",/sɛnˈseɪʃən/,38095,The sensation of touch is important for human interaction.,触覚の感覚は人間の交流に重要です。,3004339
+,,,separation,"〈C〉〈U〉分離,分割,別離〈C〉(…の分離(分割)した箇所《+of+名》  / 〈C〉〈U〉(合意・判決に基づく)夫婦の別居",/sɛpəˈreɪʃən/,38141,The separation of the two substances is necessary for the experiment.,実験のために、2つの物質の分離が必要です。,3004354
+,,,discrete,"ばらばらの, 個々の, 離散的な",/dɪˈskriːt/,12126,He was able to identify the discrete pieces of the puzzle.,彼は、パズルのバラバラのピースを特定することができました。,1623017
+,,,shortly,"まもなく(in a short time),すぐに(soon)  / 手短に,簡潔に(briefly)  / 無愛相に,そっけなく",/ˈʃɔːtli/,38694,The train will arrive shortly.,電車はまもなく到着します。,3004499
+,,,regression,"【名/C/U】後戻り,後退；退化,退歩；回帰",/rɪˈɡrɛʃən/,35413,Regression analysis is a statistical method used to examine the relationship between a dependent variable and one or more independent variables.,回帰分析は、従属変数と1つ以上の独立変数との関係を調べるために使用される統計的な手法です。,1630677
+,,,simulate,"…‘の'ふりをする,‘を'装う;simulate death死を装う  / …‘を'まねる,‘に'似せる(imitate)",/sɪmjəleɪt/,39000,He tried to simulate the sound of a car engine.,彼は車のエンジン音を再現しようとした。,1647193
+,,,simulation,"〈U〉ふりをすること,見せかけること  / 〈C〉まね,模擬実験(コンピューターで,経済,科学などの変化を予測するモデル実験)",/sɪmjəˈleɪʃən/,39002,Simulation games allow players to experience various scenarios and situations.,シミュレーションゲームは、プレイヤーがさまざまなシナリオや状況を体験することができます。,3004586
+,,,ecological,生態学の,/ˌiː.kəˈlɒ.dʒɪ.kəl/,13394,Ecological conservation is important for maintaining the balance of nature.,自然のバランスを保つために、生態学的な保護は重要です。,2998006
+,,,ecology,生態学(生物と生活環境との関連を研究する学問),/ɪˈkɒlədʒi/,13396,Ecology is the study of the relationship between organisms and their environment.,生態学は生物と生活環境との関連を研究する学問です。,2998007
+,,,emperor,皇帝;(日本の)天皇,/ˈɛmpərər/,13844,The emperor ruled over the kingdom with absolute power.,皇帝は絶対的な権力を持って王国を統治した。,2998111
+,,,encode,"…‘を'暗号化する,符号化する",/ɪnˈkoʊd/,13921,I need to encode this message before sending it.,このメッセージを送る前に暗号化する必要があります。,1660087
+,,,socialize,〈自〉社会的活動をする / 〈他〉を社会生活に順応させる / 社会主義化する,/'soʊʃəlaɪz/,39749,I enjoy socializing with my friends on the weekends.,週末に友達と交流するのが楽しいです。,1647456
+,,,enzyme,酵素,/ˈɛnzaɪm/,14182,Enzymes are proteins that act as catalysts in biological reactions.,酵素は生物学的な反応で触媒として働くタンパク質です。,1632391
+,,,equality,"(数量・程度・価値・大きさなどで)等しいこと,均等;(特に,権利・責任などにおいて)(…間の…の)平等《+of+名+between+名》",/ɪˈkwɒləti/,14245,Equality is the foundation of a just society.,平等は公正な社会の基盤です。,2998212
+,,,spatial,空間の  / 空間に存在する(で起こる),/ˈspeɪʃəl/,40190,The spatial arrangement of the furniture in the room creates a cozy atmosphere.,部屋の家具の配置は居心地の良い雰囲気を作り出しています。,1628679
+,,,specialty,"専門,専攻  / 特色,特性  / 特製品,特別品",/'spɛʃəlti/,40220,Her specialty is baking delicious cakes.,彼女の専門は美味しいケーキを焼くことです。,3004945
+,,,sperm,〈C〉精子  / 〈U〉精液,/spɜrm/,40285,The sperm fertilizes the egg to create a new life.,精子は卵を受精して新しい命を作り出します。,3004983
+,,,paradox,逆説(矛盾するようにみえても実際は真理を含んでいる説)  / 矛盾;へ理屈,/ˈpærəˌdɑks/,30579,"It's a paradox that the more choices we have, the harder it is to make a decision.",選択肢が多ければ多いほど、決断するのが難しいというのは逆説だ。,3002482
+,,,scholarship,"〈C〉《時にS-》奨学金  / 〈U〉学識,学力",/ˈskɑlərʃɪp/,37411,I received a scholarship to study abroad.,私は留学のための奨学金を受け取りました。,3004098
+,,,exponential,(数学で)指数の,/ɪkˈspəʊ.nən.ʃəl/,14858,Exponential growth is a common phenomenon in nature.,指数関数的な成長は自然界でよく見られる現象だ。,2998384
+,,,plug,"(穴・すきまなどをふさぐ)栓,くさび  / (電気の)差し込み,プラグ  / 《話》=spark plug  / 消火栓(fireplug)  / (一口分に切った)かみたばこ  / 《話》(テレビ・ラジオの番組にはさんだ)宣伝,広告  / 《米俗》老いぼれ馬",/plʌɡ/,32310,I need to replace the sparking plug in my car.,私は車のスパークプラグを交換する必要があります。,1647619
+,,,static,"【形】静的な, 固定的な　【名】電波障害",/'stætɪk/,40814,House prices have remained static for several months.,住宅の価格はここ数か月間動きがありません。,62396
+,,,statistics,"《複数扱》統計,統計資料,統計表  / 《単数扱い》統計学",/stəˈtɪstɪks/,40828,Statistics is an important field of study.,統計は重要な研究分野です。,3005060
+,,,strictly,"厳格に,厳重に  / 厳密に,正確に  / 全く,きっはりと,断然",/ˈstrɪktli/,41298,He follows a strictly vegetarian diet.,彼は厳格な菜食主義を守っています。,3005180
+,,,suicide,"〈U〉自殺  / 〈C〉自殺的行為,自滅  / 〈C〉自殺者;自殺行為",/suːɪˈsaɪd/,41678,She struggled with thoughts of suicide for years.,彼女は何年も自殺の考えに苦しんでいました。,3005277
+,,,specimen,"《…の》見本,標本,実例《of ...》  / (検査のため採取された,組織・血液・尿などの)標本  / 《話》《形容詞を伴って》…の人,…なやつ",/'spɛsɪmən/,40231,The museum has a collection of various specimens from around the world.,その博物館には世界中から集められたさまざまな見本があります。,3004954
+,,,surgical,外科の;手術用の  / 《名詞の前にのみ用いて》(衣服などが)整形用の,/sɜrˈdʒɪkəl/,41949,He underwent a surgical procedure to remove the tumor.,彼は腫瘍を取り除くために外科手術を受けました。,1648205
+,,,surgeon,外科医  / 軍医,/sɜːrˈdʒən/,41946,The surgeon performed a successful operation.,外科医は手術を成功させた。,3005347
+,,,terribly,"恐ろしく, ものすごく (比較変化なし) / 《話》ひどく, 非常に([[very]])",/tɛrəbli/,42900,The storm was terribly frightening.,嵐は恐ろしく怖かった。,3005608
+,,,theorem,"定理  / (一般に)自明の原理,定理",/ˈθiərəm/,43033,Einstein's theory of relativity is a famous theorem in physics.,アインシュタインの相対性理論は物理学の有名な定理です。,3005647
+,,,thereby,それによって(by that means)  / それに関連して,/ˈðɛərˌbaɪ/,43056,He saved a lot of money and thereby was able to buy a new car.,彼はたくさんのお金を節約し、それによって新しい車を買うことができました。,1648564
+,,,thesis,"〈C〉(論証のための)陳述,主張 / (卒業・学位の)論文",/ˈθiːsɪs/,43096,I am currently working on my thesis for my master's degree.,私は現在、修士論文に取り組んでいます。,3005692
+,,,gradient,"〈C〉(道路･線路などの)傾斜(の角度),勾配；(気温･気圧などの)勾配,変化量[率]",/ˈɡreɪdiənt/,18320,The students studied the gradient of the equation.,学生たちは方程式の勾配を学んだ。,1627485
+,,,tolerance,"(自分と異なる他人の意見・行動などを許す)寛大,寛容・我慢（がまん）,忍耐力  / (薬品・毒物などに対する)耐性,抗毒性  / 公差,許容誤差",/tɒlərəns/,43605,Tolerance is an important value in a diverse society.,寛容は多様な社会において重要な価値観です。,3005794
+,,,habitat,"(動・植物の)産地,生息地",/hæbɪtæt/,18933,The Amazon rainforest is a rich habitat for a diverse range of plant and animal species.,アマゾンの熱帯雨林は多様な動植物種の豊かな生息地です。,1639307
+,,,toxic,"毒性の, 有毒な / 毒による",/'tɒksɪk/,43861,Exposure to toxic chemicals can have serious health effects.,有毒な化学物質にさらされると、重篤な健康影響が出る可能性があります。,1648881
+,,,rewrite,…‘を'書き直す  / 《米》〈記者からの報告〉‘を'新聞比事に書き直す,/ˌriːˈraɪt/,36033,I need to rewrite this paragraph.,この段落を書き直す必要があります。,3003852
+,,,triangle,"三角形  / 三角形の物  / 《米》三角定規  / (楽器の)トライアングル  / 三つ組,三人組;(男女の)三角関係",/ˈtraɪˌæŋɡəl/,44188,The triangle has three sides.,三角形は三つの辺を持っています。,3005952
+,,,herbicide,除草剤,/ˈhɜːr.bɪ.saɪd/,19734,The farmer used herbicide to kill the weeds in his field.,農夫は除草剤を使って畑の雑草を駆除しました。,2999649
+,,,historically,"歴史的に,歴史上",/hɪˈstɔːrɪkəli/,20031,"Historically, this city has been a center of trade and commerce.",歴史的に、この都市は貿易と商業の中心地でした。,1665118
+,,,undergraduate,"大学生, 学部生, 学部在学生  / 学部学生の",/ˌʌndərˈɡrædʒuət/,44998,She is an undergraduate student at the university.,彼女は大学の学部生です。,3006134
+,,,utterance,"〈U〉(言葉を)発すること,発声/ 〈U〉発表力,話しぶり  / 〈C〉発言, 言葉, 表現 / 言説,意見 / (言語学で)発話",/ˈʌtərəns/,45722,"During the professor's lecture, a student's unexpected utterance caused the entire class to burst into laughter.",教授の講義中、ある学生の思いがけない発言で、クラス中が爆笑に包まれた。,1627597
+,,,validity,"【名/U】《理論・理由などの》妥当性,正当性《of》；《契約などの》有効性,合法性《of》",/vəˈlɪdəti/,45807,The validity of the passport is 10 years.,パスポートの有効期限は10年です。,1630679
+,,,valve,"(液体・ガスなどの流れを調節する)バルブ,弁  / (血液の流れを調節する)弁,弁膜  / (管楽器の)バルブ  / (2枚貝の)から,貝がら  / 《英》真空管",/vælv/,45825,Turn the valve to control the flow of liquid.,液体の流れを調節するためにバルブを回してください。,1653725
+,,,vertical,"垂直の,直立した,縦の  / 垂直線(面);垂直位置",/vɜrˈtɪkəl/,46083,The flagpole stood tall and vertical.,旗竿は高く垂直に立っていました。,3006404
+,,,insect,昆虫;(一般に)虫,/ˈɪnˌsɛkt/,22017,I saw a beautiful insect in the garden.,私は庭で美しい昆虫を見ました。,3000234
+,,,interface,"中間面,界面(2物体・空間の接触面)・（異なる物の）境界面, 中間共通面; 共有領域; （コンピュータ）インタフェース",/ˈɪntərˌfeɪs/,22244,The user interface of the app is easy to navigate.,アプリのユーザーインターフェースは操作が簡単です。,1628515
+,,,ion,イオン,/ˈaɪ.ɒn/,22510,I went to the ion to buy some groceries.,私はイオンに行って食料品を買いました。,1661042
+,,,whichever,《関係代名詞》《先行詞を含んで》…するどれでも(どちらでも)  / 《譲歩節を導いて》どちら(どれ)が(を)…しでも  / 《話》《which の強調形として》いったいどちらが(を),/ˈwʰɪtʃˌɛvər/,47226,Choose whichever you like.,どれでも好きなものを選びなさい。,111554
+,,,whoever,《名詞節を導く関係代名詞》(先行詞を含む)…する[ところの]だれでも  / 《譲歩節を導く関係代名詞》だれが…でも / 《疑問代名詞whoの強調形》《話》いったいだれが,/ˌhuːˈɛvər/,47369,Whoever wants to join the club can sign up at the front desk.,クラブに参加したい人は、フロントデスクで申し込むことができます。,3006717
+,,,kilometer,"キロメートル(《略》km.,km)",/kɪˈlɒmɪtər/,23379,I walked five kilometers today.,今日は5キロメートル歩きました。,3000593
+,,,lab,実験室(laboratory),/læb/,23651,I spent all day in the lab conducting experiments.,私は一日中実験室で実験を行いました。,3000653
+,,,criteria,基準（criterionの複数形）,/kraɪˈtɪəriə/,10107,"To be considered for the scholarship, applicants must meet the eligibility criteria.",奨学金の対象となるためには、応募者は適任基準を満たす必要があります。,1650210
+,,,lifestyle,"生き方,生きざま",/ˈlaɪfˌstaɪl/,24465,Having a healthy lifestyle is important for overall well-being.,健康的な生き方は全体的な幸福感に重要です。,3000855
+,,,linguistic,"言語学の;言語上の,言語的な",/lɪŋˈɡwɪstɪk/,24624,Linguistic studies the structure and development of languages.,言語学は言語の構造と発展を研究します。,3000901
+,,,linguistics,言語学,/lɪŋˈɡwɪstɪks/,24626,Linguistics is the scientific study of language and its structure.,言語学は言語とその構造の科学的研究です。,3000906
+,,,liter,"リットル(メートル法の容量の単位《略》l.,lit)",/ˈlɪtər/,24707,I bought a liter of milk at the grocery store.,私はスーパーで1リットルの牛乳を買いました。,3000926
+,,,meaningful,"《...にとって》有意義な,意義のある《to / for》；《人に》理解しやすい《to》",/ˈmiːnɪŋfʊl/,26228,Reading books is a meaningful activity.,本を読むことは有意義な活動です。,1650124
+,,,media,[[medium]]の複数形,/'miːdiə/,26280,The media plays a crucial role in shaping public opinion.,メディアは公共の意見形成に重要な役割を果たしています。,3001319
+,,,messenger,"使いの者,走り使い;(電報・郵便物・小包の)配達人;(公文書の)送達吏",/'mɛsəndʒər/,26535,The messenger left for London in secret.,使者はひそかにロンドンへ出発した。,83104
+,,,metabolism,"新陳代謝,物質交代",/mɪˈtæbəˌlɪzəm/,26550,Regular exercise can help boost your metabolism.,定期的な運動は新陳代謝を促進するのに役立ちます。,3001386
+,,,metaphor,"隠喩,暗喩(like, asなどを用いない比喩;たとえばLife is as long and hard as a journey.(人生は旅のように長くつらいものだ)といえば直喩で,Life is a journey.(人生は旅だ)といえば隠喩)",/mɛtəfɔr/,26571,Her smile is a ray of sunshine.,彼女の笑顔は太陽の光です。,3001387
+,,,undermine,"...の下を掘る / の土台を壊す / (健康・名声など)を知らないうちに(徐々に)害する,を弱める / 傷つける, だめにする",/ˌʌndərˈmaɪn/,45011,His constant criticism undermines her confidence.,彼の絶え間ない批判は彼女の自信を損なう。,3006142
+,,,maximize,【他】最大化する,/mæksɪmaɪz/,26167,We need to maximize our profits in order to grow the business.,ビジネスを成長させるために利益を最大化する必要があります。,1642976
+,,,norm,"〈C〉(しばしば複数形で) 標準,規準 / 一般水準 / (行動の)規範, 常識 / ノルマ, 基準量",/nɔːrm/,28841,Breaking the norm can sometimes lead to innovative ideas and positive change.,常識を打ち破ることは、革新的なアイデアや前向きな変化につながることがあります。,1627595
+,,,convergence,"〈U/C〉1点に集まること, 集中 / 〈C〉1点に集まった箇所",/kənˈvɜːrdʒəns/,9309,The convergence of technology and art has led to innovative creations.,技術と芸術の融合は革新的な創造をもたらしています。,1638639
+,,,questionnaire,"質問表,アンケート",/kwɛs.tʃəˈnɛr/,34401,Please fill out the questionnaire.,質問表に記入してください。,3003340
+,,,sustainable,【形】持続可能な；維持（継続）できる,/səˈsteɪ.nə.bəl/,48310,Using renewable energy is a sustainable way to power our homes.,再生可能エネルギーを利用することは、私たちの家を持続可能な方法で電力供給する手段です。,1632078
+,,,sensory,感覚の,/'sɛnsəri/,38113,The sensory experience of eating a ripe mango is heavenly.,熟したマンゴーを食べる感覚は天国のようだ。,1628817
+,,,separately,"分かれて;別々に,単独で",/sɛpərətli/,38139,They decided to go separately to the party.,彼らはパーティーに分かれて行くことに決めました。,3004353
+,,,solar,太陽の,/ˈsoʊlər/,39830,Solar energy is a renewable source of power.,太陽エネルギーは再生可能な電源です。,3004785
+,,,capitalist,資本家  / 《まれ》資本主義者,/ˈkæpɪtəlɪst/,6262,The capitalist invested in a new business venture.,資本家は新しい事業に投資しました。,1638495
+,,,evident,"（証拠に基づいて）明白な,はっきりした,明らかな",/ˈɛvɪdənt/,14587,It is evident that he did it.,彼がそれをやったことは明らかだ。,46035
+,,,formally,正式（公式）に；礼儀正しく；堅苦しく,/fɔːrˈməli/,48304,He dressed formally for the business meeting.,彼はビジネスミーティングのために正装した。,1641030
+,,,differentiation,"〈U〉区別,識別 / 差別化 / 分化 / 微分法",/dɪfəˌrenʃiˈeɪʃ(ə)n/,48311,Differentiation is an important concept in mathematics.,微分は数学の重要な概念です。,1628910
+,,,neo,【複合要素】新…；復活…；近代の…,/niːoʊ/,48326,The new technology revolutionized the industry.,新しい技術が産業を革新しました。,1651886
+,,,non,【接頭辞】…しない；...でない；…のない；非…；不…；無…,/nɑn/,48327,I am a non-smoker.,私は禁煙者です。,3006996
+,,,pre,"【接頭辞】前の,以前の / 前もって,あらかじめ / …の前部にある",/pɹiː/,48328,The prehistoric era was a time before written records.,先史時代は、記録が書かれる前の時代でした。,1641033
+,,,classify,を分類する；類別する；等級別にする；機密扱いにする,/'klæsɪfaɪ/,7779,It is important to classify the different types of animals.,異なる種類の動物を分類することは重要です。,3009521
+,,,periodic,"【形】定期的な,周期的な / ときどき起こる / 掉尾(とうび)的の",/pɪəriˈɒdɪk/,31328,I have a periodic meeting with my team every month.,私は毎月、チームと定期的に会議をしています。,1635424
+,,,modification,"修正,変更した(された)もの  / 〈U〉〈C〉(文法で)修飾",/mɑdɪfɪˈkeɪʃən/,27266,The modification of the building was necessary to meet safety regulations.,建物の修正は安全規制を満たすために必要でした。,1643311
+,,,momentum,"【名/U/C】運動量 【名/U】勢い,はずみ",/moʊˈmɛntəm/,27342,The team gained momentum after winning the first game.,チームは最初の試合に勝った後、勢いを得ました。,1627985
+,,,dynamic,"動力の,動的な；（人・思想などが）精力的な,活力のある",/dɪˈnæmɪk/,13242,The dynamic performance of the car was impressive.,車のダイナミックなパフォーマンスは印象的でした。,2997955
+,,,synthetic,"【形】合成の；作りものの,人工の；総合の,統合的な【名/C】合成品,人造物",/sɪnˈθɛtɪk/,42282,She wore a synthetic wig to the party.,彼女はパーティーで合成のウィッグをかぶっていた。,3005450
+,,,absorption,【名/U】吸収；合併；夢中になること,/əbˈsɔːrpʃən/,201,The absorption of nutrients is essential for our body.,栄養素の吸収は私たちの体にとって必要不可欠です。,2995640
+,,,accelerate,"…‘の'速度を速める,加速する  / 〈ある状態〉'を'早く起こさせる  / 速くなる,速度を増す",/əkˈsɛləreɪt/,251,The car started to accelerate as it moved down the hill.,車は丘を下り始めると速度を速め始めました。,2995664
+,,,accumulate,"を蓄積する,ためる / 蓄積する,たまる",/əˈkjumjəˌleɪt/,324,"Over time, he managed to accumulate a vast collection of rare books.",時間をかけて彼は珍しい本の大量のコレクションを蓄積することができました。,2995704
+,,,alien,"【形】外国の / 《...と》性質の異なる《from, to ...》 / 《...と》相いれない《to ...》 / 【名/C】外国人",/ˈeɪ.li.ən/,1073,This alien culture is fascinating to learn about.,この外国の文化を学ぶのは魅力的です。,2995936
+,,,arrow,矢  / (用途・形などが)矢に似た物;(記号の)矢印(→),/ˈæroʊ/,2251,He shot an arrow at the target.,彼は的に矢を射た。,2996242
+,,,array,"〈軍隊など〉'を'整列させる,配置する  / 《文》〈人〉‘に'衣類を着せる,(特に)〈人〉'を'盛装させる  / 〈U〉整列,陳列  / (…の)整列(配置)した物(人),勢ぞろい《+of+名(複数)》  / 〈U〉衣装,(特に)美しい装い",/əˈreɪ/,2240,I arrayed the books in the shelves.,本を棚に並べました。,1626322
+,,,atom,"原子  / 微量,非常な少量;《a~》微量,わずか(の…)《+of+名》",/ˈætəm/,2528,The atom is the basic unit of a chemical element.,原子は化学元素の基本単位です。,2996334
+,,,athletic,"運動競技の;運動家の,運動家らしい  / 強健な",/əˈθlɛtɪk/,2509,He is very athletic and excels in various sports.,彼は運動能力が非常に高く、様々なスポーツで優れています。,2996328
+,,,atomic,原子の / 原子力の / 極微の,/əˈtɒmɪk/,2531,The atomic structure of the material was complex.,その物質の原子構造は複雑だった。,2996336
+,,,auction,【名/C/U】競売 / 【動/他】〈物〉を競売にかける,/ˈɔːkʃən/,2621,I won the bid at the auction.,私はオークションで入札に勝ちました。,3008883
+,,,bat,〈C〉(野球・クリケットの) バット / (特にバトミントン・スカッシュなどの)ラケット / 打者 / 打順 / バットによる一撃,/bæt/,3450,He hit the ball with his bat.,彼はバットでボールを打った。,3010702
+,,,binary,"二つから成る,二つを含む;二元の,複の(dual)  / 二進法による",/'baɪnəri/,4121,The computer stores data in binary format.,コンピュータはデータを二進数形式で保存します。,1634775
+,,,campus,"(大学などの)構内,キャンパス;学園  / 《米》(大学の)分校",/'kæmpəs/,6093,I love walking around the campus and exploring all the different buildings.,私はキャンパスを散策して、さまざまな建物を探検するのが好きです。,3009220
+,,,carrier,"運搬する人;輸送業者(会社)  / 運搬する物,運客車;運客設備  / (…の)媒介体,保菌者《+of+名》  / (またaircraft carrier)航空母艦  / (自転車・車の)荷台",/ˈkæriər/,6463,The carrier transported the goods to the warehouse.,運搬人は商品を倉庫に運びました。,3009275
+,,,censor,"(出版・報道・映画・手紙などの)検閲官  / (古代ローマの)監察官  / (人の)批評をする人,やかまし屋  / …'を'検閲する",/'sɛnsər/,6807,The censor reviewed the film before it was released.,映画は公開前に検閲官によって審査されました。,3009387
+,,,client,"[弁護]依頼人,訴訟依頼人  / (商売上の)おとくい(customer)",/'klaɪənt/,7862,The lawyer met with the client to discuss the case.,弁護士は依頼人と会って事件について話し合った。,3009538
+,,,clinic,"〈U〉(医学の)臨床講義  / 〈C〉《集合的に》臨床講義のクラス  / 〈C〉臨床講義室  / 〈C〉(病院・医科大学・社会事業団などに付属した)診療所;《形容詞を判って》医療施設,病院  / 〈C〉(警察・学校・社会事業団などに付属した)相談所",/'klɪnɪk/,7888,I have an appointment at the clinic tomorrow.,明日、私はクリニックで予約があります。,1641756
+,,,clue,"〈C〉(問題などを解く) 手がかり, 糸口 /",/kl(uː)/,8024,I found a clue that led me to the hidden treasure.,私は隠された宝物へと導く手がかりを見つけました。,2996979
+,,,colonial,"植民地の, 植民の / 英国植民地(時代)の",/kəˈloʊnɪəl/,8357,The country gained independence from its colonial rulers.,その国は植民地支配者から独立を達成した。,1641309
+,,,colony,"植民地  / 植民団,居留民;(外国人の)集団居留地  / (同ど人種・宗教・職業などの人たちが住む)集団,部落  / (動物・鳥・虫などの)集団;(生物の)群体,群落《+of+名》  / 《the Colonies》アメリカ合衆国を形成した13州のイギリス植民地",/ˈkɑːləni/,8368,The British established a colony in India.,イギリスはインドに植民地を建設しました。,3009626
+,,,comparable,【形1】比較可能な　【形2】匹敵する、相当する、同等な,/kəmˈpærəbəl/,8622,The performance of the new model is comparable to that of the previous version.,新しいモデルの性能は、前のバージョンと匹敵しています。,3009688
+,,,competent,"有能な,能力のある;適任の / 満足のいく / 法的権限のある",/kɑmˈpɪtənt/,8652,She is a competent manager who can handle any task efficiently.,彼女はどんな仕事も効率的に処理できる有能なマネージャーです。,3009701
+,,,dense,"密度の濃い, 密集した / 《話》頭の鈍い,のろまな, にぶい",/dɛns/,11381,The forest was dense with trees.,森は木々で密度が濃かった。,2997455
+,,,consent,"〈自〉《...に》同意する, 承諾する《to ...》 / 〈他〉に同意する",/kənˈsɛnt/,9049,He consented on the spot.,彼は即座に承知した。,28475
+,,,conscious,"《補語にのみ用いて》気づいている,知っている,意識している  / 《補語にのみ用いて》(…に)反応を示す,意識(知覚)のある《+to+名》  / 《名詞の前にのみ用いて》意識した,わざとらしい  / 考えることができる,意志のある",/ˈkɒnʃəs/,9040,She is conscious of her surroundings.,彼女は周囲に気づいている。,3009799
+,,,consciousness,"〈U〉意識, 知覚 / (個人や集団の)意識, 意見",/kɑnʃəsnəs/,9042,Consciousness is the awareness or perception of something.,意識とは何かを認識または感知することです。,3009803
+,,,conserve,"【動/他】大切に使う，(損傷・腐敗などしないように)を保存する, を保護する / 《文》（果物）をジャムにする / 【名/U/C】 (果物の)砂糖煮,ジャム",/kənˈsɜːrv/,9065,It is important to conserve water during a drought.,干ばつ時には水を節約することが重要です。,2997016
+,,,constitution,"〈U〉(物の)構成,構造《+of+名》  / 〈C〉〈U〉体格,体質,性分質,気質  / 〈C〉政体  / 〈C〉憲法,国憲  / 《the C-》合衆国憲法  / 〈U〉(制度などの)制定…(機関なとの)設立",/kɒnstɪˈtjuːʃən/,9121,The constitution of this organization is well-structured.,この組織の構成はよく組み立てられています。,3009819
+,,,consonant,"〈C〉子音,子音字",/kɑn.sə.nənt/,9094,The word 'consonant' refers to a speech sound that is produced by obstructing airflow in the vocal tract.,「子音」という言葉は、声道で空気の流れを妨げることによって生じる音を指します。,3009822
+,,,consumption,"〈U〉消費, 消耗, 使い果たすこと / 購入 / 消費量 / 摂取 /肺結核",/kənˈsʌmpʃən/,9157,The consumption of fast food has increased significantly in recent years.,最近、ファストフードの消費量が大幅に増加しています。,1628607
+,,,corruption,"(官吏などの)不正行為,汚職  / 堕落  / (物の)腐敗  / (原文の)改悪;(言語の)なまり",/kəˈrʌpʃən/,9581,Corruption is a serious problem in many countries.,腐敗は多くの国で深刻な問題です。,2997044
+,,,cortex,"(内臓,特に脳の)皮質  / (植物の)皮層;樹皮",/'kɔrtɛks/,9589,The cortex is the outer layer of an organ or structure.,皮質は臓器や構造物の外層です。,1638688
+,,,correspondence,"〈U〉《...の間の》 一致 《between ...》 / 《...との》 一致 《with,to ...》 / 《...との》 文通, 通信, 連絡 《to ...》 / 手紙",/kɔːrɪˈspɒndəns/,9558,I received a correspondence from my boss today.,今日、上司から連絡がありました。,1638675
+,,,deceive,を欺く / をだます / を裏切る / 欺く/人をだます,/dɪˈsiːv/,10966,He tried to deceive me with his lies.,彼は嘘で私をだますことを試みた。,2997360
+,,,diffusion,"〈U〉放散,発散,拡散[作用] / 普及,流布 / (文体などの)散漫,冗漫",/dɪˈfjuːʒən/,11856,"The pleasant aroma of the freshly baked cookies spread throughout the house, [[thanks to]] the process of diffusion.",焼きたてのクッキーの心地よい香りが、拡散の作用によって家中に広がっていく。,1627785
+,,,disturbance,"〈U〉乱す(騒がす,妨害する)こと, 乱れた状態 / 〈C〉騒ぎ, 騒動, 動乱 / 乱す(騒がす,妨害する)もの",/dɪˈstɜːrbəns/,12415,The disturbance in the classroom disrupted the students' concentration.,教室の騒ぎが生徒たちの集中力を乱しました。,2997744
+,,,domain,"(国の)領地,領土;(個人の)所有地  / (関心・活動などの)範囲,分野  / (個人・一族の)所有地  / (数学で)変域(関数の独立変数がとる値の集合)",/dəˈmeɪn/,12613,The government has control over the entire domain.,政府は全ての領地を管理しています。,1661770
+,,,elastic,"弾力のある,伸縮自在の  / 融通性のある  / ゴムひも;ゴムひもで作った物,靴下留め,ズボンつり",/ɪˈlæs.tɪk/,13576,The elastic band stretched easily.,ゴムバンドは簡単に伸びました。,2998052
+,,,erase,"《...から》を消す, を削除する 《from ...》 / (記憶などから)を消し去る《from ...》",/ɪˈreɪs/,14286,I need to erase this mistake.,この間違いを消さないといけない。,2998229
+,,,essence,"〈U〉(…の)本質,真髄《+of+名》  / 〈U〉〈C〉(植物・薬物などから抽出された)精,エキス《+of+名》  / 〈U〉香水(perfume)  / 〈U〉本質,実在;〈C〉(特に)霊的実在",/ˈɛsəns/,14390,Understanding the essence of a problem is crucial for finding a solution.,問題の本質を理解することは解決策を見つけるために重要です。,2998252
+,,,ethics,"《単数扱い》倫理学  / 《複数扱い》倫理,道徳[律],規範",/ˈɛθɪks/,14441,Studying ethics helps us understand moral principles and make ethical decisions.,倫理学を学ぶことは、道徳的な原則を理解し、倫理的な決定をするのに役立ちます。,2998269
+,,,ethical,"倫理の / 道徳的な, (特に)職業道徳にかなった",/ˈɛθɪkəl/,14440,She always makes ethical decisions.,彼女は常に倫理的な決定をします。,2998261
+,,,execution,"〈U〉(命令・任務などの)実行,遂行《+of+名》  / 〈U〉〈C〉死刑執行,処刑  / 〈U〉(芸術品の)制作,できばえ;演奏[ぶり];演技  / 〈U〉(遺言などの)執行《+of+名》",/ˌɛk.sɪˈkjuː.ʃən/,14718,The execution of the plan went smoothly.,計画の実行はスムーズに行われました。,1641758
+,,,exploit,〈他〉を(不当に)利用する / (資源など)を開発する,/ɪkˈsplɔɪt/,14847,Employers sometimes exploit their workers.,雇い主は、時に従業員を搾取する。,88503
+,,,fatigue,"〈U〉(心身の激しい)疲労, 倦怠感 / 〈C〉労働 / 【動/他】を疲労させる",/fəˈtiːɡ/,15327,I feel a lot of fatigue after working long hours.,長時間働いた後、私はとても疲労を感じます。,2998519
+,,,fin,"(魚などの)ひれ  / (形・働きが)ひれに似た物  / (飛行機の)垂直安定板  / 《話》手,腕",/fɪn/,15732,The fish swam gracefully with its fins.,魚はひれを使って優雅に泳いだ。,1661172
+,,,fossil,"化石  / 時代遅れの人  / 化石の,化石となった",/'fɑsəl/,16718,Scientists discovered a rare fossil of a prehistoric bird.,科学者たちは、一羽の化石化した鳥の希少な化石を発見しました。,2998873
+,,,friction,"〈U〉摩擦,こすること  / 〈U〉〈C〉衝突,不和",/'frɪkʃən/,16998,Friction is the resistance encountered when two objects move against each other.,摩擦は、2つの物体が互いに動く際に遭遇する抵抗です。,2998937
+,,,fringe,"(ショール・幕などの)ふさ飾り,ふさべり  / (一般に)へり,縁,周辺 / / 〈服・カーテンなど〉‘に'ふさ飾りを付ける;(…で)…‘を'縁どる《+名+with+名》",/frɪndʒ/,17028,She wore a beautiful shawl with fringe.,彼女はふさ飾りのついた美しいショールを身に着けていました。,1641759
+,,,gauge,"(銃砲の口径・鉄板の厚さなどの)標準寸法(規格)  / 計器  / (評価・判断の)方法,基準  / (レールの)軌道  / (銃砲の)口径  / (特に,計器を用いて)…‘を'測る  / …‘を'評価する",/ɡeɪdʒ/,17584,The gauge of the shotgun is 12.,ショットガンのゲージは12です。,2999062
+,,,generalize,一般化する / 一般原理を引き出す / 帰納する / を概括する / を帰納する / を一般化する,/dʒɛnərəˈlaɪz/,17665,It is important to generalize the results of the study to a larger population.,研究の結果をより広い人口に一般化することが重要です。,1629019
+,,,dependence,"(…に)頼ること,(…への)依存,依頼《+on(upon)+名》  / (…への)信頼,信用《+on+名》",/dɪˈpɛndəns/,11424,I have a strong dependence on coffee to start my day.,私は一日を始めるためにコーヒーに強く頼っています。,2997468
+,,,identification,"〈U〉同一であることの確認(証明),身元確認,身分証明  / 身分証明書",/ɑɪˌdɛntɪfɪˈkeɪʃən/,20933,Identification is required to enter the building.,建物に入るためには身分証明が必要です。,2999951
+,,,ideology,"〈C〉イデオロギー(社会・政党などが持つ典型的な思考形態)  / 〈U〉《軽蔑して》空理,空論",/aɪ.diˈɑl.ə.dʒi/,20946,His ideology shaped his political beliefs.,彼のイデオロギーが彼の政治的信念を形作った。,2999955
+,,,identical,"《...と》同一の,全く同じの《with ...》 / 等しい,同様な / そっくりの, うりふたつの",/ɪˈdɛntɪkəl/,20931,The twins have identical haircuts.,双子は同じ髪型です。,2999950
+,,,illusion,"思い込み,思い違い  / 〈C〉(…の)幻覚,幻影,幻,錯覚《+of+名》",/ɪˈluʒən/,21042,Don't be fooled by the illusion of success.,成功の幻想に騙されてはいけない。,2999984
+,,,indicator,"指示する人(物),指示器,表示器;指針  / (リトマスなどの)指示薬",/ɪnˈdɪkeɪtər/,21600,The traffic light is an indicator for drivers.,交通信号は運転手の指示器です。,1635307
+,,,indirect,"(道などが)真っすぐでない,回り道の  / (話し方が)遠回しの,率直でない  / (結果などが)間接的な,二次的な",/ˌɪn.dəˈrɛkt/,21620,He took an indirect route to avoid traffic.,彼は交通渋滞を避けるために迂回路を取った。,1652563
+,,,indifference,〈U〉無関心 / 無頓着 / 冷淡 / 重要でないこと,/ɪnˈdɪfrəns/,21607,Her indifference towards his feelings hurt him deeply.,彼の気持ちに無関心な彼女は、彼を深く傷つけた。,1628628
+,,,individually,"個々に,個別的に  / 個人として,個人的に  / 個性的に,独自のやり方で",/ɪnˈdɪvɪdʒuəli/,21652,Each student will be graded individually.,各学生は個々に評価されます。,1641761
+,,,inference,"〈U〉推量, 推論, 推測, 推理  / 〈C〉推量の結果,結論",/ˈɪnfərəns/,21782,"Upon observing the clues at the crime scene, the detective made a logical inference about the suspect's identity.",犯行現場の手がかりを観察して、刑事は容疑者の身元を論理的に推理した。,1627367
+,,,inferior,"【形】劣った【名】劣っていること, 劣等",/ɪnˈfɪəriər/,21785,He always feels inferior to his older brother.,彼はいつも兄に劣等感を抱いている。,3000168
+,,,infinity,"〈U〉無限であること  / 〈C〉無限なもの,無限の空間(時間)  / 〈C〉ばく大な量(数)  / 〈C〉(数学で)無限大(記号∞)",/ɪnˈfɪnəti/,21809,The possibilities are infinite.,可能性は無限です。,1641760
+,,,informal,正式でない / 打ち解けた / 口語体の,/ɪnˈfɔːrml/,21845,"I'm going to a party tonight, so I'll be dressed informally.",今夜はパーティーに行くから、カジュアルな格好で行くよ。,1635919
+,,,inject,注射する、注入する,/ɪnˈdʒɛkt/,21924,The nurse will inject the vaccine into your arm.,看護師があなたの腕にワクチンを注入します。,2995480
+,,,inhibit,"【動/他】を抑制する,を妨げる,を阻害する / 《...しないように》 (人)を抑制する 《from doing》",/ɪnˈhɪbɪt/,21904,His behavior was inhibited by the strict rules.,彼の行動は厳しい規則によって抑圧された。,1626875
+,,,intensive,集中的な,/ɪnˈtɛnsɪv/,22199,She had an intensive workout at the gym.,彼女はジムで集中的にワークアウトをした。,2995478
+,,,integral,【形】不可欠な；完全な；整数の；積分の【名/C】積分,/ˈɪntɪɡrəl/,22165,Calculus is an integral part of mathematics.,微積分は数学の不可欠な部分である。,1635565
+,,,interrupt,"中断する,割り込む,遮る",/ɪntəˈrʌpt/,22349,"I'm sorry to interrupt, but can I ask a question?",申し訳ありませんが、お尋ねしてもよろしいですか？,3000329
+,,,invade,〈敵が〉…‘に'侵入する  / 〈人が〉…‘に'押し寄せる  / 〈権利など〉‘を'侵害する(violate)  / 〈病気などが〉…‘を'おかす,/ɪnˈveɪd/,22433,The enemy plans to invade our territory.,敵は私たちの領土に侵入する計画です。,3000349
+,,,invasion,"(敵軍の)侵入,侵略《+of+名》  / (人・物の)殺到;(災害などの)襲来《+of+名》  / (権利などの)侵害《+of+名》",/ɪnˈveɪʒən/,22445,The country prepared its defenses against the invasion.,国は侵入に備えて防御を準備しました。,3000354
+,,,justification,"(…を)正当化すること,(…の)正当化,弁明,弁護《+of+名》  / (…を)正当とする理由(事実)《+for+名(doing)》",/d͡ʒʌstɪfɪˈkeɪʃən/,23182,Your justification for this decision is not convincing enough.,あなたのこの決定に対する正当化は十分に説得力がありません。,6535704
+,,,legend,"〈C〉伝説,言い伝え;〈U〉伝説文学  / 〈C〉伝説上の人物  / 〈C〉(メダルなどの)題銘,銘(inscription)  / 〈C〉(地図・図表などの)説明,凡例(はんれい)",/'lɛdʒənd/,24215,The legend of King Arthur has been passed down for centuries.,アーサー王の伝説は何世紀にもわたって伝えられてきた。,3000802
+,,,leisure,〈U〉余暇 / 暇 / 自由な時間 / （名詞をともなって形容詞的に）暇な / 有閑な,/'liːʒər/,24251,I enjoy leisure activities such as reading and hiking.,私は読書やハイキングなどのレジャー活動を楽しんでいます。,3000804
+,,,longitudinal,"長期の, 縦断的な / 縦の,縦方向の/ 経度の",/lɒn.dʒɪˈtjuː.dɪ.nəl/,24996,The longitudinal study revealed significant findings.,縦断的研究により、重要な発見が明らかになりました。,1665314
+,,,marker,"印をつける人(道具)  / (ゲームなどの)採点者  / 目印,目標",/ˈmɑːrkər/,25910,She used a marker to highlight important information in the book.,彼女は本の重要な情報を強調するためにマーカーを使いました。,3001217
+,,,matrix,"（複数形 matrices, ～・es）(発生・成長の)母体  / 鋳型・模型;(レコードの)原盤;(活字の)母型,字母  / (金属・化石・宝石などの含んだ)母岩・《古》子宮・基盤; (細胞)細胞間質; (地学)基質; (印)字母; 紙型; 鋳型; (鉱)母岩; (数)行列; (コンピュータ)マトリックス (入力導線と出力導線の回路網); (言)母型文 （matrix sentence）",/'meɪtrɪks/,26119,The matrix is a mathematical concept used in linear algebra.,行列は線形代数で使用される数学的な概念です。,1642962
+,,,mediate,"〈紛争・相違点など〉‘を'調停する,仲裁する  / 〈妥協・和解・同意など〉‘を'仲裁して成立させる  / (両者の)調停をする《+between+名》  / 仲介者(媒介物)を通じての,間接の",/miːdɪeɪt/,26284,The mediator helped to mediate the dispute between the two parties.,仲介者は二つの当事者間の紛争を調停するのを助けました。,3001322
+,,,mercury,〈U〉水銀(化学記号はHg)  / 《the~》(温度計・晴雨計の)水銀柱,/ˈmɜːr.kjʊ.ri/,26481,"Mercury is a heavy, silvery-white liquid metal.",水銀は重い銀白色の液体金属です。,1643066
+,,,secrete,【動/他】〈ホルモン・樹液など〉を分泌(ぶんぴつ)する,/sɪˈkriːt/,37810,The endocrine gland secretes hormones into the bloodstream.,内分泌腺はホルモンを血液中に分泌します。,1656545
+,,,migrate,"(…から…へ)移住する《+from+名+to+名》  / (季節に応じ定期的に)〈鳥・動物が〉移動する,渡る",/ˈmaɪɡreɪt/,26780,Many people choose to migrate from rural areas to urban areas for better job opportunities.,多くの人々が、より良い仕事の機会を求めて、田舎から都市へ移住することを選びます。,3001453
+,,,mentor,"指導者,師 / (良き)助言者,顧問",/mɛnˈtɔr/,26454,My mentor has been guiding me throughout my career.,私の指導者は私のキャリアを通じて私を指導してきました。,3001358
+,,,flux,"流動,流れ;上げ潮  / 絶え間ない変化,流転(るてん)  / 融剤,フラックス  / (流体・粒子・エネルギーの)流量,流束,流動率  / (電気・磁気の)束(そく)  / (体内の液体の)異常流出,異常排出",/flʌks/,16298,The constant changes in the stock market create a state of flux.,株式市場の絶え間ない変動は流動状態を作り出す。,2998774
+,,,psychology,心理学  / 《話》(個人・団体の)心理[状態],/saɪˈkɒlədʒi/,33911,Psychology is the study of the human mind and behavior.,心理学は人間の心と行動の研究です。,3003288
+,,,outer,"外に,外側の,外部の  / 中心から遠い",/ˈaʊ.tər/,29944,She loves to explore the outer world.,彼女は外の世界を探検するのが好きです。,1662442
+,,,powder,"〈U〉〈C〉粉,粉末  / 〈U〉おしろい  / 〈U〉〈C〉粉薬  / 〈U〉火薬,爆薬(gunpowder)  / 〈U〉粉雪",/ˈpaʊdər/,32896,I need to buy some powder for baking.,私はベーキング用の粉を買わなければなりません。,3003017
+,,,prediction,"〈U〉予報(予言)すること  / 〈C〉予報(予言)される事;(…という)予報,予言《+that節》",/prɪˈdɪkʃən/,33061,The weather prediction for tomorrow is rain.,明日の天気予報は雨です。,3003052
+,,,randomize,…‘を'成り行き任せでする  / 成り行きでする,/ˈrændəmaɪz/,34755,You should randomize the order of the questions.,問題の順番をランダムにするべきです。,1628710
+,,,snake,ヘビ(蛇)  / (蛇のように)ずるく陰険な人  / へび(配水管などの詰まった物を取り除く道具)  /,/sneɪk/,39582,I saw a snake in the park.,公園で蛇を見た。,1623786
+,,,unstable,"(物が)不安定な,ぐらぐらする  / 情緒不安定な,落ち着のない  / (気候・経済などが)安定性のない,不安定な  / (化合物が)分解しやすい",/ʌnˈsteɪbəl/,45466,The bridge is unstable and needs to be repaired.,橋は不安定で修理が必要です。,1641630
+,,,candidate,"〈C〉《...の》 候補者, 志願者 《for ...》",/kæn.dɪ.deɪt/,6134,He is a strong candidate for the position.,彼はそのポジションの有力候補者です。,2996932
+,,,goodness,〈U〉優秀さ / (人の)親切 / (食物などの)よいところ,/ˈɡʊdnəs/,18230,Her goodness and kindness are admired by everyone.,彼女の優秀さと親切さは誰からも称賛されています。,2999228
+,,,peasant,"【名/C】(ヨーロッパなどの小さい農地を所有して耕作する) 農夫 / 借地農民,小作農 / 《軽蔑して》 小百姓, 無学者",/ˈpɛzənt/,31016,The peasant worked hard in the fields.,農民は畑で一生懸命働いた。,1641040
+,,,sophisticate,"を洗練させる,を高度化する,を世慣れさせる",/səˈfɪstɪkeɪt/,39963,She has a sophisticated taste in fashion.,彼女はファッションのセンスが洗練されています。,3004822
+,,,sufficiently,十分に,/səˈfɪʃəntli/,41650,The food was cooked sufficiently.,食べ物は十分に調理されていました。,3005267
+,,,contradict,"(報道・人の言説など) を否定する / (陳述が)…と矛盾する,と相反する",/ˌkɒn.trəˈdɪkt/,9244,I cannot contradict the fact that he is a talented musician.,彼が才能あるミュージシャンであるという事実を否定することはできません。,3009860
+,,,comply,"【動/自】《...に》 従う, 応ずる 《with ...》",/kəmˈplaɪ/,8696,It is important to comply with the rules and regulations.,ルールや規制に従うことが重要です。,3009720
+,,,polar,極地の / 南極の / 正反対の,/'poʊlər/,32449,The polar bear is a magnificent creature.,ホッキョクグマは素晴らしい生き物です。,1665248
+,,,mid,"【形】中央の, 中部の, 中間の / 【前】《詩》 …の中に, …の真ん中に(amid)  / 【接頭辞】中央の, 中部の, 半ばの",/mɪd/,26696,The clock is placed in the mid of the room.,時計は部屋の中央に置かれています。,3001425
+,,,nasty,"意地悪な,卑劣な /  不快な,いやな / みだらな,下品な  / 厄介な,ひどい",/ˈnæsti/,28149,She made a nasty comment about his appearance.,彼女は彼の容姿について意地悪なコメントをした。,3001799
+,,,variance,"〈U/C〉分散 / 変化, 多様性, ばらつき / 《...との》相違,不一致《with, between, among ...》",/ˈvɛəriəns/,45872,The variance in temperature throughout the year is quite significant in this region.,この地域では、年間を通じて温度のばらつきがかなり大きいです。,1628664
+,,,predominantly,【副詞】主に、大部分は、圧倒的に、大抵は,/prɪˈdɒmɪnəntli/,33068,She predominantly works from home.,彼女は主に自宅で仕事をしています。,3003060
+,,,correction,"〈U〉訂正, 修正 / 〈C〉訂正箇所, 訂正の書き入れ / 〈U〉(よくするための)処罰,叱責",/kəˈrɛkʃən/,9548,The teacher made a correction to my homework.,先生は私の宿題に修正を加えました。,1628759
+,,,subtle,"(知覚しにくいほど)かすかな, ほのかな, 微妙な / (頭脳・感覚などが)鋭い / ずるい,こうかつな / 難解な / 巧みな,精巧な",/'sʌtl/,41580,The subtle scent of flowers filled the air.,かすかな花の香りが空気に満ちていた。,3005246
+,,,trivial,"ささいな, 取るに足らない / 平凡な, ありふれた",/ˈtrɪviəl/,44303,The problem was trivial and didn't require much effort to solve.,その問題はささいなもので、解決するのに多くの努力を必要としなかった。,3005976
+,,,correlation,"〈C〉《...の間の》 相互関係 《between ...》 / 《...との》 関連 《with ...》 / 〈U〉《文》 関連させること, 相関関係にある状態 / 〈C〉相関グラフ",/kɔːrɪˈleɪʃən/,9554,There is a strong correlation between smoking and lung cancer.,喫煙と肺がんの間には強い相関関係があります。,1628801
+,,,accuracy,〈U〉正確さ / 正確なこと / 精度,/ˈækjərəsi/,328,The accuracy of this machine is impressive.,この機械の精度は素晴らしい。,2995699
+,,,thread,"糸 / 筋, 脈絡 /",/θrɛd/,43207,I need to buy some thread to sew this button back on.,このボタンを付け直すために糸を買わなければなりません。,3005751
+,,,publish,"...を出版する, を発行する / (作家など) の作品を出版する / を公表する / 出版する, 発行する",/'pʌblɪʃ/,33978,The author plans to publish a new book next month.,著者は来月新しい本を出版する予定です。,1629341
+,,,spontaneous,"(行動などが) 自然に起きる, 自発的な / (現象などが)自然発生の / (植物などが)天然の,自生の",/spɑnˈteɪniəs/,40431,She had a spontaneous reaction to the news.,彼女はそのニュースに自然な反応を示した。,3004882
+,,,flesh,〈U〉(人間・動物の)肉 / 肉付き / 《the ~ 》肉体,/flɛʃ/,16109,He cut his finger on the sharp edge of the knife and flesh started to bleed.,彼はナイフの鋭い刃で指を切り、肉が出血し始めた。,2998723
+,,,bizarre,"一風変わった,変な / 奇怪な,異様な",/bɪˈzɑr/,4246,The movie had a bizarre [[plot twist]].,この映画には奇妙な筋書きがあった。,1665287
+,,,hawk,"【名/C】タカ / 《話》(国際問題などで)強硬論者,タカ派の人",/hɔk/,19402,I saw a hawk flying in the sky.,私は空に飛んでいる鷹を見ました。,2999557
+,,,dissection,"〈U/C〉(実験・研究のための)解剖,解体 / 〈C〉実験用解剖体,解剖模型  / 〈U〉詳細な分析",/dɪˈsɛkʃən/,12332,The biology class performed a dissection of a frog to study its anatomy.,生物の授業で、カエルの解剖を行い、その解剖学を学びました。,1652593
+,,,bang,"〈C〉バンという音 /  バンという一撃（強打） /  おかっばにした前髪, 切り下げ前髪 (また《英》fringe)",/bæŋ/,3213,The loud bang startled me.,その大きな音に驚いた。,2996517
+,,,clip,"〈C〉紙ばさみ,クリップ / 留める物 / (機関銃の) 挿弾子（そうだんし）, 弾倉 / 〈C〉(頭髪・羊毛などを)刈り込むこと,切り取ること",/klɪp/,7898,He wore a tie clip to keep his tie in place.,彼はネクタイを留めるためにネクタイ留めを付けていました。,1650702
+,,,clip,"をはさむ / をはさんで留める / 《…に》 (クリップで)留まる 《on, to ...》 / (はさんで)…を切る,切り取る / を刈り込む / 切る / 刈り込む",/klɪp/,7899,I need to clip the papers together.,私は紙を一緒にクリップで留める必要があります。,3009549
+,,,audit,"〈C〉会計検査, 監査 / 決算報告",/ˈɔːdɪt/,2638,The company hired an external auditor to conduct a thorough audit of its financial statements.,会社は外部の監査人を雇い、財務諸表の徹底的な監査を行いました。,1634189
+,,,tremendous,"(大きさ・量・強度などで) ものすごい, 途方もない / 恐ろしい",/trɪˈmɛndəs/,44153,The storm caused tremendous damage to the city.,その嵐は都市にものすごい被害をもたらしました。,3005945
+,,,bound,"《bindの過去・過去分詞》 / 【形】縛られた / 《be ~ to do》…する義務がある / 《be ~ to do》きっと…する / 〈本が〉製本された / 《米語》《be ~ to do》…する決心をしている / 《複合語を作って》「…に縛られた,閉ざされた」の意",/baʊnd/,4938,She bound the books together with a ribbon.,彼女はリボンで本を束ねた。,3008935
+,,,tense,〈U〉〈C〉(文法で) 時制,/tɛns/,42850,I always study English tense before the exam.,試験前にはいつも英語の時制を勉強します。,3005597
+,,,bound,"《…へ》行く途上にある, 《…》行きの《for ...》 / 《複合語を作って》「…行きの」の意を表す",/baʊnd/,4937,The train is bound for Tokyo.,その電車は東京行きです。,3008934
+,,,orient,"〈他〉《新しい環境などに》〈人〉を適応させる,を慣れさせる《to ...》 / …の位置を確定する /  (ある方向に)…を向ける / 〈自〉(太陽・月が地平線から)昇る,現れる",/ˈɔːriənt/,29795,She decided to orient herself towards a career in marketing.,彼女はマーケティングのキャリアに方向転換することを決めた。,3002272
+,,,machinery,"【名/U】《集合的に》《単数扱い》(特に大きな)機械 / 機械の部品, 機械装置 / 【名/U/C】(社会・政治などの)機構,組織",/məˈʃiːnəri/,25403,The factory is equipped with state-of-the-art machinery.,その工場は最新の機械を備えています。,3001095
+,,,dissertation,"〈C〉学位論文, 博士論文 / 論文,論説",/dɪsərˈteɪʃən/,12341,I am currently in the process of writing my dissertation on the effects of social media on mental health.,私は現在、ソーシャルメディアがメンタルヘルスに及ぼす影響について論文を執筆中です。,1627213
+,,,handout,"〈C〉(こじきなどに与える)施し物 / 商品案内,広告ビラ / (広告主・政府機関などが新聞社へ渡す)新聞発表 / (学会などで資料として配布する)印刷物, 配布資料",/'hænd.aʊt/,19153,I received a handout from the charity organization.,私はチャリティ団体から施し物を受け取りました。,2999477
+,,,namely,"【副】すなわち, つまり",/'neɪmli/,28081,"He loves outdoor activities, namely hiking and camping.",彼はアウトドア活動、すなわちハイキングとキャンプが大好きです。,3001794
+,,,crude,"(原材料が) 天然のままの, 未加工の / (製品・作品などが)仕上がりの悪い / (言葉・態度・考え方などが)粗雑な,不作法な",/krud/,10237,The crude oil prices have been increasing steadily.,原油価格は着実に上昇しています。,1628908
+,,,deficiency,"〈U/C〉《...の》不足, 欠乏《of, in ...》 / 〈C〉不足分, 不足量 / (精神・肉体などの)欠陥",/dɪˈfɪʃənsi/,11132,Iron deficiency can lead to fatigue and weakness.,鉄分不足は疲労や衰弱の原因となる。,1642230
+,,,plural,複数の / 〈U〉複数 / 〈C〉(文法で)複数形の語,/'plʊərəl/,32333,There are many books on the shelf.,本棚にはたくさんの本があります。,3002876
+,,,antibiotic,"抗生物質(ペニシリン,ストレプトマイシンなど)  / 抗生[物質]の",/æn.tɪ.baɪˈɑ.tɪk/,1719,Remember to take your full course of antibiotics.,抗生物質を全部飲むようにしてください。,1017749
+,,,arbitrary,"任意の, 随意の, 恣意的な, 気まぐれな([[capricious]]) / 独裁的な,独断的な,専横な([[despotic]])",/ˈɑːrbɪtrəri/,2051,You have the arbitrary power to make decisions.,あなたには決定権がある。,2996196
+,,,resistant,抵抗力のある;(…に)抵抗する《+to+名》,/rɪˈzɪstənt/,35791,She is resistant to change.,彼女は変化に対して抵抗力がある。,1637397
+,,,cylinder,"円柱,円筒;円柱形の物  / シリンダー,気筒",/sɪˈlɪndər/,10551,The pencil holder on my desk is shaped like a cylinder.,私の机の上のペン立ては円柱の形をしています。,2997244
+,,,ridiculous,"おかしな / ばかばかしい, とんでもない",/ɹɪˈdɪkjələs/,36137,The idea of wearing a swimsuit in the snow is ridiculous.,雪の中で水着を着るなんて、馬鹿げている。,3003880
+,,,degrade,"(…に)…‘の'地位(身分)を下げる《+名+to+名》  / (…にまで)…‘の'品位(評判)を下げる,'を'卑しくする《+名+to+名》",/dɪˈɡreɪd/,11184,His scandalous behavior will degrade his reputation.,彼のスキャンダラスな行動は彼の評判を下げるだろう。,2997411
+,,,variability,"【名/U】変わりやすいこと,可変性,変動性",/vɛəriəˈbɪləti/,45869,The variability of weather patterns makes it difficult to predict the forecast accurately.,気象パターンの変動性は、正確な予報をすることを困難にします。,1636328
+,,,wisdom,"賢いこと,賢明さ,知恵,分別;《集合的に》賢明な思考,名言",/'wɪzdəm/,47619,She is known for her wisdom.,彼女は賢いことで知られています。,3006773
+,,,assert,"を断言する, を力説する,強く主張する",/əˈsɜrt/,2391,He asserted that he was innocent.,彼は自分が無害であると主張した。,2996289
+,,,conceive,"を心に抱く, を思い付く / 《文》を妊娠する / 《~ of ...》 ...を想像する",/kənˈsiːv/,8774,They conceived a plan to surprise the enemy.,彼らは敵をびっくりさせる計画を思いついた。,22250
+,,,correlate,【動/他】に相互関係を持たせる；を《…と》関連させる《with》【動/自】相互に関連がある；《...と》関連がある《with》【名/C】相互関係にあるもの,/kɔːrəˈleɪt/,9553,The study found a strong correlation between smoking and lung cancer.,その研究は喫煙と肺がんの間に強い相関関係があることを見つけた。,1665133
+,,,crystal,"〈U〉水晶  / 〈C〉水晶製品,水晶玉  / 〈U〉クリスタルグラス(透明度の高い鉛ガラス);《集合的に》クリスタルグラス製食器類(特にコップ類)  / 〈C〉結晶[体]  / 〈C〉《米》(時計の)ガラスぶた  / 水晶[製]の;クリスタルグラス製の;透き通った",/'krɪstəl/,10284,She wore a beautiful crystal necklace.,彼女は美しい水晶のネックレスを身に着けていました。,2997182
+,,,reactive,反作用の;化学反応を示す…反動的な,/rɪˈæktɪv/,34938,The chemical reaction produced a reactive compound.,化学反応は反作用性の化合物を生成した。,1645705
+,,,influential,"有力な,影響を及ばす;勢力のある",/ɪnˈfluːənʃəl/,21839,She is an influential figure in the fashion industry.,彼女はファッション業界で有力な人物です。,3000179
+,,,intensity,"(感情・行動・熱・色などの)強烈さ,熱烈さ,強度",/ɪnˈtɛnsəti/,22198,The intensity of his emotions was overwhelming.,彼の感情の強烈さは圧倒的だった。,3000304
+,,,junior,"若いほうの,年下の;年少者から成る(向けの)  / (役職などが)下の,下級の;後進の,後輩の  / 《米》(大学・高校の4(3,2)年制で)3(2,1)年生の  / 《通例one's~》年少者,年下の人;下位の人,後輩  / 《米》(大学・高校の4(3,2)年制で)3(2,1)年生(卒業の年の前年)  / 《J-》《米》うちの息子",/dʒuːnɪər/,23145,She is a junior employee at the company.,彼女は会社の若手社員です。,3000530
+,,,monkey,"さる(猿)(普通小さくて尾のあるサル)  / 《話》猿に似た顔つきの人(動作をする人);(特に)いたずら小僧  / 《英俗》500ポンド,500ドル",/ˈmʌŋki/,27391,The monkey climbed up the tree.,猿が木に登っていった。,1623583
+,,,recipe,〈C〉（食物・飲物などの）作り方；秘訣,/ˈrɛsəpi/,35088,I found a great recipe for chocolate chip cookies.,私はチョコレートチップクッキーの素晴らしいレシピを見つけました。,3003555
+,,,physically,物質的に;身体上;物理的に,/fɪzɪkli/,31745,She is physically fit and can run a marathon.,彼女は体力があり、マラソンも走れる。,3002749
+,,,productivity,"生産力,生産性",/prəˌdʌkˈtɪvɪti/,33524,Increasing productivity is essential for the success of any business.,生産力を向上させることは、どんなビジネスにおいても成功のために不可欠です。,3003191
+,,,punish,"〈人〉‘を'罰する,こらしめる  / 〈犯罪・違反・過ち〉‘を'罰する  / …‘を'手荒く扱う",/pʌnɪʃ/,34092,The judge decided to punish the criminal with a prison sentence.,裁判官は犯罪者に刑務所にいれる刑を与えることを決定しました。,3003356
+,,,quotation,"〈U〉(…から)引用すること《+from+名》  / (また《話》quote)〈C〉(…からの)引用語(句),引用文《+from+名》  / 〈C〉(株式などの)相場《+on+名》;相場をつけること",/kwəʊˈteɪʃən/,34484,She used a quotation from the book in her presentation.,彼女はプレゼンテーションでその本から引用を使いました。,3003392
+,,,politically,"政治上,政略上；政治的に",/pəˈlɪtɪkəli/,48298,She is politically active and often participates in protests.,彼女は政治的に活動的で、しばしば抗議活動に参加しています。,3006992
+,,,replacement,"〈U〉置き換わること,取り替えること / 〈C〉置き換わる物(人) / 《...の》代理, 補充物《for ...》",/rɪˈpleɪsmənt/,35663,I need a replacement for my broken phone.,壊れた携帯電話の代わりが必要です。,3003746
+,,,psychiatric,精神医学(病理学)の,/saɪˈkaɪətrɪk/,33892,He is receiving psychiatric treatment for his mental health issues.,彼は精神的な健康問題のために精神医学的な治療を受けています。,1655981
+,,,drift,"〈U〉漂流,流されること  / 〈U〉(海流・風などの)流れ,流れの方向(速度)  / 〈C〉(雪・砂などの)吹きだまり,漂流物《+of+名》  / 〈U〉〈C〉大勢,風潮,傾向  / 〈U〉《時にa~》主意,主旨  / (水・風に)流される,漂う,漂流する  / あてもなくさまよう  / 〈雪・砂などが〉吹き積もる,吹きだまりになる  / 〈砂・雪など〉‘を'吹き寄せる;〈場所〉‘を'吹きだまりにする",/drɪft/,12961,The boat began to drift aimlessly in the open sea.,船は無目的に開けた海で漂流し始めた。,2997887
+,,,mechanical,"機械の,道具の / 機械仕掛けの / 機械向きの / 機械的な,自動的な",/məˈkæn.ɪ.kəl/,26258,He has a mechanical watch.,彼は機械式の腕時計を持っています。,3001315
+,,,estimation,"【名】判断,評価；見積り,概算",/ˌɛstɪˈmeɪʃən/,14413,The estimation of the project cost was way off.,プロジェクトの費用の見積もりは大きく外れていました。,2998259
+,,,manipulate,"〈道具類〉‘を'巧みに扱う(動かす),〈言葉〉‘を'うまく使う  / 〈人・世論など〉‘を'巧みに操る,〈問題など〉‘を'うまく処理する(maneuver)  / (自分の利益のために)…‘を'ごまかす,小細工する",/məˈnɪpjəˌleɪt/,25771,The government instrumentalised the media to manipulate public opinion.,政府はメディアを手段として利用して、世論を操作しました。,1638891
+,,,naked,"(体の全部,または一部が)裸の  / はぎ取られた,むき出しにされた  / (目が)肉眼の,裸眼の  / 《名詞の前にのみ用いて》(事が)赤裸裸の,あからさまの",/ˈneɪkɪd/,28074,She felt uncomfortable being naked in front of strangers.,彼女は見知らぬ人の前で裸になることに不快感を感じた。,3001789
+,,,neutral,"中立の;中立国の,中立的な  / 公平な,不偏不党の  / (人・物が)特色のはっきりしない;(色が)はっきりしない,くすんだ  / (酸性でもアルカリ性でもない)中性の  / (電気が)中性の,(物体が)帯電していない  / (自動車などのギアが)ニュートラルの  / (文法で)中性の",/ˈnjuːtrəl/,28435,She remained neutral during the argument.,彼女は議論の間中立の立場を取り続けた。,3001886
+,,,elevate,"【動/他】《AからBに》（人）を昇進させる《from A to B》；《Aに》...を上げる,の程度を高める《to A》；を向上させる,高める",/ˈɛlɪveɪt/,13682,She used the elevator to elevate to the top floor.,彼女はエレベーターを使って最上階に昇った。,2998073
+,,,philosophical,哲学的な（=[[philosophic]]）,/fɪˌlɑː.səˈfɪ.kəl/,31631,She has a philosophical approach to life.,彼女は人生に対して哲学的なアプローチを持っています。,1644610
+,,,grasp,"〈他〉をしっかり握る, をぎゅっと掴む / を理解する, を把握する / 〈自〉《...を》捕まえようとする《at, for ...》",/ɡræsp/,18424,"He tried to grasp the concept, but it was too difficult.",彼は概念を把握しようとしたが、難しすぎた。,2999287
+,,,legitimate,"合法的な,法律の認める； / 論理的な,筋道の立った / 正当な / 嫡出の / 正統の",/lidʒítəmət/,24238,The company has a legitimate reason for terminating the employee.,会社は従業員を解雇する正当な理由があります。,3000807
+,,,occupation,"〈C〉職業, 仕事 / 時間の使い方 / 〈U〉《...を》占有すること《of ...》",/ˌɑkjuːˈpeɪʃn/,29262,My father's occupation is a doctor.,私の父の職業は医者です。,6510362
+,,,prominent,"突き出た,隆起した / 目立った / 著名な / 卓越した, 傑出した",/ˈprɒmɪnənt/,33614,The prominent building stood out among the others.,その目立つ建物は他の建物の中でもひときわ目立っていました。,3003213
+,,,diagnosis,【名】診断；診断書；原因調査,/ˌdaɪəɡˈnoʊsɪs/,11741,The doctor made a diagnosis based on the patient's symptoms.,医師は患者の症状に基づいて診断を行った。,2997567
+,,,incidence,"(病気・事件・犯罪などの)発生率,頻度;発生(影響)する範囲  / 投射[角],入射[角]",/ˈɪnsɪdəns/,21402,The incidence of crime has been decreasing in recent years.,犯罪の発生率は近年減少しています。,1630386
+,,,biologist,生物学者,/baɪˈɒlədʒɪst/,4153,The biologist is studying the behavior of dolphins in the wild.,その生物学者は野生のイルカの行動を研究しています。,2996749
+,,,consensus,"(多人数の意見などの)一致,調和《+of+名》;一致した意見,総意",/kənˈsɛnsəs/,9048,"After much discussion, we finally reached a consensus on the issue.",長い議論の末、私たちはついにその問題についての一致を見た。,3009800
+,,,cord,"〈U〉〈C〉綱,ひも(stringより太くropeより細い)  / 〈U〉〈C〉束縛,きずな  / 〈C〉〈U〉(電気の)コード,線  / (またchord)〈C〉(動物体の)索状組織,腱(けん)  / 〈C〉うね織り,(特に)コールテン;(うね織りの)うね;《複数形で》コールテンのズボン  / 〈C〉コード(材木の容積の単位で約6.25m)  / …'を'綱(ひも)で縛る",/kɔːrd/,9454,He tied the cord around the package.,彼は綱をパッケージの周りに結んだ。,3009911
+,,,decay,"〈自〉腐る, 朽ちる / 衰える / 〈他〉を腐らせる",/dɪˈkeɪ/,10961,The tooth started to decay after years of neglect.,その歯は何年も放置された後、虫歯になり始めた。,2997357
+,,,dissolve,を溶かす；を解消する；を分解する / 溶ける；消散する,/dɪˈzɒlv/,12359,The sugar will dissolve in hot water.,砂糖は熱いお湯に溶けます。,2997721
+,,,electron,"電子,エレクトロン",/ɪˈlɛktrɒn/,13652,An electron is a subatomic particle.,電子は亜原子粒子です。,1635600
+,,,infinite,"(空間・数・量・程度などについて)無限の,限りがない  / ばく大な,非常に大きい(very great)  / 《the I-》神(God)  / 《the ~》無限なもの,無限の空間(時間)  / (数学で)無限",/ˈɪnfɪnɪt/,21803,The possibilities are infinite.,可能性は無限です。,3000174
+,,,noble,"高貴の;貴族の  / 高潔な,気高い  / (姿・規模などが)壮大な,堂々とした;すばらしい  / (金属が)腐食しない",/ˈnoʊbəl/,28711,She carried herself with noble grace.,彼女は高貴な優雅さを持っていた。,3001954
+,,,nonetheless,それにもかかわらず / それでもなお,/nʌnðəˈlɛs/,28787,"She was tired; nonetheless, she continued working.",彼女は疲れていた。それにもかかわらず、彼女は仕事を続けた。,3001970
+,,,outlet,"〈C〉《水・煙などの》出口《for ...》 / 《感情・精力などの》はけ口《for ...》 /《特定の商品の》販売口,販路《for ...》コンセント",/ˈaʊtˌlɛt/,29974,I couldn't find any available outlets to charge my phone.,私は利用可能なコンセントを見つけることができませんでした。,3002313
+,,,physician,医者;(特に)内科医,/fɪˈzɪʃən/,31746,The physician examined the patient thoroughly.,医者は患者を徹底的に診察しました。,3002745
+,,,symbolic,象徴の(に関する);象徴(記号)によって表された,/sɪmˈbɒlɪk/,42215,The Statue of Liberty is a symbolic representation of freedom.,自由の象徴である自由の女神像。,3005434
+,,,theorist,"理論家,理論(学説)を立てる人",/ˈθiərɪst/,43038,The theorist proposed a new framework for understanding human behavior.,その理論家は、人間の行動を理解するための新しい枠組みを提案しました。,3005648
+,,,magnitude,"大きさ,規模  / 重要さ(importance);(精神的な)偉大さ,高潔  / (星の)光度,等級  / マグニチュード(地震の強さなどの数量的単位)",/mæɡˈnɪtjuːd/,25505,The magnitude of the earthquake was 7.2 on the Richter scale.,地震の大きさはリヒター・スケールで7.2でした。,3001124
+,,,peripheral,周囲の; 周辺（装置）の・末梢的な・重要でない; （...に比べて）瑣末な (to); {[医]}末端部の; コンピュータの周辺装置,/pəˈrɪfərəl/,31333,I bought a new peripheral for my computer.,私はコンピューターの周辺機器を新しく買いました。,1638308
+,,,optical,"視覚の,視力の  / 光学用の",/ˈɑptɪkəl/,29692,Optical illusions can play tricks on your eyes.,光学的錯視は目を惑わせることがあります。,3002237
+,,,spectrum,"スペクトル(光がプリズムを通過するとき生じる色の帯)  / (電磁波・音波などの)範囲,スペクトル  / (多様だが関連あるものの)連続[範囲]《+of+名》",/'spɛktrəm/,40248,The light passing through the prism creates a spectrum of colors.,プリズムを通過する光は、色のスペクトルを作り出します。,3004967
+,,,sketch,"…‘を'スケッチする,写生する  / …‘を'略述する《+in(out)+名》  / スケッチ(写生)する",/skɛtʃ/,39152,I like to sketch landscapes in my free time.,暇な時間に風景をスケッチするのが好きです。,3004627
+,,,stack,"干し草の山,麦わらなどの山,いなむら  / (一般に,物を積み上げた)山,(…の)積み重ね《+of+名》  / (図書館などの)書架,ラック;《複数形で》(特に,図書館などの)書庫  / 煙突  / 《しばしば複数形で》《話》多数,多量(の)《+of+名》",/stæk/,40648,I saw a stack of hay in the field.,私は畑で干し草の山を見ました。,3005009
+,,,stadium,"競技場,スタジアム,球場",/ˈsteɪdiəm/,40650,The football match will be held at the stadium.,サッカーの試合は競技場で行われます。,3005011
+,,,stereotype,"ステレオタイプ、固定観念  / 定型;決まり文句,常套手段;型にはまったイメージ",/stɛr.i.oʊ.taɪp/,40947,It is important to challenge stereotypes and not judge people based on assumptions.,ステレオタイプに挑戦し、仮定に基づいて人々を判断しないことが重要です。,3005095
+,,,syndrome,"(疾患の徴候となる一群の)症徴候,症候群  / (事件・社会的状態などのパターンを示す)徴候形態",/sɪnˈdroʊm/,42263,She is showing symptoms of a rare syndrome.,彼女は珍しい症候群の症状を示しています。,3005445
+,,,transcription,"〈U〉(…を)書き写す(書き直す)こと,(…の)転写,謄写《+of+名》  / 〈C〉写し(書き直し)[たもの]  / 〈U〉〈C〉編曲[されたもの]  / 〈U〉〈C〉(ラジオ・テレビの)録音(録画)",/trænˈskrɪpʃən/,43992,I need to do the transcription of this audio recording.,この音声の録音の書き写しをしなければなりません。,1640575
+,,,transplant,"〈植物〉‘を'移植する  / (…から他の場所へ)…‘を'移す,〈人〉‘を'移住させる《+名+from+名+to+名》  / (…から…へ)〈組織・器官など〉‘を'移植する《+名+from+名+to+名》  / 移植できる;移住する  / 〈C〉移植された物  / 〈U〉移植すること",/'trænsˌplænt/,44055,The gardener will transplant the flowers to a new location.,庭師は花を新しい場所に移植します。,1661188
+,,,tutor,"(個人あるいは少人数を教える,時に住み込みの)家庭教師・《米》(大学でinstructorの下位の)講師  / ・《英》(大学生の)個別指導教官(教授)",/ˈtjuː.tər/,44589,I hired a tutor to help me with my math homework.,数学の宿題を手伝ってもらうために家庭教師を雇いました。,3006038
+,,,vein,静脈 / 葉脈 / 鉱脈 / 水脈 / 気分 / 見方 / 言い方,/veɪn/,45946,The doctor inserted a needle into the vein to draw blood.,医者は血液を採取するために静脈に針を挿入しました。,3006387
+,,,preliminary,"準備する, 予備の / 前置きの",/prɪˈlɪməneri/,33117,She conducted a preliminary study before starting her research.,彼女は研究を始める前に予備調査を行いました。,1628018
+,,,unintelligible,"(話し方・文章などが)理解できない,訳の分からない",/ˌʌnɪnˈtɛlɪdʒəbəl/,45232,His speech was unintelligible.,彼の話し方は理解できなかった。,1641762
+,,,radar,"電波探知法;〈C〉電波探知機,レーダー[radio detecting and rangingの略]",/ˈreɪdɑr/,34579,The radar detected the approaching aircraft.,レーダーは接近する航空機を検知しました。,3003416
+,,,fungus,"菌(葉緑素が無く,他の生物の有機物に依存しているキノコ,カビなど)",/ˈfʌŋɡəs/,17231,The fungus grows on decaying leaves.,菌は腐葉土に生えます。,1651460
+,,,onset,"【名/C】《病気・季節などの》始まり,開始《of》、攻撃,襲撃",/ˈɒnsɛt/,29572,The onset of winter brings cold temperatures and snow.,冬の始まりは寒い気温と雪をもたらします。,1651459
+,,,urine,"〈U〉尿,小便",/ˈjʊərɪn/,45659,She collected a urine sample for the doctor.,彼女は医者のために尿のサンプルを集めました。,3006309
+,,,velocity,〈C〉速度,/vɪˈlɑːsɪti/,45959,The velocity of the car was incredible.,車の速度は信じられないほどでした。,1629408
+,,,lateral,"【形】横の,側面の / 横からの / 【名】側面, (道路の)側溝",/ˈlætərəl/,23956,The company is exploring new lateral strategies to increase profits.,利益を上げるために、新たな横展開の戦略を模索しています。,1017809
+,,,multinational,多国籍企業(多数の国に系列会社を持つ巨大企業)・多国籍の  / 多国籍企業の,/mʌl.tiˈnæʃ.ə.nəl/,27837,The multinational company has subsidiaries in over 50 countries.,その多国籍企業は50以上の国に系列会社を持っています。,1641044
+,,,nitrogen,窒素(気体元素;化学記号はN),/ˈnaɪtrədʒən/,28669,Nitrogen is the most abundant gas in the Earth's atmosphere.,窒素は地球の大気中で最も豊富な気体です。,1641043
+,,,precipitation,"【名/C/U】(化学で)沈殿物 / 【名/U】沈殿 / 降雨,降雪 / 降雨量",/pɹɪˌsɪpɪˈteɪʃən/,33018,The forecast predicts heavy precipitation for tomorrow.,明日は大雨が予想されています。,1652589
+,,,susceptible,"《名詞の前のみ用いて》感じやすい,多感な  / 《補語にのみ用いて》《be 〜 to+名》  / 《補語にのみ用いて》《be 〜 of+名》",/səˈsɛptəbəl/,41990,She is susceptible to colds.,彼女は風邪を引きやすい。,3005365
+,,,nominal,【形】名目上の、名前の、ほんの僅かな,/nɑːˈmɪnəl/,28749,The company made nominal changes to its policies.,会社は政策に名目上の変更を加えました。,1652590
+,,,vocabulary,"〈C〉(特定の人・グループ・分野で用いられるすべての)語彙,用語  / 〈C〉(アルファベット順に並べて語義や訳を付けた)語彙集,単語表(集)  / 〈U〉(一言語の)全語彙",/vəˈkæbjəˌlɛri/,46398,I need to expand my vocabulary.,私は語彙を増やす必要があります。,3006489
+,,,induction,"〈C〉任命, 就任, 入隊, 入社, 徴兵 /〈U〉《...を》引き起こすこと《to ...》 / (電気の)誘導 / 帰納法,帰納",/ɪnˈdʌkʃən/,21681,The induction ceremony for new employees will be held next week.,新入社員のための入社式が来週行われます。,1628195
+,,,dilute,【動/他】《...で》（液体）を薄める《with》；（力・効力など）を弱める【形】（液体などが）薄い,/dɪˈluːt/,11893,You need to dilute the paint with water before applying it.,塗る前に絵の具を水で薄める必要があります。,2997609
+,,,incumbent,"【名/C】現職者, 在職者 / 牧師, 受祿聖職者【形】《be ~》義務がある, 責務がある / 現職の,在職の",/ɪnˈkʌmbənt/,21519,The incumbent president is seeking re-election.,現職の大統領は再選を目指しています。,1629081
+,,,trajectory,"(ミサイルなどの描く)弾道,軌道,曲線",/tɹəˈdʒɛk.tɹi/,43957,The missile followed a predictable trajectory.,ミサイルは予測可能な弾道をたどった。,1649623
+,,,secrete,【動/他】…を隠す / 【動/自】秘密の場所にしまう,/sɪˈkriːt/,37811,The spy had to secrete the confidential documents before the enemy arrived.,スパイは、敵が到着する前に機密文書を隠さなければなりませんでした。,6510566
+,,,bilingual,2つの言語を話す,/baɪˈlɪŋɡwəl/,4084,My cousin is bilingual; she can speak both English and Spanish fluently.,私のいとこはバイリンガルで、英語とスペイン語を流暢に話すことができます。,2996732
+,,,sub,"=submarine  / (おもにスポーツで)=substitute  / =subordinate  / 《英》=sublieutenant  / =subeditor  / 《英》給料の前払い分  / (…の)代役を勤める,代りとなる《+for+名》  / 《英》給料を前借り(前貸し)する  / 〈給料〉‘を'前借り(前貸し)する",/sʌb/,41461,The navy deployed a sub to search for the missing submarine.,海軍は行方不明の潜水艦を捜索するために潜水艦を展開しました。,1641045
+,,,transcribe,"【動/他】を文字に起こす,発音記号で書き表す；書き写す；翻訳する；編曲する",/trænˈskraɪb/,43990,I need to transcribe this audio recording into text.,この音声録音をテキストに書き起こす必要があります。,3005911
+,,,entrant,"〈C〉《競技などの》参加者《for ...》 / 《...の》新会員, 新入生, 《新しい識務などに》つく人《to, into ...》",/ˈɛntrənt/,14137,The entrant was excited to participate in the competition.,参加者は競技に参加することを楽しみにしていました。,1628718
+,,,watershed,"分水嶺(れい),分水界,(川の)流域,分岐点,転機",/ˈwɔːtərʃɛd/,46863,"The river flows through the watershed, dividing the land into two separate drainage basins.",その川は分水嶺を通って流れ、土地を二つの別々の流域に分けています。,1659776
+,,,tech,【名/U】技術【C】技術者；工科大学【形】技術系の,/tɛk/,48299,I work in the tech industry.,私はテクノロジー業界で働いています。,1635194
+,,,specification,"〈U〉《...の》詳説,詳述《of ...》 / 〈U〉明細事項,内訳 / (また《話》[[specs]])〈C〉《通例複数形で》(明細な)仕様書,設計書",/spɛsɪfɪˈkeɪʃən/,40228,The specification of the product is provided in the user manual.,製品の詳細は取扱説明書に記載されています。,3004953
+,,,diagram,"〈C〉図, 図表, 予定表, グラフ",/ˈdaɪ.əˌɡræm/,11745,I drew a diagram to explain the process.,私はプロセスを説明するために図を描きました。,2997563
+,,,stimulus,刺激[するもの],/stɪˈmjʊləs/,41033,The loud music was a stimulus for the crowd to start dancing.,大音量の音楽は、人々が踊り始める刺激となった。,3005108
+,,,horizon,"地平線,水平線  / (知識・関心・経験などの)限界,範囲,視野《+of+名》",/həˈraɪzən/,20341,The sun sets below the horizon.,太陽は地平線の下に沈みます。,2999802
+,,,authority,"〈U〉(地位の持つ,また職能上与えられた)権威,権力,権限,権能  / 〈C〉権力者,権限者;《複数形で》当局,その筋,官庁  / 〈C〉(情報・助言などの)信頼すべき筋,信頼できる根拠;典拠  / 〈C〉(その道の)大家,権威(expert)《+on+名》",/əˈθɔːrəti/,2708,The mayor has the authority to make decisions for the city.,市長には市の決定を下す権限があります。,2996398
+,,,disadvantage,"〈C〉不利な立場(状態)  / 〈U〉不利,不利益;(名声・信用などの)損傷,損失",/dɪsədˈvæntɪdʒ/,12014,One disadvantage of living in a big city is the high cost of living.,大都市に住むことの一つの不利な点は高い生活費です。,2997637
+,,,dominant,"支配的な,最も有力な  / (位置が)群を抜いて高い,そびえ立つ  / (手・目など左右のいずれかが)力のある  / (遺伝で)優性の  / (音階で)第5度音の,属音の  / (遺伝の)優性形質  / 第5度音,属音",/dɑˈmɪnənt/,12628,She has a dominant personality.,彼女は支配的な性格を持っています。,2997792
+,,,numerical,"数字上の,数に関する,数を表す",/njuːˈmɛrɪkəl/,29053,She has a numerical advantage over her opponents.,彼女は相手より数的優位に立っている。,1659172
+,,,puzzle,"〈他〉の頭を悩ませる,を困らせる / 〈自〉頭を悩ませる,考え込む",/ˈpʌzəl/,34225,His behavior puzzled me.,彼の行動に私は、困惑した。,42937
+,,,simplify,単純化する,/sɪm.plɪ.faɪ/,38996,We need to simplify the process.,私たちはプロセスを簡単にする必要があります。,1664815
+,,,portray,を描く / を言葉で描写する / (舞台・映画で)…を演じる,/pɔːrˈtreɪ/,32727,The movie accurately portrays what it was like to live in the 19th century.,この映画は、19 世紀の生活がどのようなものであったかを正確に描写しています。,1626527
+,,,reproduce,"〈他〉を再現する / を複製する, を複写する / を繁殖させる / 〈自〉(動植物が)繁殖する / 複製できる",/ˌriː.prəˈduːs/,35708,Scientists are trying to reproduce the experiment to confirm the results.,科学者たちは結果を確認するために実験を再現しようとしています。,3003757
+,,,transmit,"伝わる / を送る, を伝える",/trænzˈmɪt/,44036,The radio waves transmit information from one device to another.,無線波は情報を一つの機器から別の機器に伝えます。,3005917
+,,,physics,〈U〉物理学,/fɪˈzɪksɪz/,31748,I studied physics in college.,私は大学で物理学を勉強しました。,3002752
+,,,virtue,"〈U〉美徳,徳;高潔 / (特に婦人の)節操,貞操 / 〈C〉 (特定の)道徳,美徳 / 〈U/C〉《...という》 長所, 美点 《of ...》 / 《…するという》効力,ききめ《of ...》",/'vɜːrtʃuː/,46302,"1. Honesty is a virtue that should be valued.
+2. What do you feel are the virtues of this company?","1. 正直は尊重されるべき美徳です。
+2. この会社の良いところはどこだと思いますか？",3006474
+,,,afterward,"あとで, あとに / 以後, その後",/ˈæftərwərd/,784,I will clean the house afterward.,私はあとで家を掃除します。,2995854
+,,,instinct,"〈U〉本能 / 〈C〉《…に対する》(生まれつきの)才能,素質,天分《for ...》",/ˈɪnstɪŋkt/,22110,Her instinct told her to trust him.,彼女の本能は彼を信じるように言った。,1628566
+,,,workshop,"〈C〉仕事場,工作場  /《米》(セミナー形式の)研究会,討論会",/'wɜːrkʃɒp/,47853,My father spends most of his time in his workshop.,私の父は彼の仕事場でほとんどの時間を過ごします。,1628618
+,,,wheat,〈U〉小麦,/wiːt/,47176,Wheat is a staple crop in many countries.,小麦は多くの国で主要な作物です。,1628770
+,,,distribution,"〈U〉《...への》配分, 配布《to ...》 / 〈C〉配分されたもの, 配給品 / 〈U〉（商品の）流通組織",/dɪstrɪˈbjuːʃən/,12406,The distribution of goods is an important aspect of the supply chain.,商品の流通はサプライチェーンの重要な側面です。,2997739
+,,,obscure,【形容詞】不明瞭な、わかりにくい / 【動詞】を曖昧にする、を隠す,/əbˈskjʊr/,29199,The meaning of the poem was obscure.,詩の意味は不明瞭だった。,3002086
+,,,destination,"〈C〉(旅行・航海などの) 目的地, 行き先 / (物の) 送付先, 到着地",/dɛstɪˈneɪʃən/,11592,What's the destination of this ship?,この船の目的地はどこですか。,132500
+,,,threshold,"〈C〉敷居 / 《単数形で》《…の》始め, 出発点《of ...》 / しきい値",/ˈθɹɛʃ.hoʊld/,43231,The threshold for passing the exam is set at 70%.,試験の合格ラインは70％に設定されています。,1628890
+,,,particle,"〈C〉粒子 / 小片,(ごく)少量,微量 / 不変化詞",/ˈpɑːrtɪkəl/,30733,The particle is very small.,その粒子はとても小さいです。,3002514
+,,,feedback,〈U〉フィードバック / 《話》《…についての》反応《about ...》,/ˈfiːdbæk/,15438,I appreciate your feedback on the project.,プロジェクトに対するフィードバックをいただけると幸いです。,2998548
+,,,proposition,"〈C〉提案 / 陳述 / 命題 / 定理 / 《話》(扱わなければならない)仕事,事柄",/prəˈpɑzɪʃən/,33711,The proposition was met with strong opposition from the members.,その提案はメンバーから強い反対を受けました。,3003246
+,,,scatter,をばらまく/ をまきちらす / を追い散らす,/'skætər/,37354,The wind scattered the leaves across the yard.,風が葉っぱを庭中に散らかした。,3004081
+,,,offspring,"〈C〉《単数・複数扱い》(人間や動物の)子, 子孫 / 《...から》生じたもの, 《...の》結果,所産《of ...》",/ˈɒfˌsprɪŋ/,29403,She loves spending time with her offspring.,彼女は子供たちと過ごすことが大好きです。,3002149
+,,,gut,"【名/C】腸 / 《複数形で》内臓,腹わた / 《複数形で》元気,勇気,根性 / 《複数形で》中身,内容 / 【動/他】〈鳥・魚〉の腹わたを取り除く / の内部を破壊する / 【形】本能的に感じる, 直感的な",/ɡʌt/,18851,He had a gut feeling that something was wrong.,彼は何かがおかしいという直感を持っていた。,2999398
+,,,absorb,【動/他】を吸収する / 〈心・注意・時間〉をすっかり奪う,/əbˈsɔːrb/,197,Plants absorb sunlight to perform photosynthesis.,植物は光合成を行うために太陽光を吸収します。,2995643
+,,,accent,"〈C〉〈U〉アクセント,強勢;アクセント記号  / 〈C〉(言葉の)なまり  / 《複数形で》口調,音調(tone)  / 〈C〉〈U〉強調,重視",/ˈæksənt/,256,She speaks English with a foreign accent.,彼女は外国なまりのある英語を話す。,16537
+,,,accurately,"【副】正確に,精密に",/ˈækjərətli/,330,He accurately described what happened there.,彼はそこで起きたことを正確に描写した。,38862
+,,,acute,"(先の)鋭い,とがった  / (痛み・感情などが)激しい,強い  / (知力・感覚などが)鋭い,鋭敏な  / (事態が)重大な  / (病気が)急性の  / (音が)高い,鋭い  / 鋭角の",/əˈkjut/,458,The eagle has an acute vision that allows it to spot its prey from a great distance.,鷲は鋭い視力を持っており、遠くから獲物を見つけることができます。,2995749
+,,,admission,"〈U〉《場所・学校・会などへ》入ることを許すこと《to ...》 / 《...への》 入場料 《to ...》 / 〈C〉(事実・誤りなどを)認めること,白状",/ədˈmɪʃən/,556,The museum offers free admission to students on weekends.,週末には、学生は無料でその博物館に入場できる。,2995787
+,,,aesthetic,"美的な, 美の, 美学の, 審美的な",/ɛsˈθɛtɪk/,692,The aesthetic appeal of the painting captivated everyone in the room.,その絵画の美的魅力は部屋にいる全員を魅了した。,2995818
+,,,aggregate,"【動/他】を集める / 【動/自】総計《....に》なる 《to ...》 / 【形】集まった / 総計の / 【名/U】集合体 / 【名/U/C】(砂利など)骨材  / 《the ~》総計,総額",/ˈæɡrɪɡət/,824,The company will aggregate data from various sources to analyze customer behavior.,会社は顧客の行動を分析するために、さまざまな情報源からデータを集約します。,1665192
+,,,aluminum,〈U〉《米》アルミニウム,/əˈluːmɪnəm/,1245,The soda can is made of aluminum.,そのソーダ缶はアルミニウムでできています。,2995990
+,,,amongst,～の間に / ～の中の,/əˈmʌŋst/,1371,The truth is often found hidden amongst the lies.,真実はしばしば嘘の間に隠されて見つかるものです。,2996029
+,,,architect,"建築家,建築技師  / (特に長期にわたる作業計画・事業などの)創始者,創案者,計画者",/ˈɑːrkɪtɛkt/,2106,My brother is studying to become an architect.,私の兄は建築家になるために勉強しています。,2996203
+,,,archaeology,考古学,/ɑrkiˈɑlədʒi/,2075,Archaeology is the study of human history through the excavation and analysis of artifacts and other physical remains.,考古学は、遺物や他の物理的な遺跡の発掘と分析を通じて人類の歴史を研究する学問です。,1661019
+,,,artifact,【名】人工物；工芸品；人工遺物/　人為的な結果; 作為/ 　不自然な結果,/ˈɑːrtɪfækt/,2283,The museum displayed a beautiful artifact from ancient Egypt.,博物館は古代エジプトの美しい工芸品を展示していました。,1629411
+,,,assignment,割り当てられた仕事,/əˈsaɪnmənt/,2404,When will your assignment be completed?,君の宿題はいつ終わりますか。,92217
+,,,axis,"〈C〉軸,軸線;枢軸(すうじく)  / 《the A-》枢軸国(第二次大戦当時の日本・ドイツ・イタリアなど)",/ˈæksɪs/,2850,The earth rotates on its axis.,地球はその軸上で回転します。,2996404
+,,,backward,後方へ / 逆に,/bækwərd/,3021,He took a step backward when he saw the snake.,彼は蛇を見て後方へ一歩下がった。,2996468
+,,,basin,"たらい,はぢ(bowl);洗面器  / (…の)たらい1杯[分]《+of+名》  / (自然または人工の)水たまり,池  / (川の)流域;くぼ地,盆地  / 入江,内湾,船だまり",/ˈbeɪsən/,3413,Please fill the basin with water.,たらいに水を入れてください。,2996566
+,,,bat,〈C〉コウモリ,/bæt/,3449,I saw a bat flying in the night sky.,夜空を飛ぶコウモリを見ました。,3008891
+,,,beam,"〈C〉(建設の)はり,けた,横材  / 〈C〉(船の甲板を支える)横はり  / 〈C〉(はかりの)さお;(織機の)糸巻き  / 〈C〉光線,光束  / 〈C〉(顔などの)輝き,晴れやかさ  / 〈C〉(船舶・航空機用の)信号電波  / 〈U〉最大船幅",/biːm/,3563,The construction worker is installing the beam in the new building.,建設作業員が新しい建物にはりを取り付けています。,2996600
+,,,behavioral,【形】行動の,/bɪˈheɪvjərəl/,3740,His behavioral problems are causing issues at school.,彼の行動上の問題が学校で問題を引き起こしています。,1641168
+,,,blank,"(紙が)白紙の;(欄が)空白の,書き入れていない  / がらんとした,からの(empty);なんの装飾もない  / ぼんやりした,うつろな,無関心な  / 全くの  / 空白,空所  / 書き込み用紙(form)  / 空虚;空(くう)の部分  / (語句・文学を伏せる場所に用いる)ダッシュ“‐"":Mr-某氏  / (またblank cartridge)(銑火器の)空包",/blæŋk/,4335,The sky was blank and empty.,空は空しく、何もない状態だった。,1624005
+,,,bonus,"ボーナス,特別手当;特別配当金  / 桂品,おまけ  / 《話》思いがけない喜び[を与えるもの]",/'boʊnəs/,4757,I received a bonus for my hard work.,私は頑張った成果としてボーナスを受け取りました。,1641067
+,,,bound,"【動/自】跳ね上がる, 跳ね返る / 〈心が〉おどる,わくわくする  / 【名/C】はずみ,はね返り / 跳躍",/baʊnd/,4935,The dog is bound by a leash.,犬はリードで繋がれています。,3008937
+,,,bound,"【名/C】《複数形で》《…の》境界,境界線《of ...》 / 《複数形で》《…の》 限度,限界《of ...》 / 【動/他】《通例受動態で》〈国など〉と境を設する / 〈行動・欲望など〉を制限する",/baʊnd/,4936,The hiker reached the bound of the national park.,ハイカーは国立公園の境界線に到達しました。,3010191
+,,,bubble,"〈C〉あわ,あぶく  / 〈U〉あわ立ち,あわ立ちの音  / 〈C〉(すぐ消える)あわのようなこと  / 〈C〉シャボン玉",/ˈbʌbəl/,5424,The children are blowing bubbles.,子供たちがシャボン玉を吹いている。,82916
+,,,calculation,"〈U〉〈C〉計算,見積もり,算定；予想,推定；意図,熟慮",/kæl.kjuˈleɪ.ʃən/,5956,I need to do some calculation for this project.,このプロジェクトのために計算をしなければなりません。,3009190
+,,,calcium,カルシウム(金属元素;化学記号はCa),/'kælsiəm/,5949,Calcium is an essential mineral for strong bones and teeth.,カルシウムは、強い骨と歯のために必要な重要なミネラルです。,1642066
+,,,civilization,"〈U〉〈C〉(物質的・社会的・科学的・政治的に高度な)文明;(特定の地域・国民・時代に発達した)文明[様式]/《集合的に》文明世界;文明人/〈U〉(…の)文明化,開化《+of+名》",/sɪvəlaɪˈzeɪʃən/,7702,The ancient civilization of Egypt built impressive pyramids.,古代エジプトの文明は印象的なピラミッドを建設しました。,3009509
+,,,click,"(掛け金をかけたり,錠を回したりする時の)カチリという音  / カチリと鳴る物;掛け金",/klɪk/,7860,"If you enjoyed this, please give a click on the vote link!",お楽しみいただけましたら、ポチっと１票お願いいたします！,986
+,,,cognitive,【形】認知の,/kɑˈɡnɪtɪv/,8214,Cognitive abilities decline with age.,年齢とともに認知能力は低下する。,1659917
+,,,commodity,"【名/C】日用品, 商品 / 《かたく》 役に立つ物, 便利な物",/kəˈmɑːdəti/,8540,The price of the commodity has increased due to high demand.,需要の高まりにより、商品の価格が上昇しました。,2996994
+,,,comparative,"比較の,比較による  / 比較的,かなりの  / 比較級の  / 比較級",/kəmˈpær.ə.tɪv/,8624,She is taller than her sister.,彼女は妹よりも背が高いです。,3009690
+,,,compensate,《…に対して》〈人〉に補償する《for ...》 / 〈損失など〉を償う / 《米》…に報酬(給与)を支払う / 《損失などを》償う《for ...》,/kɑm.pənˌseɪt/,8645,The company will compensate the employees for their overtime work.,会社は従業員に残業代を補償します。,3009696
+,,,comprehension,"〈U〉理解,理解力 / 包含,包括,包容力",/kɑmprɪˈhɛnʃən/,8722,Reading comprehension is an important skill for academic success.,読解力は学業の成功に重要なスキルです。,3009727
+,,,conference,"〈C〉会議,協議会  / 〈U〉〈C〉(…との)相談,協議《+with+名》  / 〈C〉(学校,スポーツクラブなどの)連盟",/ˈkɑnfərəns/,8890,I attended a conference last week.,先週、私は会議に出席しました。,3009773
+,,,confine,"《ある範囲に》…を制限する, 限る(limit)《to ...》  / 《…に》〈人など〉を閉じ込める, 監禁する《in, to ...》  / 《通例受動熊で》〈女性〉をお産の床につかせる",/kənˈfaɪn/,8910,The study will confine its focus on children under 10 years old.,その研究は10歳未満の子供に焦点を限定する。,2995450
+,,,confound,"【動/他】(状況などが) 〈人〉を混乱させる / 〈人〉を困惑させる, を面食らわせる / 《...と》...を混同する《with ...》",/kənˈfaʊnd/,8932,The results of the experiment confound the researchers.,実験の結果は研究者を困惑させる。,3009779
+,,,contrary,"反対の / 逆の,意に反した / ひねくれた",/'kɒntrəri/,9256,Their proposition is contrary to ours.,彼らの提案は我々のと反対である。,24169
+,,,controversy,"(通例紙上での)論争;議論,口論",/kɒntrəˈvɜːrsi/,9278,There is a lot of controversy surrounding the new government policy.,新しい政府の政策には多くの論争がある。,3009866
+,,,converge,"《同一点・同一場所に》集まる,集中する《on ...》 / (物理・数学で)収れんする / …を1点に集める",/'kɒnvɜːdʒ/,9308,The protesters will converge at the city center.,抗議者たちは市の中心部で集まる予定です。,3009872
+,,,credibility,"〈U〉信頼性,信用性",/krəˈdɪbɪləti/,10003,The credibility of the research findings was questioned.,研究結果の信頼性が問われました。,1629167
+,,,cue,"【名/C】(行動の)きっかけ,合図 / (せりふの)渡し文句 /【動/他】…にきっかけ(指示)を与える",/kjuː/,10336,The actor forgot his cue and stood on stage in silence.,俳優はキューを忘れて、黙って舞台に立っていました。,2997193
+,,,deadline,最終期限;(新聞・雑誌などの)原稿〆切（締切）時間・最終期限,/ˈdɛdˌlaɪn/,10855,I need to submit my report before the deadline.,最終期限までにレポートを提出しなければなりません。,2997319
+,,,deliberately,"故意に, わざと / よく考えて, 慎重に",/dɪˈlɪbərətli/,11228,He deliberately ignored her.,彼は故意に彼女を無視した。,2997416
+,,,dictate,命令する、指示する、 口述する、（状況や必要性が）要求する、決定づける,/dɪkˈteɪt/,11808,She asked her assistant to dictate the letter.,彼女はアシスタントに手紙を書き取らせるよう頼んだ。,2997580
+,,,diagnose,【動/他】（病気）を診断する,/ˈdaɪəɡnoʊz/,11740,The doctor was able to diagnose the patient's illness.,医者は患者の病気を診断することができました。,2997568
+,,,dialect,"〈C/U〉方言, なまり / (ある階級・人種・職業などの)通り言葉",/ˈdaɪəˌlɛkt/,11752,She speaks with a strong dialect.,彼女は強い方言で話す。,2997569
+,,,differential,"差別的な /  微分の / 差動の / 〈C〉差別額,運賃差 / 〈U〉微分 / 〈C〉〈U〉(また[[differential gear]])差動歯車,差動装置",/dɪˌfɛrənʃəl/,11845,The differential equation is difficult to solve.,微分方程式は解くのが難しいです。,1628675
+,,,differentiate,【動/自】分化する 【動/他】を識別する、を差別化する,/dɪˈfɛrəntʃieɪt/,11847,It is important to differentiate between fact and opinion.,事実と意見を区別することが重要です。,1637435
+,,,diverse,"別種の,違った《from》；いろいろの,多様な",/dɪˈvɜːrs/,12445,The team is made up of diverse individuals from different backgrounds.,チームは、異なるバックグラウンドを持つ多様な人で構成されています。,2997751
+,,,domination,"支配,君臨;優勢",/dɒmɪˈneɪʃən/,12630,The country's domination over the region was evident in its control of the economy and politics.,その国の支配は、経済と政治の制御によって明らかであった。,2997802
+,,,drain,"(液体を)…‘から'排出する《+名+of+名》;(…から)〈液体〉‘を'排出する《+名+from+名》  / …‘を'消耗させる,枯渇させる;(…を)〈人〉‘から'消耗させる《+名+of+名》  / 〈酒など〉‘を'飲み干す,空にする  / 〈土地〉‘を'干上がらせる  / 〈土地などが〉水はけがよい;(液体を)排出する《+of+名》  / 〈水・液体などが〉徐々に流れ去る",/dreɪn/,12864,The plumber fixed the drain and now the water flows smoothly.,配管工は排水溝を修理して、今は水がスムーズに流れます。,2997862
+,,,duration,"〈U〉（時間の）持続,存続,継続；存続期間,持続時間",/djʊˈreɪʃən/,13183,The duration of the movie was two hours.,映画の時間は2時間でした。,1649915
+,,,economist,経済学者,/ɪˈkɒnəmɪst/,13403,The economist predicted a recession in the next quarter.,経済学者は次の四半期に景気後退を予測しました。,2998014
+,,,elevation,"【名/U/C】《文》《…を…に》高めること, 向上させること《of ... to ...》 / 【名/U】《文》気高さ / 【名/C】《文》高地 / 《単数形で》(地表・海面からの) 高さ（＝altitude）",/ˌɛləˈveɪʃən/,13685,"The elevation of the mountain peak is 3,000 meters.","山の頂上の標高は3,000メートルです。",1665135
+,,,elementary,"初歩の,基礎の",/ˌɛləˈmɛntəri/,13675,This math problem is elementary.,この問題は非常に簡単です。,1624185
+,,,elite,"《the ~》《複数扱い》えり扱きの人々,エリート,精鋭  / 〈U〉エリート活字",/ɪˈliːt/,13706,He is considered one of the elite in his field.,彼は自分の分野でエリートの一人と見なされています。,2998084
+,,,elimination,"〈U〉《...の》除去,削除《of ...》 / 予選",/ɪˌlɪmɪˈneɪʃən/,13705,The elimination of waste is crucial for a sustainable environment.,廃棄物の排除は持続可能な環境にとって重要です。,1662451
+,,,embed,埋め込む,/ɪmˈbɛd/,13765,The workers will embed the steel rods into the concrete.,労働者たちは鉄筋をコンクリートに埋め込む予定です。,1642289
+,,,emergence,出現,/ɪˈmɜːrdʒəns/,13805,The emergence of new technologies has revolutionized the way we live.,新しい技術の出現は私たちの生活のあり方を革命的に変えました。,1663111
+,,,execute,〈他〉を実行する / 《Bの罪でAの》死刑を執行する《 A for / as B》 / （芸術品）を制作する / （法律・契約など）を執行する,/ˈɛksəˌkjut/,14717,He will execute the plan tomorrow.,彼は明日計画を実行する予定です。,2998345
+,,,flip,"〈他〉をはじく, をはじき上げる / …をくるっとひっくり返す《over ...》 / 〈自〉ぽんとはじける,ぐいと動く",/flɪp/,16154,I like to flip pancakes in the air.,私はパンケーキを空中で裏返すのが好きです。,1642313
+,,,fluid,"流体,流動体",/ˈfluːɪd/,16254,The fluid flows through the pipe.,流体がパイプを流れます。,2998754
+,,,footnote,脚注,/fʊtˈnoʊt/,16478,Please include a footnote at the bottom of the page.,ページの下部に脚注を追加してください。,2998806
+,,,forum,"《the Fo・rum》(古代ローマの)大広場,市場(商業取引や裁判・政治などの集会所として用いられた)  / 〈C〉(公開討論・批判などの)広場,フォーラム  / 〈C〉討論会",/ˈfɔː.rəm/,16706,I attended a forum on ancient Roman history.,私は古代ローマの歴史に関するフォーラムに参加しました。,2998867
+,,,found,"【動/他】...を創設する, を設立する / 《...の上に》（建物など）を建てる《on, upon ...》 / 《...に》...の基礎を置く《on, upon ...》",/faʊnd/,16736,They founded the company last year.,彼らは去年その会社を設立した。,3413132
+,,,freely,"自由に;かってに  / 惜しげなく,十分に  / 率直に;無遠虜に  / 自分から進んで",/ˈfriːli/,16918,You can express yourself freely in this art class.,この美術クラスでは自由に自己表現することができます。,2998923
+,,,fracture,"【名/U】骨を折ること, 骨を折った状態 / 【名/C】裂け目 / 【動/他】を骨折する / を砕く / 【動/自】骨折する / 砕ける",/'fræktʃər/,16806,He suffered a fracture in his arm.,彼は腕を骨折しました。,2998894
+,,,genetics,遺伝学,/dʒəˈnɛtɪks/,17684,Genetics is the study of genes and heredity.,遺伝学は遺伝子と遺伝に関する研究です。,2999090
+,,,graph,"グラフ,図表",/ɡræf/,18411,I created a graph to visualize the data.,データを視覚化するためにグラフを作成しました。,2999280
+,,,gross,"全体の, 総計の / 粗野な,下品な, キモい",/ɡroʊs/,18631,His gross manners offended his companions.,彼の無作法は仲間を怒らせた。,41656
+,,,hedge,〈C〉生垣 / 境界 / 《...に対する》 保護手段《against ...》,/hɛdʒ/,19600,I trimmed the hedge in my garden.,私は庭の生け垣を刈りました。,2999619
+,,,hierarchy,"聖職の階級組織  / 聖職位階制政治  / (一般に)階級組織,職階制;階層",/ˈhaɪəˌrɑrki/,19867,The company has a clear hierarchy with different levels of management.,会社には異なる管理レベルを持つ明確な階層があります。,1637479
+,,,hip,"〈C〉腰,背骨, ヒップ",/hɪp/,19996,She injured her hip while dancing.,彼女は踊っている最中に腰を負傷しました。,2999717
+,,,inclusion,"【名/U】中に含めること,包含【C】中に含まれた物",/ɪnˈkluːʒən/,21430,The inclusion of diverse perspectives is essential for a well-rounded discussion.,多様な視点の包括は、円滑な議論に不可欠です。,1639381
+,,,industrialization,"産業化,工業化",/ɪnˌdʌstriəlaɪˈzeɪʃən/,21697,Industrialization played a crucial role in the economic development of the country.,産業化は国の経済発展において重要な役割を果たしました。,3000150
+,,,infect,〈他〉感染させる、影響を及ぼす,/ɪnˈfɛkt/,21774,The virus can infect humans easily.,ウイルスは人間を簡単に感染させることができます。,3000172
+,,,initiate,【動/他】始める、入会させる、教える,/ɪˈnɪʃiˌeɪt/,21921,We need to initiate a plan of action to solve this problem.,この問題を解決するために、行動計画を開始する必要があります。,1017743
+,,,insert,"(…に)…‘を'差し込む,挿入する《+名+in(into, between)+名》  / 挿入物;(別刷りの)差し込みページ;(新聞などの)折り込みビラ",/ɪnˈsɜːrt/,22037,Please insert the key into the lock.,鍵をロックに差し込んでください。,3000240
+,,,intermediate,"中級の,中間の",/ˌɪntərˈmiːdiət/,22280,She is at an intermediate level in French.,彼女のフランス語は中級レベルです。,1633278
+,,,irrelevant,"無関係の,重要でない",/ɪˈrɛləvənt/,22610,The color of the walls is irrelevant to the overall design.,壁の色は全体のデザインには無関係です。,3000397
+,,,kidney,"〈C〉腎臓 / 〈U〉《文》気質,性質",/ˈkɪdni/,23354,He was diagnosed with a kidney infection.,彼は腎臓感染症と診断されました。,3000572
+,,,leaf,"〈C〉(木・草の)葉  / 〈C〉花びら  / 〈C〉(本などのページの裏表)1枚  / 〈U〉(金属の)薄片,箔(はく)  / 〈C〉(折りたたみ式テーブルの)補助板  / 《おもに米》〈木が〉葉を出す《+out》  / (本などの)ページをばらばらとめくる,内容にざっと目を通す》+through+名》",/liːf/,24093,The leaf of the tree was very large.,木の葉はとても大きかった。,1623526
+,,,lecturer,〈C〉《...の》講演者《in ...》 / (大学の)講師,/ˈlɛktʃərər/,24160,The lecturer gave an informative presentation on the topic.,講演者はそのトピックについての情報を提供するプレゼンテーションを行いました。,3000790
+,,,lever,"てこ,レバー  / ‘を'てこを使って動かす",/ˈlɛvər/,24343,He used a lever to lift the heavy box.,彼は重い箱を持ち上げるためにてこを使った。,3000826
+,,,logical,"論理学の  / 論理的な  / (論理上)必然の,不可避の",/lɑːdʒɪkəl/,24920,Logical reasoning is an important skill in the field of philosophy.,論理的な推論は哲学の分野で重要なスキルです。,1662581
+,,,loop,"(糸・ひも・針金などで作った)輪・輪状のもの;(輪状の)湾曲部・(宙返り飛行・スケートなどで描く)輪・ループ (ある条件が成立するまで繰り返し実行される，プログラム中に記述された一連の命令のこと)・仲間、影響｝を受け合う間柄・同列の立場・「keep誰々in the loop」として、「keep誰々informed：情報を（人）に絶えず提供し続ける、報告を（人）に欠かさない、（人）に逐次連絡する、（人）に常に通知する」・避妊リング; (鉄道・電線などの)環状線(loop line)・…‘を'輪にする,輪で囲む・…‘を'輪で結ぶ,輪で締める《+up+名,+名+up》・輪になる,輪を描く",/lup/,25023,She threaded the string through the loop.,彼女は糸を輪の中に通した。,3001006
+,,,lump,"【名/C】(一定の形のない) 塊 / こぶ, はれもの / 【形】塊になった / 一まとめの / 【動/他】〈いくつかのもの〉を一まとめにする《together》 / 【動/自】塊になる",/lʌmp/,25255,I found a lump on my arm.,私は腕にしこりを見つけました。,3001053
+,,,lung,"〈C〉《しばしば複数形で》肺, 肺臓",/lʌŋ/,25274,He has a problem with his lung.,彼は肺の問題を抱えています。,3001062
+,,,marble,〈U〉大理石  / 《複数形で;単数扱い》おはじき遊戯  / 〈C〉おはじきの石,/ˈmɑːrbl/,25856,The statue was made of marble.,その像は大理石で作られていました。,3001196
+,,,mechanic,"機械工,職工",/məˈkænɪk/,26257,The mechanic fixed my car.,機械工は私の車を修理しました。,3001313
+,,,merge,"〈自〉〈会社・組織が〉合併する, 《...と》合併する《with ...》 / 《…に》溶け込む《into, in ...》 / 〈他〉〈会社・組織〉を合併する, 《...と》...を合併する《with ...》",/mɜːrdʒ/,26490,The two companies decided to merge in order to expand their market share.,2つの会社は市場シェアを拡大するために合併することを決定しました。,3001375
+,,,minus,"…を引くと,を減ずると  / 《話》…なしで,を失って,のない(without)",/mɑɪnəs/,26992,"That will be $1,500, minus the deposit of $150 that you already paid.",すでに支払った150ドルを差し引くと、1500ドルとなる。,3010607
+,,,missile,"ミサイル,ロケット弾  / 《文》飛び道具(石,矢,投げやりなど)",/mɪˈsaɪl/,27132,The missile was launched from a military base.,ミサイルは軍事基地から発射されました。,3001529
+,,,monopoly,"〈U〉〈C〉《単数形で》(事業などの)独占,(商品の)専売;(一般に)(…の)独占,占有《+of+名》  / 〈C〉(国家・特許などによる)(…の)独占権,専売権《+of(on)+名》  / 〈C〉独占企業,専売会社(公社)  / 〈C〉(独占の対象となる)専売品,専売業,独占事業",/məˈnɒp.ə.li/,27433,The company has a monopoly on the market.,その会社は市場を独占している。,3001608
+,,,motive,"〈C〉《...の》動機,誘因,目的《for, of ...》",/ˈmoʊtɪv/,27633,His motive for studying abroad was to learn a new language.,彼の留学の動機は新しい言語を学ぶためでした。,3001666
+,,,multiply,"を増やす, を繁殖させる / 《ある数を》〈ある数〉に掛ける 《by ...》 / 〈数・量などが〉増える / 掛け算をする",/mʌl.tɪ.plaɪ/,27848,She likes to multiply her savings by investing in stocks.,彼女は株式投資で貯金を増やすことが好きです。,3001728
+,,,myth,"〈C〉(個々の)神話,神代物語;〈U〉《集合的に》神話  / 〈C〉神話的な人(物・事)  / 〈C〉作り話,伝説;(…という)作り話《+that節》",/mɪθ/,28010,The story of Atlantis is a famous myth.,アトランティスの物語は有名な神話です。,3001761
+,,,nest,"(鳥・昆虫・魚類・小動物などの)巣,巣穴  / 《集合的に》巣の中の鳥(動物など),(昆虫などの)群れ  / 居ごこちよい場所,落ちつける場所  / (犯罪などの)温床;(悪党などの)巣窟(そうくつ)  / (入れ子式・重箱式などになった物の)一組,一そろい《+of+名》  / 巣を作る,巣ごもる  / …‘を'巣に入れる  / (巣に入れるように)…‘を'すっぽり収める  / …‘を'入れ子式にする,重ね合わせる",/nɛst/,28398,The bird built a nest in the tree.,鳥が木の中に巣を作りました。,3001879
+,,,obtain,"〈他〉(努力して)…を得る, を手に入れる / 《...に》...をもたらす, を得させる《for ...》 / 〈自〉《文》〈習慣・制度などが〉存続する",/əbˈteɪn/,29236,I was able to obtain the information I needed.,必要な情報を手に入れることができました。,3002098
+,,,occurrence,"〈U〉(事件などが) 起こること, 発生 / 〈C〉でき事, 事件",/əˈkɜrəns/,29270,The occurrence of the event was unexpected.,事件の発生は予期されなかった。,3002111
+,,,overview,"〈C〉概観,大要",/ˈoʊvərˌvjuː/,30185,"Before we get into the details, let me give you a brief overview of the project.",詳しい説明に入る前に、プロジェクトの概要を説明します。,1626905
+,,,parenthesis,〈C〉《複数形で》括弧 / 挿入語句,/pəˈrɛnθəsɪs/,30640,Please enclose the information in parentheses.,情報を括弧で囲んでください。,3002490
+,,,pardon,"〈U〉〈C〉(…を)許すこと,容赦すること《+for+名(doing)》  / 〈C〉恩赦,赦免  / =indulgence",/pɑrdn/,30629,I asked him for his pardon.,彼に許しを求めた。,1623644
+,,,partition,"〈U〉(…の)分割,区分《+of+名》  / 〈C〉(分割された)部分  / 〈C〉仕切り壁  / (…に)…‘を'分割する,分配する《+名+into+名》  / …‘を'仕切る,区切る《+off+名,+名+off》",/pɑrˈtɪʃən/,30751,The room was divided into two partitions.,部屋は2つのパーティションに分割されていた。,3002513
+,,,physiological,生理学上の;生理的な,/fɪziəˈlɑdʒɪkəl/,31753,Physiological changes occur in the body during exercise.,運動中には身体の生理学的な変化が起こります。,1651482
+,,,precipitate,"【動/他】を思いがけなく引き起こす /  《…の中に》を投げ落とす,《…の状態に》を陥らせる《into ...》 / を沈殿させる / 【動/自】(流動体が)沈殿して固体になる /  【名/U】沈殿物",/pɹɪˈsɪpɪteɪt/,33017,The sudden drop in temperature caused the rain to precipitate.,気温の急な下降が雨を降らせた。,1663218
+,,,prejudice,"〈U〉〈C〉《…に対する不当な》先入観,偏見《against ...》;《…に好意的な》先入観,えこひいき《in favor of ...》  / 〈U〉不利益,損害",/prɪˈdʒʊdɪs/,33111,Prejudice is a harmful mindset that can lead to discrimination.,先入観は差別につながる有害な心構えです。,3003073
+,,,prey,"【名】餌食,獲物；捕食；【動/自】捕食する",/preɪ/,33307,The lion stalked its prey in the tall grass.,ライオンは高い草の中で獲物を待ち伏せした。,3003127
+,,,rainfall,"〈C〉降雨,雨降り  / 〈U〉雨量",/ˈreɪnfɔːl/,34693,The heavy rainfall caused flooding in the city.,大雨が都市で洪水を引き起こしました。,3003459
+,,,replicate,"を複製する, を繰り返す / 〈研究結果など〉を再現する / 細胞分裂で再生する, 自己複製する",/ˈrɛplɪˌkeɪt/,35670,Scientists are attempting to replicate the results of the initial experiment to confirm its validity.,科学者たちは、最初の実験の結果を再現し、その妥当性を確認しようとしている。,1626797
+,,,replication,"写し,複写,複製  / 《文》(被告の訴答に対する)原告の訴答",/rɛplɪˈkeɪʃən/,35671,The process of DNA replication is essential for cell division.,DNA複製の過程は細胞分裂に不可欠です。,1654126
+,,,rope,"〈U〉なわ,綱,ロープ;〈C〉(1本の)なわ  / 〈C〉一つながり(の…)《+of++名》  / 《the~》絞首索;絞首刑  / 〈C〉投げなわ  / 《複数形で》ロープス(ボクシングなどでリングを囲った綱)  / …‘を'なわで縛る(くくる)《+up+名,??+名+up》  / 〈場所〉‘を'なわで囲う(仕昔る)《+off+名,+名+off》  / 《米》…‘を'投げなわで捕らえる  / 〈登山者が〉ロープで体を結び合わせる《+up》  / 〈登山者が〉(…を)ロープで登る(降りる)《+up(down)+名》",/roʊp/,36478,He tied the rope around the tree.,彼は木の周りにロープを結んだ。,3003958
+,,,rotate,"回転する  / 循環する,交替する  / …‘を'回転させる  / …‘を'循環させる  / 〈人〉‘を'交替で服務させる",/ˈroʊteɪt/,36512,The Earth rotates on its axis.,地球は軸を中心に回転する。,3003963
+,,,sensible,"分別がある,思慮深い / 実用的な,実用本位の / 顕著な,目立つ / 認識している",/'sɛnsəbəl/,38103,She always gives sensible advice.,彼女はいつも賢明なアドバイスをしてくれます。,3004343
+,,,skip,"〈自〉軽く跳ねる, ぴょんぴょん跳ぶ / 《...を》省く《over, through ...》 / 〈他〉…を軽く跳び越える / を省く",/skɪp/,39213,I usually skip breakfast because I'm not hungry in the morning.,朝食は普段食べない。朝はお腹が空かないから。,3004643
+,,,slavery,"奴隷制度;奴隷の身分,奴隷の状態  / (欲望・悪習などの)とりこになっていること《+to+名》  / 骨の折れる仕事,つらい労働",/'sleɪvəri/,39320,Slavery was abolished in the 19th century.,奴隷制度は19世紀に廃止されました。,1647297
+,,,superior,"(程度・質が) 《...より》優れた, 優秀な《to ...》 / (地位・階級などが) 上位の",/suːˈpɪəriər/,41843,She is a superior athlete.,彼女は優れたアスリートです。,3005308
+,,,terminology,"〈U/C〉術語,専門用語 / (特定の分野の)用語法",/tɜːr.mɪˈnɒl.ə.dʒi/,42882,The terminology used in this field can be quite complex.,この分野で使われる専門用語は非常に複雑になることがあります。,1628451
+,,,ton,"(重量単位の)トン  / (容積単位の)トン(物によって異なり,木材では40立方フィート,小麦では20立方フィート)  / 《話》大量(の…),多数(の…)《+of+名》",/tɒn/,43637,The cargo ship can carry up to 10 tons of goods.,その貨物船は最大で10トンの貨物を運ぶことができます。,3005807
+,,,transmission,"〈U〉《...を》伝えること, 《...が》伝えられること, 伝達, 伝送《of ...》 / 〈C〉(ラジオ・テレビなどで)送られたもの / (車の)変速装置",/trænzˈmɪʃən/,44035,The transmission of information through the internet is fast and efficient.,インターネットを通じた情報の伝送は速くて効率的です。,3005914
+,,,upward,"上のほうへ,上向きに  / (地位.階級などが)上位へ  / (数量などが)…以上,さらに多く  / (…から)以降  / (大都市.水源.内陸)のほうへ",/ˈʌpwərd/,45622,The bird flew upward into the sky.,鳥は上のほうへ空に飛んでいった。,3006299
+,,,viable,"生存できる, 生育できる / 実行できる, 実現可能な",/ˈvaɪəbəl/,46136,This plan is not viable.,この計画は実行可能ではありません。,1628719
+,,,vowel,〈C〉母音 / 《話》母音字,/ˈvaʊəl/,46469,The English alphabet has five vowels.,英語のアルファベットには5つの母音があります。,3006510
+,,,critically,"非常に,決定的に / 危険なほどに / 批評的に / 注意深く",/ˈkrɪtɪkəli/,48301,The movie was critically acclaimed.,その映画は批評家に絶賛されました。,3006989
+,,,nonlinear,"【形】直線的でない；突然変化する； 非線形の,非1次の",/ˌnɒnˈlɪnɪər/,48312,The relationship between income and happiness is nonlinear.,所得と幸福の関係は非線形です。,1637719
+,,,amino,【名/U】アミノ酸,/əˈmiːnoʊ/,48315,Amino acids are the building blocks of proteins.,アミノ酸はタンパク質の構成要素です。,1637720
+,,,morphological,"【形】形態学的な,形態学の；形態上の,形態的な",/mɔrˌfɑləˈdʒɪkəl/,48316,Morphological analysis is an important part of linguistics.,形態学的な分析は言語学の重要な一部です。,1662533
+,,,phonological,【形】音韻論の；音韻体系の；音韻的な,/fəˈnɒlədʒɪkəl/,48320,Phonological rules govern the sound patterns of a language.,音韻規則は言語の音のパターンを制御する。,1637725
+,,,semi,"【接頭辞】半…；やや…,いくぶん…,不十分な",/ˈsɛmi/,48321,I ate a semi-ripe banana.,私は半熟のバナナを食べました。,1641114
+,,,descriptor,【名/C】記述語；記述子,/dɪˈskrɪptər/,48322,The descriptor of the product was very detailed and informative.,その製品の記述は非常に詳細で有益でした。,1635563
+,,,biodiversity,【名/U】生物多様性,/baɪoʊdɪ'vɜrsəti/,48318,Biodiversity is essential for maintaining a healthy ecosystem.,生物多様性は健全な生態系を維持するために不可欠です。,1640348
+,,,epidemiology,"【名/U】疫学,流行疫学",/ˌɛpɪˌdiːmiˈɒlədʒi/,48313,"Epidemiology is the study of the distribution and determinants of health-related states or events in specified populations, and the application of this study to control health problems.",疫学とは、特定の人口における健康関連の状態や出来事の分布と決定要因の研究、およびこの研究を用いた健康問題の制御の応用です。,1637402
+,,,effectiveness,〈U〉有効性,/ɪˈfɛktɪvnəs/,48302,The effectiveness of this new treatment is still being studied.,この新しい治療の効果はまだ研究中です。,3006994
+,,,enormously,"非常に；ものすごく,途方もなく",/ɪˈnɔːrməsli/,48297,She was enormously talented in playing the piano.,彼女はピアノを演奏するのが非常に上手でした。,3006991
+,,,multi,【接頭辞】多くの…；種々の…：多数（倍）の...,/ˈmʌlti/,48319,Multiculturalism is the key to a thriving society.,多文化主義は繁栄する社会の鍵です。,3006997
+,,,substrate,"【名/C】基層；基板；基質；回路基盤；隠れた特質；基礎,土台",/sʌbˈstreɪt/,48317,The substrate is placed in the container.,基板は容器内に配置されている。,1628924
+,,,randomly,【副】無作為に,/'rændəmli/,48308,He randomly picked a number between 1 and 10.,彼は無作為に1から10までの数字を選んだ。,1654355
+,,,sediment,"《時にa~》沈殿物,かす(dregs)  / (岩・石・土砂などの)堆積(たいせき)物",/sɛdɪmənt/,37850,The sediment settled at the bottom of the river.,沈殿物は川の底に沈んだ。,1635165
+,,,donor,"寄付者,寄贈者  / (移植用の組織・器官の)提供者,献血者",/ˈdoʊnər/,12659,The donor generously contributed to the charity organization.,寄付者は慈善団体に寛大に貢献しました。,2997807
+,,,closure,"〈U〉閉鎖 / 閉店, 休業 / 終止, 終局",/ˈkloʊʒər/,7973,The closure of the factory resulted in the loss of many jobs.,工場の閉鎖により、多くの仕事が失われました。,1642136
+,,,conservation,"〈U〉保存,(特に自然環境の)保護",/kɑn.sɚ'veɪ.ʃən/,9055,Conservation is important for preserving our natural resources.,自然資源を保護するためには保全が重要です。,3009807
+,,,coordination,"同等[にすること]  / (筋肉運動の)整合,釣り合い",/kəʊˌɔːdɪˈneɪʃən/,9386,Coordination is important for a successful team.,チームの成功には、調整が重要です。,3009896
+,,,contour,"【名/C】輪郭, 外形 / (言葉の)抑揚を表す線 / 【形】等高線に沿った / 【動/他】(道路)を等高線に沿って建設する / (ある地域)の等高線を地図に記入する",/ˈkɑntʊr/,9227,The hiker followed the contour of the mountain to reach the summit.,ハイカーは山の輪郭に沿って頂上にたどり着いた。,1637393
+,,,communicative,"話好きな,おしゃべりの  / 通信の,伝達の",/kəˈmjuːnɪkətɪv/,8588,She is a very communicative person.,彼女はとても話好きな人です。,1637144
+,,,discourse,"【名/U】対話,会談,談話【C】講演,講義【動/自】 (かたい調子で長々と)論ずる,講演する",/dɪˈskɔːrs/,12115,"In their discourse after dinner, they talked about politics.",夕食後の談話で彼らは政治について話し合った。,5048
+,,,alliance,"〈U〉〈C〉(国家間の)同盟,協定;〈C〉同盟国  / 〈U〉〈C〉(個人・組織間の)協力,提携  / 〈U〉〈C〉(…との)縁組み,姻戚関係;交友《+with+名》",/əˈlaɪəns/,1143,The two nations formed a powerful alliance to combat their common enemy.,二つの国家は共通の敵と戦うために強力な同盟を結成した。,2995957
+,,,globalization,【名/U】世界（標準）化,/ˌɡloʊ.bə.lɪˈzeɪ.ʃən/,48306,Globalization has led to increased interconnectedness and interdependence among countries.,グローバリゼーションは、国々の間の相互関連性と相互依存性の増加につながっています。,1637768
+,,,algorithm,アルゴリズム(最大公約数を求める互除法などの演算方式),/ˈælɡəˌrɪðəm/,1069,The engineers developed an efficient algorithm to solve the problem.,エンジニアは問題を解決する効率的な演算方式を開発した。,1627151
+,,,inversion,"反対,転倒  / (文法で)倒置[法]",/ɪnˈvɜːrʒən/,22458,Inversion is a linguistic phenomenon where the normal word order of a sentence is reversed.,倒置法とは、文の通常の語順が逆になる言語現象です。,1639446
+,,,radius,半径  / (行動・活動・能力なのどの)及ぶ範囲《+of+名》  / 橈骨(とうこつ)(上腕の骨の一つ),/ˈreɪdiəs/,34640,The radius of the circle is 5 centimeters.,円の半径は5センチメートルです。,1628797
+,,,gram,"グラム(重量の単位;《略》g.,gm.,gr.)",/ɡræm/,18336,I bought 500 grams of sugar.,私は砂糖を500グラム買いました。,2999258
+,,,transparency,"〈U〉透明  / 透明なもの,(特に)スライド[写真]",/ˌtrænsˈpɛrənsi/,44051,Transparency is important in building trust.,透明性は信頼を築く上で重要です。,1648902
+,,,interestingly,おもしろく;おもしろいことには,/ˈɪn.tər.ɪs.tɪŋ.li/,22243,"Interestingly, I found a hidden treasure in my backyard.",おもしろいことに、私は庭で隠された宝物を見つけました。,1653011
+,,,interviewer,"面接する人,会見者 / 訪問記者",/ˈɪntərˌvjuːər/,22367,The interviewer asked me many questions.,インタビュアーは私に多くの質問をした。,1623493
+,,,membrane,"(生物の)膜,皮膜",/mɛmˌbreɪn/,26382,The cell membrane is a vital component of all living cells.,細胞膜はすべての生きた細胞の重要な構成要素です。,1636526
+,,,accumulation,"【名/U】蓄積,積み重ね；利殖【C】蓄積物,たまった物",/ˌækjəmjəˈleɪʃən/,325,The accumulation of knowledge is essential for personal growth.,知識の蓄積は個人の成長に不可欠です。,1636557
+,,,appendix,"(本・論文などの)付録,補遺,追加  / 虫様突起",/əˈpɛndɪks/,1923,The detailed data analysis can be found in the appendix of this report.,詳細なデータ分析は、このレポートの付録にあります。,2996158
+,,,availability,"利用できること,有用性,利用価値",/əˌveɪləˈbɪləti/,2767,Please check the availability of the conference room for tomorrow.,明日の会議室の利用可能性を確認してください。,2996433
+,,,semester,"〈C〉(米国・ドイツなどの大学の二学期制の)一学期, 前(後)期(通例15‐18週)",/sɪˈmɛstər/,38032,I am excited for the new semester to begin.,新しい学期が始まるのが楽しみです。,3004325
+,,,prevalence,"〈U〉広く行きわたっていること, 普及, 普及率  / 優勢 / 患者数 / 有病率",/prɛvələns/,33289,The prevalence of obesity is increasing worldwide.,肥満の有病率は世界的に増加している。,1628766
+,,,minimal,"最小の,極小の,最近の",/mɪnɪməl/,26944,This is a minimal example.,これは最小の例です。,1663143
+,,,node,"(茎・幹の)節(ふし)  / (体組織にできた)結節,こぶ(リンパ瘤(りゅう)など)  / (天体の軌道の)交点  / (物事の)中心点",/nəʊd/,28725,The tree has a node at every branch.,その木には、すべての枝に節があります。,1643724
+,,,chloride,塩化物,/ˈklɔːraɪd/,7390,The chloride concentration in the water is too high.,水中の塩化物濃度が高すぎます。,1662536
+,,,instability,〈U〉不安定 / 〈U/C〉(心の)変わりやすさ / 優柔不断,/ɪnstəˈbɪlɪti/,22087,The political instability in the region has led to a decrease in foreign investment.,地域の政情不安により、海外からの投資が減少しています。,1626530
+,,,assembly,"〈C〉(特定の目的をもった) 集会,会合 / 〈U〉(機械の) 組み立て / 〈C〉組み立て部品",/əˈsɛmbli/,2386,The assembly of the new machine took longer than expected.,新しい機械の組み立ては予想よりも時間がかかった。,2996288
+,,,axiom,"〈C〉自明の理, 原理 / (数学の) 公理 / 格言",/ˈæksiəm/,2847,An axiom is a self-evident truth that requires no proof.,公理とは、証明を必要としない自明の真理である。,1017734
+,,,bargain,"〈C〉安い買い物, 掘り出し物 / 契約, 売買取引",/ˈbɑrɡɪn/,3317,I found a great bargain at the flea market.,私はフリーマーケットで素晴らしい掘り出し物を見つけました。,2996540
+,,,monetary,"貨幣の, 通貨の / 金銭上の, 金銭についての",/mɒnəteri/,27360,Monetary policy plays a crucial role in stabilizing the economy.,貨幣政策は経済の安定化に重要な役割を果たしています。,3001592
+,,,analogy,類似 / 類推 / 例え,/əˈnælədʒi/,1443,The teacher used an analogy between a heart and a pump to explain how the circulatory system works.,先生は心臓とポンプの例えを使って循環器系がどのように機能するかを説明しました。,2996046
+,,,approximation,"接近,近似  / 概算  / 近似値",/əˌprɑk.səˈmeɪ.ʃən/,1989,The approximation of the value is 3.14.,値の接近値は3.14です。,1651786
+,,,articulate,"(音節や単語が)はっきり話される,分節的な  / (自分の考えなど)はっきりと表現できる;(人が)考えを口に出せる  / (動物が)関節のある  / 〈語・音節〉'を'はっきり発音する  / 〈気持・考えなど〉'を'はっきり表現する  / …'を'関節でつなぐ,接合する",/ɑrˈtɪkjələt/,2280,She can articulate her thoughts very clearly.,彼女は自分の考えをはっきりと言うことができる。,2996250
+,,,autonomy,"〈U〉(行動などの)自主性 / 自治, 自治権, 自主権 / 〈C〉自治体,自治団体",/ɔːˈtɒnəmi/,2753,"Despite their young age, the students were given the autonomy to choose their own research topics for the project.",若い年齢にもかかわらず、学生にはプロジェクトの研究テーマを自分たちで選択する自主権が与えられました。,1627476
+,,,classification,〈U〉〈C〉分類 / 分類法 / 分類結果,/ˌklæsɪfɪˈkeɪʃən/,7776,Classification is an important step in data analysis.,分類はデータ分析における重要なステップです。,1636648
+,,,collective,"集めた,収集された;畜積された,集積した  / 総合した,合わせた;集団の,団体の,共同の  / =collective noun  / 集産主義組織(事業)",/kəˈlɛktɪv/,8307,They formed a collective to achieve their goals.,彼らは目標を達成するために集めた集団を形成しました。,1635769
+,,,deflection,"(進路などの)ふれ,偏り;(計器などの針の)ふれ,偏差,たわみ,ゆがみ",/dɪˈflɛkʃən/,11151,The driver made a quick deflection to avoid a collision.,運転手は衝突を避けるために素早く方向転換した。,1626118
+,,,developmental,開発の;発達上の;発育上の,/dɪˈvɛləpmɛntəl/,11675,The company is focused on the developmental phase of the project.,会社はプロジェクトの開発フェーズに集中しています。,1636680
+,,,economically,【副】経済的に / 倹約して,/ˌiː.kə.ˈnɑ.mɪ.kəl.i/,13401,She manages her finances economically.,彼女は経済的にお金を管理しています。,2998005
+,,,enforcement,"【名/U】施工,執行,強制",/ɪnˈfɔːrsmənt/,14004,The government is increasing enforcement of traffic laws to improve road safety.,政府は道路安全性を向上させるために交通法の執行を強化しています。,1659877
+,,,facet,"【名】一面,側面,様相；（宝石の）小面；【動/他】（宝石）に小面を刻む.",/'fæsɪt/,15064,She has many facets to her personality.,彼女の人格には多くの側面があります。,1629237
+,,,irrigation,〈U〉灌漑（かんがい）；【医】洗浄,/ˌɪrɪˈɡeɪʃən/,22634,The farmers use irrigation to water their crops.,農民は灌漑を使って作物に水をやります。,1628100
+,,,primer,"〈C〉《...についての》手引き, 入門書 《of ...》 / (塗装の)プライマー",/ˈpraɪmər/,33357,"Before starting her new hobby, she purchased a primer to familiarize herself with the basic concepts and techniques.",新しい趣味を始める前に、彼女は基本的な概念とテクニックに慣れるために入門書を購入しました。,1627365
+,,,minimize,"…‘を'最小限にする  / …‘を'過小評価する,軽視する",/mɪˈnɪmaɪz/,26945,I try to minimize my expenses by budgeting carefully.,私は慎重に予算を立てることで、出費を最小限に抑えるようにしている。,1652449
+,,,acceleration,加速  / 加速度,/əkˌsɛləˈreɪʃən/,252,The car's acceleration was impressive.,車の加速は印象的でした。,1655381
+,,,fertility,"〈U〉肥沃 / 産出力, 繁殖力, 生殖能力 / 豊かさ",/fɚˈtɪləti/,15520,The couple sought medical help to improve their fertility.,夫婦は生殖能力を改善するために医療援助を求めました。,1637982
+,,,scroll,"〈C〉(記録などを書きとめておくための羊皮紙,パピルス紙などの)巻物  / 〈U〉〈C〉(いすのひじかけ・バイオリンなどの)渦巻き形模様(装飾)",/skroʊl/,37599,I unrolled the ancient scroll to reveal its hidden message.,私は古代の巻物を広げて、その隠されたメッセージを明らかにしました。,1646663
+,,,equilibrium,"【名/U/C】(力・勢力・作用などの)釣り合い, 均衡 / (心の)平静",/ˌiːkwɪˈlɪbriəm/,14262,"[[In order to]] maintain equilibrium, she shifted her weight to her back foot.",平衡を保つために、彼女は体重を後ろ足に移した。,1017601
+,,,displacement,"とって代わること,置き換え  / 解職,罷免  / 排水量",/dɪsˈpleɪsmənt/,12290,The displacement of workers by machines is a common occurrence in modern industries.,労働者の機械による置き換えは、現代の産業界ではよくあることです。,1637067
+,,,emit,(水・熱・光・音・声など)を出す / 発する,/ɪˈmɪt/,13826,The factory emits harmful gases into the atmosphere.,工場は有害なガスを大気に排出しています。,1655296
+,,,inhibition,"禁止; 抑制; （心理学で）抑制; （化学で）（反応の）阻害, 抑制",/ˌɪnɪˈbɪʃən/,21906,Smoking is an inhibition in this restaurant.,このレストランでは喫煙は禁止されています。,1637520
+,,,layout,"(都市や建造物などの)設計《+of+名》  / (書籍・新聞の)割り付け,レイアウト《+of+名》",/ˈleɪ.aʊt/,24059,The layout of the city was carefully planned to maximize efficiency.,都市のレイアウトは効率を最大化するために注意深く計画されました。,1630869
+,,,predator,捕(肉)食動物(ライオン・タカなど)  / (強奪・搾取などで)他人を食いものにしている人,/'prɛdətər/,33041,The lion is a fierce predator in the African savannah.,ライオンはアフリカのサバンナで凶暴な捕食動物です。,1645095
+,,,planner,"〈C〉計画者,立案者, プランナー / スケジュール表",/'plænər/,32151,I am a planner at a design firm.,私はデザイン会社のプランナーです。,1665313
+,,,reservoir,"(天然または人工の)貯水池,貯水そう  / (液体・ガス用の)容器,つぼ  / (知識・富などの)貯蔵,蓄積(store)",/rɛzərˌvwɑːr/,35767,The reservoir provides water for the surrounding communities.,貯水池は周辺のコミュニティに水を供給しています。,3003778
+,,,millimeter,ミリメートル(1メートルの1000分の1),/ˈmɪlɪˌmiːtər/,26859,The length of the pencil is 150 millimeters.,鉛筆の長さは150ミリメートルです。,3001471
+,,,mobility,"〈U〉可動性,流動性,変わりやすさ / （軍隊の）機動力",/moʊˈbɪləti/,27222,The development of electric vehicles has greatly improved mobility.,電気自動車の開発は、移動性を大幅に向上させました。,1643302
+,,,portfolio,"(書類などを入れる)折りかばん,書類かばん  / 大臣の職務  / (所有する)有価証券の明細表・ポートフォリオ (金融資産の総体);",/pɔrtˈfəʊlio/,32713,I am currently working on updating my portfolio.,私は現在、ポートフォリオの更新に取り組んでいます。,1627947
+,,,congruent,"(数字などが)符合する / (2図形が)合同の / 《...と》一致している, ふさわしい《with, to ...》",/kɒŋˈɡruːənt/,8980,The two triangles were proven to be congruent after comparing their corresponding angles and side lengths.,2つの三角形は、対応する角度と辺の長さを比較することで、合同であることが証明された。,1627477
+,,,bracket,"(たななどを支える)腕木,たな受け,持ち送り  / (腕木に支えられた)たな,張り出しだな  / 《複数形で》かっこ,角がっこ([ ]など)  / (同類の人の)群,階層",/ˈbrækɪt/,5031,The shelf is supported by brackets.,棚はブラケットで支えられています。,1638363
+,,,pi,"〈C〉パイ(ギリシア語アルファベットの第16字Π,π;英語のP,pに相当)  / 〈U〉円周率 (記号はπ)",/paɪ/,31759,The value of pi is a constant.,円周率の値は不変です。,3009821
+,,,systematic,"系統的 / 体系的な, 組織的な, / 組織化する, 体系化する",/sɪˈstɛmətɪk/,42295,She has a systematic approach to problem-solving.,彼女は問題解決に対して系統的なアプローチを持っています。,3005456
+,,,precede,"《...の点で》 より先に来る, に先行する 《in ...》 / ...の上位である / ...に先立つ / 《...によって》 ...の前置きをする 《with ...》 / 先行する, 先に来る",/prɪˈsiːd/,33001,I always precede my sister in line.,私はいつも姉の前に並びます。,3003041
+,,,circulate,(血液・空気などが)循環する / (うわさなどが) 広まる / (本・新聞などが特に広範囲に) 配布される / ...を循環させる / ...を広める,/sərˈkjəleɪt/,7620,The news of the new product circulates quickly among the customers.,新製品のニュースが顧客の間で速く広まる。,1628447
+,,,practitioner,"〈C〉《かたく》医者, 開業医 / 弁護士 / 専門職従事者, 技術者, 工芸家",/ˌprækˈtɪʃənər/,32943,The physical therapist is a highly skilled practitioner of manual therapy.,理学療法士は、手技療法を行う高度な技術者である。,1017702

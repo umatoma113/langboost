@@ -198,4 +198,11 @@ model BaseWord {
   isFunctionWord Boolean  @default(false)
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
+  listTypes      ListType[]  @relation("WordList")
+}
+
+model ListType {
+  id     Int         @id @default(autoincrement())
+  name   String      @unique  // "NGSL", "TSL", etc.
+  words  BaseWord[]  @relation("WordList")
 }
