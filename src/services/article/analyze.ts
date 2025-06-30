@@ -19,7 +19,7 @@ export async function analyzeArticle(text: string): Promise<AnalyzeResult> {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      model: "gpt-4o",
+      model: "gpt-4.1-mini",
       messages: [
         {
           role: "user",

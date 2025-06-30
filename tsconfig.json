@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@generated/*": ["./app/generated/prisma/*"],
     },
     "types": ["next-auth", "next-auth/jwt"],
   },
