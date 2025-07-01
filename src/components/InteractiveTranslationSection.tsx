@@ -43,6 +43,7 @@ export default function InteractiveTranslationSection({
   const [popupWord, setPopupWord] = useState<string | null>(null);
   const [popupMeaning, setPopupMeaning] = useState<string | null>(null);
   const [localWords, setLocalWords] = useState<WordEntry[]>(wordList);
+  const [isFetching, setIsFetching] = useState(false);
 
   const enSentences = original.split(/(?<=[.?!])\s+/);
   const jaSentences = translation.split(/(?<=[。！？])\s*/);
@@ -87,6 +88,35 @@ export default function InteractiveTranslationSection({
     setPopupTargetKey(null);
   };
 
+  const handleFetchMeaning = async () => {
+    if (!popupWord) return;
+    const normalized = normalizeWordWithCache(popupWord);
+    setIsFetching(true);
+    try {
+      const res = await fetch('/api/fetchMeaning', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ baseWord: normalized }),
+      });
+
+      const data = await res.json();
+      if (data.meaning) {
+        setPopupMeaning(data.meaning);
+        setLocalWords((prev) =>
+          prev.map((w) =>
+            normalizeWordWithCache(w.word) === normalized
+              ? { ...w, meaning: data.meaning }
+              : w
+          )
+        );
+      }
+    } catch (err) {
+      console.error('意味取得エラー:', err);
+    } finally {
+      setIsFetching(false);
+    }
+  };
+
   const highlightWords = (sentence: string, sentenceIndex: number) => {
     const words = sentence.split(/(\s+)/);
     return words.map((part, idx) => {
@@ -112,9 +142,8 @@ export default function InteractiveTranslationSection({
       return (
         <span key={wordKey} className="relative inline-block">
           <span
-            className={`underline cursor-pointer transition-colors duration-150 ${
-              isRegistered ? 'text-blue-600' : 'text-gray-800'
-            }`}
+            className={`underline cursor-pointer transition-colors duration-150 ${isRegistered ? 'text-blue-600' : 'text-gray-800'
+              }`}
             onClick={() => {
               setPopupTargetKey(wordKey);
               setPopupWord(trimmed);
@@ -128,8 +157,17 @@ export default function InteractiveTranslationSection({
             <div className="absolute z-50 w-72 p-4 bg-white border border-gray-300 rounded shadow-lg text-sm mt-1">
               <div className="font-bold text-gray-900 mb-2">{popupWord}</div>
               <div className="text-gray-700 mb-2">{popupMeaning}</div>
+
               {isRegistered ? (
                 <div className="text-blue-600 text-xs font-semibold">✅ 登録済み</div>
+              ) : popupMeaning === '意味未登録' ? (
+                <button
+                  onClick={handleFetchMeaning}
+                  className="text-xs px-3 py-1 rounded bg-green-500 text-white hover:bg-green-600"
+                  disabled={isFetching}
+                >
+                  {isFetching ? '取得中...' : '🔍 意味を取得'}
+                </button>
               ) : (
                 <button
                   onClick={handleRegister}
@@ -138,6 +176,7 @@ export default function InteractiveTranslationSection({
                   ＋ 単語を登録
                 </button>
               )}
+
               <button
                 onClick={() => setPopupTargetKey(null)}
                 className="absolute top-1 right-2 text-gray-400 hover:text-gray-600 text-xs"
