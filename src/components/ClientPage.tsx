@@ -11,7 +11,6 @@ type Props = {
 };
 
 export default function ClientPage({ user }: Props) {
-  const [url, setUrl] = useState("");
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -33,7 +32,7 @@ export default function ClientPage({ user }: Props) {
       const result = await analyzeAndExtractAction(formData);
 
       // クエリパラメータとして遷移先へ渡す
-     const params = new URLSearchParams();
+      const params = new URLSearchParams();
       params.set("summary", encodeURIComponent(result.summary));
       params.set("translation", encodeURIComponent(result.translation));
       params.set("words", JSON.stringify(result.words));
@@ -51,31 +50,26 @@ export default function ClientPage({ user }: Props) {
     <>
       <Header showMyPage />
       <main className="flex-grow bg-white px-4 py-6 md:py-12">
-        <section className="text-center mb-6">
-          <h2 className="text-3xl font-bold text-gray-900">英語力を、毎日のニュースで</h2>
-          <h2 className="text-3xl font-bold text-gray-900 mt-2">育てよう</h2>
-          <p className="text-gray-600 mt-4">
-            ようこそ、{user.name ?? "ユーザー"} さん！記事URLや文章を貼るだけで、日本語の要約と単語抽出ができる語学学習ツール。
+        <section className="text-center mb-8">
+          <h2 className="text-3xl font-bold text-gray-900">英語力を、毎日のニュースで育てよう</h2>
+          <p className="text-gray-600 mt-15 mb-15 text-sm md:text-base">
+            ようこそ、{user.name ?? "ユーザー"} さん！<br />
+            記事本文を貼り付けるだけで、日本語の要約と単語抽出ができる語学学習ツールです。
           </p>
         </section>
 
-        <div className="max-w-2xl mx-auto mt-12 space-y-6">
-          <input
-            type="text"
-            placeholder="https://example.com/news..."
-            className="w-full border border-gray-300 rounded px-4 py-3 text-gray-700 placeholder-gray-400"
-            value={url}
-            onChange={(e) => setUrl(e.target.value)}
-          />
-
-          <div className="text-center text-sm text-gray-500">または</div>
-
+        <div className="max-w-2xl mx-auto space-y-6">
           <textarea
             placeholder="ここに記事の本文を貼り付けてください…"
-            className="w-full border border-gray-300 rounded px-4 py-3 h-60 text-gray-700 placeholder-gray-400"
+            className="w-full border border-gray-300 rounded px-4 py-3 h-110 text-gray-700 placeholder-gray-400 focus:ring-2 focus:ring-blue-300"
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
+
+          {/* 注意書き */}
+          <p className="text-sm text-gray-500 text-center">
+            ※ 有料記事や著作権で保護されたコンテンツの貼り付けはご遠慮ください。
+          </p>
 
           <div className="flex justify-center">
             <button
@@ -87,7 +81,7 @@ export default function ClientPage({ user }: Props) {
             </button>
           </div>
 
-          {error && <p className="text-red-500 text-center mt-4">{error}</p>}
+          {error && <p className="text-red-500 text-center">{error}</p>}
         </div>
       </main>
     </>
