@@ -121,7 +121,7 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
                       <span className="truncate">{article.title}</span>
                       <div className="flex space-x-2">
                         <Link href={`/summary/${article.id}`}>
-                          <button className="flex-shrink-0 w-16 px-3 py-1 text-sm text-white bg-blue-600 hover:bg-red-700 rounded shadow">
+                          <button className="flex-shrink-0 w-16 px-3 py-1 text-sm text-white bg-blue-600 hover:bg-blue-700 rounded shadow">
                             開く
                           </button>
                         </Link>
