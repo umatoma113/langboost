@@ -121,13 +121,13 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
                       <span className="truncate">{article.title}</span>
                       <div className="flex space-x-2">
                         <Link href={`/summary/${article.id}`}>
-                          <button className="px-3 py-1 text-sm text-white bg-blue-600 hover:bg-blue-700 rounded shadow">
+                          <button className="flex-shrink-0 w-16 px-3 py-1 text-sm text-white bg-blue-600 hover:bg-red-700 rounded shadow">
                             開く
                           </button>
                         </Link>
                         <button
                           onClick={() => handleArticleDelete(article.id)}
-                          className="px-3 py-1 text-sm text-white bg-red-600 hover:bg-red-700 rounded shadow"
+                          className="flex-shrink-0 w-16 px-3 py-1 text-sm text-white bg-red-600 hover:bg-red-700 rounded shadow"
                         >
                           削除
                         </button>
@@ -158,7 +158,7 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
                       <span>{entry.word.word} - {entry.word.meaning}</span>
                       <button
                         onClick={() => handleWordDelete(entry.word.id)}
-                        className="ml-4 text-red-600 text-sm hover:underline"
+                        className="flex-shrink-0 w-14 px-3 py-1 text-sm text-white bg-red-600 hover:bg-red-700 rounded shadow"
                       >
                         削除
                       </button>
