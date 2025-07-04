@@ -2,16 +2,27 @@
 import { prisma } from '../../../lib/db';
 
 export async function getLatestQuizResult(userId: string) {
-    const latestHistories = await prisma.quizHistory.findMany({
+    const latestTime = await prisma.quizHistory.aggregate({
         where: { userId },
-        orderBy: { executedAt: 'desc' },
-        take: 10,
+        _max: { executedAt: true },
+    });
+
+    const executedAt = latestTime._max.executedAt;
+
+    if (!executedAt) return [];
+
+    const latestHistories = await prisma.quizHistory.findMany({
+        where: {
+            userId,
+            executedAt,
+        },
+        orderBy: { id: 'asc' },
         include: {
             quizTemplate: true,
         },
     });
 
-    return latestHistories.map((result: typeof latestHistories[number]) => {
+    return latestHistories.map((result) => {
         const template = result.quizTemplate;
         const choices = [
             template.choice1,

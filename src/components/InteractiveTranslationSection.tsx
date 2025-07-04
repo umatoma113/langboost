@@ -1,7 +1,8 @@
 // src/components/InteractiveTranslationSection.tsx
+// ✅ 修正済み: InteractiveTranslationSection.tsx
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useEffect, useState, useMemo, useRef } from 'react';
 import { normalizeWordWithCache } from '../../lib/normalizeWordWithCache';
 
 const excludedWords = new Set([
@@ -27,15 +28,13 @@ type SentencePair = {
 };
 
 type Props = {
-  original: string;
-  translation: string;
+  sentencePairs: SentencePair[];
   wordList: WordEntry[];
   onRegister: (word: string, meaning: string) => void;
 };
 
 export default function InteractiveTranslationSection({
-  original,
-  translation,
+  sentencePairs,
   wordList,
   onRegister,
 }: Props) {
@@ -44,17 +43,8 @@ export default function InteractiveTranslationSection({
   const [popupMeaning, setPopupMeaning] = useState<string | null>(null);
   const [localWords, setLocalWords] = useState<WordEntry[]>(wordList);
   const [isFetching, setIsFetching] = useState(false);
-
-  const enSentences = original.split(/(?<=[.?!])\s+/);
-  const jaSentences = translation.split(/(?<=[。！？])\s*/);
-
-  const sentencePairs: SentencePair[] = enSentences.map((english, i) => ({
-    english,
-    japanese: jaSentences[i] ?? '',
-  }));
-
   const [visible, setVisible] = useState<boolean[]>(
-    Array(Math.min(enSentences.length, jaSentences.length)).fill(false)
+    Array(sentencePairs.length).fill(false)
   );
 
   const toggle = (index: number) => {
@@ -142,8 +132,7 @@ export default function InteractiveTranslationSection({
       return (
         <span key={wordKey} className="relative inline-block">
           <span
-            className={`underline cursor-pointer transition-colors duration-150 ${isRegistered ? 'text-blue-600' : 'text-gray-800'
-              }`}
+            className={`underline cursor-pointer transition-colors duration-150 ${isRegistered ? 'text-blue-600' : 'text-gray-800'}`}
             onClick={() => {
               setPopupTargetKey(wordKey);
               setPopupWord(trimmed);
@@ -189,6 +178,52 @@ export default function InteractiveTranslationSection({
       );
     });
   };
+
+  const latestPairsRef = useRef(sentencePairs);
+const articleIdRef = useRef<number | null>(null); // 初期は null
+
+useEffect(() => {
+  latestPairsRef.current = sentencePairs;
+}, [sentencePairs]);
+
+useEffect(() => {
+  if (typeof window === 'undefined') return;
+
+  // articleId をクライアントで取得
+  const id = Number(window.location.pathname.split('/').pop());
+  if (!isNaN(id)) {
+    articleIdRef.current = id;
+  }
+
+  const handleSave = () => {
+    if (articleIdRef.current === null) return;
+
+    const payload = {
+      articleId: articleIdRef.current,
+      sentencePairs: latestPairsRef.current,
+    };
+
+    console.log("💾 AutoSave payload:", payload);
+    navigator.sendBeacon('/api/saveSummary', JSON.stringify(payload));
+  };
+
+  const handleVisibilityChange = () => {
+    if (document.visibilityState === 'hidden') {
+      handleSave();
+    }
+  };
+
+  window.addEventListener('beforeunload', handleSave);
+  window.addEventListener('pagehide', handleSave);
+  document.addEventListener('visibilitychange', handleVisibilityChange);
+
+  return () => {
+    window.removeEventListener('beforeunload', handleSave);
+    window.removeEventListener('pagehide', handleSave);
+    document.removeEventListener('visibilitychange', handleVisibilityChange);
+  };
+}, []);
+
 
   return (
     <section className="bg-gray-50 border border-gray-200 rounded-lg p-6 max-w-6xl mx-auto relative">

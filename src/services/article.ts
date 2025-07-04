@@ -1,11 +1,14 @@
 // src/services/article.ts
 import { prisma } from '../../lib/db';
 
+type SentencePair = { english: string; japanese: string };
+
 export type ArticleWithWords = {
   id: number;
   title: string;
   summary: string;
   translation: string | null;
+  sentencePairs: SentencePair[] | null;
   content: string;
   words: {
     word: string;
@@ -52,14 +55,14 @@ export async function getArticleById(id: number): Promise<ArticleWithWords | nul
   const quizData = article.articleQuizzes[0];
 
   return {
-    id: article.id,
-    title: article.title,
-    summary: article.summary,
-    translation: article.translation,
-    content: article.content,
-    words,
-    quiz: quizData
-      ? {
+  id: article.id,
+  title: article.title,
+  summary: article.summary,
+  translation: article.translation,
+  content: article.content,
+  words,
+  quiz: quizData
+    ? {
         question: quizData.question,
         choice1: quizData.choice1,
         choice2: quizData.choice2,
@@ -68,6 +71,8 @@ export async function getArticleById(id: number): Promise<ArticleWithWords | nul
         answer: quizData.answer,
         explanation: quizData.explanation,
       }
-      : null,
-  };
+    : null,
+  sentencePairs: null, // 👈 一旦 null を明示的に返す
+};
+
 }

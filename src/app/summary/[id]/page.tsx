@@ -2,6 +2,7 @@
 import QuizSection from '@/components/QuizSection';
 import TopPageButtons from '@/components/TopPageButtons';
 import InteractiveTranslationSection from '@/components/InteractiveTranslationSection';
+import AutoSaveOnLeave from '@/components/AutoSaveOnLeave';
 import { getArticleById } from '@/services/article';
 import { getMyRegisteredBaseForms } from '@/services/user/getMyRegisteredBaseForms';
 import { auth } from '../../../../lib/auth';
@@ -11,6 +12,8 @@ import { normalizeWord } from '../../../../lib/normalizeWord';
 import { prisma } from '../../../../lib/db';
 
 export const dynamic = 'force-dynamic';
+
+type SentencePair = { english: string; japanese: string };
 
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
   console.time('summaryPage: 全体処理');
@@ -101,6 +104,15 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
   const filteredWordList = wordList.filter((w): w is Exclude<typeof w, null> => w !== null);
   console.timeEnd('summaryPage: null除外');
 
+  // sentencePairs の生成（または再利用）
+  const sentencePairs: SentencePair[] = (article.sentencePairs ??
+  article.content.split(/(?<=[.?!])\s+/).map((english, i) => ({
+    english,
+    japanese: (article.translation ?? '').split(/(?<=[。！？])\s*/)[i] ?? '',
+  }))
+) as SentencePair[];
+
+
   console.timeEnd('summaryPage: 全体処理');
 
   return (
@@ -115,14 +127,16 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
         </section>
 
         <InteractiveTranslationSection
-          original={article.content}
-          translation={article.translation ?? ''}
+          sentencePairs={sentencePairs}
           wordList={filteredWordList}
           onRegister={async (word, meaning) => {
             'use server';
             await registerWordAction(word, meaning);
           }}
         />
+
+        <AutoSaveOnLeave articleId={article.id} sentencePairs={sentencePairs} />
+
 
         {article.quiz && <QuizSection quiz={article.quiz} />}
       </main>
