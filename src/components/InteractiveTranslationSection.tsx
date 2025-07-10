@@ -43,6 +43,7 @@ export default function InteractiveTranslationSection({
   const [popupMeaning, setPopupMeaning] = useState<string | null>(null);
   const [localWords, setLocalWords] = useState<WordEntry[]>(wordList);
   const [isFetching, setIsFetching] = useState(false);
+  const [isRegistering, setIsRegistering] = useState(false);
   const [visible, setVisible] = useState<boolean[]>(
     Array(sentencePairs.length).fill(false)
   );
@@ -65,18 +66,26 @@ export default function InteractiveTranslationSection({
 
   const handleRegister = async () => {
     if (!popupWord || !popupMeaning || popupMeaning === '意味未登録') return;
-    await onRegister(popupWord, popupMeaning);
+    setIsRegistering(true);
+    try {
+      await onRegister(popupWord, popupMeaning);
 
-    const normalized = normalizeWordWithCache(popupWord);
-    setLocalWords((prev) =>
-      prev.map((w) =>
-        normalizeWordWithCache(w.word) === normalized
-          ? { ...w, isRegistered: true }
-          : w
-      )
-    );
-    setPopupTargetKey(null);
+      const normalized = normalizeWordWithCache(popupWord);
+      setLocalWords((prev) =>
+        prev.map((w) =>
+          normalizeWordWithCache(w.word) === normalized
+            ? { ...w, isRegistered: true }
+            : w
+        )
+      );
+      setPopupTargetKey(null);
+    } catch (err) {
+      console.error('登録エラー:', err);
+    } finally {
+      setIsRegistering(false);
+    }
   };
+
 
   const handleFetchMeaning = async () => {
     if (!popupWord) return;
@@ -160,9 +169,33 @@ export default function InteractiveTranslationSection({
               ) : (
                 <button
                   onClick={handleRegister}
-                  className="text-xs px-3 py-1 rounded bg-blue-500 text-white hover:bg-blue-600"
+                  className="text-xs px-3 py-1 rounded bg-blue-500 text-white hover:bg-blue-600 disabled:opacity-50"
+                  disabled={isRegistering}
                 >
-                  ＋ 単語を登録
+                  {isRegistering ? (
+                    <span className="flex items-center gap-1">
+                      <svg className="animate-spin h-4 w-4 text-white" viewBox="0 0 24 24">
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                          fill="none"
+                        />
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8h4z"
+                        />
+                      </svg>
+                      登録中...
+                    </span>
+                  ) : (
+                    '＋ 単語を登録'
+                  )}
+
                 </button>
               )}
 
@@ -180,49 +213,49 @@ export default function InteractiveTranslationSection({
   };
 
   const latestPairsRef = useRef(sentencePairs);
-const articleIdRef = useRef<number | null>(null); // 初期は null
+  const articleIdRef = useRef<number | null>(null); // 初期は null
 
-useEffect(() => {
-  latestPairsRef.current = sentencePairs;
-}, [sentencePairs]);
+  useEffect(() => {
+    latestPairsRef.current = sentencePairs;
+  }, [sentencePairs]);
 
-useEffect(() => {
-  if (typeof window === 'undefined') return;
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
 
-  // articleId をクライアントで取得
-  const id = Number(window.location.pathname.split('/').pop());
-  if (!isNaN(id)) {
-    articleIdRef.current = id;
-  }
+    // articleId をクライアントで取得
+    const id = Number(window.location.pathname.split('/').pop());
+    if (!isNaN(id)) {
+      articleIdRef.current = id;
+    }
 
-  const handleSave = () => {
-    if (articleIdRef.current === null) return;
+    const handleSave = () => {
+      if (articleIdRef.current === null) return;
 
-    const payload = {
-      articleId: articleIdRef.current,
-      sentencePairs: latestPairsRef.current,
+      const payload = {
+        articleId: articleIdRef.current,
+        sentencePairs: latestPairsRef.current,
+      };
+
+      console.log("💾 AutoSave payload:", payload);
+      navigator.sendBeacon('/api/saveSummary', JSON.stringify(payload));
     };
 
-    console.log("💾 AutoSave payload:", payload);
-    navigator.sendBeacon('/api/saveSummary', JSON.stringify(payload));
-  };
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'hidden') {
+        handleSave();
+      }
+    };
 
-  const handleVisibilityChange = () => {
-    if (document.visibilityState === 'hidden') {
-      handleSave();
-    }
-  };
+    window.addEventListener('beforeunload', handleSave);
+    window.addEventListener('pagehide', handleSave);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
 
-  window.addEventListener('beforeunload', handleSave);
-  window.addEventListener('pagehide', handleSave);
-  document.addEventListener('visibilitychange', handleVisibilityChange);
-
-  return () => {
-    window.removeEventListener('beforeunload', handleSave);
-    window.removeEventListener('pagehide', handleSave);
-    document.removeEventListener('visibilitychange', handleVisibilityChange);
-  };
-}, []);
+    return () => {
+      window.removeEventListener('beforeunload', handleSave);
+      window.removeEventListener('pagehide', handleSave);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
 
 
   return (

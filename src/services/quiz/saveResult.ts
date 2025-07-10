@@ -8,12 +8,18 @@ type SaveResultParams = {
   quizTemplateId: number;
   selectedChoice: number; // 1〜4
   isCorrect: boolean;
+  executedAt: Date;
 };
 
-export async function saveQuizResult(params: SaveResultParams) {
-  const { userId, wordId, quizTemplateId, selectedChoice, isCorrect } = params;
-
-  // 1. 回答履歴を保存
+export async function saveQuizResult({
+  userId,
+  wordId,
+  quizTemplateId,
+  selectedChoice,
+  isCorrect,
+  executedAt,
+}: SaveResultParams) {
+  // 1. 回答履歴を保存（共通のexecutedAtで）
   await prisma.quizHistory.create({
     data: {
       userId,
@@ -21,7 +27,7 @@ export async function saveQuizResult(params: SaveResultParams) {
       quizTemplateId,
       userAnswer: selectedChoice,
       isCorrect,
-      executedAt: new Date(),
+      executedAt,
     },
   });
 

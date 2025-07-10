@@ -9,6 +9,7 @@ type SubmitAnswerParams = {
     quizTemplateId: number;
     selectedChoice: number;
     isCorrect: boolean;
+    executedAt: string;
 };
 
 export async function submitAnswerAction({
@@ -16,6 +17,7 @@ export async function submitAnswerAction({
     quizTemplateId,
     selectedChoice,
     isCorrect,
+    executedAt,
 }: SubmitAnswerParams) {
     const user = await auth();
     if (!user) throw new Error('認証が必要です');
@@ -26,6 +28,7 @@ export async function submitAnswerAction({
         quizTemplateId,
         selectedChoice,
         isCorrect,
+        executedAt: new Date(executedAt),
     });
 
     return { success: true };

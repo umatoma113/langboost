@@ -16,6 +16,8 @@ export default function ClientPage({ user }: Props) {
   const [error, setError] = useState("");
   const router = useRouter();
 
+  const maxLength = 1200;
+
   const handleAnalyzeAndExtract = async () => {
     if (!text.trim()) {
       setError("本文を入力してください。");
@@ -31,12 +33,6 @@ export default function ClientPage({ user }: Props) {
 
       const result = await analyzeAndExtractAction(formData);
 
-      // クエリパラメータとして遷移先へ渡す
-      const params = new URLSearchParams();
-      params.set("summary", encodeURIComponent(result.summary));
-      params.set("translation", encodeURIComponent(result.translation));
-      params.set("words", JSON.stringify(result.words));
-
       router.push(`/summary/${result.id}`);
     } catch (err) {
       console.error(err);
@@ -45,6 +41,13 @@ export default function ClientPage({ user }: Props) {
       setLoading(false);
     }
   };
+
+  const charCountColor =
+    text.length > maxLength * 0.9
+      ? "text-red-500"
+      : text.length > maxLength * 0.75
+        ? "text-yellow-600"
+        : "text-gray-500";
 
   return (
     <>
@@ -64,9 +67,16 @@ export default function ClientPage({ user }: Props) {
             className="w-full border border-gray-300 rounded px-4 py-3 h-110 text-gray-700 placeholder-gray-400 focus:ring-2 focus:ring-blue-300"
             value={text}
             onChange={(e) => setText(e.target.value)}
+            maxLength={maxLength}
           />
 
-          {/* 注意書き */}
+          {/* 文字数カウント & 注意書き */}
+          <p className={`text-sm text-center ${charCountColor}`}>
+            現在の文字数: {text.length} / {maxLength}
+          </p>
+          <p className="text-xs text-gray-500 text-center">
+            ※ 最大文字数は {maxLength} 文字です。入力が多いと処理に時間がかかることがあります。
+          </p>
           <p className="text-sm text-gray-500 text-center">
             ※ 有料記事や著作権で保護されたコンテンツの貼り付けはご遠慮ください。
           </p>

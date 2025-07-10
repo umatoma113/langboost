@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
-import TopLoader from "@/components/TopLoader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,15 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Providers>
-          <TopLoader />
           <div className="min-h-screen flex flex-col">
-            <main className="flex-grow">
-              {children}
-            </main>
+            <main className="flex-grow">{children}</main>
             <footer className="text-center text-xs text-gray-500 py-6 border-t bg-white">
               <div className="mb-2">
                 出典：<br />
@@ -65,7 +59,6 @@ export default function RootLayout({
                 </a>
               </div>
             </footer>
-
           </div>
         </Providers>
       </body>
