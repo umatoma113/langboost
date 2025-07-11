@@ -1,16 +1,16 @@
 // services/quiz/getLeitnerReviewWords.ts
 import { prisma } from '../../../lib/db';
-import { startOfDay, subDays } from 'date-fns';
+import { startOfDay } from 'date-fns';
 
 export async function getLeitnerReviewWords(userId: string) {
   // ✅ UTC基準の昨日の開始時刻を取得
-  const yesterday = startOfDay(subDays(new Date(), 1));
+  const today = startOfDay(new Date());
 
   const reviewWords = await prisma.userWord.findMany({
     where: {
       userId,
       nextReviewDate: {
-        lte: yesterday,
+        lte: today,
       },
       level: {
         lte: 7,
@@ -36,8 +36,6 @@ export async function getLeitnerReviewWords(userId: string) {
     }))
   );
 
-  console.log('🧪 userId:', userId);
-  console.log('🧪 yesterday (UTC):', yesterday.toISOString());
   console.log(
     '🧪 reviewWords (debug):',
     reviewWords.map((w: typeof reviewWords[number]) => ({

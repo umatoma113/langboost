@@ -37,7 +37,6 @@ export default function ClientPage({ user }: Props) {
     } catch (err) {
       console.error(err);
       setError("要約・単語抽出に失敗しました。");
-    } finally {
       setLoading(false);
     }
   };

@@ -201,7 +201,7 @@ export default function InteractiveTranslationSection({
 
               <button
                 onClick={() => setPopupTargetKey(null)}
-                className="absolute top-1 right-2 text-gray-400 hover:text-gray-600 text-xs"
+                className="absolute top-1 right-2 text-gray-400 hover:text-gray-600 text-base md:text-lg font-bold px-2 py-1"
               >
                 ×
               </button>
