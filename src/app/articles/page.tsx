@@ -1,4 +1,5 @@
 // src/app/articles/page.tsx
+import { auth } from '../../../lib/auth';
 import { prisma } from '../../../lib/db';
 import Link from 'next/link';
 import { deleteArticleAction } from '@/app/actions/deleteArticleAction';
@@ -9,10 +10,13 @@ import Header from '@/components/Header';
 
 const PAGE_SIZE = 10;
 
-const getArticles = async (page: number, query: string) => {
-  const where = query
-    ? { title: { contains: query, mode: 'insensitive' as const } }
-    : {};
+const getArticles = async (userId: string, page: number, query: string) => {
+  const where = {
+    userId,
+    ...(query && {
+      title: { contains: query, mode: 'insensitive' as const },
+    }),
+  };
 
   const total = await prisma.article.count({ where });
 
@@ -34,6 +38,9 @@ export default async function ArticlePage({
 }: {
   searchParams?: Promise<Record<string, string | string[] | undefined>>;
 }) {
+  const session = await auth();
+  const userId = session.id;
+
   const params = await searchParams;
 
   const pageParam = Array.isArray(params?.page)
@@ -47,7 +54,7 @@ export default async function ArticlePage({
   const currentPage = Number(pageParam) || 1;
   const query = queryParam?.trim() || '';
 
-  const { articles, totalPages } = await getArticles(currentPage, query);
+  const { articles, totalPages } = await getArticles(userId, currentPage, query);
 
   async function handleDelete(id: number) {
     'use server';
@@ -121,4 +128,3 @@ export default async function ArticlePage({
     </>
   );
 }
-
