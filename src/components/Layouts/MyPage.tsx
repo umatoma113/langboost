@@ -49,14 +49,11 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
   const [viewMode, setViewMode] = useState<'both' | 'articles' | 'words'>('both');
   const [userArticles, setUserArticles] = useState(articles);
   const [userWords, setUserWords] = useState(words);
-  const [page, setPage] = useState(1);
-  const ITEMS_PER_PAGE = 5;
 
   const sortedQuizzes = [...quizzes].sort(
     (a, b) => new Date(b.executedAt).getTime() - new Date(a.executedAt).getTime()
   );
-  const paginated = sortedQuizzes.slice((page - 1) * ITEMS_PER_PAGE, page * ITEMS_PER_PAGE);
-  const totalPages = Math.ceil(sortedQuizzes.length / ITEMS_PER_PAGE);
+  const recentQuizzes = sortedQuizzes.slice(0, 5); // 直近5件のみ表示
 
   const handleWordDelete = async (wordId: number) => {
     try {
@@ -103,20 +100,20 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
         </div>
 
         {/* ✅ 記事・単語帳（6:4レイアウト） */}
-        <div
-          className={`grid gap-6 ${viewMode === 'both'
-              ? 'grid-cols-[3fr_2fr]' // ← 6:4 表示
-              : 'grid-cols-1'
-            }`}
-        >
+        <div className={`grid gap-6 ${viewMode === 'both' ? 'grid-cols-[3fr_2fr]' : 'grid-cols-1'}`}>
           {(viewMode === 'articles' || viewMode === 'both') && (
             <section className="bg-white p-4 rounded shadow w-full">
-              <h2 className="text-lg font-bold mb-2">📰 登録記事</h2>
+              <div className="flex justify-between items-center mb-2">
+                <h2 className="text-lg font-bold">📰 登録記事（直近10件）</h2>
+                <Link href="/articles">
+                  <button className="text-sm text-blue-600 hover:underline">→ 一覧を見る</button>
+                </Link>
+              </div>
               {userArticles.length === 0 ? (
                 <p className="text-sm text-gray-500">まだ記事が登録されていません。</p>
               ) : (
                 <ul className="space-y-2 max-h-[50vh] overflow-y-auto pr-1">
-                  {userArticles.map((article) => (
+                  {userArticles.slice(0, 10).map((article) => (
                     <li key={article.id} className="flex justify-between items-center border-b pb-2">
                       <span className="truncate">{article.title}</span>
                       <div className="flex space-x-2">
@@ -142,18 +139,23 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
           {(viewMode === 'words' || viewMode === 'both') && (
             <section className="bg-white p-4 rounded shadow w-full">
               <div className="flex items-center justify-between mb-2">
-                <h2 className="text-lg font-bold">📚 単語帳</h2>
-                <Link href="/quiz">
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-1.5 rounded shadow">
-                    クイズを始める
-                  </button>
-                </Link>
+                <h2 className="text-lg font-bold">📚 単語帳（直近10件）</h2>
+                <div className="flex gap-3">
+                  <Link href="/quiz">
+                    <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-1.5 rounded shadow">
+                      クイズを始める
+                    </button>
+                  </Link>
+                  <Link href="/words">
+                    <button className="text-sm text-blue-600 hover:underline">→ 一覧を見る</button>
+                  </Link>
+                </div>
               </div>
               {userWords.length === 0 ? (
                 <p className="text-sm text-gray-500">単語がまだ登録されていません。</p>
               ) : (
                 <ul className="list-disc pl-5 space-y-2 max-h-[50vh] overflow-y-auto pr-1">
-                  {userWords.map((entry, index) => (
+                  {userWords.slice(0, 10).map((entry, index) => (
                     <li key={index} className="flex justify-between items-center">
                       <span>{entry.word.word} - {entry.word.meaning}</span>
                       <button
@@ -172,49 +174,31 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
 
         {/* ✅ クイズ履歴 */}
         <section className="bg-white p-4 rounded shadow">
-          <h2 className="text-lg font-bold mb-2">📝 クイズ履歴</h2>
-          {sortedQuizzes.length === 0 ? (
+          <div className="flex justify-between items-center mb-2">
+            <h2 className="text-lg font-bold">📝 クイズ履歴（直近5件）</h2>
+            <Link href="/quiz/history">
+              <button className="text-sm text-blue-600 hover:underline">→ 一覧を見る</button>
+            </Link>
+          </div>
+          {recentQuizzes.length === 0 ? (
             <p className="text-sm text-gray-500">まだクイズ履歴がありません。</p>
           ) : (
-            <>
-              <ul className="divide-y divide-gray-200">
-                {paginated.map((quiz) => (
-                  <li key={quiz.id} className="py-2 flex justify-between items-center text-sm">
-                    <div>
-                      <span className="text-gray-500">{format(new Date(quiz.executedAt), 'yyyy/MM/dd')}：</span>{' '}
-                      <strong>{quiz.quizTemplate.word.word}</strong> — {quiz.quizTemplate.question}
-                    </div>
-                    <span className={`font-semibold ${quiz.isCorrect ? 'text-green-600' : 'text-red-600'}`}>
-                      {quiz.isCorrect ? '正解' : '不正解'}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="mt-4 flex justify-center items-center space-x-4">
-                <button
-                  onClick={() => setPage((prev) => prev - 1)}
-                  disabled={page === 1}
-                  className={`px-3 py-1 rounded border ${page === 1 ? 'text-gray-400 border-gray-300 cursor-not-allowed' : 'hover:bg-gray-100'}`}
-                >
-                  前へ
-                </button>
-                <span className="text-sm text-gray-600">
-                  {page} / {totalPages}
-                </span>
-                <button
-                  onClick={() => setPage((prev) => prev + 1)}
-                  disabled={page === totalPages}
-                  className={`px-3 py-1 rounded border ${page === totalPages ? 'text-gray-400 border-gray-300 cursor-not-allowed' : 'hover:bg-gray-100'}`}
-                >
-                  次へ
-                </button>
-              </div>
-            </>
+            <ul className="divide-y divide-gray-200">
+              {recentQuizzes.map((quiz) => (
+                <li key={quiz.id} className="py-2 flex justify-between items-center text-sm">
+                  <div>
+                    <span className="text-gray-500">{format(new Date(quiz.executedAt), 'yyyy/MM/dd')}：</span>{' '}
+                    <strong>{quiz.quizTemplate.word.word}</strong> — {quiz.quizTemplate.question}
+                  </div>
+                  <span className={`font-semibold ${quiz.isCorrect ? 'text-green-600' : 'text-red-600'}`}>
+                    {quiz.isCorrect ? '正解' : '不正解'}
+                  </span>
+                </li>
+              ))}
+            </ul>
           )}
         </section>
       </main>
     </>
   );
 }
-
