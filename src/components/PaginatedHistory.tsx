@@ -1,14 +1,11 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
-
 type Props = {
   page: number;
   totalPages: number;
 };
 
 export default function PaginatedHistory({ page, totalPages }: Props) {
-  const router = useRouter();
 
   const handlePageChange = (newPage: number) => {
     const url = new URL(window.location.href);
