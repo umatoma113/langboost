@@ -154,7 +154,7 @@ export default function QuizClient({ initialQuizzes }: { initialQuizzes: QuizTem
                     bg-blue-50 border border-blue-300 text-blue-800 px-6 py-4
                     text-sm leading-relaxed rounded-xl shadow-lg max-w-xl w-[90%] z-50">
           <strong>復習システムの仕組み：</strong><br />
-          LangBoost の復習機能は、記憶の定着を促すために「ライナーシステム（Leitner System）」をベースとしたアルゴリズムを採用しています。<br />
+          LangBoost の復習機能は、記憶の定着を促すために「ライトナーシステム（Leitner System）」をベースとしたアルゴリズムを採用しています。<br />
           学習した単語には「復習レベル」と「次回復習日」が設定されており、
           <strong>正解するたびに復習間隔が延び</strong>、
           <strong>間違えるとレベルがリセット</strong>されて早期に再出題されます。<br />
