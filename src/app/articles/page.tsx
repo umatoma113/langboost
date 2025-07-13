@@ -2,11 +2,11 @@
 import { auth } from '../../../lib/auth';
 import { prisma } from '../../../lib/db';
 import Link from 'next/link';
-import { deleteArticleAction } from '@/app/actions/deleteArticleAction';
-import { revalidatePath } from 'next/cache';
 import { format } from 'date-fns';
 import PaginationWrapper from '@/components/PaginatedArticles';
 import Header from '@/components/Header';
+import DeleteButton from '@/components/DeleteButton';
+import { deleteArticleAction } from '@/app/actions/deleteArticleAction';
 
 const PAGE_SIZE = 10;
 
@@ -56,12 +56,6 @@ export default async function ArticlePage({
 
   const { articles, totalPages } = await getArticles(userId, currentPage, query);
 
-  async function handleDelete(id: number) {
-    'use server';
-    await deleteArticleAction(id);
-    revalidatePath('/articles');
-  }
-
   return (
     <>
       <Header showTopPage={true} showMyPage={true} />
@@ -94,24 +88,22 @@ export default async function ArticlePage({
                 key={article.id}
                 className="p-4 bg-white shadow rounded flex justify-between items-center"
               >
-                <div>
-                  <p className="font-semibold">{article.title}</p>
-                  <p className="text-sm text-gray-500">
-                    {format(new Date(article.createdAt), 'yyyy/MM/dd')}
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2">
-                  <Link
-                    href={`/summary/${article.id}`}
-                    className="flex-shrink-0 w-20 bg-blue-600 hover:bg-blue-700 text-white text-sm px-3 py-1 rounded shadow text-center"
-                  >
-                    開く
-                  </Link>
-                  <form action={handleDelete.bind(null, article.id)}>
-                    <button className="flex-shrink-0 w-20 bg-red-600 hover:bg-red-700 text-white text-sm px-3 py-1 rounded shadow">
-                      削除
-                    </button>
-                  </form>
+                <div className="flex items-center gap-x-4 flex-grow min-w-0">
+                  <div className="min-w-0 flex-grow">
+                    <p className="font-semibold truncate">{article.title}</p>
+                    <p className="text-sm text-gray-500">
+                      {format(new Date(article.createdAt), 'yyyy/MM/dd')}
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap-2 flex-shrink-0">
+                    <Link
+                      href={`/summary/${article.id}`}
+                      className="w-20 bg-blue-600 hover:bg-blue-700 text-white text-sm px-3 py-1 rounded shadow text-center"
+                    >
+                      開く
+                    </Link>
+                    <DeleteButton id={article.id} onDelete={deleteArticleAction} />
+                  </div>
                 </div>
               </li>
             ))}

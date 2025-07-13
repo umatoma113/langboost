@@ -111,18 +111,20 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
               ) : (
                 <ul className="space-y-2 max-h-[50vh] overflow-y-auto pr-1">
                   {userArticles.map((article) => (
-                    <li key={article.id} className="flex justify-between items-center border-b pb-2">
-                      <span className="truncate">{article.title}</span>
-                      <div className="flex space-x-2">
+                    <li key={article.id} className="flex justify-between items-center border-b pb-2 gap-4">
+                      <span className="truncate min-w-0 flex-grow" title={article.title}>
+                        {article.title}...
+                      </span>
+                      <div className="flex space-x-2 flex-shrink-0">
                         <Link
                           href={`/summary/${article.id}`}
-                          className="flex-shrink-0 w-16 px-3 py-1 text-sm text-white bg-blue-600 hover:bg-blue-700 rounded shadow text-center"
+                          className="w-16 px-3 py-1 text-sm text-white bg-blue-600 hover:bg-blue-700 rounded shadow text-center"
                         >
                           開く
                         </Link>
                         <button
                           onClick={() => handleArticleDelete(article.id)}
-                          className="flex-shrink-0 w-16 px-3 py-1 text-sm text-white bg-red-600 hover:bg-red-700 rounded shadow"
+                          className="w-16 px-3 py-1 text-sm text-white bg-red-600 hover:bg-red-700 rounded shadow"
                         >
                           削除
                         </button>

@@ -2,10 +2,9 @@
 import { auth } from '../../../lib/auth';
 import { prisma } from '../../../lib/db';
 import PaginatedWords from '@/components/PaginatedWords';
-import { deleteWordAction } from '@/app/actions/deleteWord';
-import { revalidatePath } from 'next/cache';
 import { Prisma } from '../generated/prisma';
 import Header from '@/components/Header';
+import WordsListClient from '@/components/WordsListClient';
 
 const PAGE_SIZE = 10;
 
@@ -52,11 +51,6 @@ export default async function WordsPage({
 
   const { words, totalPages } = await getUserWords(session.id, currentPage, query);
 
-  async function handleDelete(wordId: number) {
-    'use server';
-    await deleteWordAction(wordId);
-    revalidatePath('/words');
-  }
 
   return (
     <>
@@ -86,26 +80,8 @@ export default async function WordsPage({
         {words.length === 0 ? (
           <p className="text-gray-500">単語がまだ登録されていません。</p>
         ) : (
-          <ul className="space-y-4">
-            {words.map((entry) => (
-              <li
-                key={entry.word.id}
-                className="p-4 bg-white shadow rounded flex justify-between items-center"
-              >
-                <div>
-                  <p className="font-semibold">{entry.word.word}</p>
-                  <p className="text-sm text-gray-500">{entry.word.meaning}</p>
-                </div>
-                <form action={handleDelete.bind(null, entry.word.id)}>
-                  <button className="flex-shrink-0 text-center bg-red-600 hover:bg-red-700 text-white text-sm px-3 py-1 rounded shadow">
-                    削除
-                  </button>
-                </form>
-              </li>
-            ))}
-          </ul>
+          <WordsListClient words={words} />
         )}
-
         {totalPages > 1 && (
           <PaginatedWords page={currentPage} totalPages={totalPages} query={query} />
         )}
