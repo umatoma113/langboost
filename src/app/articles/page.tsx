@@ -101,13 +101,14 @@ export default async function ArticlePage({
                   </p>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <Link href={`/summary/${article.id}`}>
-                    <button className="w-20 bg-blue-600 hover:bg-blue-700 text-white text-sm px-3 py-1 rounded shadow">
-                      開く
-                    </button>
+                  <Link
+                    href={`/summary/${article.id}`}
+                    className="flex-shrink-0 w-20 bg-blue-600 hover:bg-blue-700 text-white text-sm px-3 py-1 rounded shadow text-center"
+                  >
+                    開く
                   </Link>
                   <form action={handleDelete.bind(null, article.id)}>
-                    <button className="w-20 bg-red-600 hover:bg-red-700 text-white text-sm px-3 py-1 rounded shadow">
+                    <button className="flex-shrink-0 w-20 bg-red-600 hover:bg-red-700 text-white text-sm px-3 py-1 rounded shadow">
                       削除
                     </button>
                   </form>

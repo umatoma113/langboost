@@ -14,11 +14,11 @@ async function getUserWords(userId: string, page: number, query: string) {
     userId,
     word: query
       ? {
-          OR: [
-            { word: { contains: query, mode: 'insensitive' as const } },
-            { meaning: { contains: query, mode: 'insensitive' as const } },
-          ],
-        }
+        OR: [
+          { word: { contains: query, mode: 'insensitive' as const } },
+          { meaning: { contains: query, mode: 'insensitive' as const } },
+        ],
+      }
       : undefined,
   };
 
@@ -97,7 +97,7 @@ export default async function WordsPage({
                   <p className="text-sm text-gray-500">{entry.word.meaning}</p>
                 </div>
                 <form action={handleDelete.bind(null, entry.word.id)}>
-                  <button className="bg-red-600 hover:bg-red-700 text-white text-sm px-3 py-1 rounded shadow">
+                  <button className="flex-shrink-0 text-center bg-red-600 hover:bg-red-700 text-white text-sm px-3 py-1 rounded shadow">
                     削除
                   </button>
                 </form>

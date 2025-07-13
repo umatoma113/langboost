@@ -67,7 +67,7 @@ export default async function QuizHistoryPage({
                   <p className="text-sm text-gray-800">{quiz.quizTemplate.question}</p>
                 </div>
                 <span
-                  className={`text-sm font-semibold ${
+                  className={`flex-shrink-0 text-sm font-semibold text-center ${
                     quiz.isCorrect ? 'text-green-600' : 'text-red-600'
                   }`}
                 >

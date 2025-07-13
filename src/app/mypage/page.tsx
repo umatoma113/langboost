@@ -11,9 +11,9 @@ export default async function MyPage() {
 
     console.log("🧪 user.id:", user.id);
 
-  const articles = await getMyArticles(user.id);
-  const words = await getMyWords(user.id);
-  const quizzes = await getMyQuizRecords(user.id);
+  const articles = await getMyArticles(user.id, 10);
+  const words = await getMyWords(user.id, 10);
+  const quizzes = await getMyQuizRecords(user.id, 5);
 
   return (
     <>

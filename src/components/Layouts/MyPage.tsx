@@ -50,11 +50,6 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
   const [userArticles, setUserArticles] = useState(articles);
   const [userWords, setUserWords] = useState(words);
 
-  const sortedQuizzes = [...quizzes].sort(
-    (a, b) => new Date(b.executedAt).getTime() - new Date(a.executedAt).getTime()
-  );
-  const recentQuizzes = sortedQuizzes.slice(0, 5); // 直近5件のみ表示
-
   const handleWordDelete = async (wordId: number) => {
     try {
       await deleteWordAction(wordId);
@@ -79,7 +74,6 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
       <Header showTopPage={true} showMyPage={false} />
 
       <main className="flex-grow px-6 py-10 bg-gradient-to-b from-white via-green-50 to-green-50 text-gray-800 space-y-10">
-
         {/* ✅ プロフィール */}
         <section className="p-4 text-center">
           <h2 className="text-xl font-semibold mb-1">ようこそ、{user.name ?? 'ユーザー'} さん!!!</h2>
@@ -105,22 +99,26 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
             <section className="bg-white p-4 rounded shadow w-full">
               <div className="flex justify-between items-center mb-2">
                 <h2 className="text-lg font-bold">📰 登録記事（直近10件）</h2>
-                <Link href="/articles">
-                  <button className="text-sm text-blue-600 hover:underline">→ 一覧を見る</button>
+                <Link
+                  href="/articles"
+                  className="text-sm text-blue-600 hover:underline"
+                >
+                  → 一覧を見る
                 </Link>
               </div>
               {userArticles.length === 0 ? (
                 <p className="text-sm text-gray-500">まだ記事が登録されていません。</p>
               ) : (
                 <ul className="space-y-2 max-h-[50vh] overflow-y-auto pr-1">
-                  {userArticles.slice(0, 10).map((article) => (
+                  {userArticles.map((article) => (
                     <li key={article.id} className="flex justify-between items-center border-b pb-2">
                       <span className="truncate">{article.title}</span>
                       <div className="flex space-x-2">
-                        <Link href={`/summary/${article.id}`}>
-                          <button className="flex-shrink-0 w-16 px-3 py-1 text-sm text-white bg-blue-600 hover:bg-blue-700 rounded shadow">
-                            開く
-                          </button>
+                        <Link
+                          href={`/summary/${article.id}`}
+                          className="flex-shrink-0 w-16 px-3 py-1 text-sm text-white bg-blue-600 hover:bg-blue-700 rounded shadow text-center"
+                        >
+                          開く
                         </Link>
                         <button
                           onClick={() => handleArticleDelete(article.id)}
@@ -141,13 +139,17 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
               <div className="flex items-center justify-between mb-2">
                 <h2 className="text-lg font-bold">📚 単語帳（直近10件）</h2>
                 <div className="flex gap-3">
-                  <Link href="/quiz">
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-1.5 rounded shadow">
-                      クイズを始める
-                    </button>
+                  <Link
+                    href="/quiz"
+                    className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-1.5 rounded shadow text-center"
+                  >
+                    クイズを始める
                   </Link>
-                  <Link href="/words">
-                    <button className="text-sm text-blue-600 hover:underline">→ 一覧を見る</button>
+                  <Link
+                    href="/words"
+                    className="text-sm text-blue-600 hover:underline"
+                  >
+                    → 一覧を見る
                   </Link>
                 </div>
               </div>
@@ -155,7 +157,7 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
                 <p className="text-sm text-gray-500">単語がまだ登録されていません。</p>
               ) : (
                 <ul className="list-disc pl-5 space-y-2 max-h-[50vh] overflow-y-auto pr-1">
-                  {userWords.slice(0, 10).map((entry, index) => (
+                  {userWords.map((entry, index) => (
                     <li key={index} className="flex justify-between items-center">
                       <span>{entry.word.word} - {entry.word.meaning}</span>
                       <button
@@ -176,15 +178,18 @@ export default function MyPageLayout({ user, articles, words, quizzes }: Props) 
         <section className="bg-white p-4 rounded shadow">
           <div className="flex justify-between items-center mb-2">
             <h2 className="text-lg font-bold">📝 クイズ履歴（直近5件）</h2>
-            <Link href="/quiz/history">
-              <button className="text-sm text-blue-600 hover:underline">→ 一覧を見る</button>
+            <Link
+              href="/quiz/history"
+              className="text-sm text-blue-600 hover:underline"
+            >
+              → 一覧を見る
             </Link>
           </div>
-          {recentQuizzes.length === 0 ? (
+          {quizzes.length === 0 ? (
             <p className="text-sm text-gray-500">まだクイズ履歴がありません。</p>
           ) : (
             <ul className="divide-y divide-gray-200">
-              {recentQuizzes.map((quiz) => (
+              {quizzes.map((quiz) => (
                 <li key={quiz.id} className="py-2 flex justify-between items-center text-sm">
                   <div>
                     <span className="text-gray-500">{format(new Date(quiz.executedAt), 'yyyy/MM/dd')}：</span>{' '}
