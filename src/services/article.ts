@@ -36,7 +36,7 @@ export async function getArticleById(id: number): Promise<ArticleWithWords | nul
       content: true,
       userId: true,
       articleQuizzes: {
-        take: 1, // 1問だけ取得
+        take: 1,
         orderBy: { createdAt: 'desc' },
       },
     },
@@ -50,19 +50,20 @@ export async function getArticleById(id: number): Promise<ArticleWithWords | nul
       word: true,
       meaning: true,
     },
+    take: 50,
   });
 
   const quizData = article.articleQuizzes[0];
 
   return {
-  id: article.id,
-  title: article.title,
-  summary: article.summary,
-  translation: article.translation,
-  content: article.content,
-  words,
-  quiz: quizData
-    ? {
+    id: article.id,
+    title: article.title,
+    summary: article.summary,
+    translation: article.translation,
+    content: article.content,
+    words,
+    quiz: quizData
+      ? {
         question: quizData.question,
         choice1: quizData.choice1,
         choice2: quizData.choice2,
@@ -71,8 +72,7 @@ export async function getArticleById(id: number): Promise<ArticleWithWords | nul
         answer: quizData.answer,
         explanation: quizData.explanation,
       }
-    : null,
-  sentencePairs: null, // 👈 一旦 null を明示的に返す
-};
-
+      : null,
+    sentencePairs: null,
+  };
 }

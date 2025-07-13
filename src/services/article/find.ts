@@ -7,10 +7,11 @@ type SentencePair = {
   japanese: string;
 };
 
-export async function getArticlesByUser(userId: string) {
+export async function getArticlesByUser(userId: string, limit: number = 10) {
   return await prisma.article.findMany({
     where: { userId },
     orderBy: { createdAt: "desc" },
+    take: limit,
   });
 }
 
@@ -27,7 +28,6 @@ export async function getArticleById(id: number): Promise<(Article & {
 
   if (!article) return null;
 
-  // sentencePairs の仮想生成
   const englishSentences = article.content.split(/(?<=[.?!])\s+/);
   const japaneseSentences = (article.translation ?? "").split(/(?<=[。！？])\s*/);
   const sentencePairs: SentencePair[] = englishSentences.map((english, i) => ({
@@ -40,3 +40,4 @@ export async function getArticleById(id: number): Promise<(Article & {
     sentencePairs,
   };
 }
+

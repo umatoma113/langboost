@@ -1,14 +1,13 @@
 // services/quiz/getLatestQuizResult.ts
 import { prisma } from '../../../lib/db';
 
-export async function getLatestQuizResult(userId: string) {
+export async function getLatestQuizResult(userId: string, limit = 10) {
     const latestTime = await prisma.quizHistory.aggregate({
         where: { userId },
         _max: { executedAt: true },
     });
 
     const executedAt = latestTime._max.executedAt;
-
     if (!executedAt) return [];
 
     const latestHistories = await prisma.quizHistory.findMany({
@@ -20,6 +19,7 @@ export async function getLatestQuizResult(userId: string) {
         include: {
             quizTemplate: true,
         },
+        take: limit,
     });
 
     return latestHistories.map((result) => {
