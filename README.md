@@ -12,6 +12,16 @@ LangBoost は、英語ニュースを活用して語彙力を強化するため�
 
 ---
 
+## 公開デモ
+
+以下のURLからアプリの動作をご確認いただけます（APIキー含めて動作する構成です）：
+
+🔗 https://langboost.vercel.app/
+
+このアプリは BASIC 認証を設定しており、**ユーザー名とパスワードが必要**です。
+
+---
+
 ## 環境
 
 ### [ローカル環境]
@@ -47,10 +57,3 @@ npm install
 
 # .env.local を作成して以下の環境変数を設定
 cp .env.example .env.local
-
-# Prisma のマイグレーションと型生成
-npx prisma generate
-npx prisma migrate dev
-
-# 開発サーバーを起動
-npm run dev
