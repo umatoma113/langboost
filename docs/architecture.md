@@ -29,9 +29,10 @@ graph TD
   TOP --> SIGNUP[サインアップページ]
   TOP --> INPUT[記事貼り付け画面]
   INPUT --> SUMMARY[要約/単語抽出結果]
-  SUMMARY --> WORDLIST[マイ単語帳]
-  SUMMARY --> QUIZ[復習クイズ]
+  SUMMARY --> SUMMARYQUIZ[記事内復習クイズ]
   TOP --> MYPAGE[マイページ]
+  MYPAGE --> WORDLIST[マイ単語帳]
+  WORDLIST --> WORDQUIZ[単語帳クイズ]
   MYPAGE --> QUIZHISTORY[クイズ履歴]
   MYPAGE --> ARTICLES[登録記事一覧]
 ```
@@ -178,15 +179,41 @@ erDiagram
 
 ## 🌐 URL / API 設計
 
-```mermaid
-graph TB
-  route1[GET /] --> top[トップページ]
-  route2[GET /login] --> login[ログイン画面]
-  route3[GET /summary] --> summary[要約表示ページ]
-  route4[POST /api/analyzeAndExtract] --> analyze[記事解析API]
-  route5[POST /api/word/register] --> reg[単語登録API]
-  route6[GET /quiz] --> quiz[クイズ画面]
-  route7[POST /api/quiz/submit] --> submit[クイズ結果保存API]
-  route8[GET /mypage] --> mypage[マイページ]
-  route9[GET /articles] --> articles[記事一覧]
-```
+### 🔹 ページルーティング（画面表示）
+
+- `GET /`  
+  → トップページ
+
+- `GET /login`  
+  → ログインページ
+
+- `GET /summary`  
+  → 記事の要約・単語抽出結果ページ
+
+- `GET /quiz`  
+  → 単語帳からの復習クイズページ
+
+- `GET /mypage`  
+  → マイページ
+
+- `GET /articles`  
+  → 登録記事一覧ページ
+
+- `GET /words`  
+  → マイ単語帳ページ
+
+- `GET /quiz/history`  
+  → クイズ履歴ページ
+
+---
+
+### 🔹 API エンドポイント
+
+- `POST /api/analyzeAndExtract`  
+  → 記事の要約＋単語抽出（OpenAI連携）
+
+- `POST /api/word/register`  
+  → 単語の登録処理（UserWord 作成）
+
+- `POST /api/quiz/submit`  
+  → クイズの解答送信・履歴記録
