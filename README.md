@@ -58,7 +58,6 @@ LangBoostではこの仕組みに基づき、単語ごとの復習タイミン�
 - Supabase: 認証・DB・ストレージ管理
 - Prisma ORM: データベーススキーマ管理と型安全な操作
 - OpenAI API: 翻訳・意味生成処理
-- cheerio: URL貼り付け時のHTML解析
 - nextjs-toploader: ページ遷移時のローディングバー
 - DiQt: NGSL/TSL/BSL の語彙・意味データ（CC BY-SA 4.0 ライセンス）
 
