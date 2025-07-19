@@ -5,12 +5,31 @@
 LangBoost は、英語ニュースを活用して語彙力を強化するための語学学習支援サービスです。
 
 - ニュース記事のURLまたは本文を入力すると、日本語要約と単語リストを自動生成。
-- NGSL（New General Service List）に基づいた単語レベルの色分けと意味表示。
+- **NGSL（New General Service List）※1** に基づいた単語レベルの色分けと意味表示。
 - 自分だけの単語帳を作成し、クイズで復習が可能。
-- Leitner システムを活用した効率的な復習アルゴリズム。
+- **Leitner システム※2** を活用した効率的な復習アルゴリズム。
 - 多読支援（原文内で単語ホバー辞書・意味登録・右クリックで保存）など、学習者の習慣化を支援。
 
 ---
+
+### ※1 NGSLとは？
+
+**NGSL（New General Service List）** とは、英語学習における高頻度語彙を約2800語に絞った語彙リストです。  
+日常英語の約90%以上をカバーできるとされ、英語学習初中級者にとって最も効率の良い語彙習得指標の一つです。
+
+LangBoostではこのリストを活用し、重要語を青色で表示・意味をポップアップ表示することで学習を効率化します。
+
+---
+
+### ※2 Leitnerシステムとは？
+
+**Leitner（ライトナー）システム** は、記憶の定着を高めるための反復学習アルゴリズムです。  
+問題に正解すると復習間隔が長くなり、不正解だとすぐに再出題されるよう設計されています。
+
+LangBoostではこの仕組みに基づき、単語ごとの復習タイミングを自動で調整し、ユーザーの記憶に残りやすい最適なタイミングで復習クイズを出題します。
+
+---
+
 
 ## 公開デモ
 
@@ -18,7 +37,7 @@ LangBoost は、英語ニュースを活用して語彙力を強化するため�
 
 🔗 https://langboost.vercel.app/
 
-このアプリは BASIC 認証を設定しており、**ユーザー名とパスワードが必要**です。
+このアプリは BASIC 認証を設定しており、管理者から提供される**ユーザー名とパスワードが必要**です。
 
 ---
 
@@ -45,6 +64,15 @@ LangBoost は、英語ニュースを活用して語彙力を強化するため�
 
 ---
 
+## 設計書（別ファイル）
+
+詳細なアーキテクチャ図・ER図・画面遷移図などは以下をご参照ください。
+
+▶ [設計書（architecture.md）を開く](docs/architecture.md)
+
+
+---
+
 ## 開発環境の構築方法
 
 ```bash
@@ -57,3 +85,12 @@ npm install
 
 # .env.local を作成して以下の環境変数を設定
 cp .env.example .env.local
+
+### [.env.local の設定例]
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
+DATABASE_URL=postgresql://user:password@db.supabase.co:5432/dbname
+OPENAI_API_KEY=sk-xxxx
